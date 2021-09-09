@@ -1,0 +1,19 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	1	phageblast
+	1	phagefinder
+	1	prodigal
+	1	trim500
+	5
+
+[Tue Feb 26 23:34:00 2019]
+Job 1: --- trim scaffolds
+
+RuleException in line 17 of /local/workdir/users/agk85/press/scripts/spades/snake_min_prodigal_pf_spadestest:
+NameError: The name 'parms' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}

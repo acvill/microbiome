@@ -1,0 +1,33 @@
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	bwamap
+	1	final
+	2
+
+Job 2: ---bwaindex
+
+Error in rule bwamap:
+    jobid: 2
+    output: /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.sam, /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/flagstats/B309-5_prefilter_flagstats.txt, /workdir/users/agk85/CDC/logs/finals/B309-5_final_bwamap
+
+RuleException:
+CalledProcessError in line 54 of /local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_bwa:
+Command ' set -euo pipefail;  
+		if [ ! -d /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments ]; then mkdir -p /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments; fi
+		R=B309-5
+		PATIENT=$(echo $R| cut -d'-' -f1)
+		export PATH=/programs/bwa-0.7.13:$PATH
+		export PATH=/programs/samtools-1.6/bin:$PATH
+		/programs/bwa-0.7.8/bwa mem -a -t 4  /workdir/users/agk85/CDC/mapping/metagenomes2/references/$PATIENT_nr /workdir/data/CDC/metagenomes/merged/unzip/B309-5.1.fastq /workdir/data/CDC/metagenomes/merged/unzip/B309-5.1.fastq > /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.sam
+		samtools view -bh /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.sam  > /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.temp.bam
+		samtools flagstat /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.temp.bam > /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/flagstats/B309-5_prefilter_flagstats.txt
+		rm /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.temp.bam
+		touch /workdir/users/agk85/CDC/logs/finals/B309-5_final_bwamap ' returned non-zero exit status 1.
+  File "/local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_bwa", line 54, in __rule_bwamap
+  File "/usr/local/lib/python3.6/concurrent/futures/thread.py", line 55, in run
+Will exit after finishing currently running jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2018-03-01T161631.135318.snakemake.log

@@ -1,0 +1,27 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	1	sorted
+	2
+
+[Sun Oct 20 19:24:57 2019]
+Job 2: ---SORTED
+
+[Sun Oct 20 19:30:32 2019]
+Finished job 2.
+1 of 2 steps (50%) done
+
+[Sun Oct 20 19:30:32 2019]
+localrule final:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t8/US3-8/done, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t8/US3-10/done, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t8/US3-12/done, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t8/US3-14/done, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t8/US3-16/done
+    jobid: 0
+
+[Sun Oct 20 19:30:32 2019]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /local/workdir/users/agk85/CDC2/scripts/binning_with/.snakemake/log/2019-10-20T192457.041630.snakemake.log

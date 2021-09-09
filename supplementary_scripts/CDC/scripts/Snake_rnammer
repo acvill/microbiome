@@ -1,0 +1,80 @@
+##-----------------------------------------------------------------------------------##
+## The list of samples to be processed
+##-----------------------------------------------------------------------------------##
+BASE="/workdir/users/agk85/CDC"
+SAMPLES, = glob_wildcards(BASE + "/idba_rerun/metagenomes/scaffolds/{NAME}_scaffold.fasta")
+NB_SAMPLES = len(SAMPLES)
+print (SAMPLES)
+
+rule final:
+	input:
+                expand(BASE + "/rnammer/metagenomes2/{NAME}/{NAME}_blast_done",NAME=SAMPLES),
+		expand(BASE + "/rnammer/metagenomes2/{NAME}/{NAME}_taxa_done",NAME=SAMPLES)
+rule rnammer:
+	input:
+		FA=BASE + "/prodigal/metagenomes2/{NAME}/{NAME}_scaffold.fasta"
+	params:
+		n="rna_{NAME}"
+	resources:
+		mem_mb = lambda wildcards, attempt: attempt * 10
+	output:
+		outfile=BASE + "/rnammer/metagenomes2/{NAME}_16S.fasta",
+		done=BASE + "/rnammer/metagenomes2/{NAME}/{NAME}_rnammer_done"
+	message: """--- rnammer scaffolds"""
+	shell:
+		"""
+		perl /programs/rnammer-1.2/rnammer -S bac -m ssu -f {output.outfile} {input.FA}
+		touch {output.done}
+		""" 
+
+rule blast:
+	input: 
+		FA=BASE + "/rnammer/metagenomes2/{NAME}_16S.fasta"
+	params:
+		n="rnablast_{NAME}",
+		db=BASE+"/rnammer/gg_db"
+	resources:
+		mem_mb = lambda wildcards, attempt: attempt * 10
+	output:
+		outfile=BASE + "/rnammer/metagenomes2/{NAME}_16S.out",
+		done=BASE + "/rnammer/metagenomes2/{NAME}/{NAME}_blast_done",
+		best=BASE + "/rnammer/metagenomes2/{NAME}_16S.out.best"
+	message:"""--- blast green genes"""
+	shell:
+		"""
+		/programs/ncbi-blast-2.3.0+/bin/blastn -query {input.FA} -db {params.db} -out {output.outfile} -num_threads 1 -outfmt 6
+		sort -k1,1 -k12,12gr -k11,11g -k3,3gr {output.outfile} | sort -u -k1,1 --merge > {output.best}
+		touch {output.done}
+		"""
+
+rule taxa_link:
+	input:
+		best=BASE + "/rnammer/metagenomes2/{NAME}_16S.out.best"
+	params:
+		n="taxa_{NAME}",
+		ref=BASE+"/rnammer/current_GREENGENES_gg16S_unaligned.fasta"
+	resources:
+		mem_mb = lambda wildcards, attempt: attempt * 10
+	output:
+		outfile=BASE + "/rnammer/metagenomes2/{NAME}_16S.out.best.withtaxa.txt",
+		done=BASE + "/rnammer/metagenomes2/{NAME}/{NAME}_taxa_done"
+	message:"""--- link taxa"""
+	run:
+
+		refdict={}
+		with open({params.ref}) as reffile:
+			for line in reffile:
+				if line[0]=='>':
+					id = line.split(' ')[0].split('>')[1]
+					refdict[id] = line.strip().split('>')[1]
+		
+		with open({input.best},'r') as infile:
+			with open({output.outfile},'w') as outfile:
+				subject = line.split('\t')[1]
+				addline = refdict[subject]
+				outfile.write(line.strip() + '\t' + addline + '\n')
+		
+		with open({output.done},'w') as donefile:
+			donefile.write('done')
+
+

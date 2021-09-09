@@ -1,0 +1,30 @@
+Building DAG of jobs...
+Job counts:
+	count	jobs
+	1	final
+	4	get_trans_noeuks_phagerepair
+	4	normalize
+	4	rscript
+	13
+
+[Sat Aug 17 14:31:11 2019]
+Job 1: ---trans
+
+
+[Sat Aug 17 14:31:11 2019]
+Job 4: ---trans
+
+
+[Sat Aug 17 14:31:11 2019]
+Job 2: ---trans
+
+
+[Sat Aug 17 14:31:11 2019]
+Job 3: ---trans
+
+
+[Sat Aug 17 14:31:11 2019]
+Job 7: ---normalize
+
+RuleException in line 51 of /local/workdir/users/agk85/CDC2/scripts/network/snake_trans_network:
+'Params' object has no attribute 'rpkm'

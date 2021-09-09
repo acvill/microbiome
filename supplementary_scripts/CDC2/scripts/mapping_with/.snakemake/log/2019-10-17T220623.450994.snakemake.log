@@ -1,0 +1,211 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 43
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	24	bwa_index
+	1	final
+	25
+
+[Thu Oct 17 22:06:23 2019]
+Job 16: --- BWA INDEX
+
+Submitted job 16 with external jobid 'Your job 443614 ("B331-1_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:23 2019]
+Job 11: --- BWA INDEX
+
+Submitted job 11 with external jobid 'Your job 443615 ("B316-7_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:23 2019]
+Job 43: --- BWA INDEX
+
+Submitted job 43 with external jobid 'Your job 443616 ("B370-5_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:23 2019]
+Job 34: --- BWA INDEX
+
+Submitted job 34 with external jobid 'Your job 443617 ("US3-12_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:23 2019]
+Job 22: --- BWA INDEX
+
+Submitted job 22 with external jobid 'Your job 443618 ("B335-3_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:23 2019]
+Job 18: --- BWA INDEX
+
+Submitted job 18 with external jobid 'Your job 443619 ("B331-3_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:23 2019]
+Job 1: --- BWA INDEX
+
+Submitted job 1 with external jobid 'Your job 443620 ("B314-1_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:23 2019]
+Job 35: --- BWA INDEX
+
+Submitted job 35 with external jobid 'Your job 443621 ("US3-14_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:23 2019]
+Job 3: --- BWA INDEX
+
+Submitted job 3 with external jobid 'Your job 443622 ("B314-3_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:24 2019]
+Job 9: --- BWA INDEX
+
+Submitted job 9 with external jobid 'Your job 443623 ("B316-5_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:24 2019]
+Job 14: --- BWA INDEX
+
+Submitted job 14 with external jobid 'Your job 443624 ("B320-3_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:24 2019]
+Job 13: --- BWA INDEX
+
+Submitted job 13 with external jobid 'Your job 443625 ("B320-2_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:24 2019]
+Job 40: --- BWA INDEX
+
+Submitted job 40 with external jobid 'Your job 443626 ("US8-4_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:24 2019]
+Job 42: --- BWA INDEX
+
+Submitted job 42 with external jobid 'Your job 443627 ("B370-4_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:24 2019]
+Job 19: --- BWA INDEX
+
+Submitted job 19 with external jobid 'Your job 443628 ("B331-4_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:24 2019]
+Job 21: --- BWA INDEX
+
+Submitted job 21 with external jobid 'Your job 443629 ("B335-2_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:24 2019]
+Job 36: --- BWA INDEX
+
+Submitted job 36 with external jobid 'Your job 443630 ("US3-16_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:25 2019]
+Job 10: --- BWA INDEX
+
+Submitted job 10 with external jobid 'Your job 443631 ("B316-6_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:25 2019]
+Job 4: --- BWA INDEX
+
+Submitted job 4 with external jobid 'Your job 443632 ("B314-4_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:25 2019]
+Job 2: --- BWA INDEX
+
+Submitted job 2 with external jobid 'Your job 443633 ("B314-2_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:25 2019]
+Job 17: --- BWA INDEX
+
+Submitted job 17 with external jobid 'Your job 443634 ("B331-2_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:25 2019]
+Job 15: --- BWA INDEX
+
+Submitted job 15 with external jobid 'Your job 443635 ("B320-5_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:25 2019]
+Job 23: --- BWA INDEX
+
+Submitted job 23 with external jobid 'Your job 443636 ("B357-1_bwa_index") has been submitted'.
+
+[Thu Oct 17 22:06:25 2019]
+Job 20: --- BWA INDEX
+
+Submitted job 20 with external jobid 'Your job 443637 ("B335-1_bwa_index") has been submitted'.
+[Thu Oct 17 22:06:57 2019]
+Finished job 43.
+1 of 25 steps (4%) done
+[Thu Oct 17 22:07:57 2019]
+Finished job 11.
+2 of 25 steps (8%) done
+[Thu Oct 17 22:08:09 2019]
+Finished job 16.
+3 of 25 steps (12%) done
+[Thu Oct 17 22:09:21 2019]
+Finished job 22.
+4 of 25 steps (16%) done
+[Thu Oct 17 22:09:45 2019]
+Finished job 34.
+5 of 25 steps (20%) done
+[Thu Oct 17 22:10:08 2019]
+Finished job 18.
+6 of 25 steps (24%) done
+[Thu Oct 17 22:10:19 2019]
+Finished job 1.
+7 of 25 steps (28%) done
+[Thu Oct 17 22:11:58 2019]
+Finished job 35.
+8 of 25 steps (32%) done
+[Thu Oct 17 22:12:09 2019]
+Finished job 14.
+9 of 25 steps (36%) done
+[Thu Oct 17 22:12:31 2019]
+Finished job 3.
+10 of 25 steps (40%) done
+[Thu Oct 17 22:12:31 2019]
+Finished job 9.
+11 of 25 steps (44%) done
+[Thu Oct 17 22:13:27 2019]
+Finished job 42.
+12 of 25 steps (48%) done
+[Thu Oct 17 22:14:22 2019]
+Finished job 13.
+13 of 25 steps (52%) done
+[Thu Oct 17 22:14:22 2019]
+Finished job 21.
+14 of 25 steps (56%) done
+[Thu Oct 17 22:14:33 2019]
+Finished job 19.
+15 of 25 steps (60%) done
+[Thu Oct 17 22:15:04 2019]
+Finished job 40.
+16 of 25 steps (64%) done
+[Thu Oct 17 22:16:14 2019]
+Finished job 4.
+17 of 25 steps (68%) done
+[Thu Oct 17 22:16:24 2019]
+Finished job 10.
+18 of 25 steps (72%) done
+[Thu Oct 17 22:16:34 2019]
+Finished job 36.
+19 of 25 steps (76%) done
+[Thu Oct 17 22:17:24 2019]
+Finished job 2.
+20 of 25 steps (80%) done
+[Thu Oct 17 22:17:34 2019]
+Finished job 23.
+21 of 25 steps (84%) done
+[Thu Oct 17 22:17:44 2019]
+Finished job 17.
+22 of 25 steps (88%) done
+[Thu Oct 17 22:18:14 2019]
+Finished job 15.
+23 of 25 steps (92%) done
+[Thu Oct 17 22:19:04 2019]
+Finished job 20.
+24 of 25 steps (96%) done
+
+[Thu Oct 17 22:19:04 2019]
+localrule final:
+    input: /workdir/users/agk85/CDC2/mapping_with/references/B314-1_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B314-2_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B314-3_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B314-4_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B316-1_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B316-2_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B316-3_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B316-4_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B316-5_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B316-6_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B316-7_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B320-1_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B320-2_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B320-3_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B320-5_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B331-1_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B331-2_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B331-3_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B331-4_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B335-1_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B335-2_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B335-3_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B357-1_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B357-2_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B357-3_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B357-4_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B357-5_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B357-6_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B370-1_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B370-2_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B370-3_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/US3-8_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/US3-10_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/US3-12_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/US3-14_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/US3-16_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/US8-1_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/US8-2_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/US8-3_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/US8-4_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/US8-5_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B370-4_scaffold.sa, /workdir/users/agk85/CDC2/mapping_with/references/B370-5_scaffold.sa
+    jobid: 0
+
+[Thu Oct 17 22:19:04 2019]
+Finished job 0.
+25 of 25 steps (100%) done
+Complete log: /local/workdir/users/agk85/CDC2/scripts/mapping_with/.snakemake/log/2019-10-17T220623.450994.snakemake.log

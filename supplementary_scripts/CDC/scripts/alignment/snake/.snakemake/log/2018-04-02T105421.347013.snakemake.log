@@ -1,0 +1,154 @@
+
+Job 167: ---map_bwa
+
+
+Job 67: ---bwafilter
+
+
+Job 111: ---sortbam
+
+
+Job 292: ---rpkm
+
+
+Job 44: ---rpkm
+
+
+Job 154: ---rpkm
+
+
+Job 229: ---rpkm
+
+
+Job 214: ---rpkm
+
+
+Job 425: ---rpkm
+
+
+Job 252: ---rpkm
+
+
+Job 38: ---rpkm
+
+
+Job 384: ---rpkm
+
+
+Job 218: ---rpkm
+
+
+Job 72: ---rpkm
+
+
+Job 162: ---rpkm
+
+
+Job 341: ---rpkm
+
+
+Job 182: ---rpkm
+
+
+Job 391: ---rpkm
+
+
+Job 296: ---rpkm
+
+
+Job 368: ---rpkm
+
+
+Job 178: ---rpkm
+
+
+Job 219: ---rpkm
+
+
+Job 397: ---rpkm
+
+
+Job 241: ---rpkm
+
+
+Job 373: ---rpkm
+
+
+Job 106: ---rpkm
+
+
+Job 7: ---rpkm
+
+
+Job 76: ---rpkm
+
+
+Job 407: ---rpkm
+
+
+Job 82: ---rpkm
+
+
+Job 316: ---rpkm
+
+
+Job 48: ---rpkm
+
+
+Job 78: ---rpkm
+
+
+Job 206: ---rpkm
+
+
+Job 187: ---rpkm
+
+
+Job 386: ---rpkm
+
+
+Job 412: ---rpkm
+
+
+Job 109: ---rpkm
+
+
+Job 238: ---rpkm
+
+
+Job 414: ---rpkm
+
+
+Job 98: ---rpkm
+
+
+Job 309: ---rpkm
+
+
+Job 199: ---rpkm
+
+
+Job 418: ---rpkm
+
+
+Job 325: ---rpkm
+
+
+Job 346: ---rpkm
+
+
+Job 443: ---rpkm
+
+
+Job 376: ---rpkm
+
+
+Job 253: ---rpkm
+
+
+Job 112: ---rpkm
+
+Terminating processes on user request.
+Removing output files of failed job rpkm since they might be corrupted:
+/workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B313-3.rpkm.txt
+Complete log: .snakemake/log/2018-04-02T105421.347013.snakemake.log

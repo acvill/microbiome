@@ -1,0 +1,3 @@
+MissingInputException in line 68 of /local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_bwa:
+Missing input files for rule filter:
+/workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B316-2.sam

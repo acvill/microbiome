@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 20 of /local/workdir/users/agk85/CDC2/scripts/network_scripts/snake_trans_network:
+Missing input files for rule get_trans_noeuks_phagerepair:
+/workdir/users/agk85/CDC2/hicpro/output/B370-1_output/hic_results/data/B370-1/B370-1_allValidPairs

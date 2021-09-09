@@ -1,0 +1,14 @@
+
+for i in {1..19}
+do
+WRK=/workdir/users/agk85/CDC
+DESIGN_FILE=$WRK/MetaDesign.txt
+        DESIGN=$(sed -n "${i}p" $DESIGN_FILE)
+        NAME=`basename "$DESIGN"`
+
+OUT=$WRK/resfams/${NAME}
+
+sed 's/ \{1,\}/,/g' $OUT/${NAME}.tbl.txt > $OUT/${NAME}_modified.tbl.txt
+
+done
+

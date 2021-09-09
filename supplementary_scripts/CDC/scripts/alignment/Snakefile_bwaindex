@@ -1,0 +1,28 @@
+##-----------------------------------------------------------------------------------##
+## The list of samples to be processed
+##-----------------------------------------------------------------------------------##
+BASE="/workdir/data/CDC/metagenomes/"
+BASE2="/workdir/users/agk85/CDC"
+SAMPLES, = glob_wildcards(BASE + "/{NAME}hic.1.fastq")
+NB_SAMPLES = len(SAMPLES)
+print (SAMPLES)
+#for NAME in SAMPLES:
+#  print("Sample " + NAME + " will be processed")
+
+rule final:
+	input:
+		expand(BASE2 + "/mapping/genomes/indexes/{NAME}_scaffold.fa", NAME=SAMPLES),
+rule bwa_index:
+	input:
+		SCF=BASE2 + "/prodigal/metagenomes2/{NAME}/{NAME}_scaffold.fasta"
+	params:
+		name="{NAME}_scaffold",
+		n="{NAME}_bwa_index"
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 50,
+	output:
+		FA=BASE2 + "/newhic/refs/{NAME}_scaffold.sa"
+	message:  """--- BWA INDEX"""
+	shell: """
+		/programs/bwa-0.7.8/bwa index -a bwtsw -p {params.name} {input.SCF}
+		"""

@@ -1,0 +1,106 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 12
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	8	checkm
+	1	final
+	9
+
+[Fri Aug 23 09:26:53 2019]
+Job 132: ---checkm
+
+Submitted job 132 with external jobid 'Your job 441399 ("checkm_B314-3") has been submitted'.
+
+[Fri Aug 23 09:26:54 2019]
+Job 159: ---checkm
+
+Submitted job 159 with external jobid 'Your job 441400 ("checkm_B370-5") has been submitted'.
+
+[Fri Aug 23 09:26:54 2019]
+Job 133: ---checkm
+
+Submitted job 133 with external jobid 'Your job 441401 ("checkm_B314-4") has been submitted'.
+
+[Fri Aug 23 09:26:54 2019]
+Job 158: ---checkm
+
+Submitted job 158 with external jobid 'Your job 441402 ("checkm_B370-4") has been submitted'.
+
+[Fri Aug 23 09:26:54 2019]
+Job 151: ---checkm
+
+Submitted job 151 with external jobid 'Your job 441403 ("checkm_B357-2") has been submitted'.
+
+[Fri Aug 23 09:26:54 2019]
+Job 138: ---checkm
+
+Submitted job 138 with external jobid 'Your job 441404 ("checkm_B316-5") has been submitted'.
+
+[Fri Aug 23 09:26:54 2019]
+Job 163: ---checkm
+
+Submitted job 163 with external jobid 'Your job 441405 ("checkm_US3-16") has been submitted'.
+
+[Fri Aug 23 09:26:55 2019]
+Job 144: ---checkm
+
+Submitted job 144 with external jobid 'Your job 441406 ("checkm_B331-2") has been submitted'.
+[Fri Aug 23 09:27:33 2019]
+Error in rule checkm:
+    jobid: 132
+    output: /workdir/users/agk85/CDC2/networks/logs/B314-3_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/checkms/B314-3/B314-3.stats
+    cluster_jobid: Your job 441399 ("checkm_B314-3") has been submitted
+
+Trying to restart job 132.
+
+[Fri Aug 23 09:27:33 2019]
+Job 132: ---checkm
+
+Submitted job 132 with external jobid 'Your job 441407 ("checkm_B314-3") has been submitted'.
+[Fri Aug 23 09:36:04 2019]
+Finished job 159.
+1 of 9 steps (11%) done
+[Fri Aug 23 09:43:14 2019]
+Finished job 158.
+2 of 9 steps (22%) done
+[Fri Aug 23 09:43:54 2019]
+Finished job 133.
+3 of 9 steps (33%) done
+[Fri Aug 23 09:53:05 2019]
+Finished job 151.
+4 of 9 steps (44%) done
+[Fri Aug 23 09:53:15 2019]
+Error in rule checkm:
+    jobid: 144
+    output: /workdir/users/agk85/CDC2/networks/logs/B331-2_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/checkms/B331-2/B331-2.stats
+    cluster_jobid: Your job 441406 ("checkm_B331-2") has been submitted
+
+Trying to restart job 144.
+
+[Fri Aug 23 09:53:15 2019]
+Job 144: ---checkm
+
+Submitted job 144 with external jobid 'Your job 441408 ("checkm_B331-2") has been submitted'.
+[Fri Aug 23 09:54:05 2019]
+Error in rule checkm:
+    jobid: 132
+    output: /workdir/users/agk85/CDC2/networks/logs/B314-3_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/checkms/B314-3/B314-3.stats
+    cluster_jobid: Your job 441407 ("checkm_B314-3") has been submitted
+
+[Fri Aug 23 09:54:45 2019]
+Error in rule checkm:
+    jobid: 144
+    output: /workdir/users/agk85/CDC2/networks/logs/B331-2_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/checkms/B331-2/B331-2.stats
+    cluster_jobid: Your job 441408 ("checkm_B331-2") has been submitted
+
+[Fri Aug 23 10:01:45 2019]
+Finished job 163.
+5 of 9 steps (56%) done
+[Fri Aug 23 10:04:56 2019]
+Finished job 138.
+6 of 9 steps (67%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network_scripts/.snakemake/log/2019-08-23T092653.435388.snakemake.log

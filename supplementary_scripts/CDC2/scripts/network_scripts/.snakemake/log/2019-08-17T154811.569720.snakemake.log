@@ -1,0 +1,4 @@
+ValueError in line 10 of /local/workdir/users/agk85/CDC2/scripts/network/snake_trans_network:
+Encountered duplicate field name: 'NAME'
+  File "/local/workdir/users/agk85/CDC2/scripts/network/snake_trans_network", line 10, in <module>
+  File "/usr/lib64/python3.6/collections/__init__.py", line 411, in namedtuple

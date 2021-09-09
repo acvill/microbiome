@@ -1,0 +1,34 @@
+##-----------------------------------------------------------------------------------##
+## The list of samples to be processed
+##-----------------------------------------------------------------------------------##
+BASE="/workdir/data/press/metagenomes/merged"
+BASE2="/workdir/users/agk85/press"
+SAMPLES, = glob_wildcards(BASE + "/{NAME}.1.fastq")
+NB_SAMPLES = len(SAMPLES)
+print (SAMPLES)
+
+rule final:
+	input:
+		expand(BASE2 + "/metaspades/metagenomes/{NAME}/contigs.fasta", NAME=SAMPLES)
+rule metaspades:
+	input:
+		R1=BASE + "/{NAME}.1.fastq",
+		R2=BASE + "/{NAME}.2.fastq",
+	params:
+		n="metaspades_{NAME}",
+		FQ1=BASE + "/{NAME}.1.fastq",
+		FQ2=BASE + "/{NAME}.2.fastq",
+		SOLO1=BASE+"/{NAME}.1.solo.fastq",
+		SOLO2=BASE+"/{NAME}.2.solo.fastq",
+		OUT=BASE2 + "/metaspades/metagenomes/{NAME}", 
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 100
+	output:
+		FA=BASE2 + "/metaspades/metagenomes/{NAME}/contigs.fasta"
+	message:  """---metaSPAdes"""
+	shell: """
+		if [ ! -d {params.OUT} ]; then mkdir -p {params.OUT}; fi
+		/programs/spades/bin/spades.py --meta -1 {params.FQ1} -2 {params.FQ2} -m {resources.mem_mb} -s {params.SOLO1} -s {params.SOLO2}  -o {params.OUT}
+		gzip {params.FQ1}
+		gzip {params.FQ2}
+		"""

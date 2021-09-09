@@ -1,0 +1,37 @@
+##-----------------------------------------------------------------------------------##
+## The list of samples to be processed
+##-----------------------------------------------------------------------------------##
+BASE="/workdir/users/agk85/CDC"
+SAMPLES, = glob_wildcards(BASE + "/iselements/metagenomes/prediction/{NAME}_scaffold.fasta.is.fna")
+print(SAMPLES)
+#final rule to get to 
+rule final:
+	input:
+		expand(BASE + "/logs/finals/{NAME}_final_excise_redo", NAME=SAMPLES),
+		expand(BASE + "/prodigal_excise/metagenomes2/{NAME}/{NAME}_excise.fasta", NAME=SAMPLES)
+
+#run python script to excise phage and is
+
+rule excise:
+	input:
+		phage = BASE + "/prodigal/metagenomes2/{NAME}/PFPR_tab.txt",
+		iselements = BASE + "/iselements/metagenomes/prediction/{NAME}_scaffold.fasta.is.fna",
+		scf = BASE + "/prodigal/metagenomes2/{NAME}/{NAME}_scaffold.fasta"
+	params:
+		script = BASE+"/scripts/excise_phage_is.py",
+		n="excise_{NAME}",
+		phageout= BASE+"/prodigal_excise/metagenomes2/{NAME}/{NAME}_phagefinder.txt",
+		isout = BASE + "/isescan/metagenomes/{NAME}/{NAME}_isescan.txt",
+		out=BASE + "/prodigal_excise/metagenomes2/{NAME}",
+		name="{NAME}"
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 2
+	output:
+		final=BASE + "/logs/finals/{NAME}_final_excise_redo",
+		out=BASE + "/prodigal_excise/metagenomes2/{NAME}/{NAME}_excise.fasta"
+	message:  """--- Excise Phage and ISelements"""
+	shell: """
+		if [ ! -d {params.out} ]; then mkdir -p {params.out}; fi
+		python {params.script} {input.scf} {output.out} {input.phage} {input.iselements} {params.name} {params.phageout} {params.isout}
+		touch {output.final}
+		"""

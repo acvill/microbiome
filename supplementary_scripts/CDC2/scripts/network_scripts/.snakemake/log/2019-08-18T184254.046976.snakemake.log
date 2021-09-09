@@ -1,0 +1,16 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	25	checkm
+	1	final
+	26
+
+[Sun Aug 18 18:42:54 2019]
+Job 96: ---checkm
+
+Terminating processes on user request, this might take some time.
+Cancelling snakemake on user request.

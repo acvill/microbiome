@@ -1,0 +1,273 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	22	checkm
+	1	final
+	14	rscript
+	37
+
+[Mon Aug 19 13:56:05 2019]
+Job 55: ---rscript
+
+[Mon Aug 19 13:57:17 2019]
+Finished job 55.
+1 of 37 steps (3%) done
+
+[Mon Aug 19 13:57:17 2019]
+Job 58: ---rscript
+
+[Mon Aug 19 13:57:33 2019]
+Finished job 58.
+2 of 37 steps (5%) done
+
+[Mon Aug 19 13:57:33 2019]
+Job 65: ---rscript
+
+[Mon Aug 19 13:57:57 2019]
+Finished job 65.
+3 of 37 steps (8%) done
+
+[Mon Aug 19 13:57:57 2019]
+Job 62: ---rscript
+
+[Mon Aug 19 13:58:07 2019]
+Finished job 62.
+4 of 37 steps (11%) done
+
+[Mon Aug 19 13:58:07 2019]
+Job 74: ---rscript
+
+[Mon Aug 19 13:58:33 2019]
+Finished job 74.
+5 of 37 steps (14%) done
+
+[Mon Aug 19 13:58:33 2019]
+Job 64: ---rscript
+
+[Mon Aug 19 13:58:51 2019]
+Finished job 64.
+6 of 37 steps (16%) done
+
+[Mon Aug 19 13:58:51 2019]
+Job 66: ---rscript
+
+[Mon Aug 19 13:59:02 2019]
+Finished job 66.
+7 of 37 steps (19%) done
+
+[Mon Aug 19 13:59:02 2019]
+Job 73: ---rscript
+
+[Mon Aug 19 13:59:12 2019]
+Finished job 73.
+8 of 37 steps (22%) done
+
+[Mon Aug 19 13:59:12 2019]
+Job 69: ---rscript
+
+[Mon Aug 19 13:59:24 2019]
+Finished job 69.
+9 of 37 steps (24%) done
+
+[Mon Aug 19 13:59:24 2019]
+Job 96: ---checkm
+
+[Mon Aug 19 14:51:59 2019]
+Finished job 96.
+10 of 37 steps (27%) done
+
+[Mon Aug 19 14:51:59 2019]
+Job 57: ---rscript
+
+[Mon Aug 19 14:52:13 2019]
+Finished job 57.
+11 of 37 steps (30%) done
+
+[Mon Aug 19 14:52:13 2019]
+Job 56: ---rscript
+
+[Mon Aug 19 14:52:20 2019]
+Finished job 56.
+12 of 37 steps (32%) done
+
+[Mon Aug 19 14:52:20 2019]
+Job 85: ---checkm
+
+[Mon Aug 19 16:03:34 2019]
+Finished job 85.
+13 of 37 steps (35%) done
+
+[Mon Aug 19 16:03:34 2019]
+Job 95: ---checkm
+
+[Mon Aug 19 17:00:04 2019]
+Finished job 95.
+14 of 37 steps (38%) done
+
+[Mon Aug 19 17:00:04 2019]
+Job 67: ---rscript
+
+[Mon Aug 19 17:00:53 2019]
+Finished job 67.
+15 of 37 steps (41%) done
+
+[Mon Aug 19 17:00:53 2019]
+Job 88: ---checkm
+
+[Mon Aug 19 17:56:11 2019]
+Finished job 88.
+16 of 37 steps (43%) done
+
+[Mon Aug 19 17:56:11 2019]
+Job 77: ---checkm
+
+[Mon Aug 19 17:57:59 2019]
+Finished job 77.
+17 of 37 steps (46%) done
+
+[Mon Aug 19 17:57:59 2019]
+Job 100: ---checkm
+
+[Mon Aug 19 18:42:53 2019]
+Finished job 100.
+18 of 37 steps (49%) done
+
+[Mon Aug 19 18:42:53 2019]
+Job 80: ---checkm
+
+[Mon Aug 19 19:21:24 2019]
+Finished job 80.
+19 of 37 steps (51%) done
+
+[Mon Aug 19 19:21:24 2019]
+Job 59: ---rscript
+
+[Mon Aug 19 19:22:05 2019]
+Finished job 59.
+20 of 37 steps (54%) done
+
+[Mon Aug 19 19:22:05 2019]
+Job 90: ---checkm
+
+[Mon Aug 19 19:59:56 2019]
+Finished job 90.
+21 of 37 steps (57%) done
+
+[Mon Aug 19 19:59:56 2019]
+Job 89: ---checkm
+
+[Mon Aug 19 20:34:34 2019]
+Finished job 89.
+22 of 37 steps (59%) done
+
+[Mon Aug 19 20:34:34 2019]
+Job 72: ---rscript
+
+[Mon Aug 19 20:34:56 2019]
+Finished job 72.
+23 of 37 steps (62%) done
+
+[Mon Aug 19 20:34:56 2019]
+Job 86: ---checkm
+
+[Mon Aug 19 21:02:20 2019]
+Finished job 86.
+24 of 37 steps (65%) done
+
+[Mon Aug 19 21:02:20 2019]
+Job 93: ---checkm
+
+[Mon Aug 19 21:22:56 2019]
+Finished job 93.
+25 of 37 steps (68%) done
+
+[Mon Aug 19 21:22:56 2019]
+Job 83: ---checkm
+
+[Mon Aug 19 21:45:02 2019]
+Finished job 83.
+26 of 37 steps (70%) done
+
+[Mon Aug 19 21:45:02 2019]
+Job 91: ---checkm
+
+[Mon Aug 19 22:05:04 2019]
+Finished job 91.
+27 of 37 steps (73%) done
+
+[Mon Aug 19 22:05:04 2019]
+Job 99: ---checkm
+
+[Mon Aug 19 22:23:13 2019]
+Finished job 99.
+28 of 37 steps (76%) done
+
+[Mon Aug 19 22:23:13 2019]
+Job 98: ---checkm
+
+[Mon Aug 19 22:46:09 2019]
+Finished job 98.
+29 of 37 steps (78%) done
+
+[Mon Aug 19 22:46:09 2019]
+Job 94: ---checkm
+
+[Mon Aug 19 23:04:27 2019]
+Finished job 94.
+30 of 37 steps (81%) done
+
+[Mon Aug 19 23:04:27 2019]
+Job 92: ---checkm
+
+[Mon Aug 19 23:18:53 2019]
+Finished job 92.
+31 of 37 steps (84%) done
+
+[Mon Aug 19 23:18:53 2019]
+Job 87: ---checkm
+
+[Mon Aug 19 23:35:35 2019]
+Finished job 87.
+32 of 37 steps (86%) done
+
+[Mon Aug 19 23:35:35 2019]
+Job 84: ---checkm
+
+[Mon Aug 19 23:48:50 2019]
+Finished job 84.
+33 of 37 steps (89%) done
+
+[Mon Aug 19 23:48:50 2019]
+Job 82: ---checkm
+
+[Mon Aug 19 23:59:41 2019]
+Finished job 82.
+34 of 37 steps (92%) done
+
+[Mon Aug 19 23:59:41 2019]
+Job 97: ---checkm
+
+[Tue Aug 20 00:11:01 2019]
+Finished job 97.
+35 of 37 steps (95%) done
+
+[Tue Aug 20 00:11:01 2019]
+Job 81: ---checkm
+
+[Tue Aug 20 00:20:33 2019]
+Finished job 81.
+36 of 37 steps (97%) done
+
+[Tue Aug 20 00:20:33 2019]
+localrule final:
+    input: /workdir/users/agk85/CDC2/logs/finals/B314-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-6_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-7_trans_final, /workdir/users/agk85/CDC2/logs/finals/B320-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B320-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/B331-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B331-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B331-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B335-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B335-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B335-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-6_trans_final, /workdir/users/agk85/CDC2/logs/finals/B370-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B370-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-1_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B314-2_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B314-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B314-4_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-1_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-2_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-4_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-5_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-6_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-7_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B320-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B320-5_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B331-1_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B331-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B331-4_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B335-1_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B335-2_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B335-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B357-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B357-4_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B357-5_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B357-6_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B370-2_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B370-3_normalize_final, /workdir/users/agk85/CDC2/networks/logs/B314-1_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-2_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-3_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-4_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B316-1_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B316-2_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B316-3_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B316-4_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B316-5_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B316-6_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B316-7_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B320-3_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B320-5_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B331-1_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B331-3_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B331-4_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B335-1_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B335-2_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B335-3_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B357-3_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B357-4_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B357-5_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B357-6_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B370-2_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B370-3_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-1_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-2_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-3_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-4_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B316-1_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B316-2_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B316-3_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B316-4_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B316-5_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B316-6_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B316-7_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B320-3_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B320-5_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B331-1_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B331-3_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B331-4_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B335-1_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B335-2_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B335-3_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B357-3_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B357-4_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B357-5_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B357-6_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B370-2_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B370-3_final_network_checkm_2_0
+    jobid: 0
+
+[Tue Aug 20 00:20:33 2019]
+Finished job 0.
+37 of 37 steps (100%) done
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network_scripts/.snakemake/log/2019-08-19T135604.999289.snakemake.log

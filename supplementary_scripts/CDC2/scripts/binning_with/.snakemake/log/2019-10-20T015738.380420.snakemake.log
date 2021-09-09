@@ -1,0 +1,197 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 8
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	10	bwa
+	1	final
+	11	primary_filter
+	12	sam2bam
+	40	sorted
+	74
+
+[Sun Oct 20 01:57:38 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/US3-10.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/US3-10.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-10/US3-10.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-10/mapped
+    jobid: 163
+    wildcards: NAME=US3-10
+    resources: mem_mb=30
+
+Submitted job 163 with external jobid 'Your job 445187 ("US3-10_bwa") has been submitted'.
+
+[Sun Oct 20 01:57:38 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/US8-3.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/US8-3.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US8-3/US8-3.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US8-3/mapped
+    jobid: 169
+    wildcards: NAME=US8-3
+    resources: mem_mb=30
+
+Submitted job 169 with external jobid 'Your job 445188 ("US8-3_bwa") has been submitted'.
+
+[Sun Oct 20 01:57:38 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/US3-12.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/US3-12.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-12/US3-12.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-12/mapped
+    jobid: 164
+    wildcards: NAME=US3-12
+    resources: mem_mb=30
+
+Submitted job 164 with external jobid 'Your job 445189 ("US3-12_bwa") has been submitted'.
+
+[Sun Oct 20 01:57:38 2019]
+Job 43: ---SORTED
+
+Submitted job 43 with external jobid 'Your job 445190 ("B370-1_sort") has been submitted'.
+
+[Sun Oct 20 01:57:38 2019]
+Job 9: ---SORTED
+
+Submitted job 9 with external jobid 'Your job 445191 ("B316-2_sort") has been submitted'.
+
+[Sun Oct 20 01:57:38 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/US3-14.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/US3-14.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-14/US3-14.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-14/mapped
+    jobid: 165
+    wildcards: NAME=US3-14
+    resources: mem_mb=30
+
+Submitted job 165 with external jobid 'Your job 445192 ("US3-14_bwa") has been submitted'.
+
+[Sun Oct 20 01:57:38 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/US3-8.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/US3-8.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-8/US3-8.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-8/mapped
+    jobid: 132
+    wildcards: NAME=US3-8
+    resources: mem_mb=30
+
+Submitted job 132 with external jobid 'Your job 445193 ("US3-8_bwa") has been submitted'.
+
+[Sun Oct 20 01:57:38 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US8-5/US8-5.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US8-5/US8-5.nss.sam
+    jobid: 128
+    wildcards: NAME=US8-5
+    resources: mem_mb=15
+
+Submitted job 128 with external jobid 'Your job 445194 ("US8-5_primary_filter") has been submitted'.
+[Sun Oct 20 01:57:58 2019]
+Error in rule bwa:
+    jobid: 163
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-10/US3-10.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-10/mapped
+    cluster_jobid: Your job 445187 ("US3-10_bwa") has been submitted
+
+Trying to restart job 163.
+
+[Sun Oct 20 01:57:58 2019]
+[Sun Oct 20 01:57:58 2019]
+Error in rule bwa:
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/US3-10.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/US3-10.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-10/US3-10.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-10/mapped
+    jobid: 163
+    wildcards: NAME=US3-10
+    resources: mem_mb=60
+    jobid: 164
+
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-12/US3-12.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-12/mapped
+    cluster_jobid: Your job 445189 ("US3-12_bwa") has been submitted
+
+Trying to restart job 164.
+Submitted job 163 with external jobid 'Your job 445195 ("US3-10_bwa") has been submitted'.
+
+[Sun Oct 20 01:57:58 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/US3-12.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/US3-12.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-12/US3-12.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-12/mapped
+    jobid: 164
+    wildcards: NAME=US3-12
+    resources: mem_mb=60
+
+Submitted job 164 with external jobid 'Your job 445196 ("US3-12_bwa") has been submitted'.
+[Sun Oct 20 01:58:38 2019]
+Error in rule bwa:
+    jobid: 165
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-14/US3-14.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-14/mapped
+    cluster_jobid: Your job 445192 ("US3-14_bwa") has been submitted
+
+Trying to restart job 165.
+[Sun Oct 20 01:58:38 2019]
+
+Error in rule bwa:
+[Sun Oct 20 01:58:38 2019]
+    jobid: 132
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/US3-14.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/US3-14.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-14/US3-14.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-14/mapped
+    jobid: 165
+    wildcards: NAME=US3-14
+    resources: mem_mb=60
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-8/US3-8.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-8/mapped
+
+    cluster_jobid: Your job 445193 ("US3-8_bwa") has been submitted
+
+Trying to restart job 132.
+Submitted job 165 with external jobid 'Your job 445202 ("US3-14_bwa") has been submitted'.
+
+[Sun Oct 20 01:58:38 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/US3-8.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/US3-8.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-8/US3-8.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-8/mapped
+    jobid: 132
+    wildcards: NAME=US3-8
+    resources: mem_mb=60
+
+Submitted job 132 with external jobid 'Your job 445203 ("US3-8_bwa") has been submitted'.
+[Sun Oct 20 02:01:28 2019]
+Finished job 128.
+1 of 74 steps (1%) done
+
+[Sun Oct 20 02:01:28 2019]
+Job 85: ---SAM2BAM
+
+Submitted job 85 with external jobid 'Your job 445207 ("US8-5_sam2bam") has been submitted'.
+[Sun Oct 20 02:01:38 2019]
+Error in rule bwa:
+    jobid: 163
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-10/US3-10.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-10/mapped
+    cluster_jobid: Your job 445195 ("US3-10_bwa") has been submitted
+
+[Sun Oct 20 02:02:28 2019]
+Error in rule bwa:
+    jobid: 164
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-12/US3-12.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-12/mapped
+    cluster_jobid: Your job 445196 ("US3-12_bwa") has been submitted
+
+[Sun Oct 20 02:02:58 2019]
+Error in rule bwa:
+    jobid: 165
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-14/US3-14.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-14/mapped
+    cluster_jobid: Your job 445202 ("US3-14_bwa") has been submitted
+
+[Sun Oct 20 02:03:39 2019]
+Error in rule bwa:
+    jobid: 132
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-8/US3-8.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-8/mapped
+    cluster_jobid: Your job 445203 ("US3-8_bwa") has been submitted
+
+[Sun Oct 20 02:08:19 2019]
+Finished job 169.
+2 of 74 steps (3%) done
+[Sun Oct 20 02:14:29 2019]
+Finished job 43.
+3 of 74 steps (4%) done
+[Sun Oct 20 02:15:29 2019]
+Finished job 85.
+4 of 74 steps (5%) done
+[Sun Oct 20 02:18:39 2019]
+Finished job 9.
+5 of 74 steps (7%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/CDC2/scripts/binning_with/.snakemake/log/2019-10-20T015738.380420.snakemake.log

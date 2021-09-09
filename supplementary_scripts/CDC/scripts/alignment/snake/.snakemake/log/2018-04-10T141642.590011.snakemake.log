@@ -1,0 +1,56 @@
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	23	index
+	24
+
+Job 10: ---bwaindex
+
+Finished job 10.
+1 of 24 steps (4%) done
+
+Job 3: ---bwaindex
+
+Finished job 3.
+2 of 24 steps (8%) done
+
+Job 8: ---bwaindex
+
+Finished job 8.
+3 of 24 steps (12%) done
+
+Job 12: ---bwaindex
+
+Finished job 12.
+4 of 24 steps (17%) done
+
+Job 9: ---bwaindex
+
+Finished job 9.
+5 of 24 steps (21%) done
+
+Job 22: ---bwaindex
+
+Finished job 22.
+6 of 24 steps (25%) done
+
+Job 1: ---bwaindex
+
+Terminating processes on user request.
+Error in rule index:
+    jobid: 1
+    output: /workdir/users/agk85/CDC/logs/finals/B313_final_index
+
+RuleException:
+CalledProcessError in line 28 of /local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_index:
+Command ' set -euo pipefail;  
+		if [ ! -d /workdir/users/agk85/CDC/mapping/metagenomes2/references ]; then mkdir -p /workdir/users/agk85/CDC/mapping/metagenomes2/references; fi
+		cd /workdir/users/agk85/CDC/mapping/metagenomes2/references
+		/programs/bwa-0.7.8/bwa index -a bwtsw -p B313_nr /workdir/users/agk85/CDC/prodigal_excise/metagenomes2/combined_prots/B313_nr.fna
+		touch /workdir/users/agk85/CDC/logs/finals/B313_final_index ' died with <Signals.SIGINT: 2>.
+  File "/local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_index", line 28, in __rule_index
+  File "/usr/local/lib/python3.6/concurrent/futures/thread.py", line 55, in run
+Complete log: .snakemake/log/2018-04-10T141642.590011.snakemake.log

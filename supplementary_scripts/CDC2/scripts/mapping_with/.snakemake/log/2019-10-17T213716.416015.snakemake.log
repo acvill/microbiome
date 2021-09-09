@@ -1,0 +1,70 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	30	bwa_index
+	1	final
+	31
+
+[Thu Oct 17 21:37:16 2019]
+Job 30: --- BWA INDEX
+
+[Thu Oct 17 21:40:53 2019]
+Finished job 30.
+1 of 31 steps (3%) done
+
+[Thu Oct 17 21:40:53 2019]
+Job 24: --- BWA INDEX
+
+[Thu Oct 17 21:44:48 2019]
+Finished job 24.
+2 of 31 steps (6%) done
+
+[Thu Oct 17 21:44:48 2019]
+Job 32: --- BWA INDEX
+
+[Thu Oct 17 21:48:21 2019]
+Finished job 32.
+3 of 31 steps (10%) done
+
+[Thu Oct 17 21:48:21 2019]
+Job 41: --- BWA INDEX
+
+[Thu Oct 17 21:51:16 2019]
+Finished job 41.
+4 of 31 steps (13%) done
+
+[Thu Oct 17 21:51:16 2019]
+Job 25: --- BWA INDEX
+
+[Thu Oct 17 21:54:32 2019]
+Finished job 25.
+5 of 31 steps (16%) done
+
+[Thu Oct 17 21:54:32 2019]
+Job 31: --- BWA INDEX
+
+[Thu Oct 17 21:57:31 2019]
+Finished job 31.
+6 of 31 steps (19%) done
+
+[Thu Oct 17 21:57:31 2019]
+Job 40: --- BWA INDEX
+
+Terminating processes on user request, this might take some time.
+[Thu Oct 17 21:57:33 2019]
+Error in rule bwa_index:
+    jobid: 40
+    output: /workdir/users/agk85/CDC2/mapping_with/references/US8-4_scaffold.sa
+
+RuleException:
+CalledProcessError in line 26 of /local/workdir/users/agk85/CDC2/scripts/mapping_with/snake_bwaindex:
+Command 'set -euo pipefail;  if [ ! -e /workdir/users/agk85/CDC2/mapping_with/references/ ]; then mkdir -p /workdir/users/agk85/CDC2/mapping_with/references/; fi 
+		cd /workdir/users/agk85/CDC2/mapping_with/references/
+		/programs/bwa-0.7.8/bwa index -a bwtsw -p US8-4_scaffold /workdir/users/agk85/CDC2/prodigal/metagenomes/US8-4/US8-4_scaffold.fasta' died with <Signals.SIGINT: 2>.
+  File "/local/workdir/users/agk85/CDC2/scripts/mapping_with/snake_bwaindex", line 26, in __rule_bwa_index
+  File "/usr/lib64/python3.6/concurrent/futures/thread.py", line 56, in run
+Complete log: /local/workdir/users/agk85/CDC2/scripts/mapping_with/.snakemake/log/2019-10-17T213716.416015.snakemake.log

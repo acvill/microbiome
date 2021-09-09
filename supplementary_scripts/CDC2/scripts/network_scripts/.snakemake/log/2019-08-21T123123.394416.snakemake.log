@@ -1,0 +1,306 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 12
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	37	checkm
+	1	final
+	1	get_trans_noeuks_phagerepair
+	1	normalize
+	1	rscript
+	41
+
+[Wed Aug 21 12:31:23 2019]
+Job 145: ---checkm
+
+Submitted job 145 with external jobid 'Your job 441343 ("checkm_B331-3") has been submitted'.
+
+[Wed Aug 21 12:31:23 2019]
+Job 141: ---checkm
+
+Submitted job 141 with external jobid 'Your job 441344 ("checkm_B320-2") has been submitted'.
+
+[Wed Aug 21 12:31:23 2019]
+Job 131: ---checkm
+
+Submitted job 131 with external jobid 'Your job 441345 ("checkm_B314-2") has been submitted'.
+
+[Wed Aug 21 12:31:23 2019]
+Job 153: ---checkm
+
+Submitted job 153 with external jobid 'Your job 441346 ("checkm_B357-4") has been submitted'.
+
+[Wed Aug 21 12:31:23 2019]
+Job 14: ---trans
+
+Submitted job 14 with external jobid 'Your job 441347 ("trans_B320-1") has been submitted'.
+
+[Wed Aug 21 12:31:24 2019]
+Job 164: ---checkm
+
+Submitted job 164 with external jobid 'Your job 441348 ("checkm_US8-1") has been submitted'.
+
+[Wed Aug 21 12:31:24 2019]
+Job 139: ---checkm
+
+Submitted job 139 with external jobid 'Your job 441349 ("checkm_B316-6") has been submitted'.
+
+[Wed Aug 21 12:31:24 2019]
+Job 168: ---checkm
+
+Submitted job 168 with external jobid 'Your job 441350 ("checkm_US8-5") has been submitted'.
+
+[Wed Aug 21 12:31:24 2019]
+Job 166: ---checkm
+
+Submitted job 166 with external jobid 'Your job 441351 ("checkm_US8-3") has been submitted'.
+
+[Wed Aug 21 12:31:24 2019]
+Job 142: ---checkm
+
+Submitted job 142 with external jobid 'Your job 441352 ("checkm_B320-5") has been submitted'.
+
+[Wed Aug 21 12:31:24 2019]
+Job 152: ---checkm
+
+Submitted job 152 with external jobid 'Your job 441353 ("checkm_B357-3") has been submitted'.
+
+[Wed Aug 21 12:31:24 2019]
+Job 134: ---checkm
+
+Submitted job 134 with external jobid 'Your job 441354 ("checkm_B316-1") has been submitted'.
+[Wed Aug 21 12:31:44 2019]
+Finished job 14.
+1 of 41 steps (2%) done
+
+[Wed Aug 21 12:31:44 2019]
+Job 167: ---checkm
+
+Submitted job 167 with external jobid 'Your job 441355 ("checkm_US8-4") has been submitted'.
+[Wed Aug 21 13:34:19 2019]
+Finished job 131.
+2 of 41 steps (5%) done
+
+[Wed Aug 21 13:34:19 2019]
+Job 132: ---checkm
+
+Submitted job 132 with external jobid 'Your job 441356 ("checkm_B314-3") has been submitted'.
+[Wed Aug 21 13:36:20 2019]
+Finished job 145.
+3 of 41 steps (7%) done
+
+[Wed Aug 21 13:36:20 2019]
+Job 136: ---checkm
+
+Submitted job 136 with external jobid 'Your job 441357 ("checkm_B316-3") has been submitted'.
+[Wed Aug 21 13:39:27 2019]
+Finished job 141.
+4 of 41 steps (10%) done
+
+[Wed Aug 21 13:39:27 2019]
+Job 130: ---checkm
+
+Submitted job 130 with external jobid 'Your job 441358 ("checkm_B314-1") has been submitted'.
+[Wed Aug 21 14:39:06 2019]
+Finished job 164.
+5 of 41 steps (12%) done
+
+[Wed Aug 21 14:39:06 2019]
+Job 148: ---checkm
+
+Submitted job 148 with external jobid 'Your job 441364 ("checkm_B335-2") has been submitted'.
+[Wed Aug 21 16:20:35 2019]
+Finished job 139.
+6 of 41 steps (15%) done
+
+[Wed Aug 21 16:20:35 2019]
+Job 56: ---normalize
+
+Submitted job 56 with external jobid 'Your job 441368 ("normalize_B320-1") has been submitted'.
+[Wed Aug 21 16:20:46 2019]
+Finished job 56.
+7 of 41 steps (17%) done
+
+[Wed Aug 21 16:20:46 2019]
+Job 98: ---rscript
+
+Submitted job 98 with external jobid 'Your job 441369 ("rscript_B320-1") has been submitted'.
+[Wed Aug 21 16:34:54 2019]
+Finished job 153.
+8 of 41 steps (20%) done
+
+[Wed Aug 21 16:34:54 2019]
+Job 147: ---checkm
+
+Submitted job 147 with external jobid 'Your job 441370 ("checkm_B335-1") has been submitted'.
+[Wed Aug 21 16:36:55 2019]
+Finished job 98.
+9 of 41 steps (22%) done
+
+[Wed Aug 21 16:36:55 2019]
+Job 140: ---checkm
+
+Submitted job 140 with external jobid 'Your job 441371 ("checkm_B320-1") has been submitted'.
+[Wed Aug 21 19:04:38 2019]
+Finished job 168.
+10 of 41 steps (24%) done
+
+[Wed Aug 21 19:04:38 2019]
+Job 155: ---checkm
+
+Submitted job 155 with external jobid 'Your job 441372 ("checkm_B357-6") has been submitted'.
+[Wed Aug 21 19:22:15 2019]
+Finished job 166.
+11 of 41 steps (27%) done
+
+[Wed Aug 21 19:22:15 2019]
+Job 143: ---checkm
+
+Submitted job 143 with external jobid 'Your job 441373 ("checkm_B331-1") has been submitted'.
+[Wed Aug 21 19:55:06 2019]
+Finished job 142.
+12 of 41 steps (29%) done
+
+[Wed Aug 21 19:55:06 2019]
+Job 165: ---checkm
+
+Submitted job 165 with external jobid 'Your job 441374 ("checkm_US8-2") has been submitted'.
+[Wed Aug 21 20:38:04 2019]
+Finished job 134.
+13 of 41 steps (32%) done
+
+[Wed Aug 21 20:38:04 2019]
+Job 146: ---checkm
+
+Submitted job 146 with external jobid 'Your job 441375 ("checkm_B331-4") has been submitted'.
+[Wed Aug 21 20:38:47 2019]
+Error in rule checkm:
+    jobid: 132
+    output: /workdir/users/agk85/CDC2/networks/logs/B314-3_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/checkms/B314-3/B314-3.stats
+    cluster_jobid: Your job 441356 ("checkm_B314-3") has been submitted
+
+Trying to restart job 132.
+
+[Wed Aug 21 20:38:47 2019]
+Job 132: ---checkm
+
+Submitted job 132 with external jobid 'Your job 441376 ("checkm_B314-3") has been submitted'.
+[Wed Aug 21 20:48:53 2019]
+Finished job 167.
+14 of 41 steps (34%) done
+
+[Wed Aug 21 20:48:53 2019]
+Job 135: ---checkm
+
+Submitted job 135 with external jobid 'Your job 441377 ("checkm_B316-2") has been submitted'.
+[Wed Aug 21 20:58:59 2019]
+Finished job 152.
+15 of 41 steps (37%) done
+
+[Wed Aug 21 20:58:59 2019]
+Job 156: ---checkm
+
+Submitted job 156 with external jobid 'Your job 441378 ("checkm_B370-2") has been submitted'.
+[Wed Aug 21 21:31:05 2019]
+Finished job 136.
+16 of 41 steps (39%) done
+
+[Wed Aug 21 21:31:05 2019]
+Job 144: ---checkm
+
+Submitted job 144 with external jobid 'Your job 441379 ("checkm_B331-2") has been submitted'.
+[Wed Aug 21 21:33:28 2019]
+Finished job 130.
+17 of 41 steps (41%) done
+
+[Wed Aug 21 21:33:28 2019]
+Job 160: ---checkm
+
+Submitted job 160 with external jobid 'Your job 441380 ("checkm_US3-10") has been submitted'.
+[Wed Aug 21 21:36:35 2019]
+Finished job 148.
+18 of 41 steps (44%) done
+
+[Wed Aug 21 21:36:35 2019]
+Job 161: ---checkm
+
+Submitted job 161 with external jobid 'Your job 441381 ("checkm_US3-12") has been submitted'.
+[Wed Aug 21 22:10:10 2019]
+Finished job 147.
+19 of 41 steps (46%) done
+
+[Wed Aug 21 22:10:10 2019]
+Job 150: ---checkm
+
+Submitted job 150 with external jobid 'Your job 441382 ("checkm_B357-1") has been submitted'.
+[Wed Aug 21 22:16:58 2019]
+Finished job 155.
+20 of 41 steps (49%) done
+
+[Wed Aug 21 22:16:58 2019]
+Job 149: ---checkm
+
+Submitted job 149 with external jobid 'Your job 441383 ("checkm_B335-3") has been submitted'.
+[Wed Aug 21 22:39:21 2019]
+Finished job 140.
+21 of 41 steps (51%) done
+
+[Wed Aug 21 22:39:21 2019]
+Job 162: ---checkm
+
+Submitted job 162 with external jobid 'Your job 441384 ("checkm_US3-14") has been submitted'.
+[Wed Aug 21 22:49:26 2019]
+Finished job 143.
+22 of 41 steps (54%) done
+
+[Wed Aug 21 22:49:26 2019]
+Job 154: ---checkm
+
+Submitted job 154 with external jobid 'Your job 441385 ("checkm_B357-5") has been submitted'.
+[Wed Aug 21 22:50:00 2019]
+Error in rule checkm:
+    jobid: 132
+    output: /workdir/users/agk85/CDC2/networks/logs/B314-3_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/checkms/B314-3/B314-3.stats
+    cluster_jobid: Your job 441376 ("checkm_B314-3") has been submitted
+
+[Wed Aug 21 22:54:13 2019]
+Finished job 165.
+23 of 41 steps (56%) done
+[Wed Aug 21 23:16:14 2019]
+Finished job 146.
+24 of 41 steps (59%) done
+[Wed Aug 21 23:16:45 2019]
+Error in rule checkm:
+    jobid: 144
+    output: /workdir/users/agk85/CDC2/networks/logs/B331-2_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/checkms/B331-2/B331-2.stats
+    cluster_jobid: Your job 441379 ("checkm_B331-2") has been submitted
+
+Trying to restart job 144.
+[Wed Aug 21 23:25:56 2019]
+Finished job 156.
+25 of 41 steps (61%) done
+[Wed Aug 21 23:29:56 2019]
+Finished job 135.
+26 of 41 steps (63%) done
+[Wed Aug 21 23:45:17 2019]
+Finished job 160.
+27 of 41 steps (66%) done
+[Wed Aug 21 23:54:07 2019]
+Finished job 161.
+28 of 41 steps (68%) done
+[Wed Aug 21 23:56:27 2019]
+Finished job 150.
+29 of 41 steps (71%) done
+[Thu Aug 22 00:10:38 2019]
+Finished job 149.
+30 of 41 steps (73%) done
+[Thu Aug 22 00:16:49 2019]
+Finished job 162.
+31 of 41 steps (76%) done
+[Thu Aug 22 00:18:39 2019]
+Finished job 154.
+32 of 41 steps (78%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network_scripts/.snakemake/log/2019-08-21T123123.394416.snakemake.log

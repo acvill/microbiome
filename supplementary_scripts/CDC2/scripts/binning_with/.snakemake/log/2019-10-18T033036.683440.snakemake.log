@@ -1,0 +1,40 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	43	bwa
+	1	final
+	43	primary_filter
+	43	sam2bam
+	43	sorted
+	173
+
+[Fri Oct 18 03:30:37 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B314-1.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B314-1.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t2/B314-1/B314-1.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t2/B314-1/mapped
+    jobid: 133
+    wildcards: NAME=B314-1
+    resources: mem_mb=30
+
+Terminating processes on user request, this might take some time.
+[Fri Oct 18 03:30:40 2019]
+Error in rule bwa:
+    jobid: 133
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t2/B314-1/B314-1.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t2/B314-1/mapped
+
+RuleException:
+CalledProcessError in line 28 of /local/workdir/users/agk85/CDC2/scripts/binning_with/snake_bwa_scaffold_t2:
+Command 'set -euo pipefail;  if [ ! -e /workdir/users/agk85/CDC2/mapping_with/mapping_with_t2/B314-1 ]; then mkdir -p /workdir/users/agk85/CDC2/mapping_with/mapping_with_t2/B314-1; fi
+		PATIENT=$(echo B314-1 | cut -d'-' -f1)
+		REF=/workdir/users/agk85/CDC2/mapping_with/references/${PATIENT}-2_scaffold
+		/workdir/users/agk85/tools/bwa/bwa mem -a -t 8 $REF /workdir/data/CDC/metagenomes/merged/unzip/B314-1.1.fastq /workdir/data/CDC/metagenomes/merged/unzip/B314-1.2.fastq > /workdir/users/agk85/CDC2/mapping_with/mapping_with_t2/B314-1/B314-1.sam
+		touch /workdir/users/agk85/CDC2/mapping_with/mapping_with_t2/B314-1/mapped' died with <Signals.SIGINT: 2>.
+  File "/local/workdir/users/agk85/CDC2/scripts/binning_with/snake_bwa_scaffold_t2", line 28, in __rule_bwa
+  File "/usr/lib64/python3.6/concurrent/futures/thread.py", line 56, in run
+Removing output files of failed job bwa since they might be corrupted:
+/workdir/users/agk85/CDC2/mapping_with/mapping_with_t2/B314-1/B314-1.sam
+Complete log: /local/workdir/users/agk85/CDC2/scripts/binning_with/.snakemake/log/2019-10-18T033036.683440.snakemake.log

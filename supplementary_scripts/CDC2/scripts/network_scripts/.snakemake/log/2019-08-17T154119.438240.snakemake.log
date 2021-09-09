@@ -1,0 +1,49 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	2	normalize
+	2	rscript
+	5
+
+[Sat Aug 17 15:41:19 2019]
+Job 5: ---normalize
+
+[Sat Aug 17 15:41:21 2019]
+Finished job 5.
+1 of 5 steps (20%) done
+
+[Sat Aug 17 15:41:21 2019]
+Job 9: ---rscript
+
+[Sat Aug 17 15:41:58 2019]
+Finished job 9.
+2 of 5 steps (40%) done
+
+[Sat Aug 17 15:41:58 2019]
+Job 8: ---normalize
+
+[Sat Aug 17 15:42:01 2019]
+Finished job 8.
+3 of 5 steps (60%) done
+
+[Sat Aug 17 15:42:01 2019]
+Job 12: ---rscript
+
+[Sat Aug 17 15:42:14 2019]
+Finished job 12.
+4 of 5 steps (80%) done
+
+[Sat Aug 17 15:42:14 2019]
+localrule final:
+    input: /workdir/users/agk85/CDC2/logs/finals/B314-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-1_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B314-2_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B314-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B314-4_normalize_final, /workdir/users/agk85/CDC2/networks/logs/B314-1_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-2_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-3_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-4_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-1_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-2_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-3_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-4_final_network_checkm_2_0
+    jobid: 0
+
+[Sat Aug 17 15:42:14 2019]
+Finished job 0.
+5 of 5 steps (100%) done
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network/.snakemake/log/2019-08-17T154119.438240.snakemake.log

@@ -1,0 +1,273 @@
+##--------------------------------------------------------------------------##
+## The list of samples to be processed
+##--------------------------------------------------------------------------##
+FOLDER="CDC2"
+BASE="/workdir/users/agk85/" + FOLDER
+CUTOFF='2'
+IDENTITY='0'
+#REF="ProxiMeta-1" #if things arent just all to one reference, then  you can change it later in the rscript
+SAMPLES, = glob_wildcards(BASE + "/todo_temp/{NAME}")
+#SAMPLES, = glob_wildcards(BASE + "/networks/membership/{NAME}_membership.txt")
+NB_SAMPLES = len(SAMPLES)
+print (SAMPLES)
+
+rule final:
+	input:
+		expand(BASE+"/logs/{NAME}_trans_final",NAME=SAMPLES),
+		expand(BASE+"/networks/logs/{NAME}_final_network_rscript_" + CUTOFF + "_" + IDENTITY,NAME=SAMPLES),	
+		expand(BASE+"/networks/logs/{NAME}_final_network_checkm_" + CUTOFF + "_" + IDENTITY,NAME=SAMPLES),
+
+rule get_trans_noeuks_phagerepair:
+	input:
+		validPairs=BASE+"/hicpro/single/{NAME}_output/hic_results/data/{NAME}/{NAME}_allValidPairs",
+	params:
+		script1="/workdir/users/agk85/CDC2/scripts/convert_hicpro_to_trans.py",
+		script2="/workdir/users/agk85/CDC2/scripts/hic_relink_excise.py",
+		script3="/workdir/users/agk85/CDC2/scripts/remove_eukaryote_trans.py",
+		folder=FOLDER,
+		n="trans_{NAME}",
+		name="{NAME}",
+		pid="0",
+	resources:
+		mem_mb = lambda wildcards, attempt: attempt * 5
+	output:
+		final=BASE+"/logs/{NAME}_trans_final",
+		output=BASE+"/hicpro/single/{NAME}_output/hic_results/data/{NAME}/{NAME}_trans_primary_0.txt",
+		outnoeuks=BASE+"/hicpro/single/{NAME}_output/hic_results/data/{NAME}/{NAME}_trans_primary_0_noeuks.txt",
+		ncol=BASE+"/hicpro/single/{NAME}_output/hic_results/data/{NAME}/{NAME}_trans_primary_0_ncol.txt",
+		withexcise=BASE+"/hicpro/single/{NAME}_output/hic_results/data/{NAME}/{NAME}_trans_primary_0_ncol_withexcise.txt"
+	message:"""---trans"""
+	shell:
+		"""
+		python {params.script1} -i {input.validPairs} -o {output.output}
+		cut -f3,9 {output.output} | sort | uniq -c | awk '{{print $2 "\\t" $3 "\\t" $1}}' > {output.ncol}
+		python {params.script2} {params.folder} {output.ncol} {output.withexcise}
+		python {params.script3} {params.folder} {params.pid} {params.name}
+		touch {output.final}
+		"""
+
+rule rscript:
+	input:
+		setup=BASE + "/todo/{NAME}",
+		output=BASE+"/hicpro/output/{NAME}_output/hic_results/data/{NAME}/{NAME}_trans_primary_0.txt",
+	params:
+		n="rscript_{NAME}",
+		name="{NAME}",
+		name2="{NAME}",
+		script="/workdir/users/agk85/simulated/scripts/network_scripts/network_clustering.R",
+		cutoff=CUTOFF,
+		identity=IDENTITY,
+		folder=FOLDER,
+		
+		ref_mgm="{NAME}",
+		out=BASE+"/networks/membership",
+		out2=BASE+"/networks/outputs",
+		out3=BASE+"/networks/graphs",
+	resources:
+		mem_mb = lambda wildcards, attempt: attempt * 10
+	output:
+		final=BASE + "/networks/logs/{NAME}_final_network_rscript_" + CUTOFF + "_" + IDENTITY
+	message:"""---rscript"""	
+	shell:
+		"""
+		if [ ! -e {params.out} ]; then mkdir -p {params.out}; fi
+		if [ ! -e {params.out2} ]; then mkdir -p {params.out2}; fi
+		if [ ! -e {params.out3} ]; then mkdir -p {params.out3}; fi
+		cd {params.out}
+		/programs/R-3.3.2/bin/Rscript {params.script} {params.folder} {params.name} {params.name2} {params.identity} {params.cutoff} {params.ref_mgm}
+		touch {output.final}
+		"""
+rule checkm:
+	input:
+		members=BASE + "/networks/membership/{NAME}_membership.txt",
+	params:
+		n="checkm_{NAME}",
+		j="8",
+		reference=BASE+"/prodigal_excise/metagenomes/sim-1/sim-1_scaffold.fasta",
+		script="/workdir/users/agk85/simulated/scripts/network_scripts/split_clusters_hic.py",
+		fasta_folder=BASE + "/networks/clusters/{NAME}",
+		lineage=BASE + "/networks/checkms/{NAME}/lineage.ms",
+		checkm_folder=BASE + "/networks/checkms/{NAME}"
+	resources:
+		mem_mb = lambda wildcards, attempt: attempt * 35
+	output:
+		checkm_qa=BASE + "/networks/checkms/{NAME}/{NAME}.qa",
+		final = BASE + "/networks/logs/{NAME}_final_network_checkm_" + CUTOFF + "_" + IDENTITY
+	message:"""---checkm"""
+	shell:
+		"""
+		if [ ! -d {params.fasta_folder} ]; then mkdir -p {params.fasta_folder}; fi
+		name=$(echo {input.members} | cut -d'_' -f1| cut -d'/' -f8)
+		python {params.script} {input.members} {params.reference} {params.fasta_folder} $name
+		set +u; source  /programs/checkm_161011/init; set -u 
+		checkm lineage_wf -t 8 -x fasta {params.fasta_folder} {params.checkm_folder}
+		checkm qa -o 2 {params.lineage} {params.checkm_folder} | grep -v '^-' > {output.checkm_qa}
+		touch {output.final}
+		"""
+
+rule checkm_withmge:
+	input:
+		members=BASE + "/networks/memberships/{NAME}_min" + CUTOFF + "_" + IDENTITY + "_addon_species_membership_withmge.txt",
+	params:
+		n="checkm_withmge_{NAME}",
+		j="8",
+		reference=BASE+"/prodigal_excise/metagenomes/{NAME}/{NAME}_scaffold.fasta",
+		script="/workdir/users/agk85/CDC2/scripts/split_clusters_hic.py",
+		fasta_folder=BASE + "/networks/clusters_withmge/{NAME}",
+		lineage=BASE + "/networks/checkms_withmge/{NAME}/lineage.ms",
+		checkm_folder=BASE + "/networks/checkms_withmge/{NAME}"
+	resources:
+		mem_mb = lambda wildcards, attempt: attempt * 35
+	output:
+		checkm_qa=BASE + "/networks/checkms_withmge/{NAME}/{NAME}.qa",
+		final = BASE + "/networks/logs/{NAME}_final_network_checkm_withmge_" + CUTOFF + "_" + IDENTITY
+	message:"""---checkm_withmge"""
+	shell:
+		"""
+		if [ ! -d {params.fasta_folder} ]; then mkdir -p {params.fasta_folder}; fi
+		name=$(echo {input.members} | cut -d'_' -f1| cut -d'/' -f8)
+		python {params.script} {input.members} {params.reference} {params.fasta_folder} $name
+		set +u; source  /programs/checkm_161011/init; set -u
+		checkm lineage_wf -t 8 -x fasta {params.fasta_folder} {params.checkm_folder}
+		checkm qa -o 2 {params.lineage} {params.checkm_folder} | grep -v '^-' > {output.checkm_qa}
+		touch {output.final}
+		"""
+
+rule checkm_algo:
+	input:
+		members=BASE + "/networks/memberships/{NAME}_min" + CUTOFF + "_" + IDENTITY + "_addon_species_membership_louvain.txt",
+	params:
+		n="checkm_algo_{NAME}",
+		j="8",
+		reference=BASE+"/prodigal_excise/metagenomes/{NAME}/{NAME}_scaffold.fasta",
+		script="/workdir/users/agk85/CDC2/scripts/split_clusters_hic.py",
+		fasta_folder=BASE + "/networks/clusters_algo/{NAME}",
+		lineage=BASE + "/networks/checkms_algo/{NAME}/lineage.ms",
+		checkm_folder=BASE + "/networks/checkms_algo/{NAME}"
+	resources:
+		mem_mb = lambda wildcards, attempt: attempt * 35
+	output:
+		checkm_qa=BASE + "/networks/checkms_algo/{NAME}/{NAME}.qa",
+		final = BASE + "/networks/logs/{NAME}_final_network_checkm_algo_" + CUTOFF + "_" + IDENTITY
+	message:"""---checkm_algo"""
+	shell:
+		"""
+		if [ ! -d {params.fasta_folder} ]; then mkdir -p {params.fasta_folder}; fi
+		name=$(echo {input.members} | cut -d'_' -f1| cut -d'/' -f8)
+		python {params.script} {input.members} {params.reference} {params.fasta_folder} $name
+		set +u; source  /programs/checkm_161011/init; set -u
+		checkm lineage_wf -t 8 -x fasta {params.fasta_folder} {params.checkm_folder}
+		checkm qa -o 2 {params.lineage} {params.checkm_folder} | grep -v '^-' > {output.checkm_qa}
+		touch {output.final}
+		"""
+
+
+rule higher_orgs:
+	input:
+		membership=BASE + "/networks/memberships/{NAME}_min" + CUTOFF + "_" + IDENTITY + "_addon_species_membership.txt",
+	params:
+		n="betterorg_{NAME}",
+		j="1",
+		folder=BASE+"/networks/memberships/",
+		outhandle="{NAME}_membership_higher.txt",
+		conflicthandle="{NAME}_higher_conflict.txt",
+		script="/workdir/users/agk85/CDC/networks/scripts/higherlevel_taxonomies_forclusters.py"
+	resources:
+		mem_mb = lambda wildcards, attempt: attempt * 2
+	output:
+		final = BASE + "/networks/logs/{NAME}_final_network_higher_orgs_" + CUTOFF + "_" + IDENTITY  
+	message:"""higher_orgs"""
+	shell:
+		"""
+		cd {params.folder}
+		python {params.script} {input.membership} {params.outhandle} {params.conflicthandle}
+		touch {output.final}
+		"""
+
+
+rule rscript_withmge:
+	input:
+		setup=BASE + "/todo/{NAME}",
+		output=BASE+"/hicpro/single/{NAME}_output/hic_results/data/{NAME}/{NAME}_trans_primary_0.txt",
+	params:
+		n="rscript_withmge_{NAME}",
+		name="{NAME}",
+		name2="{NAME}",
+		script="/workdir/users/agk85/CDC2/scripts/network_clustering_alltaxa_all.R",
+		cutoff=CUTOFF,
+		identity=IDENTITY,
+		folder=FOLDER,
+		ref_mgm="{NAME}",
+		out=BASE+"/networks/memberships",
+		out2=BASE+"/networks/outputs",
+		out3=BASE+"/networks/graphs",
+	resources:
+		mem_mb = lambda wildcards, attempt: attempt * 10
+	output:
+		membership=BASE + "/networks/memberships/{NAME}_min" + CUTOFF + "_" + IDENTITY + "_addon_species_membership_withmge.txt",
+		final=BASE + "/networks/logs/{NAME}_final_network_rscript_withmge_" + CUTOFF + "_" + IDENTITY
+	message:"""---rscript"""
+	shell:
+		"""
+		if [ ! -e {params.out} ]; then mkdir -p {params.out}; fi
+		if [ ! -e {params.out2} ]; then mkdir -p {params.out2}; fi
+		if [ ! -e {params.out3} ]; then mkdir -p {params.out3}; fi
+		cd {params.out}
+		/programs/R-3.3.2/bin/Rscript {params.script} {params.folder} {params.name} {params.name2} {params.identity} {params.cutoff} {params.ref_mgm}
+		touch {output.final}
+		"""
+
+rule rscript_algo:
+	input:
+		setup=BASE+"/todo/{NAME}",
+	params:
+		n="rscript_algo_{NAME}",
+		name="{NAME}",
+		name2="{NAME}",
+		script="/workdir/users/agk85/CDC2/scripts/network_clustering_nodelete_algo.R",
+		cutoff=CUTOFF,
+		identity=IDENTITY,
+		folder=FOLDER,
+		ref_mgm="{NAME}",
+		out=BASE+"/networks/memberships",
+		out2=BASE+"/networks/outputs",
+		out3=BASE+"/networks/graphs",
+	resources:
+		mem_mb = lambda wildcards, attempt: attempt * 10
+	output:
+		membership=BASE + "/networks/memberships/{NAME}_min" + CUTOFF + "_" + IDENTITY + "_addon_species_membership_louvain.txt",
+		final=BASE + "/networks/logs/{NAME}_final_network_rscript_algo_" + CUTOFF + "_" + IDENTITY
+	message:"""---rscript"""
+	shell:
+		"""
+		if [ ! -e {params.out} ]; then mkdir -p {params.out}; fi
+		if [ ! -e {params.out2} ]; then mkdir -p {params.out2}; fi
+		if [ ! -e {params.out3} ]; then mkdir -p {params.out3}; fi
+		cd {params.out}
+		/programs/R-3.3.2/bin/Rscript {params.script} {params.folder} {params.name} {params.name2} {params.identity} {params.cutoff} {params.ref_mgm}
+		touch {output.final}
+		"""
+
+
+rule higher_orgs_withmge:
+	input:
+		membership=BASE + "/networks/memberships/{NAME}_min" + CUTOFF + "_" + IDENTITY + "_addon_species_membership_withmge.txt",
+	params:
+		n="betterorg_withmge_{NAME}",
+		j="1",
+		folder=BASE+"/networks/memberships/",
+		outhandle="{NAME}_membership_higher_withmge.txt",
+		conflicthandle="{NAME}_higher_conflict_withmge.txt",
+		script="/workdir/users/agk85/CDC/networks/scripts/higherlevel_taxonomies_forclusters.py"
+	resources:
+		mem_mb = lambda wildcards, attempt: attempt * 2
+	output:
+		final = BASE + "/networks/logs/{NAME}_final_network_higher_orgs_withmge_" + CUTOFF + "_" + IDENTITY
+	message:"""higher_orgs"""
+	shell:
+		"""
+		cd {params.folder}
+		python {params.script} {input.membership} {params.outhandle} {params.conflicthandle}
+		touch {output.final}
+		"""
+

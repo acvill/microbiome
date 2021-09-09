@@ -1,0 +1,3 @@
+WildcardError in line 16 of /local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_index:
+Wildcards in input files cannot be determined from output files:
+'NAME'

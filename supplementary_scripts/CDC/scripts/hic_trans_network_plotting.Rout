@@ -1,0 +1,58 @@
+
+R version 3.4.2 (2017-09-28) -- "Short Summer"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> 
+> library(ggplot2)
+> library(RColorBrewer)
+> setwd('/workdir/users/agk85/gates/hic/plotting/')
+> workdir='/workdir/users/agk85/gates'
+> 
+> ###ggplot theme no background
+> theme_nogrid <- function (base_size = 12, base_family = "") {
++   theme_bw(base_size = base_size, base_family = base_family) %+replace%
++     theme(
++       panel.grid = element_blank()
++     )
++ }
+> theme_set(theme_nogrid())
+> 
+> 
+> df <- read.csv("Gates_percent_capture.csv",row.names=1)
+> cutoff=1
+> df2<- subset(df, grp=="Captured.by.trans.interactions" & cfs==cutoff & type !='trans')
+> df2$study<- as.factor(substr(df2$sampleids, 0,1))
+> 
+> colourCount <- length(unique(df2$sampleids))
+> colorful_colors = colorRampPalette(brewer.pal(9,"Set1"))(colourCount)
+> pdf(paste("Percent_capture_trans_min_", cutoff, ".pdf",sep=""),height=5, width=7)
+> ggplot(df2,aes(fill=sampleids,factor(type), mge_percents))+
++         geom_bar(position='dodge', stat='identity')+
++         geom_text(position=position_dodge(width=.9),cex=1.8,aes(label=paste(mge_captured, '/',mge_total,sep="")), vjust=-0.25)+
++         ylim(0,100)+         #max(df2$mge_percents))+
++         xlab(label=c("Mobile Genetic Element Class"))+ 
++         ylab(label=c("Percentage of total MGEs"))+
++         scale_fill_manual("Individuals", values = colorful_colors)+
++         scale_x_discrete(labels=c("arg" = "ARGs", "is" = "IS\nElements","org" = "Organisms","phage"="Phage","plasmid"="Plasmids"))
+> dev.off()
+null device 
+          1 
+> 
+> proc.time()
+   user  system elapsed 
+  1.553   5.699   1.296 

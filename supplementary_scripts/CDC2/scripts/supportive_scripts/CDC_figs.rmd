@@ -1,0 +1,418 @@
+---
+title: "CDC_figs"
+author: "Albert Vill"
+date: "10/2/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(ggplot2)
+library(forcats)
+library(gplots)
+library(dplyr)
+library(reshape2)
+library(RColorBrewer)
+```
+
+```{r}
+setwd("/workdir/users/acv46/CDC_Sep2019")
+```
+
+```{r}
+cols <- c("source","patient","cluster","kingdom","phylum","class","order","family","genus")
+```
+
+```{r}
+arg2 <- as.data.frame(read.table(file = "new/arg2_genus_mergedUnique.txt", header = F, sep = "\t", col.names = cols, fill = T))
+
+arg5 <- as.data.frame(read.table(file = "new/arg5_genus_mergedUnique.txt", header = F, sep = "\t", col.names = cols, fill = T))
+
+mge2 <- as.data.frame(read.table(file = "new/mge2_genus_mergedUnique.txt", header = F, sep = "\t", col.names = cols, fill = T))
+
+mge5 <- as.data.frame(read.table(file = "new/mge5_genus_mergedUnique.txt", header = F, sep = "\t", col.names = cols, fill = T))
+```
+
+##Box Plots
+
+###ARG,2
+```{r}
+P_arg2 <- ggplot(arg2, aes(fill = source))
+
+P_arg2 + geom_bar(mapping = aes(x=phylum), position = "stack") +
+  facet_wrap(~patient) +
+  theme_classic() +
+  ylab(label = "Clustered ARG counts (99%)") + xlab(label = "Phyla") +
+  theme(strip.text = element_text(size = 12)) +
+  theme(axis.text.x=element_text(size=12, colour = "#000000", angle = -90, vjust = 0.2, hjust = 0)) +
+  theme(axis.text.y=element_text(size=12, colour = "#000000")) +
+  theme(axis.title=element_text(size=14))
+
+#ggsave("arg_2_phylum_count_stack.png", width=10, height=10, units = "in")
+
+
+
+G_arg2 <- ggplot(arg2, aes(fill = source))
+
+G_arg2 + geom_bar(mapping = aes(x = fct_cross(phylum, genus)), position = "stack") +
+  facet_grid(patient~.) +
+  theme_classic() +
+  ylab(label = "Clustered ARG counts (99%)") + xlab(label = "Genera") +
+  theme(strip.text = element_text(size = 12)) +
+  theme(axis.text.x=element_text(size=12, color = "#000000", angle = -90, vjust = 0.2, hjust = 0)) +
+  theme(axis.text.y=element_text(size=12, color = "#000000")) +
+  theme(axis.title=element_text(size=14))
+
+ggsave("arg_2_genus_count_stack2.png", width=12, height=10, units = "in")
+```
+
+###ARG,5
+```{r}
+#Phylum
+P_arg5 <- ggplot(arg5, aes(fill = source))
+
+P_arg5 + geom_bar(mapping = aes(x=phylum), position = "stack") +
+  facet_wrap(~patient) +
+  theme_classic() +
+  ylab(label = "Clustered ARG counts (99%)") + xlab(label = "Phyla") +
+  theme(strip.text = element_text(size = 12)) +
+  theme(axis.text.x=element_text(size=12, colour = "#000000", angle = -90, vjust = 0.2, hjust = 0)) +
+  theme(axis.text.y=element_text(size=12, colour = "#000000")) +
+  theme(axis.title=element_text(size=14))
+
+ggsave("arg_5_phylum_count_stack.png", width=10, height=10, units = "in")
+
+#Genus
+G_arg5 <- ggplot(arg5, aes(fill = source))
+
+G_arg5 + geom_bar(mapping = aes(x = genus), position = "stack") +
+  facet_grid(patient~.) +
+  theme_classic() +
+  ylab(label = "Clustered ARG counts (99%)") + xlab(label = "Genera") +
+  theme(strip.text = element_text(size = 12)) +
+  theme(axis.text.x=element_text(size=12, color = "#000000", angle = -90, vjust = 0.2, hjust = 0)) +
+  theme(axis.text.y=element_text(size=12, color = "#000000")) +
+  theme(axis.title=element_text(size=14))
+
+ggsave("arg_5_genus_count_stack.png", width=12, height=10, units = "in")
+
+#Genus by Phylum
+G_arg5 + geom_bar(mapping = aes(x = fct_cross(phylum, genus)), position = "stack") +
+  facet_grid(patient~.) +
+  theme_classic() +
+  ylab(label = "Clustered ARG counts (99%)") + xlab(label = "Genera") +
+  theme(strip.text = element_text(size = 12)) +
+  theme(axis.text.x=element_text(size=12, color = "#000000", angle = -90, vjust = 0.2, hjust = 0)) +
+  theme(axis.text.y=element_text(size=12, color = "#000000")) +
+  theme(axis.title=element_text(size=14))
+
+ggsave("arg_5_genus_count_stack_orderByPhylum.png", width=12, height=10, units = "in")
+```
+
+###MGE,2
+```{r}
+#Phylum
+P_mge2 <- ggplot(mge2, aes(fill = source))
+
+P_mge2 + geom_bar(mapping = aes(x=phylum), position = "stack") +
+  facet_wrap(~patient) +
+  theme_classic() +
+  ylab(label = "Clustered MGE counts (99%)") + xlab(label = "Phyla") +
+  theme(strip.text = element_text(size = 12)) +
+  theme(axis.text.x=element_text(size=12, colour = "#000000", angle = -90, vjust = 0.2, hjust = 0)) +
+  theme(axis.text.y=element_text(size=12, colour = "#000000")) +
+  theme(axis.title=element_text(size=14))
+
+ggsave("mge_2_phylum_count_stack.png", width=10, height=10, units = "in")
+
+#Genus
+G_mge2 <- ggplot(mge2, aes(fill = source))
+
+G_mge2 + geom_bar(mapping = aes(x = genus), position = "stack") +
+  facet_grid(patient~.) +
+  theme_classic() +
+  ylab(label = "Clustered MGE counts (99%)") + xlab(label = "Genera") +
+  theme(strip.text = element_text(size = 12)) +
+  theme(axis.text.x=element_text(size=12, color = "#000000", angle = -90, vjust = 0.2, hjust = 0)) +
+  theme(axis.text.y=element_text(size=12, color = "#000000")) +
+  theme(axis.title=element_text(size=14))
+
+ggsave("mge_2_genus_count_stack.png", width=14, height=10, units = "in")
+
+#Genus by Phylum
+G_mge2 + geom_bar(mapping = aes(x = fct_cross(phylum, genus)), position = "stack") +
+  facet_grid(patient~.) +
+  theme_classic() +
+  ylab(label = "Clustered MGE counts (99%)") + xlab(label = "Genera") +
+  theme(strip.text = element_text(size = 12)) +
+  theme(axis.text.x=element_text(size=12, color = "#000000", angle = -90, vjust = 0.2, hjust = 0)) +
+  theme(axis.text.y=element_text(size=12, color = "#000000")) +
+  theme(axis.title=element_text(size=14))
+
+ggsave("mge_2_genus_count_stack_orderByPhylum.png", width=14, height=10, units = "in")
+```
+
+###MGE,5
+```{r}
+#Phylum
+P_mge5 <- ggplot(mge5, aes(fill = source))
+
+P_mge5 + geom_bar(mapping = aes(x=phylum), position = "stack") +
+  facet_wrap(~patient) +
+  theme_classic() +
+  ylab(label = "Clustered MGE counts (99%)") + xlab(label = "Phyla") +
+  theme(strip.text = element_text(size = 12)) +
+  theme(axis.text.x=element_text(size=12, colour = "#000000", angle = -90, vjust = 0.2, hjust = 0)) +
+  theme(axis.text.y=element_text(size=12, colour = "#000000")) +
+  theme(axis.title=element_text(size=14))
+
+ggsave("mge_5_phylum_count_stack.png", width=10, height=10, units = "in")
+
+#Genus
+G_mge5 <- ggplot(mge5, aes(fill = source))
+
+G_mge5 + geom_bar(mapping = aes(x = genus), position = "stack") +
+  facet_grid(patient~.) +
+  theme_classic() +
+  ylab(label = "Clustered MGE counts (99%)") + xlab(label = "Genera") +
+  theme(strip.text = element_text(size = 12)) +
+  theme(axis.text.x=element_text(size=12, color = "#000000", angle = -90, vjust = 0.2, hjust = 0)) +
+  theme(axis.text.y=element_text(size=12, color = "#000000")) +
+  theme(axis.title=element_text(size=14))
+
+ggsave("mge_5_genus_count_stack.png", width=14, height=10, units = "in")
+
+#Genus by Phylum
+G_mge5 + geom_bar(mapping = aes(x = fct_cross(phylum, genus)), position = "stack") +
+  facet_grid(patient~.) +
+  theme_classic() +
+  ylab(label = "Clustered MGE counts (99%)") + xlab(label = "Genera") +
+  theme(strip.text = element_text(size = 12)) +
+  theme(axis.text.x=element_text(size=12, color = "#000000", angle = -90, vjust = 0.2, hjust = 0)) +
+  theme(axis.text.y=element_text(size=12, color = "#000000")) +
+  theme(axis.title=element_text(size=14))
+
+ggsave("mge_5_genus_count_stack_orderByPhylum.png", width=14, height=10, units = "in")
+```
+
+
+##Heat Maps
+```{r}
+library(heatmaply)
+library(gplots)
+library(wesanderson)
+library(dplyr)
+pal1 <- wes_palette("Zissou1", type = "continuous")
+pal2 <- c('#ffffd4','#fee391','#fec44f','#fe9929','#d95f0e','#993404')
+pal3 <- c('#d53e4f','#fc8d59','#fee08b','#e6f598','#99d594','#3288bd')
+pal4 <- c('#ffffb2','#fed976','#feb24c','#fd8d3c','#fc4e2a','#e31a1c','#b10026')
+```
+
+```{r}
+cols <- c("count","source","cluster","kingdom","phylum","class","order","family","genus")
+```
+
+###Subset healthy and BMT
+
+```{r}
+
+arg2.us <- as.data.frame(read.table(file = "new/counts/arg2_genus_mergedUnique_counts_US.txt", header = F, sep = "\t", col.names = cols, fill = T))
+arg2.bmt <- as.data.frame(read.table(file = "new/counts/arg2_genus_mergedUnique_counts_BMT.txt", header = F, sep = "\t", col.names = cols, fill = T))
+
+arg5.us <- as.data.frame(read.table(file = "new/counts/arg5_genus_mergedUnique_counts_US.txt", header = F, sep = "\t", col.names = cols, fill = T))
+arg5.bmt <- as.data.frame(read.table(file = "new/counts/arg5_genus_mergedUnique_counts_BMT.txt", header = F, sep = "\t", col.names = cols, fill = T))
+
+mge2.us <- as.data.frame(read.table(file = "new/counts/mge2_genus_mergedUnique_counts_US.txt", header = F, sep = "\t", col.names = cols, fill = T))
+mge2.bmt <- as.data.frame(read.table(file = "new/counts/mge2_genus_mergedUnique_counts_BMT.txt", header = F, sep = "\t", col.names = cols, fill = T))
+
+mge5.us <- as.data.frame(read.table(file = "new/counts/mge5_genus_mergedUnique_counts_US.txt", header = F, sep = "\t", col.names = cols, fill = T))
+mge5.bmt <- as.data.frame(read.table(file = "new/counts/mge5_genus_mergedUnique_counts_BMT.txt", header = F, sep = "\t", col.names = cols, fill = T))
+```
+
+```{r}
+arg2.bmt.clust <- hclust(arg2.bmt)
+```
+
+
+```{r}
+arg2.bmt.mgm <- arg2.bmt[which(arg2.bmt$source == "resident"),]
+
+test.mgm <- ggplot(data = arg2.bmt.mgm, aes(x = cluster, y= fct_cross(phylum, genus)))
+test.all <- ggplot(data = arg2.bmt, aes(x = cluster, y= fct_cross(phylum, genus)))
+#x = fct_cross(type, cluster), y = fct_cross(phylum, genus)
+
+test.mgm + geom_tile(mapping = aes(fill = factor(count))) +
+  theme_classic() +
+  xlab(label = "Clustered ARGs (99%)") + ylab(label = "Genera") + 
+  scale_fill_manual(values = pal4) +
+  theme_dark() +
+  ggtitle("mgm")
+
+test.all + geom_tile(mapping = aes(fill = factor(count))) +
+  theme_classic() +
+  xlab(label = "Clustered ARGs (99%)") + ylab(label = "Genera") + 
+  scale_fill_manual(values = pal4) +
+  theme_dark() + 
+  ggtitle("mgm + hic")
+
+#ggsave("figs/mge_2_heatmap_genusByPhylum.png", width=14, height=10, units = "in")
+```
+
+#Patients by ARGs -- arg2, mgm + HiC
+```{r}
+hclustfunc <- function(x) hclust(x, method="complete")
+distfunc <- function(x) dist(x,method="euclidean")
+
+cols2 <- c("check","type","source","patient","cluster","king","phylum","class","order","family","genus")
+cols3 <- c("B314","B316","B320","B331","B335","B357","B370","US3","US8")
+
+pat_arg2 <- as.data.frame(read.table(file = "new/arg2_type.txt", header = F, sep = "\t", fill = T, col.names = cols2))
+
+labsdf <- as.data.frame(pat_arg2[,c(1,2)])
+labsdf.1 <- distinct(labsdf)
+labsdf.2 <- as.data.frame(labsdf.1[,-1])
+rownames(labsdf.2) <- labsdf.1[,1]
+colnames(labsdf.2) <- c("type")
+
+heat_arg2 <- pat_arg2[,c(4,5)]
+heat_arg2$cluster <- factor(heat_arg2$cluster)
+
+m_arg2 <- aggregate(model.matrix(~patient -1, data=heat_arg2), heat_arg2["cluster"], max)
+
+m_arg2.1 <- m_arg2[,-1]
+rownames(m_arg2.1) <- m_arg2[,1]
+colnames(m_arg2.1) <- cols3
+
+png("figs/arg2_genus_patients&args_mgm&hic.png", width = 8, height = 16, units = "in", res = 600)
+pheatmap(m_arg2.1, 
+         cluster_cols = F, 
+         cluster_rows = T, 
+         annotation_row = labsdf.2,
+         color = c("grey","black"),
+         labels_row = "")#,
+         #annotation_colors = anncol)
+
+dev.off()
+
+```
+
+#Patients by ARGs -- arg2, mgm + HiC, no efflux
+```{r}
+hclustfunc <- function(x) hclust(x, method="complete")
+distfunc <- function(x) dist(x,method="euclidean")
+
+cols2 <- c("check","type","source","patient","cluster","king","phylum","class","order","family","genus")
+cols3 <- c("B314","B316","B320","B331","B335","B357","B370","US3","US8")
+
+pat_arg2 <- as.data.frame(read.table(file = "new/arg2_type_noEfflux.txt", header = F, sep = "\t", fill = T, col.names = cols2))
+
+labsdf <- as.data.frame(pat_arg2[,c(1,2)])
+labsdf.1 <- distinct(labsdf)
+labsdf.2 <- as.data.frame(labsdf.1[,-1])
+rownames(labsdf.2) <- labsdf.1[,1]
+colnames(labsdf.2) <- c("type")
+
+heat_arg2 <- pat_arg2[,c(4,5)]
+heat_arg2$cluster <- factor(heat_arg2$cluster)
+
+m_arg2 <- aggregate(model.matrix(~patient -1, data=heat_arg2), heat_arg2["cluster"], max)
+
+m_arg2.1 <- m_arg2[,-1]
+rownames(m_arg2.1) <- m_arg2[,1]
+colnames(m_arg2.1) <- cols3
+
+anncol <- colorRampPalette(rev(brewer.pal(n=length(unique(pat_arg2$type)), "Set1")))
+
+png("figs/arg2_genus_patients&args_mgm&hic_noEfflux.png", width = 8, height = 16, units = "in", res = 600)
+pheatmap(m_arg2.1, 
+         cluster_cols = F, 
+         cluster_rows = T, 
+         annotation_row = labsdf.2,
+         color = c("grey","black"),
+         labels_row = "")#,
+         #annotation_colors = anncol)
+
+dev.off()
+```
+
+
+#Patients by ARGs -- arg5, mgm + HiC
+```{r}
+hclustfunc <- function(x) hclust(x, method="complete")
+distfunc <- function(x) dist(x,method="euclidean")
+
+cols2 <- c("check","type","source","patient","cluster","king","phylum","class","order","family","genus")
+cols3 <- c("B314","B316","B320","B331","B335","B357","B370","US3","US8")
+
+pat_arg2 <- as.data.frame(read.table(file = "new/arg5_type.txt", header = F, sep = "\t", fill = T, col.names = cols2))
+
+labsdf <- as.data.frame(pat_arg2[,c(1,2)])
+labsdf.1 <- distinct(labsdf)
+labsdf.2 <- as.data.frame(labsdf.1[,-1])
+rownames(labsdf.2) <- labsdf.1[,1]
+colnames(labsdf.2) <- c("type")
+
+heat_arg2 <- pat_arg2[,c(4,5)]
+heat_arg2$cluster <- factor(heat_arg2$cluster)
+
+m_arg2 <- aggregate(model.matrix(~patient -1, data=heat_arg2), heat_arg2["cluster"], max)
+
+m_arg2.1 <- m_arg2[,-1]
+rownames(m_arg2.1) <- m_arg2[,1]
+colnames(m_arg2.1) <- cols3
+
+anncol <- colorRampPalette(rev(brewer.pal(n=length(unique(pat_arg2$type)), "Set1")))
+
+png("figs/arg5_genus_patients&args_mgm&hic.png", width = 8, height = 16, units = "in", res = 600)
+pheatmap(m_arg2.1, 
+         cluster_cols = F, 
+         cluster_rows = T, 
+         annotation_row = labsdf.2,
+         color = c("grey","black"),
+         labels_row = "")#,
+         #annotation_colors = anncol)
+
+dev.off()
+```
+
+#Patients by ARGs -- arg5, mgm + HiC, no efflux
+```{r}
+hclustfunc <- function(x) hclust(x, method="complete")
+distfunc <- function(x) dist(x,method="euclidean")
+
+cols2 <- c("check","type","source","patient","cluster","king","phylum","class","order","family","genus")
+cols3 <- c("B314","B316","B320","B331","B335","B357","B370","US3","US8")
+
+pat_arg2 <- as.data.frame(read.table(file = "new/arg5_type_noEfflux.txt", header = F, sep = "\t", fill = T, col.names = cols2))
+
+labsdf <- as.data.frame(pat_arg2[,c(1,2)])
+labsdf.1 <- distinct(labsdf)
+labsdf.2 <- as.data.frame(labsdf.1[,-1])
+rownames(labsdf.2) <- labsdf.1[,1]
+colnames(labsdf.2) <- c("type")
+
+heat_arg2 <- pat_arg2[,c(4,5)]
+heat_arg2$cluster <- factor(heat_arg2$cluster)
+
+m_arg2 <- aggregate(model.matrix(~patient -1, data=heat_arg2), heat_arg2["cluster"], max)
+
+m_arg2.1 <- m_arg2[,-1]
+rownames(m_arg2.1) <- m_arg2[,1]
+colnames(m_arg2.1) <- cols3
+
+anncol <- colorRampPalette(rev(brewer.pal(n=length(unique(pat_arg2$type)), "Set1")))
+
+png("figs/arg5_genus_patients&args_mgm&hic_noEfflux.png", width = 8, height = 16, units = "in", res = 600)
+pheatmap(m_arg2.1, 
+         cluster_cols = F, 
+         cluster_rows = T, 
+         annotation_row = labsdf.2,
+         color = c("grey","black"),
+         labels_row = "")#,
+         #annotation_colors = anncol)
+
+dev.off()
+```

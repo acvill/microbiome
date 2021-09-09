@@ -1,0 +1,246 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 30
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	30	checkm
+	1	final
+	31
+
+[Sat Aug 31 17:29:53 2019]
+Job 152: ---checkm
+
+Submitted job 152 with external jobid 'Your job 441683 ("checkm_B335-3") has been submitted'.
+
+[Sat Aug 31 17:29:53 2019]
+Job 163: ---checkm
+
+Submitted job 163 with external jobid 'Your job 441684 ("checkm_US3-10") has been submitted'.
+
+[Sat Aug 31 17:29:53 2019]
+Job 166: ---checkm
+
+Submitted job 166 with external jobid 'Your job 441685 ("checkm_US3-16") has been submitted'.
+
+[Sat Aug 31 17:29:53 2019]
+Job 167: ---checkm
+
+Submitted job 167 with external jobid 'Your job 441686 ("checkm_US8-1") has been submitted'.
+
+[Sat Aug 31 17:29:53 2019]
+Job 154: ---checkm
+
+Submitted job 154 with external jobid 'Your job 441687 ("checkm_B357-2") has been submitted'.
+
+[Sat Aug 31 17:29:53 2019]
+Job 141: ---checkm
+
+Submitted job 141 with external jobid 'Your job 441688 ("checkm_B316-5") has been submitted'.
+
+[Sat Aug 31 17:29:54 2019]
+Job 153: ---checkm
+
+Submitted job 153 with external jobid 'Your job 441689 ("checkm_B357-1") has been submitted'.
+
+[Sat Aug 31 17:29:54 2019]
+Job 149: ---checkm
+
+Submitted job 149 with external jobid 'Your job 441690 ("checkm_B331-4") has been submitted'.
+
+[Sat Aug 31 17:29:54 2019]
+Job 170: ---checkm
+
+Submitted job 170 with external jobid 'Your job 441691 ("checkm_US8-4") has been submitted'.
+
+[Sat Aug 31 17:29:54 2019]
+Job 151: ---checkm
+
+Submitted job 151 with external jobid 'Your job 441692 ("checkm_B335-2") has been submitted'.
+
+[Sat Aug 31 17:29:54 2019]
+Job 138: ---checkm
+
+Submitted job 138 with external jobid 'Your job 441693 ("checkm_B316-2") has been submitted'.
+
+[Sat Aug 31 17:29:54 2019]
+Job 136: ---checkm
+
+Submitted job 136 with external jobid 'Your job 441694 ("checkm_B314-4") has been submitted'.
+
+[Sat Aug 31 17:29:54 2019]
+Job 172: ---checkm
+
+Submitted job 172 with external jobid 'Your job 441695 ("checkm_B370-1") has been submitted'.
+
+[Sat Aug 31 17:29:54 2019]
+Job 133: ---checkm
+
+Submitted job 133 with external jobid 'Your job 441696 ("checkm_B314-1") has been submitted'.
+
+[Sat Aug 31 17:29:54 2019]
+Job 162: ---checkm
+
+Submitted job 162 with external jobid 'Your job 441697 ("checkm_B370-5") has been submitted'.
+
+[Sat Aug 31 17:29:55 2019]
+Job 165: ---checkm
+
+Submitted job 165 with external jobid 'Your job 441698 ("checkm_US3-14") has been submitted'.
+
+[Sat Aug 31 17:29:55 2019]
+Job 147: ---checkm
+
+Submitted job 147 with external jobid 'Your job 441699 ("checkm_B331-2") has been submitted'.
+
+[Sat Aug 31 17:29:55 2019]
+Job 168: ---checkm
+
+Submitted job 168 with external jobid 'Your job 441700 ("checkm_US8-2") has been submitted'.
+
+[Sat Aug 31 17:29:55 2019]
+Job 140: ---checkm
+
+Submitted job 140 with external jobid 'Your job 441701 ("checkm_B316-4") has been submitted'.
+
+[Sat Aug 31 17:29:55 2019]
+Job 159: ---checkm
+
+Submitted job 159 with external jobid 'Your job 441702 ("checkm_B370-2") has been submitted'.
+
+[Sat Aug 31 17:29:55 2019]
+Job 130: ---checkm
+
+Submitted job 130 with external jobid 'Your job 441703 ("checkm_B320-3") has been submitted'.
+
+[Sat Aug 31 17:29:55 2019]
+Job 135: ---checkm
+
+Submitted job 135 with external jobid 'Your job 441704 ("checkm_B314-3") has been submitted'.
+
+[Sat Aug 31 17:29:55 2019]
+Job 150: ---checkm
+
+Submitted job 150 with external jobid 'Your job 441705 ("checkm_B335-1") has been submitted'.
+
+[Sat Aug 31 17:29:55 2019]
+Job 161: ---checkm
+
+Submitted job 161 with external jobid 'Your job 441706 ("checkm_B370-4") has been submitted'.
+
+[Sat Aug 31 17:29:56 2019]
+Job 144: ---checkm
+
+Submitted job 144 with external jobid 'Your job 441707 ("checkm_B320-2") has been submitted'.
+
+[Sat Aug 31 17:29:56 2019]
+Job 139: ---checkm
+
+Submitted job 139 with external jobid 'Your job 441708 ("checkm_B316-3") has been submitted'.
+
+[Sat Aug 31 17:29:56 2019]
+Job 157: ---checkm
+
+Submitted job 157 with external jobid 'Your job 441709 ("checkm_B357-5") has been submitted'.
+
+[Sat Aug 31 17:29:56 2019]
+Job 158: ---checkm
+
+Submitted job 158 with external jobid 'Your job 441710 ("checkm_B357-6") has been submitted'.
+
+[Sat Aug 31 17:29:56 2019]
+Job 143: ---checkm
+
+Submitted job 143 with external jobid 'Your job 441711 ("checkm_B320-1") has been submitted'.
+
+[Sat Aug 31 17:29:56 2019]
+Job 164: ---checkm
+
+Submitted job 164 with external jobid 'Your job 441712 ("checkm_US3-12") has been submitted'.
+[Sat Aug 31 17:39:10 2019]
+Finished job 154.
+1 of 31 steps (3%) done
+[Sat Aug 31 17:39:47 2019]
+Finished job 166.
+2 of 31 steps (6%) done
+[Sat Aug 31 17:41:47 2019]
+Finished job 163.
+3 of 31 steps (10%) done
+[Sat Aug 31 17:51:00 2019]
+Finished job 141.
+4 of 31 steps (13%) done
+[Sat Aug 31 17:51:12 2019]
+Finished job 153.
+5 of 31 steps (16%) done
+[Sat Aug 31 17:51:48 2019]
+Finished job 167.
+6 of 31 steps (19%) done
+[Sat Aug 31 18:00:12 2019]
+Finished job 138.
+7 of 31 steps (23%) done
+[Sat Aug 31 18:01:48 2019]
+Finished job 149.
+8 of 31 steps (26%) done
+[Sat Aug 31 18:08:49 2019]
+Finished job 136.
+9 of 31 steps (29%) done
+[Sat Aug 31 18:10:01 2019]
+Finished job 170.
+10 of 31 steps (32%) done
+[Sat Aug 31 18:11:25 2019]
+Finished job 151.
+11 of 31 steps (35%) done
+[Sat Aug 31 18:17:40 2019]
+Finished job 172.
+12 of 31 steps (39%) done
+[Sat Aug 31 18:18:46 2019]
+Finished job 162.
+13 of 31 steps (42%) done
+[Sat Aug 31 18:23:10 2019]
+Finished job 165.
+14 of 31 steps (45%) done
+[Sat Aug 31 18:25:23 2019]
+Finished job 133.
+15 of 31 steps (48%) done
+[Sat Aug 31 18:30:20 2019]
+Finished job 168.
+16 of 31 steps (52%) done
+[Sat Aug 31 18:31:04 2019]
+Finished job 147.
+17 of 31 steps (55%) done
+[Sat Aug 31 18:40:48 2019]
+Finished job 159.
+18 of 31 steps (58%) done
+[Sat Aug 31 18:44:17 2019]
+Finished job 130.
+19 of 31 steps (61%) done
+[Sat Aug 31 18:45:01 2019]
+Finished job 140.
+20 of 31 steps (65%) done
+[Sat Aug 31 18:52:43 2019]
+Finished job 150.
+21 of 31 steps (68%) done
+[Sat Aug 31 18:52:43 2019]
+Finished job 161.
+22 of 31 steps (71%) done
+[Sat Aug 31 18:54:04 2019]
+Finished job 135.
+23 of 31 steps (74%) done
+[Sat Aug 31 19:01:35 2019]
+Finished job 139.
+24 of 31 steps (77%) done
+[Sat Aug 31 19:02:25 2019]
+Finished job 157.
+25 of 31 steps (81%) done
+[Sat Aug 31 19:07:45 2019]
+Finished job 144.
+26 of 31 steps (84%) done
+[Sat Aug 31 19:11:35 2019]
+Finished job 158.
+27 of 31 steps (87%) done
+[Sat Aug 31 19:14:36 2019]
+Finished job 164.
+28 of 31 steps (90%) done
+[Sat Aug 31 19:23:46 2019]
+Finished job 143.
+29 of 31 steps (94%) done

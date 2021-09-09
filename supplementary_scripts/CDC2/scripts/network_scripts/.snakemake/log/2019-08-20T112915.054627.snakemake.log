@@ -1,0 +1,41 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	3	normalize
+	4
+
+[Tue Aug 20 11:29:15 2019]
+Job 77: ---normalize
+
+[Tue Aug 20 11:29:16 2019]
+Finished job 77.
+1 of 4 steps (25%) done
+
+[Tue Aug 20 11:29:16 2019]
+Job 70: ---normalize
+
+[Tue Aug 20 11:29:18 2019]
+Finished job 70.
+2 of 4 steps (50%) done
+
+[Tue Aug 20 11:29:18 2019]
+Job 72: ---normalize
+
+[Tue Aug 20 11:29:19 2019]
+Finished job 72.
+3 of 4 steps (75%) done
+
+[Tue Aug 20 11:29:19 2019]
+localrule final:
+    input: /workdir/users/agk85/CDC2/logs/finals/B314-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-6_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-7_trans_final, /workdir/users/agk85/CDC2/logs/finals/B320-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B320-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/B331-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B331-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B331-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B335-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B335-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B335-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-6_trans_final, /workdir/users/agk85/CDC2/logs/finals/B370-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B370-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B320-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B331-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B370-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B370-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/US3-8_trans_final, /workdir/users/agk85/CDC2/logs/finals/US3-10_trans_final, /workdir/users/agk85/CDC2/logs/finals/US3-12_trans_final, /workdir/users/agk85/CDC2/logs/finals/US3-14_trans_final, /workdir/users/agk85/CDC2/logs/finals/US3-16_trans_final, /workdir/users/agk85/CDC2/logs/finals/US8-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/US8-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/US8-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/US8-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/US8-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-1_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B314-2_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B314-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B314-4_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-1_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-2_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-4_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-5_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-6_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-7_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B320-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B320-5_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B331-1_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B331-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B331-4_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B335-1_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B335-2_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B335-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B357-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B357-4_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B357-5_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B357-6_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B370-2_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B370-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B320-2_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B331-2_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B357-1_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B357-2_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B370-4_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B370-5_normalize_final, /workdir/users/agk85/CDC2/logs/finals/US3-8_normalize_final, /workdir/users/agk85/CDC2/logs/finals/US3-10_normalize_final, /workdir/users/agk85/CDC2/logs/finals/US3-12_normalize_final, /workdir/users/agk85/CDC2/logs/finals/US3-14_normalize_final, /workdir/users/agk85/CDC2/logs/finals/US3-16_normalize_final, /workdir/users/agk85/CDC2/logs/finals/US8-1_normalize_final, /workdir/users/agk85/CDC2/logs/finals/US8-2_normalize_final, /workdir/users/agk85/CDC2/logs/finals/US8-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/US8-4_normalize_final, /workdir/users/agk85/CDC2/logs/finals/US8-5_normalize_final
+    jobid: 0
+
+[Tue Aug 20 11:29:19 2019]
+Finished job 0.
+4 of 4 steps (100%) done
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network_scripts/.snakemake/log/2019-08-20T112915.054627.snakemake.log

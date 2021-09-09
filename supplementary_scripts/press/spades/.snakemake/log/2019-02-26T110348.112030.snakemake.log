@@ -1,0 +1,39 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	1	phageblast
+	1	phagefinder
+	3
+
+[Tue Feb 26 11:03:48 2019]
+Job 3: ---phage blast
+
+[Tue Feb 26 15:54:32 2019]
+Finished job 3.
+1 of 3 steps (33%) done
+
+[Tue Feb 26 15:54:32 2019]
+Job 4: ---phage finder
+
+Terminating processes on user request, this might take some time.
+[Tue Feb 26 17:30:43 2019]
+Error in rule phagefinder:
+    jobid: 4
+    output: /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/PFPR_tab.txt, /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/pf_finished
+
+RuleException:
+CalledProcessError in line 96 of /local/workdir/users/agk85/press/scripts/spades/snake_min_prodigal_pf_spadestest:
+Command 'set -euo pipefail;  export PHOME=/workdir/users/agk85/tools/
+		cd /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades
+		/workdir/users/agk85/tools/phage_finder_v2.1/bin/Phage_Finder_v2.1.pl -t ProxiMeta-spades_proteins.out -i phage_finder_info.txt
+                touch /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/pf_finished' died with <Signals.SIGINT: 2>.
+  File "/local/workdir/users/agk85/press/scripts/spades/snake_min_prodigal_pf_spadestest", line 96, in __rule_phagefinder
+  File "/usr/lib64/python3.6/concurrent/futures/thread.py", line 56, in run
+Removing output files of failed job phagefinder since they might be corrupted:
+/workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/PFPR_tab.txt
+Complete log: /local/workdir/users/agk85/press/scripts/spades/.snakemake/log/2019-02-26T110348.112030.snakemake.log

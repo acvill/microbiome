@@ -1,0 +1,34 @@
+##-----------------------------------------------------------------------------------##
+## The list of samples to be processed
+##-----------------------------------------------------------------------------------##
+BASE2="/workdir/data/CDC/metagenomes/merged"
+BASE="/workdir/users/agk85/CDC"
+SAMPLES, = glob_wildcards(BASE + "/todo/{NAME}/")
+#SAMPLES, = glob_wildcards(BASE + "/temptest/{NAME}")
+NB_SAMPLES = len(SAMPLES)
+print (SAMPLES)
+
+rule final:
+	input:
+		expand(BASE+"/logs/finals/{NAME}_final_index_scaffold", NAME=SAMPLES)
+
+rule index:
+	input:
+		prots=BASE+"/prodigal_excise/metagenomes3/{NAME}/{NAME}_scaffold.fasta"
+	params:
+		n="bwaindex_{NAME}",
+		name="{NAME}",
+		out=BASE + "/mapping/metagenomes3/references"
+	resources:
+		mem_mb= lambda wildcards, attempt: attempt * 4
+	output:
+		final=BASE + "/logs/finals/{NAME}_final_index_scaffold"
+	message:"""---bwaindex"""
+	shell:
+		"""
+		if [ ! -d {params.out} ]; then mkdir -p {params.out}; fi
+		cd {params.out}
+		/programs/bwa-0.7.8/bwa index -a bwtsw -p {params.name} {input.prots}
+		touch {output.final}
+		"""
+

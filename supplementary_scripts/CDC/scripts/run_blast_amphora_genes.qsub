@@ -1,0 +1,34 @@
+#$ -S /bin/bash
+#$ -N blast_lsa
+#$ -V
+#$ -e /workdir/users/fnn3/scripts/LOGS/LSA/blast_genes_to_lsa.err
+#$ -t 1-16
+#$ -wd /workdir/users/fnn3/twins_uk/lsa_downstream/blast_xu_genes
+#$ -l h_vmem=10G
+#$ -q long.q@cbsubrito2
+
+
+# This script will blast the amphora genes from the LSA partitions to the blast nr dataset
+
+WRK=/workdir/users/fnn3
+
+
+#Design file
+DESIGN_FILE=$WRK/design_files/list_of_partitions_w_hits.txt
+  DESIGN=$(sed -n "${SGE_TASK_ID}p" $DESIGN_FILE)
+  NAME=`basename "${DESIGN}"`
+
+REF=/workdir/blastdb/nr
+QUERY=$WRK/twins_uk/lsa_downstream/amphora_genes/${NAME}
+
+export PATH=/programs/ncbi-blast-2.3.0+/bin:$PATH
+
+cd $QUERY
+for file in *.pep 
+    do
+      blastp -db $REF -query $file -outfmt "6 qseqid sseqid stitle sblastnames salltitles pident length mismatch" -out ${file}.out.txt
+done
+
+
+
+

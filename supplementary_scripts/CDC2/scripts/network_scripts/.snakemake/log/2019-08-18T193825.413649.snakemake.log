@@ -1,0 +1,106 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	4	checkm
+	1	final
+	4	normalize
+	4	rscript
+	13
+
+[Sun Aug 18 19:38:25 2019]
+Job 7: ---normalize
+
+[Sun Aug 18 19:38:27 2019]
+Finished job 7.
+1 of 13 steps (8%) done
+
+[Sun Aug 18 19:38:27 2019]
+Job 11: ---rscript
+
+[Sun Aug 18 19:38:54 2019]
+Finished job 11.
+2 of 13 steps (15%) done
+
+[Sun Aug 18 19:38:54 2019]
+Job 14: ---checkm
+
+[Sun Aug 18 20:34:39 2019]
+Finished job 14.
+3 of 13 steps (23%) done
+
+[Sun Aug 18 20:34:39 2019]
+Job 6: ---normalize
+
+[Sun Aug 18 20:34:41 2019]
+Finished job 6.
+4 of 13 steps (31%) done
+
+[Sun Aug 18 20:34:41 2019]
+Job 10: ---rscript
+
+[Sun Aug 18 20:35:22 2019]
+Finished job 10.
+5 of 13 steps (38%) done
+
+[Sun Aug 18 20:35:22 2019]
+Job 5: ---normalize
+
+[Sun Aug 18 20:35:24 2019]
+Finished job 5.
+6 of 13 steps (46%) done
+
+[Sun Aug 18 20:35:24 2019]
+Job 9: ---rscript
+
+[Sun Aug 18 20:35:45 2019]
+Finished job 9.
+7 of 13 steps (54%) done
+
+[Sun Aug 18 20:35:45 2019]
+Job 15: ---checkm
+
+[Sun Aug 18 21:15:07 2019]
+Finished job 15.
+8 of 13 steps (62%) done
+
+[Sun Aug 18 21:15:07 2019]
+Job 8: ---normalize
+
+[Sun Aug 18 21:15:09 2019]
+Finished job 8.
+9 of 13 steps (69%) done
+
+[Sun Aug 18 21:15:09 2019]
+Job 12: ---rscript
+
+[Sun Aug 18 21:15:20 2019]
+Finished job 12.
+10 of 13 steps (77%) done
+
+[Sun Aug 18 21:15:20 2019]
+Job 13: ---checkm
+
+[Sun Aug 18 21:41:35 2019]
+Finished job 13.
+11 of 13 steps (85%) done
+
+[Sun Aug 18 21:41:35 2019]
+Job 16: ---checkm
+
+[Sun Aug 18 21:54:30 2019]
+Finished job 16.
+12 of 13 steps (92%) done
+
+[Sun Aug 18 21:54:30 2019]
+localrule final:
+    input: /workdir/users/agk85/CDC2/logs/finals/B314-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-1_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B314-2_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B314-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B314-4_normalize_final, /workdir/users/agk85/CDC2/networks/logs/B314-1_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-2_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-3_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-4_final_network_rscript_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-1_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-2_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-3_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/logs/B314-4_final_network_checkm_2_0
+    jobid: 0
+
+[Sun Aug 18 21:54:30 2019]
+Finished job 0.
+13 of 13 steps (100%) done
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network_scripts/.snakemake/log/2019-08-18T193825.413649.snakemake.log

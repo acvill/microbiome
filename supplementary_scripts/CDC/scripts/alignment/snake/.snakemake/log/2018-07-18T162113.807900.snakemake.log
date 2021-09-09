@@ -1,0 +1,3 @@
+MissingInputException in line 15 of /local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_index_scaffolds:
+Missing input files for rule index:
+/workdir/users/agk85/CDC/prodigal_excise/metagenomes3/B329-1/B329-1_phagefinder.txt/B329-1/B329-1_phagefinder.txt_scaffold.fasta

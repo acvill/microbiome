@@ -1,0 +1,419 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	31	get_trans_noeuks_phagerepair
+	31	normalize
+	35	rscript
+	98
+
+[Sat Aug 17 16:01:04 2019]
+Job 15: ---trans
+
+[Sat Aug 17 16:01:19 2019]
+Finished job 15.
+1 of 98 steps (1%) done
+
+[Sat Aug 17 16:01:19 2019]
+Job 21: ---trans
+
+[Sat Aug 17 16:01:30 2019]
+Finished job 21.
+2 of 98 steps (2%) done
+
+[Sat Aug 17 16:01:30 2019]
+Job 12: ---trans
+
+[Sat Aug 17 16:01:40 2019]
+Finished job 12.
+3 of 98 steps (3%) done
+
+[Sat Aug 17 16:01:40 2019]
+Job 24: ---trans
+
+[Sat Aug 17 16:01:51 2019]
+Finished job 24.
+4 of 98 steps (4%) done
+
+[Sat Aug 17 16:01:51 2019]
+Job 8: ---trans
+
+[Sat Aug 17 16:02:01 2019]
+Finished job 8.
+5 of 98 steps (5%) done
+
+[Sat Aug 17 16:02:01 2019]
+Job 10: ---trans
+
+[Sat Aug 17 16:02:11 2019]
+Finished job 10.
+6 of 98 steps (6%) done
+
+[Sat Aug 17 16:02:11 2019]
+Job 14: ---trans
+
+[Sat Aug 17 16:02:21 2019]
+Finished job 14.
+7 of 98 steps (7%) done
+
+[Sat Aug 17 16:02:21 2019]
+Job 13: ---trans
+
+[Sat Aug 17 16:02:31 2019]
+Finished job 13.
+8 of 98 steps (8%) done
+
+[Sat Aug 17 16:02:31 2019]
+Job 18: ---trans
+
+[Sat Aug 17 16:02:41 2019]
+Finished job 18.
+9 of 98 steps (9%) done
+
+[Sat Aug 17 16:02:41 2019]
+Job 17: ---trans
+
+[Sat Aug 17 16:02:49 2019]
+Finished job 17.
+10 of 98 steps (10%) done
+
+[Sat Aug 17 16:02:49 2019]
+Job 29: ---trans
+
+[Sat Aug 17 16:02:59 2019]
+Finished job 29.
+11 of 98 steps (11%) done
+
+[Sat Aug 17 16:02:59 2019]
+Job 16: ---trans
+
+[Sat Aug 17 16:03:08 2019]
+Finished job 16.
+12 of 98 steps (12%) done
+
+[Sat Aug 17 16:03:08 2019]
+Job 11: ---trans
+
+[Sat Aug 17 16:03:18 2019]
+Finished job 11.
+13 of 98 steps (13%) done
+
+[Sat Aug 17 16:03:18 2019]
+Job 31: ---trans
+
+[Sat Aug 17 16:03:27 2019]
+Finished job 31.
+14 of 98 steps (14%) done
+
+[Sat Aug 17 16:03:27 2019]
+Job 5: ---trans
+
+[Sat Aug 17 16:03:36 2019]
+Finished job 5.
+15 of 98 steps (15%) done
+
+[Sat Aug 17 16:03:36 2019]
+Job 25: ---trans
+
+[Sat Aug 17 16:03:46 2019]
+Finished job 25.
+16 of 98 steps (16%) done
+
+[Sat Aug 17 16:03:46 2019]
+Job 30: ---trans
+
+[Sat Aug 17 16:03:54 2019]
+Finished job 30.
+17 of 98 steps (17%) done
+
+[Sat Aug 17 16:03:54 2019]
+Job 20: ---trans
+
+[Sat Aug 17 16:04:01 2019]
+Finished job 20.
+18 of 98 steps (18%) done
+
+[Sat Aug 17 16:04:01 2019]
+Job 27: ---trans
+
+[Sat Aug 17 16:04:09 2019]
+Finished job 27.
+19 of 98 steps (19%) done
+
+[Sat Aug 17 16:04:09 2019]
+Job 28: ---trans
+
+[Sat Aug 17 16:04:18 2019]
+Finished job 28.
+20 of 98 steps (20%) done
+
+[Sat Aug 17 16:04:18 2019]
+Job 32: ---trans
+
+[Sat Aug 17 16:04:24 2019]
+Finished job 32.
+21 of 98 steps (21%) done
+
+[Sat Aug 17 16:04:24 2019]
+Job 23: ---trans
+
+[Sat Aug 17 16:04:31 2019]
+Finished job 23.
+22 of 98 steps (22%) done
+
+[Sat Aug 17 16:04:31 2019]
+Job 19: ---trans
+
+[Sat Aug 17 16:04:37 2019]
+Finished job 19.
+23 of 98 steps (23%) done
+
+[Sat Aug 17 16:04:37 2019]
+Job 33: ---trans
+
+[Sat Aug 17 16:04:43 2019]
+Finished job 33.
+24 of 98 steps (24%) done
+
+[Sat Aug 17 16:04:43 2019]
+Job 9: ---trans
+
+[Sat Aug 17 16:04:50 2019]
+Finished job 9.
+25 of 98 steps (26%) done
+
+[Sat Aug 17 16:04:50 2019]
+Job 35: ---trans
+
+[Sat Aug 17 16:04:56 2019]
+Finished job 35.
+26 of 98 steps (27%) done
+
+[Sat Aug 17 16:04:56 2019]
+Job 22: ---trans
+
+[Sat Aug 17 16:05:02 2019]
+Finished job 22.
+27 of 98 steps (28%) done
+
+[Sat Aug 17 16:05:02 2019]
+Job 26: ---trans
+
+[Sat Aug 17 16:05:09 2019]
+Finished job 26.
+28 of 98 steps (29%) done
+
+[Sat Aug 17 16:05:09 2019]
+Job 7: ---trans
+
+[Sat Aug 17 16:05:15 2019]
+Finished job 7.
+29 of 98 steps (30%) done
+
+[Sat Aug 17 16:05:15 2019]
+Job 34: ---trans
+
+[Sat Aug 17 16:05:21 2019]
+Finished job 34.
+30 of 98 steps (31%) done
+
+[Sat Aug 17 16:05:21 2019]
+Job 6: ---trans
+
+[Sat Aug 17 16:05:26 2019]
+Finished job 6.
+31 of 98 steps (32%) done
+
+[Sat Aug 17 16:05:26 2019]
+Job 46: ---normalize
+
+[Sat Aug 17 16:05:28 2019]
+Finished job 46.
+32 of 98 steps (33%) done
+
+[Sat Aug 17 16:05:28 2019]
+Job 81: ---rscript
+
+[Sat Aug 17 16:06:17 2019]
+Finished job 81.
+33 of 98 steps (34%) done
+
+[Sat Aug 17 16:06:17 2019]
+Job 49: ---normalize
+
+[Sat Aug 17 16:06:19 2019]
+Finished job 49.
+34 of 98 steps (35%) done
+
+[Sat Aug 17 16:06:19 2019]
+Job 84: ---rscript
+
+[Sat Aug 17 16:07:40 2019]
+Finished job 84.
+35 of 98 steps (36%) done
+
+[Sat Aug 17 16:07:40 2019]
+Job 60: ---normalize
+
+[Sat Aug 17 16:07:44 2019]
+Finished job 60.
+36 of 98 steps (37%) done
+
+[Sat Aug 17 16:07:44 2019]
+Job 95: ---rscript
+
+[Sat Aug 17 16:08:53 2019]
+Finished job 95.
+37 of 98 steps (38%) done
+
+[Sat Aug 17 16:08:53 2019]
+Job 59: ---normalize
+
+[Sat Aug 17 16:08:56 2019]
+Finished job 59.
+38 of 98 steps (39%) done
+
+[Sat Aug 17 16:08:56 2019]
+Job 94: ---rscript
+
+[Sat Aug 17 16:10:41 2019]
+Finished job 94.
+39 of 98 steps (40%) done
+
+[Sat Aug 17 16:10:41 2019]
+Job 72: ---rscript
+
+[Sat Aug 17 16:11:28 2019]
+Finished job 72.
+40 of 98 steps (41%) done
+
+[Sat Aug 17 16:11:28 2019]
+Job 55: ---normalize
+
+[Sat Aug 17 16:11:29 2019]
+Finished job 55.
+41 of 98 steps (42%) done
+
+[Sat Aug 17 16:11:29 2019]
+Job 90: ---rscript
+
+[Sat Aug 17 16:12:00 2019]
+Finished job 90.
+42 of 98 steps (43%) done
+
+[Sat Aug 17 16:12:00 2019]
+Job 45: ---normalize
+
+[Sat Aug 17 16:12:02 2019]
+Finished job 45.
+43 of 98 steps (44%) done
+
+[Sat Aug 17 16:12:02 2019]
+Job 80: ---rscript
+
+[Sat Aug 17 16:13:09 2019]
+Finished job 80.
+44 of 98 steps (45%) done
+
+[Sat Aug 17 16:13:09 2019]
+Job 73: ---rscript
+
+[Sat Aug 17 16:13:38 2019]
+Finished job 73.
+45 of 98 steps (46%) done
+
+[Sat Aug 17 16:13:38 2019]
+Job 64: ---normalize
+
+[Sat Aug 17 16:13:40 2019]
+Finished job 64.
+46 of 98 steps (47%) done
+
+[Sat Aug 17 16:13:40 2019]
+Job 99: ---rscript
+
+[Sat Aug 17 16:14:30 2019]
+Finished job 99.
+47 of 98 steps (48%) done
+
+[Sat Aug 17 16:14:30 2019]
+Job 43: ---normalize
+
+[Sat Aug 17 16:14:33 2019]
+Finished job 43.
+48 of 98 steps (49%) done
+
+[Sat Aug 17 16:14:33 2019]
+Job 78: ---rscript
+
+[Sat Aug 17 16:14:52 2019]
+Finished job 78.
+49 of 98 steps (50%) done
+
+[Sat Aug 17 16:14:52 2019]
+Job 71: ---rscript
+
+[Sat Aug 17 16:15:13 2019]
+Finished job 71.
+50 of 98 steps (51%) done
+
+[Sat Aug 17 16:15:13 2019]
+Job 40: ---normalize
+
+[Sat Aug 17 16:15:16 2019]
+Finished job 40.
+51 of 98 steps (52%) done
+
+[Sat Aug 17 16:15:16 2019]
+Job 75: ---rscript
+
+[Sat Aug 17 16:15:55 2019]
+Finished job 75.
+52 of 98 steps (53%) done
+
+[Sat Aug 17 16:15:55 2019]
+Job 48: ---normalize
+
+[Sat Aug 17 16:15:56 2019]
+Finished job 48.
+53 of 98 steps (54%) done
+
+[Sat Aug 17 16:15:56 2019]
+Job 83: ---rscript
+
+[Sat Aug 17 16:16:08 2019]
+Finished job 83.
+54 of 98 steps (55%) done
+
+[Sat Aug 17 16:16:08 2019]
+Job 47: ---normalize
+
+[Sat Aug 17 16:16:09 2019]
+Finished job 47.
+55 of 98 steps (56%) done
+
+[Sat Aug 17 16:16:09 2019]
+Job 82: ---rscript
+
+[Sat Aug 17 16:16:13 2019]
+Error in rule rscript:
+    jobid: 82
+    output: /workdir/users/agk85/CDC2/networks/logs/B320-2_final_network_rscript_5_0
+
+RuleException:
+CalledProcessError in line 97 of /local/workdir/users/agk85/CDC2/scripts/network/snake_trans_network:
+Command 'set -euo pipefail;  if [ ! -e /workdir/users/agk85/CDC2/networks/membership ]; then mkdir -p /workdir/users/agk85/CDC2/networks/membership; fi
+		if [ ! -e /workdir/users/agk85/CDC2/networks/outputs ]; then mkdir -p /workdir/users/agk85/CDC2/networks/outputs; fi
+		if [ ! -e /workdir/users/agk85/CDC2/networks/graphs ]; then mkdir -p /workdir/users/agk85/CDC2/networks/graphs; fi
+		cd /workdir/users/agk85/CDC2/networks/membership
+		/programs/R-3.3.2/bin/Rscript /workdir/users/agk85/simulated/scripts/network_scripts/network_clustering.R CDC2 B320-2 B320-2 mge count B320-2
+		touch /workdir/users/agk85/CDC2/networks/logs/B320-2_final_network_rscript_5_0' returned non-zero exit status 1.
+  File "/local/workdir/users/agk85/CDC2/scripts/network/snake_trans_network", line 97, in __rule_rscript
+  File "/usr/lib64/python3.6/concurrent/futures/thread.py", line 56, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network/.snakemake/log/2019-08-17T160104.351618.snakemake.log

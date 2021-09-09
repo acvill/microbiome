@@ -1,0 +1,3 @@
+TypeError in line 161 of /local/workdir/users/agk85/CDC2/scripts/network_scripts/snake_trans_network:
+message() missing 1 required positional argument: 'message'
+  File "/local/workdir/users/agk85/CDC2/scripts/network_scripts/snake_trans_network", line 161, in <module>

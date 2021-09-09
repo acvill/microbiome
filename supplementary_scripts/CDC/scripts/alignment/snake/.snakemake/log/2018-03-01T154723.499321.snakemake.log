@@ -1,0 +1,4 @@
+MissingInputException in line 18 of /local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_bwa:
+Missing input files for rule gunzip:
+/workdir/data/CDC/metagenomes/merged/Unknown.1.fastq.gz
+/workdir/data/CDC/metagenomes/merged/Unknown.2.fastq.gz

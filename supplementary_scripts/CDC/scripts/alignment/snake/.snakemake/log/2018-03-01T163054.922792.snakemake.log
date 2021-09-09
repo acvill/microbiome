@@ -1,0 +1,2 @@
+SyntaxError in line 81 of /local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_bwa:
+EOF in multi-line string (snake_bwa, line 81)

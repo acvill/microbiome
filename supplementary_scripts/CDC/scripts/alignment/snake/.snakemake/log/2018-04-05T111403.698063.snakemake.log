@@ -1,0 +1,39 @@
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	7	bwa
+	7	filter
+	1	final
+	7	rpkm
+	7	sortbam
+	29
+
+Job 132: ---map_bwa
+
+Finished job 132.
+1 of 29 steps (3%) done
+
+Job 174: ---map_bwa
+
+Finished job 174.
+2 of 29 steps (7%) done
+
+Job 407: ---map_bwa
+
+Finished job 407.
+3 of 29 steps (10%) done
+
+Job 179: ---map_bwa
+
+Finished job 179.
+4 of 29 steps (14%) done
+
+Job 209: ---map_bwa
+
+Finished job 209.
+5 of 29 steps (17%) done
+
+Job 387: ---map_bwa
+

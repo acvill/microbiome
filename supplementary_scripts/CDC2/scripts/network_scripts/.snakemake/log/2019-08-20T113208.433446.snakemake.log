@@ -1,0 +1,341 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 12
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	41	rscript
+	42
+
+[Tue Aug 20 11:32:08 2019]
+Job 92: ---rscript
+
+Submitted job 92 with external jobid 'Your job 441210 ("rscript_B316-6") has been submitted'.
+
+[Tue Aug 20 11:32:08 2019]
+Job 107: ---rscript
+
+Submitted job 107 with external jobid 'Your job 441211 ("rscript_B370-3") has been submitted'.
+
+[Tue Aug 20 11:32:08 2019]
+Job 85: ---rscript
+
+Submitted job 85 with external jobid 'Your job 441212 ("rscript_B314-3") has been submitted'.
+
+[Tue Aug 20 11:32:08 2019]
+Job 93: ---rscript
+
+Submitted job 93 with external jobid 'Your job 441213 ("rscript_B316-7") has been submitted'.
+
+[Tue Aug 20 11:32:08 2019]
+Job 100: ---rscript
+
+Submitted job 100 with external jobid 'Your job 441214 ("rscript_B335-2") has been submitted'.
+
+[Tue Aug 20 11:32:09 2019]
+Job 121: ---rscript
+
+Submitted job 121 with external jobid 'Your job 441215 ("rscript_US8-3") has been submitted'.
+
+[Tue Aug 20 11:32:09 2019]
+Job 87: ---rscript
+
+Submitted job 87 with external jobid 'Your job 441216 ("rscript_B316-1") has been submitted'.
+
+[Tue Aug 20 11:32:09 2019]
+Job 95: ---rscript
+
+Submitted job 95 with external jobid 'Your job 441217 ("rscript_B320-5") has been submitted'.
+
+[Tue Aug 20 11:32:09 2019]
+Job 114: ---rscript
+
+Submitted job 114 with external jobid 'Your job 441218 ("rscript_US3-8") has been submitted'.
+
+[Tue Aug 20 11:32:09 2019]
+Job 103: ---rscript
+
+Submitted job 103 with external jobid 'Your job 441219 ("rscript_B357-4") has been submitted'.
+
+[Tue Aug 20 11:32:09 2019]
+Job 90: ---rscript
+
+Submitted job 90 with external jobid 'Your job 441220 ("rscript_B316-4") has been submitted'.
+
+[Tue Aug 20 11:32:09 2019]
+Job 102: ---rscript
+
+Submitted job 102 with external jobid 'Your job 441221 ("rscript_B357-3") has been submitted'.
+[Tue Aug 20 11:35:47 2019]
+Finished job 92.
+1 of 42 steps (2%) done
+
+[Tue Aug 20 11:35:47 2019]
+Job 84: ---rscript
+
+Submitted job 84 with external jobid 'Your job 441222 ("rscript_B314-2") has been submitted'.
+[Tue Aug 20 11:42:13 2019]
+Finished job 85.
+2 of 42 steps (5%) done
+
+[Tue Aug 20 11:42:13 2019]
+Job 108: ---rscript
+
+Submitted job 108 with external jobid 'Your job 441223 ("rscript_B320-2") has been submitted'.
+[Tue Aug 20 11:42:24 2019]
+Finished job 93.
+3 of 42 steps (7%) done
+
+[Tue Aug 20 11:42:24 2019]
+Job 123: ---rscript
+
+Submitted job 123 with external jobid 'Your job 441224 ("rscript_US8-5") has been submitted'.
+[Tue Aug 20 11:42:46 2019]
+Finished job 107.
+4 of 42 steps (10%) done
+
+[Tue Aug 20 11:42:46 2019]
+Job 97: ---rscript
+
+Submitted job 97 with external jobid 'Your job 441225 ("rscript_B331-3") has been submitted'.
+[Tue Aug 20 11:43:52 2019]
+Finished job 100.
+5 of 42 steps (12%) done
+
+[Tue Aug 20 11:43:52 2019]
+Job 119: ---rscript
+
+Submitted job 119 with external jobid 'Your job 441226 ("rscript_US8-1") has been submitted'.
+[Tue Aug 20 11:44:47 2019]
+Error in rule rscript:
+    jobid: 87
+    output: /workdir/users/agk85/CDC2/networks/membership/B316-1_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B316-1_final_network_rscript_2_0
+    cluster_jobid: Your job 441216 ("rscript_B316-1") has been submitted
+
+Trying to restart job 87.
+
+[Tue Aug 20 11:44:47 2019]
+Job 87: ---rscript
+
+Submitted job 87 with external jobid 'Your job 441227 ("rscript_B316-1") has been submitted'.
+[Tue Aug 20 11:46:04 2019]
+Finished job 121.
+6 of 42 steps (14%) done
+
+[Tue Aug 20 11:46:04 2019]
+Job 94: ---rscript
+
+Submitted job 94 with external jobid 'Your job 441228 ("rscript_B320-3") has been submitted'.
+[Tue Aug 20 11:46:59 2019]
+Finished job 114.
+7 of 42 steps (17%) done
+
+[Tue Aug 20 11:46:59 2019]
+Job 106: ---rscript
+
+Submitted job 106 with external jobid 'Your job 441229 ("rscript_B370-2") has been submitted'.
+[Tue Aug 20 11:47:43 2019]
+Finished job 95.
+8 of 42 steps (19%) done
+
+[Tue Aug 20 11:47:43 2019]
+Job 96: ---rscript
+
+Submitted job 96 with external jobid 'Your job 441230 ("rscript_B331-1") has been submitted'.
+[Tue Aug 20 11:48:17 2019]
+Finished job 90.
+9 of 42 steps (21%) done
+
+[Tue Aug 20 11:48:17 2019]
+Job 83: ---rscript
+
+Submitted job 83 with external jobid 'Your job 441231 ("rscript_B314-1") has been submitted'.
+[Tue Aug 20 11:49:44 2019]
+Finished job 84.
+10 of 42 steps (24%) done
+
+[Tue Aug 20 11:49:44 2019]
+Job 122: ---rscript
+
+Submitted job 122 with external jobid 'Your job 441232 ("rscript_US8-4") has been submitted'.
+[Tue Aug 20 11:50:50 2019]
+Finished job 103.
+11 of 42 steps (26%) done
+
+[Tue Aug 20 11:50:50 2019]
+Job 98: ---rscript
+
+Submitted job 98 with external jobid 'Your job 441233 ("rscript_B331-4") has been submitted'.
+[Tue Aug 20 11:51:56 2019]
+Finished job 108.
+12 of 42 steps (29%) done
+
+[Tue Aug 20 11:51:56 2019]
+Job 109: ---rscript
+
+Submitted job 109 with external jobid 'Your job 441234 ("rscript_B331-2") has been submitted'.
+[Tue Aug 20 11:52:42 2019]
+Finished job 102.
+13 of 42 steps (31%) done
+
+[Tue Aug 20 11:52:42 2019]
+Job 105: ---rscript
+
+Submitted job 105 with external jobid 'Your job 441235 ("rscript_B357-6") has been submitted'.
+[Tue Aug 20 11:53:03 2019]
+Finished job 123.
+14 of 42 steps (33%) done
+
+[Tue Aug 20 11:53:03 2019]
+Job 101: ---rscript
+
+Submitted job 101 with external jobid 'Your job 441236 ("rscript_B335-3") has been submitted'.
+[Tue Aug 20 11:53:47 2019]
+Finished job 94.
+15 of 42 steps (36%) done
+
+[Tue Aug 20 11:53:47 2019]
+Job 89: ---rscript
+
+Submitted job 89 with external jobid 'Your job 441237 ("rscript_B316-3") has been submitted'.
+[Tue Aug 20 11:53:58 2019]
+Finished job 97.
+16 of 42 steps (38%) done
+
+[Tue Aug 20 11:53:58 2019]
+Job 88: ---rscript
+
+Submitted job 88 with external jobid 'Your job 441238 ("rscript_B316-2") has been submitted'.
+[Tue Aug 20 11:54:42 2019]
+Finished job 119.
+17 of 42 steps (40%) done
+
+[Tue Aug 20 11:54:42 2019]
+Job 116: ---rscript
+
+Submitted job 116 with external jobid 'Your job 441239 ("rscript_US3-12") has been submitted'.
+[Tue Aug 20 11:55:15 2019]
+Finished job 106.
+18 of 42 steps (43%) done
+
+[Tue Aug 20 11:55:15 2019]
+Job 120: ---rscript
+
+Submitted job 120 with external jobid 'Your job 441240 ("rscript_US8-2") has been submitted'.
+[Tue Aug 20 11:55:16 2019]
+Error in rule rscript:
+    jobid: 83
+    output: /workdir/users/agk85/CDC2/networks/membership/B314-1_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B314-1_final_network_rscript_2_0
+    cluster_jobid: Your job 441231 ("rscript_B314-1") has been submitted
+
+Trying to restart job 83.
+
+[Tue Aug 20 11:55:16 2019]
+Job 83: ---rscript
+
+Submitted job 83 with external jobid 'Your job 441241 ("rscript_B314-1") has been submitted'.
+[Tue Aug 20 11:55:26 2019]
+Finished job 96.
+19 of 42 steps (45%) done
+
+[Tue Aug 20 11:55:26 2019]
+Job 115: ---rscript
+
+Submitted job 115 with external jobid 'Your job 441242 ("rscript_US3-10") has been submitted'.
+[Tue Aug 20 11:55:59 2019]
+Error in rule rscript:
+    jobid: 122
+    output: /workdir/users/agk85/CDC2/networks/membership/US8-4_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/US8-4_final_network_rscript_2_0
+    cluster_jobid: Your job 441232 ("rscript_US8-4") has been submitted
+
+Trying to restart job 122.
+[Tue Aug 20 11:55:59 2019]
+
+Error in rule rscript:
+[Tue Aug 20 11:55:59 2019]
+    jobid: 87
+Job 122: ---rscript
+    output: /workdir/users/agk85/CDC2/networks/membership/B316-1_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B316-1_final_network_rscript_2_0
+
+    cluster_jobid: Your job 441227 ("rscript_B316-1") has been submitted
+
+Submitted job 122 with external jobid 'Your job 441243 ("rscript_US8-4") has been submitted'.
+[Tue Aug 20 11:56:43 2019]
+Error in rule rscript:
+    jobid: 109
+    output: /workdir/users/agk85/CDC2/networks/membership/B331-2_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B331-2_final_network_rscript_2_0
+    cluster_jobid: Your job 441234 ("rscript_B331-2") has been submitted
+
+Trying to restart job 109.
+[Tue Aug 20 11:56:43 2019]
+Error in rule rscript:
+    jobid: 98
+    output: /workdir/users/agk85/CDC2/networks/membership/B331-4_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B331-4_final_network_rscript_2_0
+    cluster_jobid: Your job 441233 ("rscript_B331-4") has been submitted
+
+Trying to restart job 98.
+[Tue Aug 20 11:56:43 2019]
+Error in rule rscript:
+    jobid: 105
+    output: /workdir/users/agk85/CDC2/networks/membership/B357-6_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B357-6_final_network_rscript_2_0
+    cluster_jobid: Your job 441235 ("rscript_B357-6") has been submitted
+
+Trying to restart job 105.
+[Tue Aug 20 11:57:14 2019]
+Error in rule rscript:
+    jobid: 88
+    output: /workdir/users/agk85/CDC2/networks/membership/B316-2_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B316-2_final_network_rscript_2_0
+    cluster_jobid: Your job 441238 ("rscript_B316-2") has been submitted
+
+Trying to restart job 88.
+[Tue Aug 20 11:57:14 2019]
+Error in rule rscript:
+    jobid: 89
+    output: /workdir/users/agk85/CDC2/networks/membership/B316-3_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B316-3_final_network_rscript_2_0
+    cluster_jobid: Your job 441237 ("rscript_B316-3") has been submitted
+
+Trying to restart job 89.
+[Tue Aug 20 11:57:14 2019]
+Error in rule rscript:
+    jobid: 101
+    output: /workdir/users/agk85/CDC2/networks/membership/B335-3_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B335-3_final_network_rscript_2_0
+    cluster_jobid: Your job 441236 ("rscript_B335-3") has been submitted
+
+Trying to restart job 101.
+[Tue Aug 20 11:57:54 2019]
+Error in rule rscript:
+    jobid: 115
+    output: /workdir/users/agk85/CDC2/networks/membership/US3-10_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/US3-10_final_network_rscript_2_0
+    cluster_jobid: Your job 441242 ("rscript_US3-10") has been submitted
+
+Trying to restart job 115.
+[Tue Aug 20 11:57:54 2019]
+Error in rule rscript:
+    jobid: 120
+    output: /workdir/users/agk85/CDC2/networks/membership/US8-2_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/US8-2_final_network_rscript_2_0
+    cluster_jobid: Your job 441240 ("rscript_US8-2") has been submitted
+
+Trying to restart job 120.
+[Tue Aug 20 11:57:54 2019]
+Error in rule rscript:
+    jobid: 116
+    output: /workdir/users/agk85/CDC2/networks/membership/US3-12_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/US3-12_final_network_rscript_2_0
+    cluster_jobid: Your job 441239 ("rscript_US3-12") has been submitted
+
+Trying to restart job 116.
+[Tue Aug 20 11:58:44 2019]
+Error in rule rscript:
+    jobid: 83
+    output: /workdir/users/agk85/CDC2/networks/membership/B314-1_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B314-1_final_network_rscript_2_0
+    cluster_jobid: Your job 441241 ("rscript_B314-1") has been submitted
+
+[Tue Aug 20 11:59:14 2019]
+Error in rule rscript:
+    jobid: 122
+    output: /workdir/users/agk85/CDC2/networks/membership/US8-4_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/US8-4_final_network_rscript_2_0
+    cluster_jobid: Your job 441243 ("rscript_US8-4") has been submitted
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network_scripts/.snakemake/log/2019-08-20T113208.433446.snakemake.log

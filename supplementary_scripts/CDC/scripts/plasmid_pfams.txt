@@ -1,0 +1,59 @@
+Type	Pfam	Plasmid-call-worthy	Pfam replication	Description
+Replication	PF04796	1	RepA_C	Plasmid encoded RepA protein
+Replication	PF01446	1	Rep_1	Replication protein
+Replication	PF01719	1	Rep_2	Plasmid replication protein
+Replication	PF01051	1	Rep_3	Initiator replication protein
+Replication	PF06504	1	RepC	Replication protein C (RepC)
+Replication	PF03090	1	Replicase	Replicase family
+Replication	PF01815	1	Rop	Rop protein
+Replication	PF02486	1	Rep_trans	Replication initiation factor
+Replication	PF01402	1	RHH_1	Ribbon-helix-helix protein, copG family
+Replication	PF00436	1	SSB	Single-strand binding protein family
+Replication	PF07042	1	TrfA	TrfA protein
+Replication	PF02387	1	IncFII_repA	IncFII RepA protein family
+Replication	PF03428	1	RP-C	Replication protein C
+Replication	PF08048	1	RepA1_leader	Tap RepA1 leader peptide
+Replication	PF04057	1	RepA_N	Replication initiator protein A (RepA) N-terminus
+Replication	PF05732	1	RepL	Firmicute plasmid replication protein (RepL)
+Replication	PF06430	1	L_lactis_RepB_C	Lactococcus lactis RepB C-terminus
+Replication	PF10134	1	RPA	Replication initiator protein A
+Replication	PF06970	1	RepA_N	Replication initiator protein A (RepA) N-terminus
+Stabilization	PF02195	1	ParBc	ParB-like nuclease domain
+Stabilization	PF05016	1	Plasmid_stabil	Plasmid stabilisation system protein
+Stabilization	PF04221	1	RelB	RelB antitoxin
+Stabilization	PF01656	1	CbiA	CobQ/CobB/MinD/ParA nucleotide binding domain
+Stabilization	PF07362	1	CcdA	Post-segregation antitoxin CcdA
+Stabilization	PF01845	1	CcdB	CcdB protein
+Stabilization	PF02452	1	PemK	PemK-like protein
+Stabilization	PF06769	1	Plasmid_Txe	Plasmid encoded toxin Txe
+Stabilization	PF05015	1	Plasmid_killer	Plasmid maintenance system killer protein
+Stabilization	PF00816	1	Histone_HNS	H-NS histone family
+Stabilization	PF06406	1	StbA	StbA protein
+Stabilization	PF08535	1	KorB	KorB domain
+Stabilization	PF06613	1	KorB_C	KorB C-terminal beta-barrel domain
+Stabilization	PF07506	1	RepB	RepB plasmid partitioning protein
+Stabilization	PF06414	1	Zeta_toxin	Zeta toxin
+Stabilization	PF03882	1	KicB	KicB killing factor
+Stabilization	PF02604	1	PhdYeFM_antitox	Antitoxin Phd_YefM, type II toxin-antitoxin system
+Stabilization	PF02661	1	Fic	Fic/DOC family
+Stabilization	PF03230	1	Antirestrict	Antirestriction protein
+Stabilization	PF06986	1	TraN	Type-1V conjugative transfer system mating pair stabilisation
+Stabilization	PF07275	1	ArdA	Antirestriction protein (ArdA)
+Stabilization	PF07764	1	Omega_Repress	Omega Transcriptional Repressor
+Stabilization	PF08085	1	Entericidin	Entericidin EcnA/B family
+Stabilization	PF08751	1	TrwC	TrwC relaxase
+Stabilization	PF08775	1	ParB	ParB family
+Stabilization	PF08857	1	ParBc_2	Putative ParB-like nuclease
+Stabilization	PF08998	1	Epsilon_antitox	Bacterial epsilon antitoxin
+Stabilization	PF09140	1	MipZ	ATPase MipZ
+Stabilization	PF09386	1	ParD	Antitoxin ParD
+Stabilization	PF10609	1	ParA	NUBPL iron-transfer P-loop NTPase
+Stabilization	PF10784	1	Plasmid_stab_B	Plasmid stability protein
+Stabilization	PF12910	1	PHD_like	Antitoxin of toxin-antitoxin, RelE / RelB, TA system
+Mobilization	PF03389	1	MobA_MobL	MobA/MobL family
+Mobilization	PF05713	1	MobC	Bacterial mobilisation protein (MobC)
+Mobilization	PF04899	1	MbeD_MobD	MbeD/MobD like
+Mobilization	PF04837	1	MbeB_N	MbeB-like, N-term conserved region
+Mobilization	PF01076	1	Mob_Pre	Plasmid recombination enzyme
+Mobilization	PF03432	1	Relaxase	Relaxase/mobilisation nuclease domain
+Mobilization	PF05122	1	SpdB	Mobile element transfer protein

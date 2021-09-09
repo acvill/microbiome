@@ -1,0 +1,386 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 12
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	43	checkm
+	1	final
+	43	normalize
+	43	rscript
+	130
+
+[Sat Aug 31 01:11:38 2019]
+Job 74: ---normalize
+
+Submitted job 74 with external jobid 'Your job 441577 ("normalize_B370-3") has been submitted'.
+
+[Sat Aug 31 01:11:38 2019]
+Job 65: ---normalize
+
+Submitted job 65 with external jobid 'Your job 441578 ("normalize_B335-2") has been submitted'.
+
+[Sat Aug 31 01:11:38 2019]
+Job 45: ---normalize
+
+Submitted job 45 with external jobid 'Your job 441579 ("normalize_B316-7") has been submitted'.
+
+[Sat Aug 31 01:11:38 2019]
+Job 54: ---normalize
+
+Submitted job 54 with external jobid 'Your job 441580 ("normalize_B316-4") has been submitted'.
+
+[Sat Aug 31 01:11:38 2019]
+Job 49: ---normalize
+
+Submitted job 49 with external jobid 'Your job 441581 ("normalize_B314-3") has been submitted'.
+
+[Sat Aug 31 01:11:38 2019]
+Job 86: ---normalize
+
+Submitted job 86 with external jobid 'Your job 441582 ("normalize_B370-1") has been submitted'.
+
+[Sat Aug 31 01:11:39 2019]
+Job 70: ---normalize
+
+Submitted job 70 with external jobid 'Your job 441583 ("normalize_B357-4") has been submitted'.
+
+[Sat Aug 31 01:11:39 2019]
+Job 69: ---normalize
+
+Submitted job 69 with external jobid 'Your job 441584 ("normalize_B357-3") has been submitted'.
+
+[Sat Aug 31 01:11:39 2019]
+Job 51: ---normalize
+
+Submitted job 51 with external jobid 'Your job 441585 ("normalize_B316-1") has been submitted'.
+
+[Sat Aug 31 01:11:39 2019]
+Job 83: ---normalize
+
+Submitted job 83 with external jobid 'Your job 441586 ("normalize_US8-3") has been submitted'.
+
+[Sat Aug 31 01:11:39 2019]
+Job 59: ---normalize
+
+Submitted job 59 with external jobid 'Your job 441587 ("normalize_B320-5") has been submitted'.
+
+[Sat Aug 31 01:11:39 2019]
+Job 56: ---normalize
+
+Submitted job 56 with external jobid 'Your job 441588 ("normalize_B316-6") has been submitted'.
+[Sat Aug 31 01:11:59 2019]
+Finished job 74.
+1 of 130 steps (0.77%) done
+
+[Sat Aug 31 01:11:59 2019]
+Job 117: ---rscript
+
+[Sat Aug 31 01:11:59 2019]
+Finished job 65.
+2 of 130 steps (2%) done
+[Sat Aug 31 01:11:59 2019]
+Finished job 45.
+3 of 130 steps (2%) done
+[Sat Aug 31 01:11:59 2019]
+Finished job 54.
+4 of 130 steps (3%) done
+[Sat Aug 31 01:11:59 2019]
+Finished job 49.
+5 of 130 steps (4%) done
+[Sat Aug 31 01:11:59 2019]
+Finished job 86.
+6 of 130 steps (5%) done
+[Sat Aug 31 01:11:59 2019]
+Finished job 70.
+7 of 130 steps (5%) done
+[Sat Aug 31 01:11:59 2019]
+Finished job 69.
+8 of 130 steps (6%) done
+[Sat Aug 31 01:11:59 2019]
+Finished job 51.
+9 of 130 steps (7%) done
+[Sat Aug 31 01:11:59 2019]
+Finished job 83.
+10 of 130 steps (8%) done
+Submitted job 117 with external jobid 'Your job 441589 ("rscript_B370-3") has been submitted'.
+
+[Sat Aug 31 01:11:59 2019]
+Job 113: ---rscript
+
+Submitted job 113 with external jobid 'Your job 441590 ("rscript_B357-4") has been submitted'.
+
+[Sat Aug 31 01:11:59 2019]
+Job 112: ---rscript
+
+Submitted job 112 with external jobid 'Your job 441591 ("rscript_B357-3") has been submitted'.
+
+[Sat Aug 31 01:11:59 2019]
+Job 94: ---rscript
+
+Submitted job 94 with external jobid 'Your job 441592 ("rscript_B316-1") has been submitted'.
+
+[Sat Aug 31 01:11:59 2019]
+Job 126: ---rscript
+
+Submitted job 126 with external jobid 'Your job 441593 ("rscript_US8-3") has been submitted'.
+
+[Sat Aug 31 01:11:59 2019]
+Job 88: ---rscript
+
+Submitted job 88 with external jobid 'Your job 441594 ("rscript_B316-7") has been submitted'.
+
+[Sat Aug 31 01:12:00 2019]
+Job 108: ---rscript
+
+Submitted job 108 with external jobid 'Your job 441595 ("rscript_B335-2") has been submitted'.
+
+[Sat Aug 31 01:12:00 2019]
+Job 97: ---rscript
+
+Submitted job 97 with external jobid 'Your job 441596 ("rscript_B316-4") has been submitted'.
+
+[Sat Aug 31 01:12:00 2019]
+Job 92: ---rscript
+
+Submitted job 92 with external jobid 'Your job 441597 ("rscript_B314-3") has been submitted'.
+
+[Sat Aug 31 01:12:00 2019]
+Job 129: ---rscript
+
+Submitted job 129 with external jobid 'Your job 441598 ("rscript_B370-1") has been submitted'.
+[Sat Aug 31 01:12:00 2019]
+Finished job 59.
+11 of 130 steps (8%) done
+[Sat Aug 31 01:12:00 2019]
+Finished job 56.
+12 of 130 steps (9%) done
+
+[Sat Aug 31 01:12:01 2019]
+Job 102: ---rscript
+
+Submitted job 102 with external jobid 'Your job 441599 ("rscript_B320-5") has been submitted'.
+
+[Sat Aug 31 01:12:01 2019]
+Job 99: ---rscript
+
+Submitted job 99 with external jobid 'Your job 441600 ("rscript_B316-6") has been submitted'.
+[Sat Aug 31 01:12:54 2019]
+Error in rule rscript:
+    jobid: 117
+    output: /workdir/users/agk85/CDC2/networks/membership/B370-3_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B370-3_final_network_rscript_5_0
+    cluster_jobid: Your job 441589 ("rscript_B370-3") has been submitted
+
+Trying to restart job 117.
+
+[Sat Aug 31 01:12:54 2019]
+[Sat Aug 31 01:12:54 2019]
+Job 117: ---rscript
+Error in rule rscript:
+
+    jobid: 113
+    output: /workdir/users/agk85/CDC2/networks/membership/B357-4_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B357-4_final_network_rscript_5_0
+    cluster_jobid: Your job 441590 ("rscript_B357-4") has been submitted
+
+Trying to restart job 113.
+[Sat Aug 31 01:12:54 2019]
+Error in rule rscript:
+    jobid: 112
+    output: /workdir/users/agk85/CDC2/networks/membership/B357-3_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B357-3_final_network_rscript_5_0
+    cluster_jobid: Your job 441591 ("rscript_B357-3") has been submitted
+
+Trying to restart job 112.
+[Sat Aug 31 01:12:54 2019]
+Error in rule rscript:
+    jobid: 94
+    output: /workdir/users/agk85/CDC2/networks/membership/B316-1_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B316-1_final_network_rscript_5_0
+    cluster_jobid: Your job 441592 ("rscript_B316-1") has been submitted
+
+Trying to restart job 94.
+[Sat Aug 31 01:12:54 2019]
+Error in rule rscript:
+    jobid: 126
+    output: /workdir/users/agk85/CDC2/networks/membership/US8-3_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/US8-3_final_network_rscript_5_0
+    cluster_jobid: Your job 441593 ("rscript_US8-3") has been submitted
+
+Trying to restart job 126.
+[Sat Aug 31 01:12:54 2019]
+Error in rule rscript:
+    jobid: 88
+    output: /workdir/users/agk85/CDC2/networks/membership/B316-7_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B316-7_final_network_rscript_5_0
+    cluster_jobid: Your job 441594 ("rscript_B316-7") has been submitted
+
+Trying to restart job 88.
+[Sat Aug 31 01:12:54 2019]
+Error in rule rscript:
+    jobid: 108
+    output: /workdir/users/agk85/CDC2/networks/membership/B335-2_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B335-2_final_network_rscript_5_0
+    cluster_jobid: Your job 441595 ("rscript_B335-2") has been submitted
+
+Trying to restart job 108.
+[Sat Aug 31 01:12:54 2019]
+Error in rule rscript:
+    jobid: 97
+    output: /workdir/users/agk85/CDC2/networks/membership/B316-4_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B316-4_final_network_rscript_5_0
+    cluster_jobid: Your job 441596 ("rscript_B316-4") has been submitted
+
+Trying to restart job 97.
+[Sat Aug 31 01:12:54 2019]
+Error in rule rscript:
+    jobid: 92
+    output: /workdir/users/agk85/CDC2/networks/membership/B314-3_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B314-3_final_network_rscript_5_0
+    cluster_jobid: Your job 441597 ("rscript_B314-3") has been submitted
+
+Trying to restart job 92.
+[Sat Aug 31 01:12:54 2019]
+Error in rule rscript:
+    jobid: 129
+    output: /workdir/users/agk85/CDC2/networks/membership/B370-1_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B370-1_final_network_rscript_5_0
+    cluster_jobid: Your job 441598 ("rscript_B370-1") has been submitted
+
+Trying to restart job 129.
+Submitted job 117 with external jobid 'Your job 441601 ("rscript_B370-3") has been submitted'.
+
+[Sat Aug 31 01:12:54 2019]
+Job 113: ---rscript
+
+Submitted job 113 with external jobid 'Your job 441602 ("rscript_B357-4") has been submitted'.
+
+[Sat Aug 31 01:12:54 2019]
+Job 112: ---rscript
+
+Submitted job 112 with external jobid 'Your job 441603 ("rscript_B357-3") has been submitted'.
+
+[Sat Aug 31 01:12:54 2019]
+Job 94: ---rscript
+
+Submitted job 94 with external jobid 'Your job 441604 ("rscript_B316-1") has been submitted'.
+
+[Sat Aug 31 01:12:55 2019]
+Job 126: ---rscript
+
+Submitted job 126 with external jobid 'Your job 441605 ("rscript_US8-3") has been submitted'.
+
+[Sat Aug 31 01:12:55 2019]
+Job 88: ---rscript
+
+Submitted job 88 with external jobid 'Your job 441606 ("rscript_B316-7") has been submitted'.
+
+[Sat Aug 31 01:12:55 2019]
+Job 108: ---rscript
+
+Submitted job 108 with external jobid 'Your job 441607 ("rscript_B335-2") has been submitted'.
+
+[Sat Aug 31 01:12:55 2019]
+Job 97: ---rscript
+
+Submitted job 97 with external jobid 'Your job 441608 ("rscript_B316-4") has been submitted'.
+
+[Sat Aug 31 01:12:55 2019]
+Job 92: ---rscript
+
+Submitted job 92 with external jobid 'Your job 441609 ("rscript_B314-3") has been submitted'.
+
+[Sat Aug 31 01:12:55 2019]
+Job 129: ---rscript
+
+Submitted job 129 with external jobid 'Your job 441610 ("rscript_B370-1") has been submitted'.
+[Sat Aug 31 01:12:55 2019]
+Error in rule rscript:
+    jobid: 102
+    output: /workdir/users/agk85/CDC2/networks/membership/B320-5_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B320-5_final_network_rscript_5_0
+    cluster_jobid: Your job 441599 ("rscript_B320-5") has been submitted
+
+Trying to restart job 102.
+[Sat Aug 31 01:12:55 2019]
+Error in rule rscript:
+    jobid: 99
+    output: /workdir/users/agk85/CDC2/networks/membership/B316-6_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B316-6_final_network_rscript_5_0
+    cluster_jobid: Your job 441600 ("rscript_B316-6") has been submitted
+
+Trying to restart job 99.
+
+[Sat Aug 31 01:12:56 2019]
+Job 102: ---rscript
+
+Submitted job 102 with external jobid 'Your job 441611 ("rscript_B320-5") has been submitted'.
+
+[Sat Aug 31 01:12:56 2019]
+Job 99: ---rscript
+
+Submitted job 99 with external jobid 'Your job 441612 ("rscript_B316-6") has been submitted'.
+[Sat Aug 31 01:13:16 2019]
+Error in rule rscript:
+    jobid: 117
+    output: /workdir/users/agk85/CDC2/networks/membership/B370-3_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B370-3_final_network_rscript_5_0
+    cluster_jobid: Your job 441601 ("rscript_B370-3") has been submitted
+
+[Sat Aug 31 01:13:16 2019]
+Error in rule rscript:
+    jobid: 113
+    output: /workdir/users/agk85/CDC2/networks/membership/B357-4_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B357-4_final_network_rscript_5_0
+    cluster_jobid: Your job 441602 ("rscript_B357-4") has been submitted
+
+[Sat Aug 31 01:13:16 2019]
+Error in rule rscript:
+    jobid: 112
+    output: /workdir/users/agk85/CDC2/networks/membership/B357-3_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B357-3_final_network_rscript_5_0
+    cluster_jobid: Your job 441603 ("rscript_B357-3") has been submitted
+
+[Sat Aug 31 01:13:16 2019]
+Error in rule rscript:
+    jobid: 94
+    output: /workdir/users/agk85/CDC2/networks/membership/B316-1_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B316-1_final_network_rscript_5_0
+    cluster_jobid: Your job 441604 ("rscript_B316-1") has been submitted
+
+[Sat Aug 31 01:13:16 2019]
+Error in rule rscript:
+    jobid: 126
+    output: /workdir/users/agk85/CDC2/networks/membership/US8-3_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/US8-3_final_network_rscript_5_0
+    cluster_jobid: Your job 441605 ("rscript_US8-3") has been submitted
+
+[Sat Aug 31 01:13:16 2019]
+Error in rule rscript:
+    jobid: 88
+    output: /workdir/users/agk85/CDC2/networks/membership/B316-7_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B316-7_final_network_rscript_5_0
+    cluster_jobid: Your job 441606 ("rscript_B316-7") has been submitted
+
+[Sat Aug 31 01:13:16 2019]
+Error in rule rscript:
+    jobid: 108
+    output: /workdir/users/agk85/CDC2/networks/membership/B335-2_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B335-2_final_network_rscript_5_0
+    cluster_jobid: Your job 441607 ("rscript_B335-2") has been submitted
+
+[Sat Aug 31 01:13:16 2019]
+Error in rule rscript:
+    jobid: 97
+    output: /workdir/users/agk85/CDC2/networks/membership/B316-4_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B316-4_final_network_rscript_5_0
+    cluster_jobid: Your job 441608 ("rscript_B316-4") has been submitted
+
+[Sat Aug 31 01:13:16 2019]
+Error in rule rscript:
+    jobid: 92
+    output: /workdir/users/agk85/CDC2/networks/membership/B314-3_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B314-3_final_network_rscript_5_0
+    cluster_jobid: Your job 441609 ("rscript_B314-3") has been submitted
+
+[Sat Aug 31 01:13:16 2019]
+Error in rule rscript:
+    jobid: 129
+    output: /workdir/users/agk85/CDC2/networks/membership/B370-1_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B370-1_final_network_rscript_5_0
+    cluster_jobid: Your job 441610 ("rscript_B370-1") has been submitted
+
+[Sat Aug 31 01:13:17 2019]
+Error in rule rscript:
+    jobid: 102
+    output: /workdir/users/agk85/CDC2/networks/membership/B320-5_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B320-5_final_network_rscript_5_0
+    cluster_jobid: Your job 441611 ("rscript_B320-5") has been submitted
+
+[Sat Aug 31 01:13:17 2019]
+Error in rule rscript:
+    jobid: 99
+    output: /workdir/users/agk85/CDC2/networks/membership/B316-6_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/B316-6_final_network_rscript_5_0
+    cluster_jobid: Your job 441612 ("rscript_B316-6") has been submitted
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network_scripts/.snakemake/log/2019-08-31T011138.372943.snakemake.log

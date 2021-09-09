@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	1	phageblast
+	1	phagefinder
+	1	prodigal
+	1	trim500
+	5
+
+[Tue Feb 26 23:34:14 2019]
+Job 1: --- trim scaffolds
+
+[Tue Feb 26 23:34:15 2019]
+Error in rule trim500:
+    jobid: 1
+    output: /workdir/users/agk85/press/metaspades/metagenomes/scaffolds/ProxiMeta-spades_scaffold.fasta
+
+RuleException:
+CalledProcessError in line 30 of /local/workdir/users/agk85/press/scripts/spades/snake_min_prodigal_pf_spadestest:
+Command 'set -euo pipefail;  if [ ! -d /workdir/users/agk85/press/metaspades/metagenomes/scaffolds/ ]; then mkdir -p /workdir/users/agk85/press/metaspades/metagenomes/scaffolds/; fi
+		python /workdir/users/agk85/press/scripts/spades/convert_spades_header.py /workdir/users/agk85/press/metaspades/metagenomes/ProxiMeta-spades/contigs.fasta /workdir/users/agk85/press/metaspades/metagenomes/ProxiMeta-spades/contigs_betterheader.fasta
+		python /workdir/users/agk85/CDC/scripts/fasta_min_Xbp.py /workdir/users/agk85/press/metaspades/metagenomes/ProxiMeta-spades/contigs_betterheader.fasta /workdir/users/agk85/press/metaspades/metagenomes/scaffolds/ProxiMeta-spades_scaffold.fasta 1000
+		rm /workdir/users/agk85/press/metaspades/metagenomes/ProxiMeta-spades/contigs_betterheader.fasta' returned non-zero exit status 2.
+  File "/local/workdir/users/agk85/press/scripts/spades/snake_min_prodigal_pf_spadestest", line 30, in __rule_trim500
+  File "/usr/lib64/python3.6/concurrent/futures/thread.py", line 56, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/press/scripts/spades/.snakemake/log/2019-02-26T233414.716460.snakemake.log

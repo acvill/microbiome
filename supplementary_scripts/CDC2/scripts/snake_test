@@ -1,0 +1,38 @@
+##--------------------------------------------------------------------------##
+## The list of samples to be processed
+##--------------------------------------------------------------------------##
+FOLDER="CDC2"
+BASE="/workdir/users/agk85/" + FOLDER
+CUTOFF='2'
+IDENTITY='99'
+#REF="ProxiMeta-1" #if things arent just all to one reference, then  you can change it later in the rscript
+SAMPLES, = glob_wildcards(BASE + "/todohic/{NAME}")
+NB_SAMPLES = len(SAMPLES)
+print (SAMPLES)
+
+rule final:
+	input:
+		expand(BASE+"/logs/{NAME}_trans_final",NAME=SAMPLES),
+
+rule get_trans_noeuks_phagerepair:
+	input:
+		sample=BASE+"/todohic/{NAME}",
+		validPairs=BASE+"/hicpro/output/{NAME}_output/hic_results/data/{NAME}/{NAME}_allValidPairs",
+	params:
+		script1="/workdir/users/agk85/CDC2/scripts/convert_hicpro_to_trans.py",
+		script2="/workdir/users/agk85/CDC2/scripts/hic_relink_excise.py",
+		script3="/workdir/users/agk85/CDC2/scripts/remove_eukaryote_trans.py",
+		folder=FOLDER,
+		pid="0",
+	resources:
+		mem_mb = lambda wildcards, attempt: attempt * 5
+	output:
+		final=BASE+"/logs/{NAME}_trans_final",
+		output=BASE+"/hicpro/output/{NAME}_output/hic_results/data/{NAME}/{NAME}_trans_0.txt",
+	message:"""---trans"""
+	shell:
+		"""
+		touch {output.final}
+		python {params.script1} -i {input.validPairs) -o {output.output}
+		"""
+

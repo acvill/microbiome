@@ -1,0 +1,44 @@
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	bwa
+	1	filter
+	1	final
+	1	gunzip
+	1	rpkm
+	1	sortbam
+	6
+
+Job 5: ---gunzip
+
+Finished job 5.
+1 of 6 steps (17%) done
+
+Job 4: ---map_bwa
+
+Finished job 4.
+2 of 6 steps (33%) done
+
+Job 2: ---bwafilter
+
+Finished job 2.
+3 of 6 steps (50%) done
+
+Job 3: ---sortbam
+
+Finished job 3.
+4 of 6 steps (67%) done
+
+Job 1: ---rpkm
+
+Finished job 1.
+5 of 6 steps (83%) done
+
+localrule final:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B309-5.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B309-5.2.fastq, /workdir/users/agk85/CDC/logs/finals/B309-5_final_map_bwa, /workdir/users/agk85/CDC/logs/finals/B309-5_final_map_filter, /workdir/users/agk85/CDC/logs/finals/B309-5_final_map_sortbam, /workdir/users/agk85/CDC/logs/finals/B309-5_final_map_rpkm
+    jobid: 0
+
+Finished job 0.
+6 of 6 steps (100%) done

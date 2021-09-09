@@ -1,0 +1,36 @@
+indata0 <- read.csv("sample.stats",header=F, sep='\t')
+indata <- subset(indata0, indata0$V3>0)
+
+
+print("without zeroes")
+mean(indata$V3)
+mean(indata$V4)
+mean(indata$V5)
+mean(indata$V6)
+median(indata$V3)
+median(indata$V4)
+median(indata$V5)
+median(indata$V6)
+sd(indata$V3)
+sd(indata$V4)
+sd(indata$V5)
+sd(indata$V6)
+length(indata$V6)
+
+
+print("with zeroes")
+mean(indata0$V3)
+mean(indata0$V4)
+mean(indata0$V5)
+mean(indata0$V6)
+median(indata0$V3)
+median(indata0$V4)
+median(indata0$V5)
+median(indata0$V6)
+sd(indata0$V3)
+sd(indata0$V4)
+sd(indata0$V5)
+sd(indata0$V6)
+print(length(indata0$V6))
+
+

@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	30	contig_bin
+	1	final
+	31
+
+[Fri Aug 23 09:22:30 2019]
+Job 11: ---contig_bin
+
+[Fri Aug 23 09:23:26 2019]
+Error in rule contig_bin:
+    jobid: 11
+    output: /workdir/users/agk85/CDC2/logs/finals/B357-4_final_contig_bin, /workdir/users/agk85/CDC2/bins/B357-4_contig_taxa_network_2_fgs
+
+RuleException:
+CalledProcessError in line 41 of /local/workdir/users/agk85/CDC2/scripts/network_scripts/snake_network_hist:
+Command 'set -euo pipefail;  set +u;
+		export PATH=$HOME/miniconda3/condabin:$PATH
+		export PATH=$HOME/miniconda3/bin:$PATH
+		eval "$(conda shell.bash hook)"
+		if [ ! -d /workdir/users/agk85/CDC2/networks/clusters/B357-4 ]; then mkdir -p /workdir/users/agk85/CDC2/networks/clusters/B357-4; fi	
+		conda activate forDAS
+		Fasta_to_Scaffolds2Bin.sh -i /workdir/users/agk85/CDC2/networks/clusters/B357-4 -e fasta > /workdir/users/agk85/CDC2/networks/clusters/B357-4/B357-4_network_scaffolds2bin.tsv
+		time python /workdir/users/agk85/CDC2/scripts/contig_vs_bin.py -b /workdir/users/agk85/CDC2/networks/clusters/B357-4/B357-4_network_scaffolds2bin.tsv -o /workdir/users/agk85/CDC2/bins/B357-4_network_2_contigs_v_bins.txt -l /workdir/users/agk85/CDC2/hicpro/output/B357-4_output/hic_results/data/B357-4/B357-4_trans_primary_0_ncol_withexcise_noeuks_normalize_2.txt -t /workdir/users/agk85/CDC2/combo_tables/metagenomes/B357-4_master_scf_table.txt -m 2 -c /workdir/users/agk85/CDC2/networks/checkms/B357-4/B357-4.stats -a /workdir/users/agk85/CDC2/args/args_99_nr.fna.clstr.tbl -k /workdir/users/agk85/CDC2/networks/membership/B357-4_mge_count_membership.txt -kc /workdir/users/agk85/CDC2/kraken/B357-4/B357-4.kraken.taxonomy.txt
+		set -u
+		python /workdir/users/agk85/CDC2/scripts/contig_histogram_prep.py -o /workdir/users/agk85/CDC2/bins/B357-4_contig_taxa_network_2_fgs -i /workdir/users/agk85/CDC2/bins/B357-4_network_2_contigs_v_bins.txt -c /workdir/users/agk85/CDC2/combo_tables/metagenomes/B357-4_master_scf_table.txt
+		touch /workdir/users/agk85/CDC2/logs/finals/B357-4_final_contig_bin' returned non-zero exit status 1.
+  File "/local/workdir/users/agk85/CDC2/scripts/network_scripts/snake_network_hist", line 41, in __rule_contig_bin
+  File "/usr/lib64/python3.6/concurrent/futures/thread.py", line 56, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network_scripts/.snakemake/log/2019-08-23T092230.119076.snakemake.log

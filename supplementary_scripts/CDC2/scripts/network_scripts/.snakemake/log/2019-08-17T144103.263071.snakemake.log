@@ -1,0 +1,24 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	4	normalize
+	4	rscript
+	9
+
+[Sat Aug 17 14:41:03 2019]
+Job 7: ---normalize
+
+[Sat Aug 17 14:41:05 2019]
+Finished job 7.
+1 of 9 steps (11%) done
+
+[Sat Aug 17 14:41:05 2019]
+Job 11: ---rscript
+
+Terminating processes on user request, this might take some time.
+Cancelling snakemake on user request.

@@ -1,0 +1,49 @@
+##--------------------------------------------------------------------------##
+## The list of samples to be processed
+##--------------------------------------------------------------------------##
+BASE="/workdir/users/agk85/CDC"
+SAMPLES, = glob_wildcards(BASE + "/anvio/{NAME}_bscg.fna")
+
+rule final:
+	input:
+		expand(BASE+"/logs/finals/{NAME}_final_anvio",NAME=SAMPLES),
+		expand(BASE+"/logs/finals/{NAME}_final_anvio_filter",NAME=SAMPLES)
+rule anvio:
+	input:
+		scf=BASE+"/anvio/{NAME}_bscg.fna"
+	params:
+		n="anvio_{NAME}",
+		db="/workdir/blastdb/nt",
+		out=BASE+"/plasmids/metagenomes2/{NAME}"
+	resources:
+		mem_mb= lambda wildcards, attempt: attempt * 8
+	output:
+		outfile=BASE+ "/anvio/{NAME}_bscg.out",
+		outbest=BASE+ "/anvio/{NAME}_bscg.out.best",
+		final=BASE + "/logs/finals/{NAME}_final_anvio"
+	message:"""---anvio"""
+	shell:
+		"""
+		if [ ! -d {params.out} ]; then mkdir -p {params.out}; fi
+		/programs/ncbi-blast-2.3.0+/bin/blastn -query {input.scf} -db {params.db} -out {output.outfile} -num_threads 8 -task megablast -outfmt  "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore staxids" -max_target_seqs 500
+		sort -k1,1 -k12,12gr -k11,11g -k3,3gr {output.outfile} | sort -u -k1,1 --merge > {output.outbest}
+		touch {output.final}
+		"""
+
+rule anvio_filter:
+	input:
+		outbest=BASE+"/anvio/{NAME}_bscg.out.best"
+	params:
+		n="anviofilter_{NAME}",
+		scf=BASE+"/anvio/{NAME}_bscg.fna"
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 1
+	output:
+		outfilter=BASE+"/anvio/{NAME}_bscg_filter.out",
+		final = BASE+"/logs/finals/{NAME}_final_anvio_filter"
+	message:"""---anviofilter"""
+	shell:
+		"""
+		python /workdir/users/agk85/CDC/scripts/blast_filter_size_noref.py {params.scf} {input.outbest} {output.outfilter} 95 80 0
+		touch {output.final}
+		"""

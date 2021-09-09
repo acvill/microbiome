@@ -1,0 +1,16 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	36	contig_bin
+	1	final
+	37
+
+[Thu Aug 29 01:05:01 2019]
+Job 11: ---contig_bin
+
+RuleException in line 17 of /local/workdir/users/agk85/CDC2/scripts/network_scripts/snake_network_hist:
+'OutputFiles' object has no attribute 'histogram_prep'

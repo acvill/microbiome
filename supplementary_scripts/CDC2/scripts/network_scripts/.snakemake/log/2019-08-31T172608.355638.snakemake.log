@@ -1,0 +1,244 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 30
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	14	normalize
+	14	rscript
+	29
+
+[Sat Aug 31 17:26:08 2019]
+Job 53: ---normalize
+
+Submitted job 53 with external jobid 'Your job 441653 ("normalize_B316-3") has been submitted'.
+
+[Sat Aug 31 17:26:08 2019]
+Job 76: ---normalize
+
+Submitted job 76 with external jobid 'Your job 441654 ("normalize_B370-5") has been submitted'.
+
+[Sat Aug 31 17:26:08 2019]
+Job 67: ---normalize
+
+Submitted job 67 with external jobid 'Your job 441655 ("normalize_B357-1") has been submitted'.
+
+[Sat Aug 31 17:26:08 2019]
+Job 79: ---normalize
+
+Submitted job 79 with external jobid 'Your job 441656 ("normalize_US3-14") has been submitted'.
+
+[Sat Aug 31 17:26:08 2019]
+Job 66: ---normalize
+
+Submitted job 66 with external jobid 'Your job 441657 ("normalize_B335-3") has been submitted'.
+
+[Sat Aug 31 17:26:08 2019]
+Job 77: ---normalize
+
+Submitted job 77 with external jobid 'Your job 441658 ("normalize_US3-10") has been submitted'.
+
+[Sat Aug 31 17:26:08 2019]
+Job 55: ---normalize
+
+Submitted job 55 with external jobid 'Your job 441659 ("normalize_B316-5") has been submitted'.
+
+[Sat Aug 31 17:26:08 2019]
+Job 82: ---normalize
+
+Submitted job 82 with external jobid 'Your job 441660 ("normalize_US8-2") has been submitted'.
+
+[Sat Aug 31 17:26:09 2019]
+Job 64: ---normalize
+
+Submitted job 64 with external jobid 'Your job 441661 ("normalize_B335-1") has been submitted'.
+
+[Sat Aug 31 17:26:09 2019]
+Job 68: ---normalize
+
+Submitted job 68 with external jobid 'Your job 441662 ("normalize_B357-2") has been submitted'.
+
+[Sat Aug 31 17:26:09 2019]
+Job 71: ---normalize
+
+Submitted job 71 with external jobid 'Your job 441663 ("normalize_B357-5") has been submitted'.
+
+[Sat Aug 31 17:26:09 2019]
+Job 75: ---normalize
+
+Submitted job 75 with external jobid 'Your job 441664 ("normalize_B370-4") has been submitted'.
+
+[Sat Aug 31 17:26:09 2019]
+Job 50: ---normalize
+
+Submitted job 50 with external jobid 'Your job 441665 ("normalize_B314-4") has been submitted'.
+
+[Sat Aug 31 17:26:09 2019]
+Job 80: ---normalize
+
+Submitted job 80 with external jobid 'Your job 441666 ("normalize_US3-16") has been submitted'.
+[Sat Aug 31 17:26:29 2019]
+Finished job 53.
+1 of 29 steps (3%) done
+[Sat Aug 31 17:26:29 2019]
+Finished job 76.
+2 of 29 steps (7%) done
+
+[Sat Aug 31 17:26:29 2019]
+Job 96: ---rscript
+
+[Sat Aug 31 17:26:29 2019]
+Finished job 67.
+3 of 29 steps (10%) done
+[Sat Aug 31 17:26:29 2019]
+Finished job 79.
+4 of 29 steps (14%) done
+[Sat Aug 31 17:26:29 2019]
+Finished job 66.
+5 of 29 steps (17%) done
+[Sat Aug 31 17:26:29 2019]
+Finished job 77.
+6 of 29 steps (21%) done
+[Sat Aug 31 17:26:29 2019]
+Finished job 55.
+7 of 29 steps (24%) done
+[Sat Aug 31 17:26:29 2019]
+Finished job 82.
+8 of 29 steps (28%) done
+[Sat Aug 31 17:26:29 2019]
+Finished job 64.
+9 of 29 steps (31%) done
+[Sat Aug 31 17:26:29 2019]
+Finished job 68.
+10 of 29 steps (34%) done
+Submitted job 96 with external jobid 'Your job 441667 ("rscript_B316-3") has been submitted'.
+
+[Sat Aug 31 17:26:29 2019]
+Job 119: ---rscript
+
+Submitted job 119 with external jobid 'Your job 441668 ("rscript_B370-5") has been submitted'.
+
+[Sat Aug 31 17:26:29 2019]
+Job 120: ---rscript
+
+Submitted job 120 with external jobid 'Your job 441669 ("rscript_US3-10") has been submitted'.
+
+[Sat Aug 31 17:26:29 2019]
+Job 111: ---rscript
+
+Submitted job 111 with external jobid 'Your job 441670 ("rscript_B357-2") has been submitted'.
+
+[Sat Aug 31 17:26:29 2019]
+Job 125: ---rscript
+
+Submitted job 125 with external jobid 'Your job 441671 ("rscript_US8-2") has been submitted'.
+
+[Sat Aug 31 17:26:29 2019]
+Job 98: ---rscript
+
+Submitted job 98 with external jobid 'Your job 441672 ("rscript_B316-5") has been submitted'.
+
+[Sat Aug 31 17:26:29 2019]
+Job 109: ---rscript
+
+Submitted job 109 with external jobid 'Your job 441673 ("rscript_B335-3") has been submitted'.
+
+[Sat Aug 31 17:26:30 2019]
+Job 110: ---rscript
+
+Submitted job 110 with external jobid 'Your job 441674 ("rscript_B357-1") has been submitted'.
+
+[Sat Aug 31 17:26:30 2019]
+Job 107: ---rscript
+
+Submitted job 107 with external jobid 'Your job 441675 ("rscript_B335-1") has been submitted'.
+
+[Sat Aug 31 17:26:30 2019]
+Job 122: ---rscript
+
+Submitted job 122 with external jobid 'Your job 441676 ("rscript_US3-14") has been submitted'.
+[Sat Aug 31 17:26:30 2019]
+Finished job 71.
+11 of 29 steps (38%) done
+[Sat Aug 31 17:26:30 2019]
+Finished job 75.
+12 of 29 steps (41%) done
+[Sat Aug 31 17:26:30 2019]
+Finished job 50.
+13 of 29 steps (45%) done
+[Sat Aug 31 17:26:30 2019]
+Finished job 80.
+14 of 29 steps (48%) done
+
+[Sat Aug 31 17:26:31 2019]
+Job 114: ---rscript
+
+Submitted job 114 with external jobid 'Your job 441677 ("rscript_B357-5") has been submitted'.
+
+[Sat Aug 31 17:26:31 2019]
+Job 123: ---rscript
+
+Submitted job 123 with external jobid 'Your job 441678 ("rscript_US3-16") has been submitted'.
+
+[Sat Aug 31 17:26:31 2019]
+Job 93: ---rscript
+
+Submitted job 93 with external jobid 'Your job 441679 ("rscript_B314-4") has been submitted'.
+
+[Sat Aug 31 17:26:31 2019]
+Job 118: ---rscript
+
+Submitted job 118 with external jobid 'Your job 441680 ("rscript_B370-4") has been submitted'.
+[Sat Aug 31 17:26:51 2019]
+Finished job 96.
+15 of 29 steps (52%) done
+[Sat Aug 31 17:26:51 2019]
+Finished job 119.
+16 of 29 steps (55%) done
+[Sat Aug 31 17:26:51 2019]
+Finished job 120.
+17 of 29 steps (59%) done
+[Sat Aug 31 17:26:51 2019]
+Finished job 111.
+18 of 29 steps (62%) done
+[Sat Aug 31 17:26:51 2019]
+Finished job 125.
+19 of 29 steps (66%) done
+[Sat Aug 31 17:26:51 2019]
+Finished job 98.
+20 of 29 steps (69%) done
+[Sat Aug 31 17:26:51 2019]
+Finished job 109.
+21 of 29 steps (72%) done
+[Sat Aug 31 17:26:51 2019]
+Finished job 110.
+22 of 29 steps (76%) done
+[Sat Aug 31 17:26:51 2019]
+Finished job 107.
+23 of 29 steps (79%) done
+[Sat Aug 31 17:26:51 2019]
+Finished job 122.
+24 of 29 steps (83%) done
+[Sat Aug 31 17:26:52 2019]
+Finished job 114.
+25 of 29 steps (86%) done
+[Sat Aug 31 17:26:52 2019]
+Finished job 123.
+26 of 29 steps (90%) done
+[Sat Aug 31 17:26:52 2019]
+Finished job 93.
+27 of 29 steps (93%) done
+[Sat Aug 31 17:26:52 2019]
+Finished job 118.
+28 of 29 steps (97%) done
+
+[Sat Aug 31 17:26:52 2019]
+localrule final:
+    input: /workdir/users/agk85/CDC2/logs/finals/B320-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-7_trans_final, /workdir/users/agk85/CDC2/logs/finals/US3-8_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-6_trans_final, /workdir/users/agk85/CDC2/logs/finals/B320-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B320-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B320-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/B331-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B331-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B331-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B331-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B335-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B335-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B335-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-6_trans_final, /workdir/users/agk85/CDC2/logs/finals/B370-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B370-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B370-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B370-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/US3-10_trans_final, /workdir/users/agk85/CDC2/logs/finals/US3-12_trans_final, /workdir/users/agk85/CDC2/logs/finals/US3-14_trans_final, /workdir/users/agk85/CDC2/logs/finals/US3-16_trans_final, /workdir/users/agk85/CDC2/logs/finals/US8-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/US8-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/US8-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/US8-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/US8-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/B370-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B320-3_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B316-7_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/US3-8_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B314-1_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B314-2_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B314-3_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B314-4_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B316-1_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B316-2_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B316-3_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B316-4_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B316-5_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B316-6_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B320-1_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B320-2_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B320-5_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B331-1_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B331-2_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B331-3_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B331-4_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B335-1_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B335-2_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B335-3_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B357-1_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B357-2_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B357-3_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B357-4_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B357-5_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B357-6_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B370-2_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B370-3_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B370-4_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B370-5_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/US3-10_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/US3-12_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/US3-14_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/US3-16_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/US8-1_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/US8-2_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/US8-3_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/US8-4_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/US8-5_normalize_5_final, /workdir/users/agk85/CDC2/logs/finals/B370-1_normalize_5_final, /workdir/users/agk85/CDC2/networks/logs/B320-3_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B316-7_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/US3-8_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B314-1_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B314-2_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B314-3_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B314-4_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B316-1_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B316-2_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B316-3_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B316-4_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B316-5_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B316-6_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B320-1_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B320-2_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B320-5_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B331-1_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B331-2_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B331-3_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B331-4_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B335-1_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B335-2_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B335-3_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B357-1_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B357-2_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B357-3_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B357-4_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B357-5_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B357-6_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B370-2_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B370-3_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B370-4_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B370-5_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/US3-10_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/US3-12_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/US3-14_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/US3-16_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/US8-1_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/US8-2_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/US8-3_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/US8-4_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/US8-5_final_network_rscript_5_0, /workdir/users/agk85/CDC2/networks/logs/B370-1_final_network_rscript_5_0
+    jobid: 0
+
+[Sat Aug 31 17:26:52 2019]
+Finished job 0.
+29 of 29 steps (100%) done
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network_scripts/.snakemake/log/2019-08-31T172608.355638.snakemake.log

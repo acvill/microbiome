@@ -1,0 +1,24 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 12
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	3	checkm
+	1	final
+	4
+
+[Tue Aug 20 23:34:23 2019]
+Job 12: ---checkm
+
+Submitted job 12 with external jobid 'Your job 441321 ("checkm_B314-3") has been submitted'.
+
+[Tue Aug 20 23:34:23 2019]
+Job 10: ---checkm
+
+Submitted job 10 with external jobid 'Your job 441322 ("checkm_B320-3") has been submitted'.
+
+[Tue Aug 20 23:34:23 2019]
+Job 11: ---checkm
+
+Submitted job 11 with external jobid 'Your job 441323 ("checkm_B331-2") has been submitted'.

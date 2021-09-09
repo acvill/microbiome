@@ -1,0 +1,119 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	44	bwa_index
+	1	final
+	45
+
+[Thu Oct 17 20:04:58 2019]
+Job 30: --- BWA INDEX
+
+[Thu Oct 17 20:10:41 2019]
+Finished job 30.
+1 of 45 steps (2%) done
+
+[Thu Oct 17 20:10:41 2019]
+Job 6: --- BWA INDEX
+
+[Thu Oct 17 20:15:33 2019]
+Finished job 6.
+2 of 45 steps (4%) done
+
+[Thu Oct 17 20:15:33 2019]
+Job 8: --- BWA INDEX
+
+[Thu Oct 17 20:19:56 2019]
+Finished job 8.
+3 of 45 steps (7%) done
+
+[Thu Oct 17 20:19:56 2019]
+Job 12: --- BWA INDEX
+
+[Thu Oct 17 20:25:59 2019]
+Finished job 12.
+4 of 45 steps (9%) done
+
+[Thu Oct 17 20:25:59 2019]
+Job 5: --- BWA INDEX
+
+[Thu Oct 17 20:39:35 2019]
+Finished job 5.
+5 of 45 steps (11%) done
+
+[Thu Oct 17 20:39:35 2019]
+Job 28: --- BWA INDEX
+
+[Thu Oct 17 20:44:35 2019]
+Finished job 28.
+6 of 45 steps (13%) done
+
+[Thu Oct 17 20:44:35 2019]
+Job 7: --- BWA INDEX
+
+[Thu Oct 17 20:49:43 2019]
+Finished job 7.
+7 of 45 steps (16%) done
+
+[Thu Oct 17 20:49:43 2019]
+Job 27: --- BWA INDEX
+
+[Thu Oct 17 20:54:29 2019]
+Finished job 27.
+8 of 45 steps (18%) done
+
+[Thu Oct 17 20:54:29 2019]
+Job 40: --- BWA INDEX
+
+[Thu Oct 17 20:59:15 2019]
+Finished job 40.
+9 of 45 steps (20%) done
+
+[Thu Oct 17 20:59:15 2019]
+Job 39: --- BWA INDEX
+
+[Thu Oct 17 21:03:29 2019]
+Finished job 39.
+10 of 45 steps (22%) done
+
+[Thu Oct 17 21:03:29 2019]
+Job 38: --- BWA INDEX
+
+[Thu Oct 17 21:07:02 2019]
+Finished job 38.
+11 of 45 steps (24%) done
+
+[Thu Oct 17 21:07:02 2019]
+Job 29: --- BWA INDEX
+
+[Thu Oct 17 21:10:31 2019]
+Finished job 29.
+12 of 45 steps (27%) done
+
+[Thu Oct 17 21:10:31 2019]
+Job 34: --- BWA INDEX
+
+[Thu Oct 17 21:13:59 2019]
+Finished job 34.
+13 of 45 steps (29%) done
+
+[Thu Oct 17 21:13:59 2019]
+Job 31: --- BWA INDEX
+
+Terminating processes on user request, this might take some time.
+[Thu Oct 17 21:14:38 2019]
+Error in rule bwa_index:
+    jobid: 31
+    output: /workdir/users/agk85/CDC2/mapping_with/references/B370-2_scaffold.sa
+
+RuleException:
+CalledProcessError in line 26 of /local/workdir/users/agk85/CDC2/scripts/mapping_with/snake_bwaindex:
+Command 'set -euo pipefail;  if [ ! -e /workdir/users/agk85/CDC2/mapping_with/references/ ]; then mkdir -p /workdir/users/agk85/CDC2/mapping_with/references/; fi 
+		cd /workdir/users/agk85/CDC2/mapping_with/references/
+		/programs/bwa-0.7.8/bwa index -a bwtsw -p B370-2_scaffold /workdir/users/agk85/CDC2/prodigal/metagenomes/B370-2/B370-2_scaffold.fasta' died with <Signals.SIGINT: 2>.
+  File "/local/workdir/users/agk85/CDC2/scripts/mapping_with/snake_bwaindex", line 26, in __rule_bwa_index
+  File "/usr/lib64/python3.6/concurrent/futures/thread.py", line 56, in run
+Complete log: /local/workdir/users/agk85/CDC2/scripts/mapping_with/.snakemake/log/2019-10-17T200458.267770.snakemake.log

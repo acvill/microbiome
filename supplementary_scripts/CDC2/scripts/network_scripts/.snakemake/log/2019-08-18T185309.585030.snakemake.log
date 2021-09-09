@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	25	checkm
+	1	final
+	25	normalize
+	25	rscript
+	76
+
+[Sun Aug 18 18:53:10 2019]
+Job 36: ---normalize
+
+[Sun Aug 18 18:53:11 2019]
+Error in rule normalize:
+    jobid: 36
+    output: /workdir/users/agk85/CDC2/logs/finals/B316-7_normalize_final, /workdir/users/agk85/CDC2/hicpro/output/B316-7_output/hic_results/data/B316-7/B316-7_trans_primary_0_ncol_withexcise_noeuks_normalize_2.txt
+
+RuleException:
+CalledProcessError in line 70 of /local/workdir/users/agk85/CDC2/scripts/network_scripts/snake_trans_network:
+Command 'set -euo pipefail;  python /workdir/users/agk85/CDC2/scripts/normalize_trans_norpkm.py -o /workdir/users/agk85/CDC2/hicpro/output/B316-7_output/hic_results/data/B316-7/B316-7_trans_primary_0_ncol_withexcise_noeuks_normalize_2.txt -t /workdir/users/agk85/CDC2/hicpro/output/B316-7_output/hic_results/data/B316-7/B316-7_trans_primary_0_ncol_withexcise_noeuks.txt -s /workdir/users/agk85/CDC2/prodigal_excise/metagenomes/B316-7/B316-7_scaffold.fasta -m 2
+		touch /workdir/users/agk85/CDC2/logs/finals/B316-7_normalize_final' returned non-zero exit status 1.
+  File "/local/workdir/users/agk85/CDC2/scripts/network_scripts/snake_trans_network", line 70, in __rule_normalize
+  File "/usr/lib64/python3.6/concurrent/futures/thread.py", line 56, in run
+Removing output files of failed job normalize since they might be corrupted:
+/workdir/users/agk85/CDC2/hicpro/output/B316-7_output/hic_results/data/B316-7/B316-7_trans_primary_0_ncol_withexcise_noeuks_normalize_2.txt
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network_scripts/.snakemake/log/2019-08-18T185309.585030.snakemake.log

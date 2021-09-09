@@ -1,0 +1,616 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	42	get_trans_noeuks_phagerepair
+	43	normalize
+	86
+
+[Thu Oct 17 23:10:36 2019]
+Job 4: ---trans
+
+[Thu Oct 17 23:10:43 2019]
+Finished job 4.
+1 of 86 steps (1%) done
+
+[Thu Oct 17 23:10:43 2019]
+Job 17: ---trans
+
+[Thu Oct 17 23:10:50 2019]
+Finished job 17.
+2 of 86 steps (2%) done
+
+[Thu Oct 17 23:10:50 2019]
+Job 14: ---trans
+
+[Thu Oct 17 23:10:54 2019]
+Finished job 14.
+3 of 86 steps (3%) done
+
+[Thu Oct 17 23:10:54 2019]
+Job 23: ---trans
+
+[Thu Oct 17 23:10:58 2019]
+Finished job 23.
+4 of 86 steps (5%) done
+
+[Thu Oct 17 23:10:58 2019]
+Job 15: ---trans
+
+[Thu Oct 17 23:11:02 2019]
+Finished job 15.
+5 of 86 steps (6%) done
+
+[Thu Oct 17 23:11:02 2019]
+Job 3: ---trans
+
+[Thu Oct 17 23:11:07 2019]
+Finished job 3.
+6 of 86 steps (7%) done
+
+[Thu Oct 17 23:11:07 2019]
+Job 26: ---trans
+
+[Thu Oct 17 23:11:12 2019]
+Finished job 26.
+7 of 86 steps (8%) done
+
+[Thu Oct 17 23:11:12 2019]
+Job 11: ---trans
+
+[Thu Oct 17 23:11:15 2019]
+Finished job 11.
+8 of 86 steps (9%) done
+
+[Thu Oct 17 23:11:15 2019]
+Job 5: ---trans
+
+[Thu Oct 17 23:11:22 2019]
+Finished job 5.
+9 of 86 steps (10%) done
+
+[Thu Oct 17 23:11:22 2019]
+Job 13: ---trans
+
+[Thu Oct 17 23:11:26 2019]
+Finished job 13.
+10 of 86 steps (12%) done
+
+[Thu Oct 17 23:11:26 2019]
+Job 16: ---trans
+
+[Thu Oct 17 23:11:30 2019]
+Finished job 16.
+11 of 86 steps (13%) done
+
+[Thu Oct 17 23:11:30 2019]
+Job 1: ---trans
+
+[Thu Oct 17 23:11:33 2019]
+Finished job 1.
+12 of 86 steps (14%) done
+
+[Thu Oct 17 23:11:33 2019]
+Job 20: ---trans
+
+[Thu Oct 17 23:11:36 2019]
+Finished job 20.
+13 of 86 steps (15%) done
+
+[Thu Oct 17 23:11:36 2019]
+Job 40: ---trans
+
+[Thu Oct 17 23:11:41 2019]
+Finished job 40.
+14 of 86 steps (16%) done
+
+[Thu Oct 17 23:11:41 2019]
+Job 19: ---trans
+
+[Thu Oct 17 23:11:44 2019]
+Finished job 19.
+15 of 86 steps (17%) done
+
+[Thu Oct 17 23:11:44 2019]
+Job 31: ---trans
+
+[Thu Oct 17 23:11:47 2019]
+Finished job 31.
+16 of 86 steps (19%) done
+
+[Thu Oct 17 23:11:47 2019]
+Job 18: ---trans
+
+[Thu Oct 17 23:11:50 2019]
+Finished job 18.
+17 of 86 steps (20%) done
+
+[Thu Oct 17 23:11:50 2019]
+Job 2: ---trans
+
+[Thu Oct 17 23:11:53 2019]
+Finished job 2.
+18 of 86 steps (21%) done
+
+[Thu Oct 17 23:11:53 2019]
+Job 33: ---trans
+
+[Thu Oct 17 23:11:56 2019]
+Finished job 33.
+19 of 86 steps (22%) done
+
+[Thu Oct 17 23:11:56 2019]
+Job 8: ---trans
+
+[Thu Oct 17 23:11:59 2019]
+Finished job 8.
+20 of 86 steps (23%) done
+
+[Thu Oct 17 23:11:59 2019]
+Job 27: ---trans
+
+[Thu Oct 17 23:12:03 2019]
+Finished job 27.
+21 of 86 steps (24%) done
+
+[Thu Oct 17 23:12:03 2019]
+Job 32: ---trans
+
+[Thu Oct 17 23:12:05 2019]
+Finished job 32.
+22 of 86 steps (26%) done
+
+[Thu Oct 17 23:12:05 2019]
+Job 7: ---trans
+
+[Thu Oct 17 23:12:07 2019]
+Finished job 7.
+23 of 86 steps (27%) done
+
+[Thu Oct 17 23:12:07 2019]
+Job 6: ---trans
+
+[Thu Oct 17 23:12:10 2019]
+Finished job 6.
+24 of 86 steps (28%) done
+
+[Thu Oct 17 23:12:10 2019]
+Job 29: ---trans
+
+[Thu Oct 17 23:12:12 2019]
+Finished job 29.
+25 of 86 steps (29%) done
+
+[Thu Oct 17 23:12:12 2019]
+Job 42: ---trans
+
+[Thu Oct 17 23:12:15 2019]
+Finished job 42.
+26 of 86 steps (30%) done
+
+[Thu Oct 17 23:12:15 2019]
+Job 30: ---trans
+
+[Thu Oct 17 23:12:17 2019]
+Finished job 30.
+27 of 86 steps (31%) done
+
+[Thu Oct 17 23:12:17 2019]
+Job 38: ---trans
+
+[Thu Oct 17 23:12:19 2019]
+Finished job 38.
+28 of 86 steps (33%) done
+
+[Thu Oct 17 23:12:19 2019]
+Job 41: ---trans
+
+[Thu Oct 17 23:12:21 2019]
+Finished job 41.
+29 of 86 steps (34%) done
+
+[Thu Oct 17 23:12:21 2019]
+Job 43: ---trans
+
+[Thu Oct 17 23:12:23 2019]
+Finished job 43.
+30 of 86 steps (35%) done
+
+[Thu Oct 17 23:12:23 2019]
+Job 34: ---trans
+
+[Thu Oct 17 23:12:24 2019]
+Finished job 34.
+31 of 86 steps (36%) done
+
+[Thu Oct 17 23:12:24 2019]
+Job 25: ---trans
+
+[Thu Oct 17 23:12:25 2019]
+Finished job 25.
+32 of 86 steps (37%) done
+
+[Thu Oct 17 23:12:25 2019]
+Job 21: ---trans
+
+[Thu Oct 17 23:12:26 2019]
+Finished job 21.
+33 of 86 steps (38%) done
+
+[Thu Oct 17 23:12:26 2019]
+Job 35: ---trans
+
+[Thu Oct 17 23:12:28 2019]
+Finished job 35.
+34 of 86 steps (40%) done
+
+[Thu Oct 17 23:12:28 2019]
+Job 12: ---trans
+
+[Thu Oct 17 23:12:29 2019]
+Finished job 12.
+35 of 86 steps (41%) done
+
+[Thu Oct 17 23:12:29 2019]
+Job 37: ---trans
+
+[Thu Oct 17 23:12:31 2019]
+Finished job 37.
+36 of 86 steps (42%) done
+
+[Thu Oct 17 23:12:31 2019]
+Job 24: ---trans
+
+[Thu Oct 17 23:12:32 2019]
+Finished job 24.
+37 of 86 steps (43%) done
+
+[Thu Oct 17 23:12:32 2019]
+Job 28: ---trans
+
+[Thu Oct 17 23:12:33 2019]
+Finished job 28.
+38 of 86 steps (44%) done
+
+[Thu Oct 17 23:12:33 2019]
+Job 10: ---trans
+
+[Thu Oct 17 23:12:34 2019]
+Finished job 10.
+39 of 86 steps (45%) done
+
+[Thu Oct 17 23:12:34 2019]
+Job 36: ---trans
+
+[Thu Oct 17 23:12:35 2019]
+Finished job 36.
+40 of 86 steps (47%) done
+
+[Thu Oct 17 23:12:35 2019]
+Job 39: ---trans
+
+[Thu Oct 17 23:12:36 2019]
+Finished job 39.
+41 of 86 steps (48%) done
+
+[Thu Oct 17 23:12:36 2019]
+Job 9: ---trans
+
+[Thu Oct 17 23:12:37 2019]
+Finished job 9.
+42 of 86 steps (49%) done
+
+[Thu Oct 17 23:12:37 2019]
+Job 83: ---normalize
+
+[Thu Oct 17 23:12:40 2019]
+Finished job 83.
+43 of 86 steps (50%) done
+
+[Thu Oct 17 23:12:40 2019]
+Job 45: ---normalize
+
+[Thu Oct 17 23:12:41 2019]
+Finished job 45.
+44 of 86 steps (51%) done
+
+[Thu Oct 17 23:12:41 2019]
+Job 59: ---normalize
+
+[Thu Oct 17 23:12:43 2019]
+Finished job 59.
+45 of 86 steps (52%) done
+
+[Thu Oct 17 23:12:43 2019]
+Job 70: ---normalize
+
+[Thu Oct 17 23:12:45 2019]
+Finished job 70.
+46 of 86 steps (53%) done
+
+[Thu Oct 17 23:12:45 2019]
+Job 69: ---normalize
+
+[Thu Oct 17 23:12:47 2019]
+Finished job 69.
+47 of 86 steps (55%) done
+
+[Thu Oct 17 23:12:47 2019]
+Job 65: ---normalize
+
+[Thu Oct 17 23:12:48 2019]
+Finished job 65.
+48 of 86 steps (56%) done
+
+[Thu Oct 17 23:12:48 2019]
+Job 56: ---normalize
+
+[Thu Oct 17 23:12:49 2019]
+Finished job 56.
+49 of 86 steps (57%) done
+
+[Thu Oct 17 23:12:49 2019]
+Job 74: ---normalize
+
+[Thu Oct 17 23:12:51 2019]
+Finished job 74.
+50 of 86 steps (58%) done
+
+[Thu Oct 17 23:12:51 2019]
+Job 54: ---normalize
+
+[Thu Oct 17 23:12:55 2019]
+Finished job 54.
+51 of 86 steps (59%) done
+
+[Thu Oct 17 23:12:55 2019]
+Job 49: ---normalize
+
+[Thu Oct 17 23:12:56 2019]
+Finished job 49.
+52 of 86 steps (60%) done
+
+[Thu Oct 17 23:12:56 2019]
+Job 51: ---normalize
+
+[Thu Oct 17 23:12:59 2019]
+Finished job 51.
+53 of 86 steps (62%) done
+
+[Thu Oct 17 23:12:59 2019]
+Job 44: ---normalize
+
+[Thu Oct 17 23:13:00 2019]
+Finished job 44.
+54 of 86 steps (63%) done
+
+[Thu Oct 17 23:13:00 2019]
+Job 46: ---normalize
+
+[Thu Oct 17 23:13:03 2019]
+Finished job 46.
+55 of 86 steps (64%) done
+
+[Thu Oct 17 23:13:03 2019]
+Job 86: ---normalize
+
+[Thu Oct 17 23:13:07 2019]
+Finished job 86.
+56 of 86 steps (65%) done
+
+[Thu Oct 17 23:13:07 2019]
+Job 58: ---normalize
+
+[Thu Oct 17 23:13:09 2019]
+Finished job 58.
+57 of 86 steps (66%) done
+
+[Thu Oct 17 23:13:09 2019]
+Job 48: ---normalize
+
+[Thu Oct 17 23:13:12 2019]
+Finished job 48.
+58 of 86 steps (67%) done
+
+[Thu Oct 17 23:13:12 2019]
+Job 85: ---normalize
+
+[Thu Oct 17 23:13:14 2019]
+Finished job 85.
+59 of 86 steps (69%) done
+
+[Thu Oct 17 23:13:14 2019]
+Job 81: ---normalize
+
+[Thu Oct 17 23:13:17 2019]
+Finished job 81.
+60 of 86 steps (70%) done
+
+[Thu Oct 17 23:13:17 2019]
+Job 73: ---normalize
+
+[Thu Oct 17 23:13:19 2019]
+Finished job 73.
+61 of 86 steps (71%) done
+
+[Thu Oct 17 23:13:19 2019]
+Job 62: ---normalize
+
+[Thu Oct 17 23:13:20 2019]
+Finished job 62.
+62 of 86 steps (72%) done
+
+[Thu Oct 17 23:13:20 2019]
+Job 57: ---normalize
+
+[Thu Oct 17 23:13:23 2019]
+Finished job 57.
+63 of 86 steps (73%) done
+
+[Thu Oct 17 23:13:23 2019]
+Job 60: ---normalize
+
+[Thu Oct 17 23:13:24 2019]
+Finished job 60.
+64 of 86 steps (74%) done
+
+[Thu Oct 17 23:13:24 2019]
+Job 47: ---normalize
+
+[Thu Oct 17 23:13:26 2019]
+Finished job 47.
+65 of 86 steps (76%) done
+
+[Thu Oct 17 23:13:26 2019]
+Job 84: ---normalize
+
+[Thu Oct 17 23:13:28 2019]
+Finished job 84.
+66 of 86 steps (77%) done
+
+[Thu Oct 17 23:13:28 2019]
+Job 61: ---normalize
+
+[Thu Oct 17 23:13:29 2019]
+Finished job 61.
+67 of 86 steps (78%) done
+
+[Thu Oct 17 23:13:29 2019]
+Job 63: ---normalize
+
+[Thu Oct 17 23:13:30 2019]
+Finished job 63.
+68 of 86 steps (79%) done
+
+[Thu Oct 17 23:13:30 2019]
+Job 78: ---normalize
+
+[Thu Oct 17 23:13:32 2019]
+Finished job 78.
+69 of 86 steps (80%) done
+
+[Thu Oct 17 23:13:32 2019]
+Job 72: ---normalize
+
+[Thu Oct 17 23:13:34 2019]
+Finished job 72.
+70 of 86 steps (81%) done
+
+[Thu Oct 17 23:13:34 2019]
+Job 66: ---normalize
+
+[Thu Oct 17 23:13:35 2019]
+Finished job 66.
+71 of 86 steps (83%) done
+
+[Thu Oct 17 23:13:35 2019]
+Job 77: ---normalize
+
+[Thu Oct 17 23:13:37 2019]
+Finished job 77.
+72 of 86 steps (84%) done
+
+[Thu Oct 17 23:13:37 2019]
+Job 52: ---normalize
+
+[Thu Oct 17 23:13:41 2019]
+Finished job 52.
+73 of 86 steps (85%) done
+
+[Thu Oct 17 23:13:41 2019]
+Job 53: ---normalize
+
+[Thu Oct 17 23:13:44 2019]
+Finished job 53.
+74 of 86 steps (86%) done
+
+[Thu Oct 17 23:13:44 2019]
+Job 82: ---normalize
+
+[Thu Oct 17 23:13:46 2019]
+Finished job 82.
+75 of 86 steps (87%) done
+
+[Thu Oct 17 23:13:46 2019]
+Job 79: ---normalize
+
+[Thu Oct 17 23:13:48 2019]
+Finished job 79.
+76 of 86 steps (88%) done
+
+[Thu Oct 17 23:13:48 2019]
+Job 67: ---normalize
+
+[Thu Oct 17 23:13:49 2019]
+Finished job 67.
+77 of 86 steps (90%) done
+
+[Thu Oct 17 23:13:49 2019]
+Job 50: ---normalize
+
+[Thu Oct 17 23:13:51 2019]
+Finished job 50.
+78 of 86 steps (91%) done
+
+[Thu Oct 17 23:13:51 2019]
+Job 64: ---normalize
+
+[Thu Oct 17 23:13:52 2019]
+Finished job 64.
+79 of 86 steps (92%) done
+
+[Thu Oct 17 23:13:52 2019]
+Job 55: ---normalize
+
+[Thu Oct 17 23:13:54 2019]
+Finished job 55.
+80 of 86 steps (93%) done
+
+[Thu Oct 17 23:13:54 2019]
+Job 75: ---normalize
+
+[Thu Oct 17 23:13:55 2019]
+Finished job 75.
+81 of 86 steps (94%) done
+
+[Thu Oct 17 23:13:55 2019]
+Job 80: ---normalize
+
+[Thu Oct 17 23:13:57 2019]
+Finished job 80.
+82 of 86 steps (95%) done
+
+[Thu Oct 17 23:13:57 2019]
+Job 71: ---normalize
+
+[Thu Oct 17 23:13:59 2019]
+Finished job 71.
+83 of 86 steps (97%) done
+
+[Thu Oct 17 23:13:59 2019]
+Job 68: ---normalize
+
+[Thu Oct 17 23:14:01 2019]
+Finished job 68.
+84 of 86 steps (98%) done
+
+[Thu Oct 17 23:14:01 2019]
+Job 76: ---normalize
+
+[Thu Oct 17 23:14:01 2019]
+Finished job 76.
+85 of 86 steps (99%) done
+
+[Thu Oct 17 23:14:01 2019]
+localrule final:
+    input: /workdir/users/agk85/CDC2/logs/finals/B320-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-7_trans_final, /workdir/users/agk85/CDC2/logs/finals/US3-8_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-6_trans_final, /workdir/users/agk85/CDC2/logs/finals/B320-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B320-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B320-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/B331-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B331-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B331-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B331-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B335-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B335-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B335-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-6_trans_final, /workdir/users/agk85/CDC2/logs/finals/B370-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B370-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B370-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B370-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/US3-10_trans_final, /workdir/users/agk85/CDC2/logs/finals/US3-12_trans_final, /workdir/users/agk85/CDC2/logs/finals/US3-14_trans_final, /workdir/users/agk85/CDC2/logs/finals/US3-16_trans_final, /workdir/users/agk85/CDC2/logs/finals/US8-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/US8-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/US8-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/US8-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/US8-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/B370-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B320-3_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B316-7_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/US3-8_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B314-1_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B314-2_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B314-3_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B314-4_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B316-1_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B316-2_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B316-3_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B316-4_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B316-5_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B316-6_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B320-1_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B320-2_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B320-5_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B331-1_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B331-2_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B331-3_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B331-4_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B335-1_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B335-2_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B335-3_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B357-1_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B357-2_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B357-3_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B357-4_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B357-5_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B357-6_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B370-2_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B370-3_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B370-4_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B370-5_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/US3-10_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/US3-12_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/US3-14_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/US3-16_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/US8-1_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/US8-2_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/US8-3_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/US8-4_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/US8-5_normalize_1_final, /workdir/users/agk85/CDC2/logs/finals/B370-1_normalize_1_final
+    jobid: 0
+
+[Thu Oct 17 23:14:01 2019]
+Finished job 0.
+86 of 86 steps (100%) done
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network_scripts/.snakemake/log/2019-10-17T231036.540388.snakemake.log

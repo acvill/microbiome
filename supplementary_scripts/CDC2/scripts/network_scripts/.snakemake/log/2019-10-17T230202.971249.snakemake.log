@@ -1,0 +1,13 @@
+Building DAG of jobs...
+Job counts:
+	count	jobs
+	1	final
+	43	get_trans_noeuks_phagerepair
+	43	normalize
+	87
+
+[Thu Oct 17 23:02:03 2019]
+Job 9: ---trans
+
+RuleException in line 20 of /local/workdir/users/agk85/CDC2/scripts/network_scripts/snake_trans_with_network:
+'Params' object has no attribute 'script2'

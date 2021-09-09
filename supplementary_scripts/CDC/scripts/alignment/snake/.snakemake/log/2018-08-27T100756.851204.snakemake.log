@@ -1,0 +1,39 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	14	bwa
+	14	filter
+	1	final
+	14	rpkm
+	14	sortbam
+	57
+
+[Mon Aug 27 10:07:57 2018]
+Job 36: ---map_bwa
+
+Terminating processes on user request, this might take some time.
+    [Mon Aug 27 10:07:58 2018]
+    Error in rule bwa:
+        jobid: 36
+        output: /workdir/users/agk85/CDC/mapping/metagenomes3/bwa_alignments_SS/B314-4SS.sam, /workdir/users/agk85/CDC/mapping/metagenomes3/bwa_alignments_SS/flagstats/B314-4SS_prefilter_flagstats.txt, /workdir/users/agk85/CDC/logs3/finals/B314-4SS_final_map_bwa_SS
+
+RuleException:
+CalledProcessError in line 37 of /local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_bwa_SSSS:
+Command ' set -euo pipefail;  
+		if [ ! -d /workdir/users/agk85/CDC/mapping/metagenomes3/bwa_alignments_SS ]; then mkdir -p /workdir/users/agk85/CDC/mapping/metagenomes3/bwa_alignments_SS; fi
+		export PATH=/programs/bwa-0.7.13:$PATH
+		export PATH=/programs/samtools-1.6/bin:$PATH
+		/programs/bwa-0.7.8/bwa mem -a -t 8  /workdir/users/agk85/CDC/mapping/metagenomes3/references/PICARTT_Noyes /workdir/data/CDC/sureselect/B314-4SS.1.fastq /workdir/data/CDC/sureselect/B314-4SS.2.fastq > /workdir/users/agk85/CDC/mapping/metagenomes3/bwa_alignments_SS/B314-4SS.sam
+		samtools view -bh /workdir/users/agk85/CDC/mapping/metagenomes3/bwa_alignments_SS/B314-4SS.sam  > /workdir/users/agk85/CDC/mapping/metagenomes3/bwa_alignments_SS/B314-4SS.temp.bam
+		samtools flagstat /workdir/users/agk85/CDC/mapping/metagenomes3/bwa_alignments_SS/B314-4SS.temp.bam > /workdir/users/agk85/CDC/mapping/metagenomes3/bwa_alignments_SS/flagstats/B314-4SS_prefilter_flagstats.txt
+		rm /workdir/users/agk85/CDC/mapping/metagenomes3/bwa_alignments_SS/B314-4SS.temp.bam
+		touch /workdir/users/agk85/CDC/logs3/finals/B314-4SS_final_map_bwa_SS ' died with <Signals.SIGINT: 2>.
+  File "/local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_bwa_SSSS", line 37, in __rule_bwa
+  File "/usr/local/lib/python3.6/concurrent/futures/thread.py", line 55, in run
+Removing output files of failed job bwa since they might be corrupted:
+/workdir/users/agk85/CDC/mapping/metagenomes3/bwa_alignments_SS/B314-4SS.sam
+Complete log: /local/workdir/users/agk85/CDC/scripts/alignment/snake/.snakemake/log/2018-08-27T100756.851204.snakemake.log

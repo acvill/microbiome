@@ -1,0 +1,25 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	42	get_trans_noeuks_phagerepair
+	43	normalize
+	86
+
+[Thu Oct 17 23:08:49 2019]
+Job 4: ---trans
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 20 of /local/workdir/users/agk85/CDC2/scripts/network_scripts/snake_trans_with_network:
+Missing files after 5 seconds:
+/workdir/users/agk85/CDC2/hicpro/output/B314-1_output/hic_results/data/B314-1/B314-1_trans_primary_0_ncol_noeuks.txt
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Removing output files of failed job get_trans_noeuks_phagerepair since they might be corrupted:
+/workdir/users/agk85/CDC2/logs/finals/B314-1_trans_final
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network_scripts/.snakemake/log/2019-10-17T230849.800580.snakemake.log

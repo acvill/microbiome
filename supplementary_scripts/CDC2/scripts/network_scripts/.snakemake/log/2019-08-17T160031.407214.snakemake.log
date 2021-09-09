@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 105 of /local/workdir/users/agk85/CDC2/scripts/network/snake_trans_network:
+Missing input files for rule checkm:
+/workdir/users/agk85/CDC2/networks/membership/B314-1_membership.txt

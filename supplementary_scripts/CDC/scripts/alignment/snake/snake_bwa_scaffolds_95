@@ -1,0 +1,122 @@
+##-----------------------------------------------------------------------------------##
+## The list of samples to be processed
+##-----------------------------------------------------------------------------------##
+BASE2="/workdir/data/CDC/metagenomes/merged"
+BASE="/workdir/users/agk85/CDC"
+BASE3=BASE+"/mapping/metagenomes3/bwa_alignments_scaffolds_95"
+SAMPLES, = glob_wildcards(BASE + "/todo/{NAME}")
+NB_SAMPLES = len(SAMPLES)
+print (SAMPLES)
+
+rule final:
+	input:
+		expand(BASE+"/logs3/finals/{NAME}_final_map_bwa_scaffolds_95", NAME=SAMPLES),
+		expand(BASE+"/logs3/finals/{NAME}_final_map_filter_scaffolds_95", NAME=SAMPLES),
+		expand(BASE+"/logs3/finals/{NAME}_final_map_sortbam_scaffolds_95", NAME=SAMPLES),
+		expand(BASE+"/logs3/finals/{NAME}_final_map_rpkm_new_scaffolds_95", NAME=SAMPLES)
+
+rule bwa:
+	input:
+		r1=BASE2 + "/unzip/{NAME}.1.fastq",
+		r2=BASE2 + "/unzip/{NAME}.2.fastq"
+	params:
+		n="bwa_{NAME}",
+		ref="{NAME}",
+		j="12",
+		temp=BASE+"/mapping/metagenomes3/bwa_alignments_scaffolds_95/{NAME}.temp.bam",
+		flagstats=BASE + "/mapping/metagenomes3/bwa_alignments_scaffolds_95/flagstats",
+		out=BASE + "/mapping/metagenomes3/bwa_alignments_scaffolds_95"
+	resources:
+		mem_mb= lambda wildcards, attempt: attempt * 8
+	output:
+		outfile=BASE+"/mapping/metagenomes3/bwa_alignments_scaffolds_95/{NAME}.sam",
+		flagfile=BASE+"/mapping/metagenomes3/bwa_alignments_scaffolds_95/flagstats/{NAME}_prefilter_flagstats.txt",
+		final=BASE + "/logs3/finals/{NAME}_final_map_bwa_scaffolds_95"
+	message:"""---map_bwa"""
+	shell:
+		"""
+		if [ ! -d {params.out} ]; then mkdir -p {params.out}; fi
+		export PATH=/programs/bwa-0.7.13:$PATH
+		export PATH=/programs/samtools-1.6/bin:$PATH
+		/programs/bwa-0.7.8/bwa mem -a -t 12  /workdir/users/agk85/CDC/mapping/metagenomes3/references/{params.ref} {input.r1} {input.r2} > {output.outfile}
+		samtools view -bh {output.outfile}  > {params.temp}
+		samtools flagstat {params.temp} > {output.flagfile}
+		rm {params.temp}
+		touch {output.final}
+		"""
+
+rule filter:
+	input:
+		sam=BASE+"/mapping/metagenomes3/bwa_alignments_scaffolds_95/{NAME}.sam"
+	params:
+		n="filter_{NAME}",
+		j="1"
+	resources:
+		mem_mb= lambda wildcards, attempt: attempt * 15
+	output:
+		filtersam=BASE+"/mapping/metagenomes3/bwa_alignments_scaffolds_95/{NAME}.filtered.sam",
+		filterbam=BASE+"/mapping/metagenomes3/bwa_alignments_scaffolds_95/{NAME}.filtered.bam",
+		flagfile=BASE+"/mapping/metagenomes3/bwa_alignments_scaffolds_95/flagstats/{NAME}_filter_flagstats.txt",
+		final=BASE + "/logs3/finals/{NAME}_final_map_filter_scaffolds_95"
+	message:"""---bwafilter"""
+	shell:
+		"""
+		export PATH=/programs/samtools-1.6/bin:$PATH
+		perl /workdir/scripts/filterSamByIdentity.pl {input.sam} 95 0 0 1 1 > {output.filtersam}
+		samtools view -b {output.filtersam} > {output.filterbam}
+		samtools flagstat {output.filterbam} > {output.flagfile}
+		rm {input.sam}
+		touch {output.final}
+		"""
+
+rule sortbam:
+	input:
+		filterbam=BASE+"/mapping/metagenomes3/bwa_alignments_scaffolds_95/{NAME}.filtered.bam"
+	params:
+		n="sortbam_{NAME}",
+		name="{NAME}",
+		j="8"
+	resources:
+		mem_mb= lambda wildcards, attempt: attempt * 30
+	output:
+		sortbam=BASE+"/mapping/metagenomes3/bwa_alignments_scaffolds_95/{NAME}.sorted.bam",
+		idxstats=BASE+"/mapping/metagenomes3/bwa_alignments_scaffolds_95/{NAME}.idxstats.txt",
+		depth=BASE+"/mapping/metagenomes3/bwa_alignments_scaffolds_95/{NAME}.depth.txt",
+		flagfile=BASE+"/mapping/metagenomes3/bwa_alignments_scaffolds_95/flagstats/{NAME}_sorted_flagstats.txt",
+		final=BASE + "/logs3/finals/{NAME}_final_map_sortbam_scaffolds_95"
+	message:"""---sortbam"""
+	shell:
+		"""
+		export PATH=/programs/samtools-1.6/bin:$PATH
+		samtools view -h -F 0x900 {input.filterbam} | samtools sort -m 3G -O BAM --threads 8 -o {output.sortbam} -T {params.name}
+		samtools index {output.sortbam}
+		samtools idxstats {output.sortbam} > {output.idxstats}
+		samtools depth -a {output.sortbam} > {output.depth}
+		samtools flagstat {output.sortbam} > {output.flagfile}
+		touch {output.final}
+		rm {input.filterbam}
+		"""
+
+rule rpkm:
+	input:
+                idxstats=BASE+"/mapping/metagenomes3/bwa_alignments_scaffolds_95/{NAME}.idxstats.txt",
+                depth=BASE+"/mapping/metagenomes3/bwa_alignments_scaffolds_95/{NAME}.depth.txt",
+		F1=BASE2+"/unzip/{NAME}.1.fastq",
+		F2=BASE2+"/unzip/{NAME}.2.fastq"
+	params:
+		j="1",
+		n="rpkm_{NAME}"
+	resources:
+		mem_mb= lambda wildcards, attempt: attempt * 30
+	output:
+		depth=BASE+"/mapping/metagenomes3/bwa_alignments_scaffolds_95/{NAME}.rpkm.txt",
+		final=BASE + "/logs3/finals/{NAME}_final_map_rpkm_new_scaffolds_95"
+	message:"""---rpkm"""
+	shell:
+		"""
+		a=($(wc -l {input.F1}))
+		b=($(wc -l {input.F2}))
+		python /workdir/scripts/rpkm_calculate.py -s {input.idxstats} -d {input.depth} -o {output.depth} -f1 $a -f2 $b
+		touch {output.final}
+		"""
+		

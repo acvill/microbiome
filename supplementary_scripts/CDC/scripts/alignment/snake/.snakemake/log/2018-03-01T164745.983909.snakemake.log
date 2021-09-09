@@ -1,0 +1,32 @@
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	1	sortbam
+	2
+
+Job 3: ---sortbam
+
+Error in rule sortbam:
+    jobid: 3
+    output: /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.sorted.bam, /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.idxstats.txt, /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.depth.txt, /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/flagstats/B309-5_sorted_flagstats.txt, /workdir/users/agk85/CDC/logs/finals/B309-5_final_sortbam
+
+RuleException:
+CalledProcessError in line 108 of /local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_bwa:
+Command ' set -euo pipefail;  
+		export PATH=/programs/samtools-1.6/bin:$PATH
+		samtools view -h -F 0x900 /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.filtered.bam | samtools sort -m 10G -O BAM --threads 4 -o /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.sorted.bam -T B309-5
+		samtools idxstats /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.sorted.bam > /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.idxstats.txt
+		samtools depth -a /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.sorted.bam > /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.depth.txt
+		samtools flagstat /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.sorted.bam > /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/flagstats/B309-5_sorted_flagstats.txt
+		touch /workdir/users/agk85/CDC/logs/finals/B309-5_final_sortbam
+		rm /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.filtered.bam ' returned non-zero exit status 1.
+  File "/local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_bwa", line 108, in __rule_sortbam
+  File "/usr/local/lib/python3.6/concurrent/futures/thread.py", line 55, in run
+Removing output files of failed job sortbam since they might be corrupted:
+/workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.sorted.bam, /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B309-5.idxstats.txt
+Will exit after finishing currently running jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2018-03-01T164745.983909.snakemake.log

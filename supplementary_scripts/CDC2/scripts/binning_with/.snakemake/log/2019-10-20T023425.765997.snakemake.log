@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	1	sorted
+	2
+
+[Sun Oct 20 02:34:25 2019]
+Job 5: ---SORTED
+
+Terminating processes on user request, this might take some time.
+[Sun Oct 20 02:34:31 2019]
+Error in rule sorted:
+    jobid: 5
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t16/US3-16/US3-16.sorted.bam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t16/US3-16/done
+
+RuleException:
+CalledProcessError in line 79 of /local/workdir/users/agk85/CDC2/scripts/binning_with/snake_bwa_scaffold_t16:
+Command 'set -euo pipefail;  /programs/samtools-1.3.2/bin/samtools sort -O BAM --threads 8 -o /workdir/users/agk85/CDC2/mapping_with/mapping_with_t16/US3-16/US3-16.sorted.bam -T US3-16 /workdir/users/agk85/CDC2/mapping_with/mapping_with_t16/US3-16/US3-16.nss.bam
+		/programs/samtools-1.3.2/bin/samtools index /workdir/users/agk85/CDC2/mapping_with/mapping_with_t16/US3-16/US3-16.sorted.bam
+		rm /workdir/users/agk85/CDC2/mapping_with/mapping_with_t16/US3-16/US3-16.nss.bam
+		touch /workdir/users/agk85/CDC2/mapping_with/mapping_with_t16/US3-16/done' died with <Signals.SIGINT: 2>.
+  File "/local/workdir/users/agk85/CDC2/scripts/binning_with/snake_bwa_scaffold_t16", line 79, in __rule_sorted
+  File "/usr/lib64/python3.6/concurrent/futures/thread.py", line 56, in run
+Complete log: /local/workdir/users/agk85/CDC2/scripts/binning_with/.snakemake/log/2019-10-20T023425.765997.snakemake.log

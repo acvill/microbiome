@@ -1,0 +1,81 @@
+##-----------------------------------------------------------------------------------##
+## The list of samples to be processed
+##-----------------------------------------------------------------------------------##
+BASE="/workdir/data/CDC/metagenomes/merged"
+BASE2="/workdir/users/agk85/CDC"
+SAMPLES, = glob_wildcards(BASE + "/{NAME}.1.fastq.gz")
+
+
+#final rule to get to 
+rule final:
+	input:
+		expand(BASE2 + "/metaphlan/metagenomes/{NAME}_profile.txt", NAME=SAMPLES),
+		expand(BASE2 + "/metaphlan/metagenomes/{NAME}_finished",NAME=SAMPLES),
+		BASE2 + "/metaphlan/metagenomes/Mgm_metaphlan.txt"
+#metaphlan rule
+#unzip, metaphlan, rezip
+rule gunzip:
+	input:
+		gzip1=BASE + "/{NAME}.1.fastq.gz",
+		gzip2=BASE + "/{NAME}.2.fastq.gz",
+		gzip3=BASE + "/{NAME}.1.solo.fastq.gz",
+		gzip4=BASE + "/{NAME}.2.solo.fastq.gz"
+	params:
+		n="unzip_{NAME}",
+		out=BASE + "/unzip"
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 50
+	output:
+		unzip1=BASE + "/unzip/{NAME}.1.fastq",
+		unzip2=BASE + "/unzip/{NAME}.2.fastq",
+		unzip3=BASE + "/unzip/{NAME}.1.solo.fastq",
+		unzip4=BASE + "/unzip/{NAME}.2.solo.fastq",
+		tfile=BASE+"/unzip/{NAME}_unzip_done"
+	shell: """
+		if [ ! -d {params.out} ]; then mkdir -p {params.out}; fi
+		gunzip -c {input.gzip1} > {output.unzip1}
+		gunzip -c {input.gzip2} > {output.unzip2}
+		gunzip -c {input.gzip3} > {output.unzip3}
+		gunzip -c {input.gzip4} > {output.unzip4}
+		touch {output.tfile}
+		"""
+
+rule metaphlan:
+	input: 
+		tfile=BASE+"/unzip/{NAME}_unzip_done"
+	params:
+		FQ1=BASE + "/unzip/{NAME}.1.fastq",
+		FQ2=BASE + "/unzip/{NAME}.2.fastq", 
+		FQ3=BASE + "/unzip/{NAME}.1.solo.fastq",
+		FQ4=BASE + "/unzip/{NAME}.2.solo.fastq",
+		n="mphln_{NAME}",
+		ref="/workdir/users/fnn3/references/db_v20/mpa_v20_m200"
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 50
+	output:
+		profile=BASE2 + "/metaphlan/metagenomes/{NAME}_profile.txt",
+		bt=BASE2 + "/metaphlan/metagenomes/{NAME}.bowtie2.bz2",
+		final=BASE2 + "/metaphlan/metagenomes/{NAME}_finished"
+	message:  """--- Metaphlan"""
+	shell: """
+		export PATH=/programs/bowtie2-2.3.0:$PATH
+		export PATH=/programs/MetaPhlAn-2.0:/programs/MetaPhlAn-2.0/utils:$PATH
+		metaphlan2.py --input_type fastq --bowtie2db {params.ref} --bowtie2out {output.bt} --nproc 4 {params.FQ1},{params.FQ2},{params.FQ3},{params.FQ4} {output.profile}
+		touch {output.final}
+		"""
+
+rule merge:
+	input:
+		expand(BASE2+"/metaphlan/metagenomes/{NAME}_profile.txt", NAME=SAMPLES)
+	params:
+		n="merge",
+		dir=BASE+"/metaphlan/metagenomes"
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 2
+	output:
+		outfile=BASE2 + "/metaphlan/metagenomes/Mgm_metaphlan.txt"
+	shell:
+		"""
+		cd {params.dir}
+		python /programs/MetaPhlAn-2.0/utils/merge_metaphlan_tables.py *profile.txt > {output.outfile}
+		"""

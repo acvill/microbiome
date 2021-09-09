@@ -1,0 +1,144 @@
+##-----------------------------------------------------------------------------------##
+## The list of samples to be processed
+##-----------------------------------------------------------------------------------##
+BASE="/workdir/data/CDC/metagenomes/merged"
+BASE2="/workdir/users/agk85/CDC"
+SAMPLES, = glob_wildcards(BASE2 + "/mapping/indexes/{NAME}-.1.fastq.gz")
+NB_SAMPLES = len(SAMPLES)
+print (SAMPLES)
+#for NAME in SAMPLES:
+#  print("Sample " + NAME + " will be processed")
+
+rule final:
+	input:
+		expand(BASE2 + "/mapping/{NAME}/{NAME}_trans_primary.txt", NAME=SAMPLES),
+		expand(BASE2 + "/mapping/flagstats/{NAME}_R1_prefilter_flagstats.txt", NAME=SAMPLES),
+		expand(BASE2 + "/mapping/flagstats/{NAME}_R2_prefilter_flagstats.txt", NAME=SAMPLES)
+		#expand(BASE2 + "/newhic/mapping/flagstats/{NAME}_R1_nss_flagstats.txt", NAME=SAMPLES),
+		#expand(BASE2 + "/newhic/mapping/flagstats/{NAME}_R2_nss_flagstats.txt", NAME=SAMPLES),
+		#expand(BASE2 + "/newhic/mapping/flagstats/{NAME}_R1_filter_flagstats.txt", NAME=SAMPLES),
+		#expand(BASE2 + "/newhic/mapping/flagstats/{NAME}_R2_filter_flagstats.txt", NAME=SAMPLES)
+rule bwa:
+	input: 
+		FQ1=BASE + "/{NAME}.1.fastq.gz",
+		FQ2=BASE + "/{NAME}.2.fastq.gz"
+	params: 
+		REF=BASE2 + "/newhic/refs/{NAME}_scaffold",
+		MAPFOLDER=BASE2 + "/newhic/mapping/{NAME}",
+		n="{NAME}_bwa"
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 30
+	output:
+		OUT1=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R1.sam",
+		OUT2=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R2.sam",
+		NSS1=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R1.nss.sam",
+		NSS2=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R2.nss.sam",
+		SUPP1=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R1.supp.sam",
+		SUPP2=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R2.supp.sam"
+	shell: """ 
+		if [ ! -e {params.MAPFOLDER} ]; then mkdir -p {params.MAPFOLDER}; fi
+		/programs/bwa-0.7.8/bwa mem -a -t 8 {params.REF} {input.FQ1} > {output.OUT1}
+		/programs/bwa-0.7.8/bwa mem -a -t 8 {params.REF} {input.FQ2} > {output.OUT2}
+		/programs/samtools-1.3.2/bin/samtools view -F 0x900 {output.OUT1} > {output.NSS1}
+		/programs/samtools-1.3.2/bin/samtools view -F 0x900 {output.OUT2} > {output.NSS2}
+		/programs/samtools-1.3.2/bin/samtools view -f 0x800 {output.OUT1} > {output.SUPP1}
+		/programs/samtools-1.3.2/bin/samtools view -f 0x800 {output.OUT2} > {output.SUPP2}
+		"""
+rule flagstat:
+	input:
+		SAM1=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R1.sam",
+		SAM2=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R2.sam"
+	params:
+		BAM1=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R1.bam",
+		BAM2=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R2.bam",
+		n="{NAME}_flagstat"
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 30
+	output:
+		FLAGSTAT1=BASE2 + "/newhic/mapping/flagstats/{NAME}_R1_prefilter_flagstats.txt",
+		FLAGSTAT2=BASE2 + "/newhic/mapping/flagstats/{NAME}_R2_prefilter_flagstats.txt"
+	shell:
+		"""
+		/programs/samtools-1.3.2/bin/samtools view -bh {input.SAM1}  > {params.BAM1}
+		/programs/samtools-1.3.2/bin/samtools flagstat {params.BAM1} > {output.FLAGSTAT1}
+		rm {input.SAM1}
+                /programs/samtools-1.3.2/bin/samtools view -bh {input.SAM2}  > {params.BAM2}
+                /programs/samtools-1.3.2/bin/samtools flagstat {params.BAM2} > {output.FLAGSTAT2}
+                rm {input.SAM2}
+		"""
+
+rule filter:
+	input:
+		 NSS1=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R1.nss.sam",
+		 NSS2=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R2.nss.sam"
+	params:
+		n="{NAME}_filter"
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 30
+	output:
+		FILTER1=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R1.nss.filter.sam",
+		FILTER2=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R2.nss.filter.sam",
+		COMBINED=BASE2 + "/newhic/mapping/{NAME}/{NAME}.nss.filter.combined.txt"
+	message: """--- FILTER"""
+	shell: """
+		perl /workdir/scripts/filterSamByIdentity.pl {input.NSS1} 0 0 0 1 1 > {output.FILTER1}
+		perl /workdir/scripts/filterSamByIdentity.pl {input.NSS2} 0 0 0 1 1 > {output.FILTER2}
+		python ~/agk/CDC/scripts/repair.py {output.FILTER1} {output.FILTER2} {output.COMBINED}
+		"""
+#rule flagstat2:
+#        input:
+#                SAM1=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R1.nss.sam",
+#                SAM2=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R2.nss.sam"
+#        params:
+#                BAM1=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R1.nss.bam",
+#                BAM2=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R2.nss.bam",
+#                n="{NAME}_fs2"
+#        resources:
+#                mem_mb=lambda wildcards, attempt: attempt * 30
+#        output:
+#                FLAGSTAT1=BASE2 + "/newhic/mapping/flagstats/{NAME}_R1_nss_flagstats.txt",
+#                FLAGSTAT2=BASE2 + "/newhic/mapping/flagstats/{NAME}_R2_nss_flagstats.txt"
+#        shell:
+#                """
+#                /programs/samtools-1.3.2/bin/samtools view -b {input.SAM1}  > {params.BAM1}
+#                /programs/samtools-1.3.2/bin/samtools flagstat {params.BAM1} > {output.FLAGSTAT1}
+#                rm {input.SAM1}
+#                /programs/samtools-1.3.2/bin/samtools view -b {input.SAM2}  > {params.BAM2}
+#                /programs/samtools-1.3.2/bin/samtools flagstat {params.BAM2} > {output.FLAGSTAT2}
+#                rm {input.SAM2}
+#                """
+#rule flagstat3:
+#        input:
+#                SAM1=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R1.nss.filter.sam",
+#                SAM2=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R2.nss.filter.sam"
+#        params:
+#                BAM1=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R1.nss.filter.bam",
+#                BAM2=BASE2 + "/newhic/mapping/{NAME}/{NAME}_R2.nss.filter.bam",
+#                n="{NAME}_fs3"
+#        resources:
+#                mem_mb=lambda wildcards, attempt: attempt * 30
+#        output:
+#                FLAGSTAT1=BASE2 + "/newhic/mapping/flagstats/{NAME}_R1_filter_flagstats.txt",
+#                FLAGSTAT2=BASE2 + "/newhic/mapping/flagstats/{NAME}_R2_filter_flagstats.txt"
+#        shell:
+#                """
+#                /programs/samtools-1.3.2/bin/samtools view -b {input.SAM1}  > {params.BAM1}
+#                /programs/samtools-1.3.2/bin/samtools flagstat {params.BAM1} > {output.FLAGSTAT1}
+#                rm {input.SAM1}
+#                /programs/samtools-1.3.2/bin/samtools view -b {input.SAM2}  > {params.BAM2}
+#                /programs/samtools-1.3.2/bin/samtools flagstat {params.BAM2} > {output.FLAGSTAT2}
+#                rm {input.SAM2}
+#                """
+rule trans:
+	input:
+		COMBINED=BASE2 + "/newhic/mapping/{NAME}/{NAME}.nss.filter.combined.txt"
+	params:
+		n="{NAME}_trans"
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 15
+	output:
+		TRANS=BASE2 + "/newhic/mapping/{NAME}/{NAME}_trans_primary.txt"
+	message: """--- TRANS"""
+	shell: """
+		awk '($3 != $9)' {input.COMBINED}  > {output.TRANS}
+		"""

@@ -1,0 +1,118 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	14	normalize
+	15
+
+[Mon Aug 19 13:55:04 2019]
+Job 33: ---normalize
+
+[Mon Aug 19 13:55:07 2019]
+Finished job 33.
+1 of 15 steps (7%) done
+
+[Mon Aug 19 13:55:07 2019]
+Job 30: ---normalize
+
+[Mon Aug 19 13:55:10 2019]
+Finished job 30.
+2 of 15 steps (13%) done
+
+[Mon Aug 19 13:55:10 2019]
+Job 37: ---normalize
+
+[Mon Aug 19 13:55:11 2019]
+Finished job 37.
+3 of 15 steps (20%) done
+
+[Mon Aug 19 13:55:11 2019]
+Job 49: ---normalize
+
+[Mon Aug 19 13:55:13 2019]
+Finished job 49.
+4 of 15 steps (27%) done
+
+[Mon Aug 19 13:55:13 2019]
+Job 40: ---normalize
+
+[Mon Aug 19 13:55:15 2019]
+Finished job 40.
+5 of 15 steps (33%) done
+
+[Mon Aug 19 13:55:15 2019]
+Job 39: ---normalize
+
+[Mon Aug 19 13:55:16 2019]
+Finished job 39.
+6 of 15 steps (40%) done
+
+[Mon Aug 19 13:55:16 2019]
+Job 41: ---normalize
+
+[Mon Aug 19 13:55:17 2019]
+Finished job 41.
+7 of 15 steps (47%) done
+
+[Mon Aug 19 13:55:17 2019]
+Job 31: ---normalize
+
+[Mon Aug 19 13:55:20 2019]
+Finished job 31.
+8 of 15 steps (53%) done
+
+[Mon Aug 19 13:55:20 2019]
+Job 48: ---normalize
+
+[Mon Aug 19 13:55:23 2019]
+Finished job 48.
+9 of 15 steps (60%) done
+
+[Mon Aug 19 13:55:23 2019]
+Job 44: ---normalize
+
+[Mon Aug 19 13:55:24 2019]
+Finished job 44.
+10 of 15 steps (67%) done
+
+[Mon Aug 19 13:55:24 2019]
+Job 32: ---normalize
+
+[Mon Aug 19 13:55:26 2019]
+Finished job 32.
+11 of 15 steps (73%) done
+
+[Mon Aug 19 13:55:26 2019]
+Job 42: ---normalize
+
+[Mon Aug 19 13:55:28 2019]
+Finished job 42.
+12 of 15 steps (80%) done
+
+[Mon Aug 19 13:55:28 2019]
+Job 34: ---normalize
+
+[Mon Aug 19 13:55:29 2019]
+Finished job 34.
+13 of 15 steps (87%) done
+
+[Mon Aug 19 13:55:29 2019]
+Job 47: ---normalize
+
+[Mon Aug 19 13:55:32 2019]
+Finished job 47.
+14 of 15 steps (93%) done
+
+[Mon Aug 19 13:55:32 2019]
+localrule final:
+    input: /workdir/users/agk85/CDC2/logs/finals/B314-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-6_trans_final, /workdir/users/agk85/CDC2/logs/finals/B316-7_trans_final, /workdir/users/agk85/CDC2/logs/finals/B320-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B320-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/B331-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B331-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B331-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B335-1_trans_final, /workdir/users/agk85/CDC2/logs/finals/B335-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B335-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-4_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-5_trans_final, /workdir/users/agk85/CDC2/logs/finals/B357-6_trans_final, /workdir/users/agk85/CDC2/logs/finals/B370-2_trans_final, /workdir/users/agk85/CDC2/logs/finals/B370-3_trans_final, /workdir/users/agk85/CDC2/logs/finals/B314-1_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B314-2_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B314-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B314-4_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-1_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-2_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-4_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-5_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-6_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B316-7_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B320-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B320-5_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B331-1_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B331-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B331-4_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B335-1_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B335-2_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B335-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B357-3_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B357-4_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B357-5_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B357-6_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B370-2_normalize_final, /workdir/users/agk85/CDC2/logs/finals/B370-3_normalize_final
+    jobid: 0
+
+[Mon Aug 19 13:55:32 2019]
+Finished job 0.
+15 of 15 steps (100%) done
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network_scripts/.snakemake/log/2019-08-19T135504.227789.snakemake.log

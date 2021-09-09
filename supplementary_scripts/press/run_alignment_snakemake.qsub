@@ -1,0 +1,22 @@
+#$ -S /bin/bash
+#$ -N aln2rpkm
+#$ -V
+#$ -e /workdir/users/agk85/press/logs/rpkm_out.err
+#$ -o /workdir/users/agk85/press/logs/rpkm_out.out
+#$ -wd /workdir/users/agk85/press/mapping/
+#$ -l h_vmem=1G
+#$ -q long.q@cbsubrito2
+
+
+#Edit these:
+SNAKE=/workdir/users/agk85/press/scripts/alignment.snakemake
+JOBS=5
+CONFIG=/workdir/users/agk85/press/scripts/alignment_config.yaml
+RESTART=3
+QUEUE=long.q@cbsubrito2
+ERROR='/workdir/users/agk85/press/logs/rpkm_err'
+STDOUT='/workdir/users/agk85/press/logs/rpkm_out'
+
+
+#Don't edit this:
+snakemake -s $SNAKE --jobs $JOBS --configfile $CONFIG  --restart-times $RESTART  --cluster "qsub -q $QUEUE -S /bin/bash -e $ERROR -o $STDOUT -l h_vmem={resources.mem_mb}G"

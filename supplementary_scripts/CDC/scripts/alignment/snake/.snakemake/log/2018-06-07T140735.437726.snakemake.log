@@ -1,0 +1,38 @@
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	bwa
+	4	filter
+	1	final
+	7	rpkm
+	5	sortbam
+	18
+
+Job 93: ---map_bwa
+
+Terminating processes on user request.
+Error in rule bwa:
+    jobid: 93
+    output: /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B316-5.sam, /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/flagstats/B316-5_prefilter_flagstats.txt, /workdir/users/agk85/CDC/logs/finals/B316-5_final_map_bwa
+
+RuleException:
+CalledProcessError in line 55 of /local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_bwa:
+Command ' set -euo pipefail;  
+		if [ ! -d /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments ]; then mkdir -p /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments; fi
+		R=B316-5
+		PATIENT=$(echo $R| cut -d'-' -f1)
+		echo $PATIENT
+		export PATH=/programs/bwa-0.7.13:$PATH
+		export PATH=/programs/samtools-1.6/bin:$PATH
+		/programs/bwa-0.7.8/bwa mem -a -t 4  /workdir/users/agk85/CDC/mapping/metagenomes2/references/${PATIENT}_nr /workdir/data/CDC/metagenomes/merged/unzip/B316-5.1.fastq /workdir/data/CDC/metagenomes/merged/unzip/B316-5.2.fastq > /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B316-5.sam
+		samtools view -bh /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B316-5.sam  > /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B316-5.temp.bam
+		samtools flagstat /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B316-5.temp.bam > /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/flagstats/B316-5_prefilter_flagstats.txt
+		rm /workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B316-5.temp.bam
+		touch /workdir/users/agk85/CDC/logs/finals/B316-5_final_map_bwa ' died with <Signals.SIGINT: 2>.
+  File "/local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_bwa", line 55, in __rule_bwa
+  File "/usr/local/lib/python3.6/concurrent/futures/thread.py", line 55, in run
+Removing output files of failed job bwa since they might be corrupted:
+/workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B316-5.sam
+Complete log: .snakemake/log/2018-06-07T140735.437726.snakemake.log

@@ -1,0 +1,50 @@
+##-----------------------------------------------------------------------------------##
+## The list of samples to be processed
+##-----------------------------------------------------------------------------------##
+BASE="/workdir/data/CDC/metagenomes/merged"
+BASE2="/workdir/users/agk85/CDC"
+SAMPLES, = glob_wildcards(BASE + "/{NAME}.1.fastq.gz")
+NB_SAMPLES = len(SAMPLES)
+print (SAMPLES)
+#for NAME in SAMPLES:
+#  print("Sample " + NAME + " will be processed")
+
+rule final:
+	input:
+		expand(BASE2 + "/idba_rerun/metagenomes/{NAME}/end", NAME=SAMPLES)
+rule fq2fa:
+	input:
+		R1=BASE + "{NAME}.1.fastq.gz",
+		R2=BASE + "{NAME}.2.fastq.gz"
+	params:
+		n="fq2fa_{NAME}",
+		FQ1=BASE + "{NAME}.1.fastq",
+		FQ2=BASE + "{NAME}.2.fastq",
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 50
+	output:
+		FA=BASE2 + "/idba_rerun/fq2fa/{NAME}_fq2fa.fasta"
+	message:  """--- FQ2FA"""
+	shell: """
+		gunzip {input.R1}
+		gunzip {input.R2}
+		/programs/idba-1.1.1/bin/fq2fa --merge --filter {params.FQ1} {params.FQ2} {output.FA}
+		gzip {params.FQ1}
+		gzip {params.FQ2}
+
+		"""
+rule idba:
+	input: 
+		FA=BASE2 + "/idba_rerun/fq2fa/{NAME}_fq2fa.fasta"
+	params:
+		n="idba_{NAME}",
+		out=BASE2 + "/idba_rerun/metagenomes/{NAME}"
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 470
+	output:
+		fin=BASE2 + "/idba_rerun/metagenomes/{NAME}/end"
+	message:  """--- IDBA"""
+	shell: """ 
+		if [ ! -d {params.out} ]; then mkdir -p {params.out}; fi
+		/programs/idba-1.1.1/bin/idba_ud -r {input.FA} --num_threads 8 -o {params.out}
+		"""

@@ -1,0 +1,996 @@
+ProxiMeta-1_10094|phage|1|7523_254376_7	ABC_efflux	Efflux
+ProxiMeta-1_100|phage|125370|136508_253840_10	ABC_efflux	Efflux
+ProxiMeta-1_100|phage|125370|136508_253840_9	ABC_efflux	Efflux
+ProxiMeta-1_10892|phage|1|8049_254394_4	ABC_efflux	Efflux
+ProxiMeta-1_1128|phage|1820|18870_253975_5	ABC_efflux	Efflux
+ProxiMeta-1_1128|phage|1820|18870_253975_5	msbA	Efflux
+ProxiMeta-1_1128|phage|1820|18870_253975_9	ABC_efflux	Efflux
+ProxiMeta-1_1173|phage|39058|50830_253980_8	ABC_efflux	Efflux
+ProxiMeta-1_124|phage|131403|148742_253849_12	ABC_efflux	Efflux
+ProxiMeta-1_127|phage|60887|65544_253851_1	ABC_efflux	Efflux
+ProxiMeta-1_1358|phage|25203|36664_253996_1	ABC_efflux	Efflux
+ProxiMeta-1_1450|phage|8090|30787_254004_2	ABC_efflux	Efflux
+ProxiMeta-1_15|phage|147408|155037_253812_3	ABC_efflux	Efflux
+ProxiMeta-1_228|phage|1|10537_253872_8	ABC_efflux	Efflux
+ProxiMeta-1_2524|phage|10603|15264_254069_1	ABC_efflux	Efflux
+ProxiMeta-1_277|phage|1|6724_253884_2	ABC_efflux	Efflux
+ProxiMeta-1_2827|phage|5891|13882_254094_8	ABC_efflux	Efflux
+ProxiMeta-1_2912|phage|14502|22710_254099_2	ABC_efflux	Efflux
+ProxiMeta-1_3009|phage|1|4883_254106_4	ABC_efflux	Efflux
+ProxiMeta-1_3276|phage|1|12552_254120_5	ABC_efflux	Efflux
+ProxiMeta-1_3276|phage|1|12552_254120_6	ABC_efflux	Efflux
+ProxiMeta-1_359|phage|69515|75938_253896_6	ABC_efflux	Efflux
+ProxiMeta-1_363|phage|61278|71046_253897_2	Chlor_Acetyltrans_CAT	Acetyltransferase
+ProxiMeta-1_3882|phage|1|9781_254147_4	ABC_efflux	Efflux
+ProxiMeta-1_3951|phage|5906|27365_254152_14	ABC_efflux	Efflux
+ProxiMeta-1_3951|phage|5906|27365_254152_14	msbA	Efflux
+ProxiMeta-1_3958|phage|5419|17107_254153_2	ABC_efflux	Efflux
+ProxiMeta-1_3|phage|90149|101277_253804_4	ABC_efflux	Efflux
+ProxiMeta-1_4848|phage|1|10401_254180_2	ABC_efflux	Efflux
+ProxiMeta-1_5800|phage|1|12841_254214_7	ABC_efflux	Efflux
+ProxiMeta-1_7322|phage|1|11457_254232_1	ABC_efflux	Efflux
+ProxiMeta-1_7743|phage|1|8324_254262_5	ABC_efflux	Efflux
+ProxiMeta-1_7862|phage|2461|6132_254268_1	ABC_efflux	Efflux
+ProxiMeta-1_841|phage|30241|40403_253941_7	ABC_efflux	Efflux
+ProxiMeta-1_8722|phage|1|7396_254315_6	ABC_efflux	Efflux
+ProxiMeta-1_9147|phage|1085|8230_254335_5	ABC_efflux	Efflux
+ProxiMeta-1_91|phage|35860|45940_253838_4	ABC_efflux	Efflux
+ProxiMeta-1_9909|phage|5768|11682_254368_1	ABC_efflux	Efflux
+ProxiMeta-1_991|phage|1|21644_253960_7	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_100532_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_100684_1	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_10123_7	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_10140_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_10142_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_10197_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_10251_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_10263_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_10399_3	CblA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_10399_3	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_104_17	MexW-MexI	Efflux
+ProxiMeta-1_scaffold_104_17	RND_efflux	Efflux
+ProxiMeta-1_scaffold_1043_12	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1045_36	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_10457_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_10490_6	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_10_49	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_10520_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_10532_5	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_10532_6	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1054_6	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1056_12	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_10626_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_10626_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_10638_4	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_10825_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1084_25	RND_efflux	Efflux
+ProxiMeta-1_scaffold_1086_9	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_10905_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_10908_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1091_26	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_109_8	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_10995_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_11029_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1104_58	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_11091_6	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_111_1	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_1114_29	RND_efflux	Efflux
+ProxiMeta-1_scaffold_11291_13	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_11328_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_11337_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_113_71	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_11428_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_11_44	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_11514_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1153_29	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_11589_1	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_11612_3	Chlor_Acetyltrans_CAT	Acetyltransferase
+ProxiMeta-1_scaffold_11683_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1173_11	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1175_14	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_11756_3	AAC3	Acetyltransferase
+ProxiMeta-1_scaffold_1178_22	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1183_9	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1187_19	MexW-MexI	Efflux
+ProxiMeta-1_scaffold_1187_19	RND_efflux	Efflux
+ProxiMeta-1_scaffold_1187_20	MexH	Efflux
+ProxiMeta-1_scaffold_11872_4	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_11891_3	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_11904_9	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1197_22	MexH	Efflux
+ProxiMeta-1_scaffold_1197_23	MexW-MexI	Efflux
+ProxiMeta-1_scaffold_1197_23	RND_efflux	Efflux
+ProxiMeta-1_scaffold_11993_6	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1205_8	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_12060_1	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_12060_1	SubclassB3	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_1211_16	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1211_17	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1212_27	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_1212_27	SubclassB3	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_1212_36	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1212_37	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1220_19	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_124_25	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_12464_12	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_12495_1	vanT	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_12495_4	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_12495_5	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1253_30	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1254_77	MexH	Efflux
+ProxiMeta-1_scaffold_1254_78	MexW-MexI	Efflux
+ProxiMeta-1_scaffold_1254_78	RND_efflux	Efflux
+ProxiMeta-1_scaffold_12553_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_12558_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_126_17	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_12622_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1276_28	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_12923_17	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_12930_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1298_21	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_1305_6	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1309_30	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1314_44	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_13163_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_13329_4	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_1341_15	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1341_16	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1342_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_134_46	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1346_26	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1346_27	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1346_29	vanT	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_13601_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1360_30	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1363_29	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_13637_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_13650_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_13658_4	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_13701_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_13701_2	msbA	Efflux
+ProxiMeta-1_scaffold_137_87	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_13833_3	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_1386_26	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1386_26	msbA	Efflux
+ProxiMeta-1_scaffold_1388_26	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_13894_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_13914_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_13956_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_14003_1	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1405_29	RND_efflux	Efflux
+ProxiMeta-1_scaffold_14090_5	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_14090_5	SubclassB3	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_1409_24	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1412_8	Chlor_Acetyltrans_CAT	Acetyltransferase
+ProxiMeta-1_scaffold_1421_13	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_14376_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_14396_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_14495_1	MexH	Efflux
+ProxiMeta-1_scaffold_14495_2	MexW-MexI	Efflux
+ProxiMeta-1_scaffold_14495_2	RND_efflux	Efflux
+ProxiMeta-1_scaffold_14497_3	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_14586_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_14_72	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1474_19	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1474_20	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1475_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_147_81	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_148_38	RND_efflux	Efflux
+ProxiMeta-1_scaffold_1486_1	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_148_8	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_148_8	NDM-CcrA	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_148_8	SubclassB1	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_148_8	SubclassB2	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_14893_4	AAC3	Acetyltransferase
+ProxiMeta-1_scaffold_14901_3	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_14901_4	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1496_17	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1498_6	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1499_24	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1499_7	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_15014_6	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1510_46	AAC3	Acetyltransferase
+ProxiMeta-1_scaffold_1521_12	MexW-MexI	Efflux
+ProxiMeta-1_scaffold_1521_12	RND_efflux	Efflux
+ProxiMeta-1_scaffold_1521_13	MexH	Efflux
+ProxiMeta-1_scaffold_1538_39	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1538_69	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1538_70	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1545_4	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_15458_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_15472_1	TetM-TetW-TetO-TetS	Tetracycline Ribosomal Protection
+ProxiMeta-1_scaffold_1552_21	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_15528_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_15576_2	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_15692_3	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_1569_28	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_15711_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_15724_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1580_24	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_15875_4	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_1588_7	RND_efflux	Efflux
+ProxiMeta-1_scaffold_15909_5	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1593_43	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1597_39	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1605_30	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_160_6	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_16096_4	MFS_efflux	Efflux
+ProxiMeta-1_scaffold_16096_4	tet_MFS_efflux	Tetracycline MFS Efflux
+ProxiMeta-1_scaffold_16122_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_16122_3	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_16122_6	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_16148_3	AAC3	Acetyltransferase
+ProxiMeta-1_scaffold_16_157	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_16_157	msbA	Efflux
+ProxiMeta-1_scaffold_1616_13	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_1616_13	SubclassB1	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_16165_3	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1617_12	MexH	Efflux
+ProxiMeta-1_scaffold_1617_13	MexW-MexI	Efflux
+ProxiMeta-1_scaffold_1617_13	RND_efflux	Efflux
+ProxiMeta-1_scaffold_16199_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_16281_2	Chlor_Acetyltrans_CAT	Acetyltransferase
+ProxiMeta-1_scaffold_16_29	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1633_18	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_16467_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1651_33	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_1653_12	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1654_18	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_16543_2	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_1662_10	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_16653_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1680_67	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1689_25	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_1689_25	SubclassB3	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_168_95	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_16940_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_16940_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_169_53	AAC3	Acetyltransferase
+ProxiMeta-1_scaffold_1699_24	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1702_14	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_17059_8	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1714_25	MexE	Efflux
+ProxiMeta-1_scaffold_17161_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1725_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_17354_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_17455_6	Chlor_Acetyltrans_CAT	Acetyltransferase
+ProxiMeta-1_scaffold_17460_1	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_17460_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_17463_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1750_30	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_17584_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_17637_3	Chlor_Acetyltrans_CAT	Acetyltransferase
+ProxiMeta-1_scaffold_176_47	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_17712_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1773_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_17771_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_17806_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1787_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1787_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_17997_6	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_18010_6	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_1801_20	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_18013_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1804_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_180_55	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_18106_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_18131_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_18131_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_18228_1	RND_efflux	Efflux
+ProxiMeta-1_scaffold_18272_2	CfxA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_18272_2	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_1843_31	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1843_32	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_18455_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_18459_2	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_1850_24	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_18669_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1873_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_18769_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1877_23	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_188_60	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_188_60	SubclassB1	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_1900_54	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1900_55	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1900_56	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_19019_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1913_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1914_61	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1916_25	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_191_74	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_19_199	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_19_200	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1920_15	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1920_16	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1923_19	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_19329_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_19362_9	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_19430_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1956_23	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1969_32	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_19720_8	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_19720_9	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1973_43	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1979_24	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1979_25	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_19809_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_19825_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_19825_3	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1984_17	MexE	Efflux
+ProxiMeta-1_scaffold_1984_18	RND_efflux	Efflux
+ProxiMeta-1_scaffold_19853_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_19864_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_1989_59	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_1991_14	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2001_10	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_2001_10	SubclassB3	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_2006_19	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_200_73	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_20079_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_20082_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_20086_9	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2016_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2018_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_20252_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_20280_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2033_20	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2039_17	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2039_18	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_20492_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_205_9	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_20670_2	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_2067_9	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_20699_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2072_12	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2087_44	Chlor_Acetyltrans_CAT	Acetyltransferase
+ProxiMeta-1_scaffold_2089_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_20949_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_20949_1	msbA	Efflux
+ProxiMeta-1_scaffold_209_82	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_20996_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_21041_3	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_21047_3	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_2124_5	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_21274_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2134_5	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_21626_2	MexH	Efflux
+ProxiMeta-1_scaffold_2166_21	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_21698_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_217_40	MexE	Efflux
+ProxiMeta-1_scaffold_217_41	RND_efflux	Efflux
+ProxiMeta-1_scaffold_2178_9	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_21824_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_21845_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_220_11	MexE	Efflux
+ProxiMeta-1_scaffold_220_12	RND_efflux	Efflux
+ProxiMeta-1_scaffold_2211_19	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_221_19	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2215_1	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_2216_34	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_22187_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_22191_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2229_7	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_22334_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_22334_3	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_22373_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2239_10	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_22430_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2256_11	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_2256_11	SubclassB3	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_22571_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_22574_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2261_26	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_2261_26	SubclassB3	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_22_68	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2271_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2272_15	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2275_27	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_2285_26	vanT	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_2287_10	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2288_22	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2297_14	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_231_49	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_2317_22	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_23427_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2343_11	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_235_11	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2357_7	MFS_efflux	Efflux
+ProxiMeta-1_scaffold_2357_7	tet_MFS_efflux	Tetracycline MFS Efflux
+ProxiMeta-1_scaffold_23588_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_236_47	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_2380_11	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_23821_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_2406_73	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_24101_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2411_7	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_24_142	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_241_71	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_24268_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_24451_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_24519_3	TetM-TetW-TetO-TetS	Tetracycline Ribosomal Protection
+ProxiMeta-1_scaffold_24592_1	TetM-TetW-TetO-TetS	Tetracycline Ribosomal Protection
+ProxiMeta-1_scaffold_24600_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2460_24	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_24768_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2480_14	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2480_14	msbA	Efflux
+ProxiMeta-1_scaffold_2481_20	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_2507_17	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2517_17	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_2521_20	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2521_9	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_253_59	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2542_14	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_25470_2	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_254_77	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_25552_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_25597_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_25849_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_25913_2	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_26052_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_26052_3	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_26094_4	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_2636_20	CfxA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_2636_20	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_2646_19	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_2649_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_26676_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2670_8	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2670_9	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2674_10	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_2674_9	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_2679_3	CepA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_2679_3	CfxA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_2679_3	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_2679_5	MexW-MexI	Efflux
+ProxiMeta-1_scaffold_2679_5	RND_efflux	Efflux
+ProxiMeta-1_scaffold_2679_6	MexH	Efflux
+ProxiMeta-1_scaffold_2685_14	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_27015_3	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_2731_19	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_2736_2	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_27393_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_27508_4	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_2788_20	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2790_2	RND_efflux	Efflux
+ProxiMeta-1_scaffold_279_115	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2797_8	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2797_9	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_27987_2	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_2803_12	RND_efflux	Efflux
+ProxiMeta-1_scaffold_2806_27	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2820_17	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_283_41	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_28681_5	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_2908_34	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2908_35	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2910_12	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_29126_2	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_2939_19	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2939_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2949_7	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_295_65	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_296_103	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_296_27	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_296_28	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_2969_9	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2970_16	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_29888_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_2991_1	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_2991_2	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_2998_22	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_29997_4	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_30017_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_30_164	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_3020_9	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3023_16	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3035_24	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3035_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3035_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3068_7	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_30856_2	AAC3	Acetyltransferase
+ProxiMeta-1_scaffold_3086_8	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_30870_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3088_8	RND_efflux	Efflux
+ProxiMeta-1_scaffold_31006_1	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_3_10	RND_efflux	Efflux
+ProxiMeta-1_scaffold_31122_2	APH3	Phosphotransferase
+ProxiMeta-1_scaffold_3113_6	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_31_138	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_31149_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3115_5	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_3116_21	AAC3	Acetyltransferase
+ProxiMeta-1_scaffold_31299_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3130_4	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_31335_6	AAC3	Acetyltransferase
+ProxiMeta-1_scaffold_3141_19	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3150_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_316_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_31676_1	MexE	Efflux
+ProxiMeta-1_scaffold_3180_10	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3185_17	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3188_15	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_32292_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3257_13	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3257_16	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3273_6	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_32781_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_32803_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_32803_3	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_3280_5	SubclassB1	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_3280_5	SubclassB2	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_3282_4	MexE	Efflux
+ProxiMeta-1_scaffold_328_24	MexH	Efflux
+ProxiMeta-1_scaffold_328_25	MexW-MexI	Efflux
+ProxiMeta-1_scaffold_328_25	RND_efflux	Efflux
+ProxiMeta-1_scaffold_3282_5	RND_efflux	Efflux
+ProxiMeta-1_scaffold_32878_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_32912_3	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_33028_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_33088_3	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_33115_3	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_33218_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_33_229	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_332_65	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_333_84	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_33416_3	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_3356_5	Chlor_Acetyltrans_CAT	Acetyltransferase
+ProxiMeta-1_scaffold_336_22	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_33690_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_33829_1	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_33898_2	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_33898_2	SubclassB1	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_341_25	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_341_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_341_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_342_12	RND_efflux	Efflux
+ProxiMeta-1_scaffold_3422_28	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_34271_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_34294_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_34312_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_34340_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_34448_2	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_34699_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_34852_2	MexH	Efflux
+ProxiMeta-1_scaffold_34859_1	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_3500_2	RND_efflux	Efflux
+ProxiMeta-1_scaffold_35032_3	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_35072_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3538_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_35558_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3556_18	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3556_19	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_35578_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3570_10	CblA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_3570_10	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_35741_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_35782_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_36073_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_361_30	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_362_65	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_36473_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_36575_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3661_11	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_36646_1	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_36646_1	MoxA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_36656_2	CepA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_36656_2	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_36967_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_36977_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3709_14	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3729_13	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_37298_1	AAC3	Acetyltransferase
+ProxiMeta-1_scaffold_3749_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3762_11	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_37703_3	Chlor_Acetyltrans_CAT	Acetyltransferase
+ProxiMeta-1_scaffold_37847_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_37970_1	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_37991_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3803_16	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_38041_3	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_3805_14	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_3834_14	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_383_72	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_3837_40	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_38640_2	AAC3	Acetyltransferase
+ProxiMeta-1_scaffold_38702_2	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_3871_15	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_3920_17	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_392_39	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_395_39	MexH	Efflux
+ProxiMeta-1_scaffold_395_40	MexW-MexI	Efflux
+ProxiMeta-1_scaffold_395_40	RND_efflux	Efflux
+ProxiMeta-1_scaffold_39549_3	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_396_13	vanT	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_396_19	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_3968_9	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_396_8	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_396_9	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_39810_3	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_3981_25	MexE	Efflux
+ProxiMeta-1_scaffold_40127_1	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_40180_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_4019_15	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_402_66	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_403_25	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_4039_30	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_4039_31	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_404_42	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_4047_3	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_40_53	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_40616_1	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_4063_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_40694_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_4082_12	MexH	Efflux
+ProxiMeta-1_scaffold_4104_23	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_4120_12	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_4124_6	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_41340_2	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_4158_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_416_8	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_418_55	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_41882_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_41883_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_41896_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_41985_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_42039_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_42071_1	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_4_226	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_4229_3	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_4229_3	SubclassB1	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_4264_6	RND_efflux	Efflux
+ProxiMeta-1_scaffold_42_68	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_42_68	msbA	Efflux
+ProxiMeta-1_scaffold_42964_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_42966_3	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_4299_3	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_43_124	MexE	Efflux
+ProxiMeta-1_scaffold_43_125	RND_efflux	Efflux
+ProxiMeta-1_scaffold_43_154	tet_MFS_efflux	Tetracycline MFS Efflux
+ProxiMeta-1_scaffold_4320_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_43438_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_4353_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_4360_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_440_16	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_44073_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_4420_6	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_443_105	MexH	Efflux
+ProxiMeta-1_scaffold_4439_17	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_4443_36	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_44494_2	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_4451_22	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_4463_19	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_4463_19	SubclassB3	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_45062_1	CblA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_45062_1	CepA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_45062_1	CfxA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_45062_1	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_45089_3	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_45_13	APH3	Phosphotransferase
+ProxiMeta-1_scaffold_4537_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_45463_1	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_4552_1	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_4568_9	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_45801_2	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_45801_2	SubclassB3	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_46040_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_4611_9	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_4616_10	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_4627_8	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_4654_15	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_466_21	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_46704_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_4677_8	RND_efflux	Efflux
+ProxiMeta-1_scaffold_46865_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_4701_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_472_12	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_47324_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_4734_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_47356_2	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_4743_10	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_478_20	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_4791_24	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_479_6	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_47998_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_482_32	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_482_45	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_48278_2	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_483_34	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_486_66	AAC3	Acetyltransferase
+ProxiMeta-1_scaffold_48898_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_4902_1	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_4904_1	Chlor_Acetyltrans_CAT	Acetyltransferase
+ProxiMeta-1_scaffold_490_42	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_490_43	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_490_46	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_4918_14	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_4930_13	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_49424_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_49450_3	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_49637_1	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_49637_2	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_49719_1	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_49899_2	Chlor_Acetyltrans_CAT	Acetyltransferase
+ProxiMeta-1_scaffold_499_8	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_50_104	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_50122_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5040_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5040_6	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_50526_2	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_5068_16	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5075_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5075_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_51_126	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_51_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5122_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_51271_2	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_51_83	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_51_84	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5221_8	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5238_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5267_1	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_5274_10	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5274_15	AAC3	Acetyltransferase
+ProxiMeta-1_scaffold_52762_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_5364_9	tet_ribosomoal_protect	Tetracycline Ribosomal Protection
+ProxiMeta-1_scaffold_537_65	ANT	Nucleotidyltransferase
+ProxiMeta-1_scaffold_5409_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_543_35	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_54388_2	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_54550_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5456_20	Chlor_Acetyltrans_CAT	Acetyltransferase
+ProxiMeta-1_scaffold_5493_10	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5493_9	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5517_10	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_553_46	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_553_47	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_554_42	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_554_43	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5601_7	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_5601_8	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_56583_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_56589_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5672_15	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_56747_3	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_5686_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_56977_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_5722_5	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_5728_7	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_5728_7	SubclassB3	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_57390_2	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_5750_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_57683_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5779_7	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_58_12	AAC3	Acetyltransferase
+ProxiMeta-1_scaffold_582_20	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_58239_2	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_5829_10	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5836_5	MexE	Efflux
+ProxiMeta-1_scaffold_5836_6	RND_efflux	Efflux
+ProxiMeta-1_scaffold_5841_8	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_584_43	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5868_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5868_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5946_4	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_5946_4	SubclassB1	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_5974_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_5980_6	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_5980_7	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_5980_9	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_5980_9	SubclassB3	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_598_30	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_599_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_600_23	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6019_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_602_30	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_602_32	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_602_34	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_60491_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_60563_4	ANT	Nucleotidyltransferase
+ProxiMeta-1_scaffold_60563_4	ANT6	Nucleotidyltransferase
+ProxiMeta-1_scaffold_60789_1	APH3	Phosphotransferase
+ProxiMeta-1_scaffold_610_11	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6119_7	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_6179_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6217_10	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6218_8	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_62436_1	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_62826_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_629_113	CepA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_629_113	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_6295_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6324_6	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6334_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6338_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6342_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_635_141	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6360_6	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_640_36	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_640_37	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_6404_13	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_6404_14	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_641_14	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_64258_2	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_6457_6	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_64697_2	Chlor_Acetyltrans_CAT	Acetyltransferase
+ProxiMeta-1_scaffold_65393_1	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_65434_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6553_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_656_24	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_65682_2	SubclassB1	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_66016_1	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_661_33	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6624_4	CepA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_6624_4	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_66340_2	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_66474_2	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_6681_14	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6695_7	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6695_8	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_67003_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6714_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6721_16	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_672_132	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_672_24	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_67433_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6774_15	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6774_36	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_679_37	MexW-MexI	Efflux
+ProxiMeta-1_scaffold_679_37	RND_efflux	Efflux
+ProxiMeta-1_scaffold_679_38	MexH	Efflux
+ProxiMeta-1_scaffold_6798_9	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_6814_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6830_8	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_68599_1	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_6882_9	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_69104_2	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_69104_2	SubclassB1	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_6914_32	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_6961_9	Chlor_Acetyltrans_CAT	Acetyltransferase
+ProxiMeta-1_scaffold_69837_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_699_31	Chlor_Acetyltrans_CAT	Acetyltransferase
+ProxiMeta-1_scaffold_702_36	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_70330_2	Chlor_Acetyltrans_CAT	Acetyltransferase
+ProxiMeta-1_scaffold_7045_9	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_705_36	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_7065_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_7087_5	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_7088_5	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_7115_8	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_7_129	RND_efflux	Efflux
+ProxiMeta-1_scaffold_7136_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_7153_2	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_72240_2	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_72240_2	SubclassB1	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_723_37	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_72_39	MexH	Efflux
+ProxiMeta-1_scaffold_726_30	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_728_52	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_729_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_732_23	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_7325_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_7325_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_7345_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_7374_12	TetX	Tetracycline Inactivation
+ProxiMeta-1_scaffold_74080_1	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_74130_2	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_7442_3	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_7442_4	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_74426_4	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_7471_6	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_748_50	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_74950_2	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_75213_2	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_754_26	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_754_51	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_754_52	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_754_58	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_754_59	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_7552_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_7552_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_757_88	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_762_31	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_7653_6	TetM-TetW-TetO-TetS	Tetracycline Ribosomal Protection
+ProxiMeta-1_scaffold_7653_6	tet_ribosomoal_protect	Tetracycline Ribosomal Protection
+ProxiMeta-1_scaffold_76671_1	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_785_35	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_7862_6	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_7866_6	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_7866_6	msbA	Efflux
+ProxiMeta-1_scaffold_788_7	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_788_8	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_7906_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_7932_7	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_801_39	RND_efflux	Efflux
+ProxiMeta-1_scaffold_8029_7	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_8029_7	msbA	Efflux
+ProxiMeta-1_scaffold_8032_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_8049_14	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_8066_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_8066_3	msbA	Efflux
+ProxiMeta-1_scaffold_8078_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_809_9	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_81490_1	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_8_159	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_8202_7	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_821_16	RND_efflux	Efflux
+ProxiMeta-1_scaffold_821_20	RND_efflux	Efflux
+ProxiMeta-1_scaffold_8213_2	MexE	Efflux
+ProxiMeta-1_scaffold_8213_3	RND_efflux	Efflux
+ProxiMeta-1_scaffold_829_9	CblA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_829_9	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_83043_2	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_83043_2	SubclassB1	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_83043_2	SubclassB2	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_8319_8	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_83489_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_8352_4	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_8352_4	SubclassB3	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_838_36	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_839_36	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_84045_1	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_8435_6	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_843_66	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_859_12	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_86018_2	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_861_29	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_8638_6	SubclassB1	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_86448_1	MexH	Efflux
+ProxiMeta-1_scaffold_8699_7	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_8728_5	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_872_8	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_872_9	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_8737_10	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_87645_1	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_8772_8	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_8781_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_88063_2	Chlor_Acetyltrans_CAT	Acetyltransferase
+ProxiMeta-1_scaffold_8836_8	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_8836_9	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_890_19	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_8973_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_8974_15	vanY	Gylcopeptide Resistance
+ProxiMeta-1_scaffold_9013_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_9013_3	msbA	Efflux
+ProxiMeta-1_scaffold_90614_1	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_90861_2	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_9_133	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_9138_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_9142_2	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_9142_3	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_91700_1	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_91700_1	SubclassB3	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_9179_5	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_9202_12	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_9217_3	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_9217_3	SubclassB3	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_934_30	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_940_18	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_940_26	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_940_27	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_947_25	RND_efflux	Efflux
+ProxiMeta-1_scaffold_95_17	MexW-MexI	Efflux
+ProxiMeta-1_scaffold_95_17	RND_efflux	Efflux
+ProxiMeta-1_scaffold_95_18	MexH	Efflux
+ProxiMeta-1_scaffold_95_39	MexE	Efflux
+ProxiMeta-1_scaffold_95_40	RND_efflux	Efflux
+ProxiMeta-1_scaffold_957_29	SubclassB1	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_957_29	SubclassB2	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_9616_3	vanR	Gene Modulating Resistance
+ProxiMeta-1_scaffold_9616_4	vanS	Gene Modulating Resistance
+ProxiMeta-1_scaffold_9623_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_9628_1	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_9634_3	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_9694_2	RND_efflux	Efflux
+ProxiMeta-1_scaffold_969_6	AAC3	Acetyltransferase
+ProxiMeta-1_scaffold_97_27	ClassB	Beta-Lactamase-Class B
+ProxiMeta-1_scaffold_9740_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_9793_2	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_983_24	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_986_14	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_9_87	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_9905_4	CblA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_9905_4	ClassA	Beta-Lactamase-Class A
+ProxiMeta-1_scaffold_9905_5	RND_efflux	Efflux
+ProxiMeta-1_scaffold_993_4	ABC_efflux	Efflux
+ProxiMeta-1_scaffold_99395_2	Chlor_Acetyltrans_CAT	Acetyltransferase

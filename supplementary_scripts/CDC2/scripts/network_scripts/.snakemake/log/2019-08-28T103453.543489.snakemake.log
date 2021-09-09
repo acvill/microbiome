@@ -1,0 +1,58 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 12
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	2	checkm
+	1	final
+	3
+
+[Wed Aug 28 10:34:54 2019]
+Job 144: ---checkm
+
+Submitted job 144 with external jobid 'Your job 441432 ("checkm_B331-2") has been submitted'.
+
+[Wed Aug 28 10:34:54 2019]
+Job 132: ---checkm
+
+Submitted job 132 with external jobid 'Your job 441433 ("checkm_B314-3") has been submitted'.
+[Wed Aug 28 11:03:15 2019]
+Error in rule checkm:
+    jobid: 144
+    output: /workdir/users/agk85/CDC2/networks/logs/B331-2_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/checkms/B331-2/B331-2.stats
+    cluster_jobid: Your job 441432 ("checkm_B331-2") has been submitted
+
+Trying to restart job 144.
+
+[Wed Aug 28 11:03:15 2019]
+Job 144: ---checkm
+
+Submitted job 144 with external jobid 'Your job 441434 ("checkm_B331-2") has been submitted'.
+[Wed Aug 28 11:04:15 2019]
+Error in rule checkm:
+    jobid: 132
+    output: /workdir/users/agk85/CDC2/networks/logs/B314-3_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/checkms/B314-3/B314-3.stats
+    cluster_jobid: Your job 441433 ("checkm_B314-3") has been submitted
+
+Trying to restart job 132.
+
+[Wed Aug 28 11:04:15 2019]
+Job 132: ---checkm
+
+Submitted job 132 with external jobid 'Your job 441435 ("checkm_B314-3") has been submitted'.
+[Wed Aug 28 11:04:45 2019]
+Error in rule checkm:
+    jobid: 144
+    output: /workdir/users/agk85/CDC2/networks/logs/B331-2_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/checkms/B331-2/B331-2.stats
+    cluster_jobid: Your job 441434 ("checkm_B331-2") has been submitted
+
+[Wed Aug 28 11:04:45 2019]
+Error in rule checkm:
+    jobid: 132
+    output: /workdir/users/agk85/CDC2/networks/logs/B314-3_final_network_checkm_2_0, /workdir/users/agk85/CDC2/networks/checkms/B314-3/B314-3.stats
+    cluster_jobid: Your job 441435 ("checkm_B314-3") has been submitted
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network_scripts/.snakemake/log/2019-08-28T103453.543489.snakemake.log

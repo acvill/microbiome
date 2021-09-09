@@ -1,0 +1,325 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 12
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	43	checkm
+	1	final
+	31	normalize
+	31	rscript
+	106
+
+[Sat Aug 31 02:05:38 2019]
+Job 73: ---normalize
+
+Submitted job 73 with external jobid 'Your job 441614 ("normalize_B370-2") has been submitted'.
+
+[Sat Aug 31 02:05:38 2019]
+Job 57: ---normalize
+
+Submitted job 57 with external jobid 'Your job 441615 ("normalize_B320-1") has been submitted'.
+
+[Sat Aug 31 02:05:38 2019]
+Job 44: ---normalize
+
+Submitted job 44 with external jobid 'Your job 441616 ("normalize_B320-3") has been submitted'.
+
+[Sat Aug 31 02:05:38 2019]
+Job 46: ---normalize
+
+Submitted job 46 with external jobid 'Your job 441617 ("normalize_US3-8") has been submitted'.
+
+[Sat Aug 31 02:05:38 2019]
+Job 156: ---checkm
+
+Submitted job 156 with external jobid 'Your job 441618 ("checkm_B357-4") has been submitted'.
+
+[Sat Aug 31 02:05:38 2019]
+Job 145: ---checkm
+
+Submitted job 145 with external jobid 'Your job 441619 ("checkm_B320-5") has been submitted'.
+
+[Sat Aug 31 02:05:38 2019]
+Job 85: ---normalize
+
+Submitted job 85 with external jobid 'Your job 441620 ("normalize_US8-5") has been submitted'.
+
+[Sat Aug 31 02:05:39 2019]
+Job 58: ---normalize
+
+Submitted job 58 with external jobid 'Your job 441621 ("normalize_B320-2") has been submitted'.
+
+[Sat Aug 31 02:05:39 2019]
+Job 48: ---normalize
+
+Submitted job 48 with external jobid 'Your job 441622 ("normalize_B314-2") has been submitted'.
+
+[Sat Aug 31 02:05:39 2019]
+Job 142: ---checkm
+
+Submitted job 142 with external jobid 'Your job 441623 ("checkm_B316-6") has been submitted'.
+
+[Sat Aug 31 02:05:39 2019]
+Job 169: ---checkm
+
+Submitted job 169 with external jobid 'Your job 441624 ("checkm_US8-3") has been submitted'.
+
+[Sat Aug 31 02:05:39 2019]
+Job 155: ---checkm
+
+Submitted job 155 with external jobid 'Your job 441625 ("checkm_B357-3") has been submitted'.
+[Sat Aug 31 02:05:59 2019]
+Finished job 73.
+1 of 106 steps (0.94%) done
+
+[Sat Aug 31 02:05:59 2019]
+Job 116: ---rscript
+
+[Sat Aug 31 02:05:59 2019]
+Finished job 57.
+2 of 106 steps (2%) done
+[Sat Aug 31 02:05:59 2019]
+Finished job 44.
+3 of 106 steps (3%) done
+[Sat Aug 31 02:05:59 2019]
+Finished job 46.
+4 of 106 steps (4%) done
+[Sat Aug 31 02:05:59 2019]
+Finished job 85.
+5 of 106 steps (5%) done
+[Sat Aug 31 02:05:59 2019]
+Finished job 58.
+6 of 106 steps (6%) done
+[Sat Aug 31 02:05:59 2019]
+Finished job 48.
+7 of 106 steps (7%) done
+Submitted job 116 with external jobid 'Your job 441626 ("rscript_B370-2") has been submitted'.
+
+[Sat Aug 31 02:05:59 2019]
+Job 87: ---rscript
+
+Submitted job 87 with external jobid 'Your job 441627 ("rscript_B320-3") has been submitted'.
+
+[Sat Aug 31 02:05:59 2019]
+Job 100: ---rscript
+
+Submitted job 100 with external jobid 'Your job 441628 ("rscript_B320-1") has been submitted'.
+
+[Sat Aug 31 02:05:59 2019]
+Job 128: ---rscript
+
+Submitted job 128 with external jobid 'Your job 441629 ("rscript_US8-5") has been submitted'.
+
+[Sat Aug 31 02:05:59 2019]
+Job 89: ---rscript
+
+Submitted job 89 with external jobid 'Your job 441630 ("rscript_US3-8") has been submitted'.
+
+[Sat Aug 31 02:06:00 2019]
+Job 101: ---rscript
+
+Submitted job 101 with external jobid 'Your job 441631 ("rscript_B320-2") has been submitted'.
+
+[Sat Aug 31 02:06:00 2019]
+Job 91: ---rscript
+
+Submitted job 91 with external jobid 'Your job 441632 ("rscript_B314-2") has been submitted'.
+[Sat Aug 31 02:06:54 2019]
+Finished job 87.
+8 of 106 steps (8%) done
+
+[Sat Aug 31 02:06:54 2019]
+Job 81: ---normalize
+
+Submitted job 81 with external jobid 'Your job 441633 ("normalize_US8-1") has been submitted'.
+[Sat Aug 31 02:07:05 2019]
+Finished job 100.
+9 of 106 steps (8%) done
+
+[Sat Aug 31 02:07:05 2019]
+Job 62: ---normalize
+
+[Sat Aug 31 02:07:05 2019]
+Finished job 101.
+10 of 106 steps (9%) done
+Submitted job 62 with external jobid 'Your job 441634 ("normalize_B331-3") has been submitted'.
+
+[Sat Aug 31 02:07:05 2019]
+Job 160: ---checkm
+
+Submitted job 160 with external jobid 'Your job 441635 ("checkm_B370-3") has been submitted'.
+[Sat Aug 31 02:07:16 2019]
+Finished job 62.
+11 of 106 steps (10%) done
+
+[Sat Aug 31 02:07:16 2019]
+Job 105: ---rscript
+
+[Sat Aug 31 02:07:16 2019]
+Finished job 81.
+12 of 106 steps (11%) done
+[Sat Aug 31 02:07:16 2019]
+Finished job 116.
+13 of 106 steps (12%) done
+[Sat Aug 31 02:07:16 2019]
+Finished job 89.
+14 of 106 steps (13%) done
+[Sat Aug 31 02:07:16 2019]
+Finished job 91.
+15 of 106 steps (14%) done
+Submitted job 105 with external jobid 'Your job 441636 ("rscript_B331-3") has been submitted'.
+
+[Sat Aug 31 02:07:16 2019]
+Job 134: ---checkm
+
+Submitted job 134 with external jobid 'Your job 441637 ("checkm_B314-2") has been submitted'.
+
+[Sat Aug 31 02:07:16 2019]
+Job 60: ---normalize
+
+Submitted job 60 with external jobid 'Your job 441638 ("normalize_B331-1") has been submitted'.
+
+[Sat Aug 31 02:07:17 2019]
+Job 124: ---rscript
+
+Submitted job 124 with external jobid 'Your job 441639 ("rscript_US8-1") has been submitted'.
+
+[Sat Aug 31 02:07:17 2019]
+Job 47: ---normalize
+
+Submitted job 47 with external jobid 'Your job 441640 ("normalize_B314-1") has been submitted'.
+[Sat Aug 31 02:07:27 2019]
+Finished job 128.
+16 of 106 steps (15%) done
+
+[Sat Aug 31 02:07:27 2019]
+Job 171: ---checkm
+
+Submitted job 171 with external jobid 'Your job 441641 ("checkm_US8-5") has been submitted'.
+[Sat Aug 31 02:07:49 2019]
+Finished job 105.
+17 of 106 steps (16%) done
+
+[Sat Aug 31 02:07:49 2019]
+Job 137: ---checkm
+
+Submitted job 137 with external jobid 'Your job 441642 ("checkm_B316-1") has been submitted'.
+[Sat Aug 31 02:08:00 2019]
+Finished job 60.
+18 of 106 steps (17%) done
+
+[Sat Aug 31 02:08:00 2019]
+Job 103: ---rscript
+
+[Sat Aug 31 02:08:00 2019]
+Finished job 47.
+19 of 106 steps (18%) done
+Submitted job 103 with external jobid 'Your job 441643 ("rscript_B331-1") has been submitted'.
+
+[Sat Aug 31 02:08:00 2019]
+Job 90: ---rscript
+
+Submitted job 90 with external jobid 'Your job 441644 ("rscript_B314-1") has been submitted'.
+[Sat Aug 31 02:08:22 2019]
+Finished job 90.
+20 of 106 steps (19%) done
+
+[Sat Aug 31 02:08:22 2019]
+Job 84: ---normalize
+
+[Sat Aug 31 02:08:22 2019]
+Finished job 124.
+21 of 106 steps (20%) done
+Submitted job 84 with external jobid 'Your job 441645 ("normalize_US8-4") has been submitted'.
+
+[Sat Aug 31 02:08:22 2019]
+Job 61: ---normalize
+
+Submitted job 61 with external jobid 'Your job 441646 ("normalize_B331-2") has been submitted'.
+[Sat Aug 31 02:08:33 2019]
+Finished job 84.
+22 of 106 steps (21%) done
+
+[Sat Aug 31 02:08:33 2019]
+Job 127: ---rscript
+
+[Sat Aug 31 02:08:33 2019]
+Finished job 103.
+23 of 106 steps (22%) done
+Submitted job 127 with external jobid 'Your job 441647 ("rscript_US8-4") has been submitted'.
+
+[Sat Aug 31 02:08:34 2019]
+Job 148: ---checkm
+
+Submitted job 148 with external jobid 'Your job 441648 ("checkm_B331-3") has been submitted'.
+[Sat Aug 31 02:08:44 2019]
+Finished job 61.
+24 of 106 steps (23%) done
+
+[Sat Aug 31 02:08:44 2019]
+Job 104: ---rscript
+
+Submitted job 104 with external jobid 'Your job 441649 ("rscript_B331-2") has been submitted'.
+[Sat Aug 31 02:08:55 2019]
+Error in rule rscript:
+    jobid: 127
+    output: /workdir/users/agk85/CDC2/networks/membership/US8-4_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/US8-4_final_network_rscript_5_0
+    cluster_jobid: Your job 441647 ("rscript_US8-4") has been submitted
+
+Trying to restart job 127.
+
+[Sat Aug 31 02:08:55 2019]
+Job 127: ---rscript
+
+Submitted job 127 with external jobid 'Your job 441650 ("rscript_US8-4") has been submitted'.
+[Sat Aug 31 02:09:07 2019]
+Finished job 104.
+25 of 106 steps (24%) done
+
+[Sat Aug 31 02:09:07 2019]
+Job 132: ---checkm
+
+Submitted job 132 with external jobid 'Your job 441651 ("checkm_US3-8") has been submitted'.
+[Sat Aug 31 02:09:29 2019]
+Error in rule rscript:
+    jobid: 127
+    output: /workdir/users/agk85/CDC2/networks/membership/US8-4_5_mge_count_membership.txt, /workdir/users/agk85/CDC2/networks/logs/US8-4_final_network_rscript_5_0
+    cluster_jobid: Your job 441650 ("rscript_US8-4") has been submitted
+
+[Sat Aug 31 02:43:48 2019]
+Finished job 169.
+26 of 106 steps (25%) done
+[Sat Aug 31 02:48:01 2019]
+Finished job 145.
+27 of 106 steps (25%) done
+[Sat Aug 31 02:58:32 2019]
+Finished job 142.
+28 of 106 steps (26%) done
+[Sat Aug 31 03:01:13 2019]
+Finished job 156.
+29 of 106 steps (27%) done
+[Sat Aug 31 03:23:04 2019]
+Finished job 160.
+30 of 106 steps (28%) done
+[Sat Aug 31 03:28:44 2019]
+Finished job 155.
+31 of 106 steps (29%) done
+[Sat Aug 31 03:33:25 2019]
+Finished job 134.
+32 of 106 steps (30%) done
+[Sat Aug 31 03:35:55 2019]
+Finished job 171.
+33 of 106 steps (31%) done
+[Sat Aug 31 03:50:16 2019]
+Finished job 137.
+34 of 106 steps (32%) done
+[Sat Aug 31 03:57:16 2019]
+Finished job 132.
+35 of 106 steps (33%) done
+[Sat Aug 31 03:57:56 2019]
+Finished job 148.
+36 of 106 steps (34%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network_scripts/.snakemake/log/2019-08-31T020538.357007.snakemake.log

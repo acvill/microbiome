@@ -1,0 +1,34 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	25	checkm
+	1	final
+	26
+
+[Sun Aug 18 18:35:11 2019]
+Job 96: ---checkm
+
+[Sun Aug 18 18:35:15 2019]
+Error in rule checkm:
+    jobid: 96
+    output: /workdir/users/agk85/CDC2/networks/logs/B357-4_final_network_checkm_5_0
+
+RuleException:
+CalledProcessError in line 127 of /local/workdir/users/agk85/CDC2/scripts/network_scripts/snake_trans_network:
+Command 'set -euo pipefail;  if [ ! -d /workdir/users/agk85/CDC2/networks/clusters/B357-4 ]; then mkdir -p /workdir/users/agk85/CDC2/networks/clusters/B357-4; fi
+		python /workdir/users/agk85/CDC2/scripts/network_scripts/split_clusters_hic.py /workdir/users/agk85/CDC2/networks/membership/B357-4_mge_count_membership.txt /workdir/users/agk85/CDC2/prodigal_excise/metagenomes/B357-4/B357-4_scaffold.fasta /workdir/users/agk85/CDC2/networks/clusters/B357-4 B357-4
+		set +u; source  /programs/checkm_161011/init; set -u 
+		checkm lineage_wf -t 8 -x fasta /workdir/users/agk85/CDC2/networks/clusters/B357-4 /workdir/users/agk85/CDC2/networks/checkms/B357-4
+		checkm qa -o 2 /workdir/users/agk85/CDC2/networks/checkms/B357-4/lineage.ms /workdir/users/agk85/CDC2/networks/checkms/B357-4 | grep -v '^-' > /workdir/users/agk85/CDC2/networks/checkms/B357-4/B357-4.qa
+		awk -v OFS="	" '$1=$1' /workdir/users/agk85/CDC2/networks/checkms/B357-4/B357-4.qa | grep -v '^Bin' | cut -f1,2,7,8,9,10 > /workdir/users/agk85/CDC2/networks/checkms/B357-4/B357-4.stats;
+		sed -i "s/^/B357-4	/" /workdir/users/agk85/CDC2/networks/checkms/B357-4/B357-4.stats;
+		touch /workdir/users/agk85/CDC2/networks/logs/B357-4_final_network_checkm_5_0' returned non-zero exit status 1.
+  File "/local/workdir/users/agk85/CDC2/scripts/network_scripts/snake_trans_network", line 127, in __rule_checkm
+  File "/usr/lib64/python3.6/concurrent/futures/thread.py", line 56, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network_scripts/.snakemake/log/2019-08-18T183511.374169.snakemake.log

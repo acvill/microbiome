@@ -1,0 +1,62 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	4	get_trans_noeuks_phagerepair
+	4	normalize
+	4	rscript
+	13
+
+[Sat Aug 17 14:32:37 2019]
+Job 1: ---trans
+
+[Sat Aug 17 14:32:53 2019]
+Finished job 1.
+1 of 13 steps (8%) done
+
+[Sat Aug 17 14:32:53 2019]
+Job 2: ---trans
+
+[Sat Aug 17 14:33:06 2019]
+Finished job 2.
+2 of 13 steps (15%) done
+
+[Sat Aug 17 14:33:06 2019]
+Job 4: ---trans
+
+[Sat Aug 17 14:33:14 2019]
+Finished job 4.
+3 of 13 steps (23%) done
+
+[Sat Aug 17 14:33:14 2019]
+Job 3: ---trans
+
+[Sat Aug 17 14:33:22 2019]
+Finished job 3.
+4 of 13 steps (31%) done
+
+[Sat Aug 17 14:33:22 2019]
+Job 11: ---rscript
+
+[Sat Aug 17 14:33:54 2019]
+Error in rule rscript:
+    jobid: 11
+    output: /workdir/users/agk85/CDC2/networks/logs/B314-3_final_network_rscript_2_0
+
+RuleException:
+CalledProcessError in line 94 of /local/workdir/users/agk85/CDC2/scripts/network/snake_trans_network:
+Command 'set -euo pipefail;  if [ ! -e /workdir/users/agk85/CDC2/networks/membership ]; then mkdir -p /workdir/users/agk85/CDC2/networks/membership; fi
+		if [ ! -e /workdir/users/agk85/CDC2/networks/outputs ]; then mkdir -p /workdir/users/agk85/CDC2/networks/outputs; fi
+		if [ ! -e /workdir/users/agk85/CDC2/networks/graphs ]; then mkdir -p /workdir/users/agk85/CDC2/networks/graphs; fi
+		cd /workdir/users/agk85/CDC2/networks/membership
+		/programs/R-3.3.2/bin/Rscript /workdir/users/agk85/simulated/scripts/network_scripts/network_clustering.R CDC2 B314-3 B314-3 0 2 B314-3
+		touch /workdir/users/agk85/CDC2/networks/logs/B314-3_final_network_rscript_2_0' returned non-zero exit status 1.
+  File "/local/workdir/users/agk85/CDC2/scripts/network/snake_trans_network", line 94, in __rule_rscript
+  File "/usr/lib64/python3.6/concurrent/futures/thread.py", line 56, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network/.snakemake/log/2019-08-17T143237.604315.snakemake.log

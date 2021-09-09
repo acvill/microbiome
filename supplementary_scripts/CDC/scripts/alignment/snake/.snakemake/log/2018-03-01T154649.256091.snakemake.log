@@ -1,0 +1,3 @@
+SyntaxError:
+Not all output files of rule bwamap contain the same wildcards.
+  File "/local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_bwa", line 54, in <module>

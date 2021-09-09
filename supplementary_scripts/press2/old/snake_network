@@ -1,0 +1,95 @@
+##--------------------------------------------------------------------------##
+## The list of samples to be processed
+##--------------------------------------------------------------------------##
+FOLDER="press2"
+BASE="/workdir/users/agk85/" + FOLDER
+CUTOFF='2'
+IDENTITY='99'
+REF="ProxiMeta-1" #if things arent just all to one reference, then  you can change it later in the rscript
+SAMPLES, = glob_wildcards(BASE + "/todohic/{NAME}")
+NB_SAMPLES = len(SAMPLES)
+print (SAMPLES)
+
+rule final:
+	input:
+		expand(BASE+"/networks/logs/{NAME}_final_network_rscript_" + CUTOFF + "_" + IDENTITY,NAME=SAMPLES),	
+		#expand(BASE+"/networks/logs/{NAME}_final_network_checkm_" + CUTOFF + "_" + IDENTITY,NAME=SAMPLES),
+		expand(BASE+"/networks/logs/{NAME}_final_network_higher_orgs_" + CUTOFF + "_" + IDENTITY,NAME=SAMPLES)
+rule rscript:
+	input:
+		setup=BASE + "/todohic/{NAME}"
+	params:
+		n="rscript_{NAME}",
+		name=REF,
+		name2="{NAME}",
+		script="/workdir/users/agk85/press/scripts/network_clustering_alltaxa.R",
+		cutoff=CUTOFF,
+		identity=IDENTITY,
+		folder=FOLDER,
+		ref_mgm=REF,
+		out=BASE+"/networks/memberships",
+		out2=BASE+"/networks/outputs",
+		out3=BASE+"/networks/graphs",
+	resources:
+		mem_mb = lambda wildcards, attempt: attempt * 10
+	output:
+		membership=BASE + "/networks/memberships/{NAME}_min" + CUTOFF + "_" + IDENTITY + "_addon_species_membership.txt",
+		final=BASE + "/networks/logs/{NAME}_final_network_rscript_" + CUTOFF + "_" + IDENTITY
+	message:"""---rscript"""	
+	shell:
+		"""
+		if [ ! -e {params.out} ]; then mkdir -p {params.out}; fi
+		if [ ! -e {params.out2} ]; then mkdir -p {params.out2}; fi
+		if [ ! -e {params.out3} ]; then mkdir -p {params.out3}; fi
+		cd {params.out}
+		/programs/R-3.3.2/bin/Rscript {params.script} {params.folder} {params.name} {params.name2} {params.identity} {params.cutoff} {params.ref_mgm}
+		touch {output.final}
+		"""
+rule checkm:
+	input:
+		members=BASE + "/networks/memberships/{NAME}_min" + CUTOFF + "_" + IDENTITY + "_addon_species_membership.txt",
+	params:
+		n="checkm_{NAME}",
+		j="8",
+		script="/workdir/users/agk85/CDC/networks/scripts/split_clusters_hic.py",
+		fasta_folder=BASE + "/networks/clusters/{NAME}",
+		lineage=BASE + "/networks/checkms/{NAME}/lineage.ms",
+		checkm_folder=BASE + "/networks/checkms/{NAME}"
+	resources:
+		mem_mb = lambda wildcards, attempt: attempt * 35
+	output:
+		checkm_qa=BASE + "/networks/checkms/{NAME}/{NAME}.qa",
+		final = BASE + "/networks/logs/{NAME}_final_network_checkm_" + CUTOFF + "_" + IDENTITY
+	message:"""---checkm"""
+	shell:
+		"""
+		if [ ! -d {params.fasta_folder} ]; then mkdir -p {params.fasta_folder}; fi
+		name=$(echo {input.members} | cut -d'_' -f1| cut -d'/' -f8)
+		python {params.script} {input.members} {params.fasta_folder} $name
+		set +u; source  /programs/checkm_161011/init; set -u 
+		checkm lineage_wf -t 8 -x fasta {params.fasta_folder} {params.checkm_folder}
+		checkm qa -o 2 {params.lineage} {params.checkm_folder} | grep -v '^-' > {output.checkm_qa}
+		touch {output.final}
+		"""
+
+rule higher_orgs:
+	input:
+		membership=BASE + "/networks/memberships/{NAME}_min" + CUTOFF + "_" + IDENTITY + "_addon_species_membership.txt",
+	params:
+		n="betterorg_{NAME}",
+		j="1",
+		folder=BASE+"/networks/memberships/",
+		outhandle="{NAME}_membership_higher.txt",
+		conflicthandle="{NAME}_higher_conflict.txt",
+		script="/workdir/users/agk85/CDC/networks/scripts/higherlevel_taxonomies_forclusters.py"
+	resources:
+		mem_mb = lambda wildcards, attempt: attempt * 2
+	output:
+		final = BASE + "/networks/logs/{NAME}_final_network_higher_orgs_" + CUTOFF + "_" + IDENTITY  
+	message:"""higher_orgs"""
+	shell:
+		"""
+		cd {params.folder}
+		python {params.script} {input.membership} {params.outhandle} {params.conflicthandle}
+		touch {output.final}
+		"""

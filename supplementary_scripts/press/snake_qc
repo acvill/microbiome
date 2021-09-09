@@ -1,0 +1,154 @@
+##-----------------------------------------------------------------------------------##
+## The list of samples to be processed
+##-----------------------------------------------------------------------------------##
+BASE="/workdir/users/agk85/hic/press"
+SAMPLES, = glob_wildcards(BASE + "/raw_fastq/{NAME}.R1.fastq")
+NB_SAMPLES = len(SAMPLES)
+
+#for NAME in SAMPLES:
+#  print("Sample " + NAME + " will be processed")
+
+rule final:
+	input:
+		expand(BASE + "/3-trimmo/{NAME}.1.fastq", NAME=SAMPLES),
+		expand(BASE + "/3-trimmo/{NAME}.2.fastq", NAME=SAMPLES),
+		expand(BASE+ "/4-readcounts/Readcounts_{NAME}.txt",NAME=SAMPLES),
+		BASE + '/ReadCounts.txt'
+#rule unzip:
+#	input:
+#		R1=BASE + "/raw_fastq/{NAME}_R1.fastq.gz",
+#                R2=BASE + "/raw_fastq/{NAME}_R2.fastq.gz"
+#	output:
+#		outR1=BASE + "/raw_fastq/{NAME}_R1.fastq",
+#		outR2=BASE + "/raw_fastq/{NAME}_R2.fastq"
+#	resources:
+#               mem_mb=lambda wildcards, attempt: attempt * 10
+#	shell:"""
+#		gunzip {input.R1}
+#		gunzip {input.R2}
+#
+#	"""
+rule derep:
+	input:
+		R1=BASE + "/raw_fastq/{NAME}.R1.fastq",
+		R2=BASE + "/raw_fastq/{NAME}.R2.fastq"
+	params: 
+		out=BASE + "/1-derep/out_bad",
+		outgood=BASE+ "/1-derep/{NAME}.derep",
+		outbad=BASE + "/1-derep/out_bad/{NAME}"
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 100
+	output:
+		good_R1=BASE+"/1-derep/{NAME}.derep_1.fastq",
+		good_R2=BASE+"/1-derep/{NAME}.derep_2.fastq",
+		bad_R1=BASE+"/1-derep/out_bad/{NAME}_1.fastq",
+		bad_R2=BASE+"/1-derep/out_bad/{NAME}_2.fastq"
+	message:  """--- Dereplication"""
+	shell: """
+		if [ ! -d {params.out} ]; then mkdir -p {params.out}; fi 
+		perl /programs/prinseq-lite-0.20.2/prinseq-lite.pl -fastq {input.R1} \
+		-fastq2 {input.R2} -derep 12345 -out_format 3 -no_qual_header -out_good \
+		{params.outgood} -out_bad {params.outbad}
+		"""
+
+rule bmtagger:
+	input: 
+		R1=BASE + "/1-derep/{NAME}.derep_1.fastq",
+		R2=BASE + "/1-derep/{NAME}.derep_2.fastq"
+	params: 
+		out=BASE + "/2-bmtagger",
+		config="/home/britolab/refdbs/bmtagger.conf",
+		name="{NAME}",
+		base=BASE,
+		REFGENOME="/home/britolab/refdbs/HUMAN/Homo_sapiens_assembly19.fasta"
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 100
+	output:
+		out_R1=BASE + "/2-bmtagger/{NAME}.human_1.fastq",
+		out_R2=BASE + "/2-bmtagger/{NAME}.human_2.fastq"
+	message:  """--- BMTagger"""
+	shell: """ 
+		if [ ! -d {params.out} ]; then mkdir -p {params.out}; fi
+		export PATH=/programs/ncbi-blast-2.3.0+/bin:$PATH
+		bash /programs/bmtools/bmtagger/bmtagger.sh -C {params.config} -b {params.REFGENOME}.bitmask -x {params.REFGENOME}.srprism -T {params.base}/2-bmtagger -q1 -1 {input.R1} -2 {input.R2} -o {params.base}/2-bmtagger/{params.name}.human -X """
+
+rule trimmo:
+	input: 
+		R1=BASE + "/2-bmtagger/{NAME}.human_1.fastq",
+		R2=BASE + "/2-bmtagger/{NAME}.human_2.fastq"
+	params:
+		out=BASE + "/3-trimmo",
+        	ADAPTER="/home/britolab/refdbs/nextera_truseq_adapters.fasta"
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 100
+	output:
+                out_R1=BASE + "/3-trimmo/{NAME}.1.fastq",
+                out_R2=BASE + "/3-trimmo/{NAME}.2.fastq",
+		out_R1_solo=BASE +"/3-trimmo/{NAME}.1.solo.fastq",
+		out_R2_solo=BASE +"/3-trimmo/{NAME}.2.solo.fastq"
+	message:  """--- Trimmomatic"""
+	shell: """
+		if [ ! -d {params.out} ]; then mkdir -p {params.out}; fi
+		java -Xmx8g -jar /programs/trimmomatic/trimmomatic-0.36.jar \
+		PE {input.R1} {input.R2} {output.out_R1} {output.out_R1_solo} \
+		{output.out_R2} {output.out_R2_solo} \
+		ILLUMINACLIP:{params.ADAPTER}:2:30:10:8:true \
+		SLIDINGWINDOW:4:15 LEADING:3 TRAILING:3 MINLEN:50
+		"""
+
+rule readCount:
+	input: 
+		BASE + "/raw_fastq/{NAME}.R1.fastq",
+		BASE + "/raw_fastq/{NAME}.R2.fastq",
+		BASE + "/1-derep/{NAME}.derep_1.fastq",
+		BASE + "/1-derep/{NAME}.derep_2.fastq",
+		BASE + "/2-bmtagger/{NAME}.human_1.fastq",
+		BASE + "/2-bmtagger/{NAME}.human_2.fastq",
+		BASE + "/3-trimmo/{NAME}.1.fastq",
+		BASE + "/3-trimmo/{NAME}.2.fastq",
+		BASE +"/3-trimmo/{NAME}.1.solo.fastq",
+		BASE +"/3-trimmo/{NAME}.2.solo.fastq"
+	params:
+		"{NAME}"
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 100
+	output:
+		BASE+ "/4-readcounts/Readcounts_{NAME}.txt"
+	message: """--- ReadCounts"""
+	run:
+		with open(output[0],'w') as outfile:
+			outfile.write(params[0])
+			for i in input:
+				with open(i) as infile:
+					count = 0
+					for line in infile:
+						if line[0] == '@':
+							count = count + 1
+				outfile.write('\t' + str(count))
+			outfile.write('\n')
+		
+					
+rule Combine_readcounts:
+	input:
+		expand(BASE+'/4-readcounts/Readcounts_{NAME}.txt', NAME=SAMPLES)
+	resources:
+		mem_mb=lambda wildcards, attempt: attempt * 10
+	output:
+		BASE + '/ReadCounts.txt'
+	run:
+		with open(output[0], 'w') as out:
+			for i in input:
+				for line in open(i):
+
+
+					out.write(line)
+
+
+rule clean_up:
+	input: 
+		BASE + '/ReadCounts.txt'
+	message: """Remove directories"""
+	shell:"""
+	rm -r BASE +"/1-derep/
+	rm -r BASE +"/2-bmtagger/
+        """

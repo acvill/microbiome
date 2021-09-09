@@ -1,0 +1,41 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	5	bwa
+	1	final
+	5	primary_filter
+	5	sam2bam
+	5	sorted
+	21
+
+[Mon Oct 21 23:49:24 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/US3-10.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/US3-10.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t2/US3-10/US3-10.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t2/US3-10/mapped
+    jobid: 163
+    wildcards: NAME=US3-10
+    resources: mem_mb=30
+
+[Mon Oct 21 23:49:24 2019]
+Error in rule bwa:
+    jobid: 163
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t2/US3-10/US3-10.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t2/US3-10/mapped
+
+RuleException:
+CalledProcessError in line 28 of /local/workdir/users/agk85/CDC2/scripts/binning_with/snake_bwa_scaffold_t2:
+Command 'set -euo pipefail;  if [ ! -e /workdir/users/agk85/CDC2/mapping_with/mapping_with_t2/US3-10 ]; then mkdir -p /workdir/users/agk85/CDC2/mapping_with/mapping_with_t2/US3-10; fi
+		PATIENT=$(echo US3-10 | cut -d'-' -f1)
+		REF=/workdir/users/agk85/CDC2/mapping_with/references/${PATIENT}-2_scaffold
+		/workdir/users/agk85/tools/bwa/bwa mem -a -t 8 $REF /workdir/data/CDC/metagenomes/merged/unzip/US3-10.1.fastq /workdir/data/CDC/metagenomes/merged/unzip/US3-10.2.fastq > /workdir/users/agk85/CDC2/mapping_with/mapping_with_t2/US3-10/US3-10.sam
+		touch /workdir/users/agk85/CDC2/mapping_with/mapping_with_t2/US3-10/mapped' returned non-zero exit status 1.
+  File "/local/workdir/users/agk85/CDC2/scripts/binning_with/snake_bwa_scaffold_t2", line 28, in __rule_bwa
+  File "/usr/lib64/python3.6/concurrent/futures/thread.py", line 56, in run
+Removing output files of failed job bwa since they might be corrupted:
+/workdir/users/agk85/CDC2/mapping_with/mapping_with_t2/US3-10/US3-10.sam
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/CDC2/scripts/binning_with/.snakemake/log/2019-10-21T234924.492426.snakemake.log

@@ -1,0 +1,43 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	1	phageblast
+	1	phagefinder
+	1	prodigal
+	1	trim500
+	5
+
+[Tue Feb 26 23:35:03 2019]
+Job 1: --- trim scaffolds
+
+[Tue Feb 26 23:35:39 2019]
+Finished job 1.
+1 of 5 steps (20%) done
+
+[Tue Feb 26 23:35:39 2019]
+Job 2: --- prodigal
+
+Terminating processes on user request, this might take some time.
+[Tue Feb 26 23:35:46 2019]
+Error in rule prodigal:
+    jobid: 2
+    output: /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_scaffold.fasta, /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades.gff3, /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_proteins.fna, /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_proteins.faa
+
+RuleException:
+CalledProcessError in line 56 of /local/workdir/users/agk85/press/scripts/spades/snake_min_prodigal_pf_spadestest:
+Command 'set -euo pipefail;  if [ ! -d /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades ]; then mkdir -p /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades; fi
+		cp /workdir/users/agk85/press/metaspades/metagenomes/scaffolds/ProxiMeta-spades_scaffold.fasta /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_scaffold.fasta
+		grep '>' /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_scaffold.fasta | cut -d'>' -f2 > /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_scfids.txt
+		python /workdir/users/agk85/CDC/scripts/general_getseqs.py /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_scaffold.fasta /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_scfids.txt /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_scaffold_rename.fasta 1 ProxiMeta-spades
+		mv /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_scaffold_rename.fasta /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_scaffold.fasta
+		/programs/prodigal-2.6.3/prodigal -i /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_scaffold.fasta -o /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades.gff3 -f gff -d /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_proteins.fna -a /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_proteins.faa -p meta' returned non-zero exit status 1.
+  File "/local/workdir/users/agk85/press/scripts/spades/snake_min_prodigal_pf_spadestest", line 56, in __rule_prodigal
+  File "/usr/lib64/python3.6/concurrent/futures/thread.py", line 56, in run
+Removing output files of failed job prodigal since they might be corrupted:
+/workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_scaffold.fasta
+Complete log: /local/workdir/users/agk85/press/scripts/spades/.snakemake/log/2019-02-26T233503.043225.snakemake.log

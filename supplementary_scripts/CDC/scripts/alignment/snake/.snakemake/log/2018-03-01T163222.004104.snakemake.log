@@ -1,0 +1,5 @@
+
+Job 3: ---bwafilter
+
+RuleException in line 69 of /local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_bwa:
+'OutputFiles' object has no attribute 'sam'

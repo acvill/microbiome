@@ -1,0 +1,20 @@
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	1	index
+	2
+
+Job 12: ---bwaindex
+
+Finished job 12.
+1 of 2 steps (50%) done
+
+localrule final:
+    input: /workdir/users/agk85/CDC/logs/finals/B309_final_index, /workdir/users/agk85/CDC/logs/finals/B313_final_index, /workdir/users/agk85/CDC/logs/finals/B310_final_index, /workdir/users/agk85/CDC/logs/finals/B314_final_index, /workdir/users/agk85/CDC/logs/finals/B329_final_index, /workdir/users/agk85/CDC/logs/finals/B331_final_index, /workdir/users/agk85/CDC/logs/finals/B321_final_index, /workdir/users/agk85/CDC/logs/finals/B320_final_index, /workdir/users/agk85/CDC/logs/finals/B326_final_index, /workdir/users/agk85/CDC/logs/finals/B335_final_index, /workdir/users/agk85/CDC/logs/finals/B346_final_index, /workdir/users/agk85/CDC/logs/finals/B359_final_index, /workdir/users/agk85/CDC/logs/finals/B369_final_index, /workdir/users/agk85/CDC/logs/finals/B352_final_index, /workdir/users/agk85/CDC/logs/finals/B357_final_index, /workdir/users/agk85/CDC/logs/finals/B316_final_index, /workdir/users/agk85/CDC/logs/finals/L82_final_index, /workdir/users/agk85/CDC/logs/finals/L92_final_index, /workdir/users/agk85/CDC/logs/finals/B370_final_index, /workdir/users/agk85/CDC/logs/finals/L93_final_index, /workdir/users/agk85/CDC/logs/finals/L109_final_index, /workdir/users/agk85/CDC/logs/finals/B371_final_index
+    jobid: 0
+
+Finished job 0.
+2 of 2 steps (100%) done

@@ -1,0 +1,11 @@
+Building DAG of jobs...
+MissingInputException in line 13 of /local/workdir/users/agk85/CDC2/scripts/network_scripts/snake_network_hist:
+Missing input files for rule final:
+/workdir/users/agk85/CDC2/logs/B316-7_final_contig_v_bin
+/workdir/users/agk85/CDC2/logs/US3-8_final_contig_v_bin
+/workdir/users/agk85/CDC2/logs/B331-3_final_contig_v_bin
+/workdir/users/agk85/CDC2/logs/B320-3_final_contig_v_bin
+/workdir/users/agk85/CDC2/logs/B320-2_final_contig_v_bin
+/workdir/users/agk85/CDC2/logs/B314-2_final_contig_v_bin
+/workdir/users/agk85/CDC2/logs/B370-3_final_contig_v_bin
+/workdir/users/agk85/CDC2/logs/B316-4_final_contig_v_bin

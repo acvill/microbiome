@@ -1,0 +1,1057 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 8
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	43	bwa
+	1	final
+	43	primary_filter
+	43	sam2bam
+	43	sorted
+	173
+
+[Fri Oct 18 03:40:53 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B370-1.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B370-1.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-1/B370-1.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-1/mapped
+    jobid: 172
+    wildcards: NAME=B370-1
+    resources: mem_mb=30
+
+Submitted job 172 with external jobid 'Your job 443736 ("B370-1_bwa") has been submitted'.
+
+[Fri Oct 18 03:40:53 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B357-4.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B357-4.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-4/B357-4.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-4/mapped
+    jobid: 156
+    wildcards: NAME=B357-4
+    resources: mem_mb=30
+
+Submitted job 156 with external jobid 'Your job 443737 ("B357-4_bwa") has been submitted'.
+
+[Fri Oct 18 03:40:53 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B316-4.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B316-4.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-4/B316-4.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-4/mapped
+    jobid: 140
+    wildcards: NAME=B316-4
+    resources: mem_mb=30
+
+Submitted job 140 with external jobid 'Your job 443738 ("B316-4_bwa") has been submitted'.
+
+[Fri Oct 18 03:40:54 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B314-2.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B314-2.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B314-2/B314-2.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B314-2/mapped
+    jobid: 134
+    wildcards: NAME=B314-2
+    resources: mem_mb=30
+
+Submitted job 134 with external jobid 'Your job 443739 ("B314-2_bwa") has been submitted'.
+
+[Fri Oct 18 03:40:54 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B314-1.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B314-1.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B314-1/B314-1.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B314-1/mapped
+    jobid: 133
+    wildcards: NAME=B314-1
+    resources: mem_mb=30
+
+Submitted job 133 with external jobid 'Your job 443740 ("B314-1_bwa") has been submitted'.
+
+[Fri Oct 18 03:40:54 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B316-2.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B316-2.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-2/B316-2.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-2/mapped
+    jobid: 138
+    wildcards: NAME=B316-2
+    resources: mem_mb=30
+
+Submitted job 138 with external jobid 'Your job 443741 ("B316-2_bwa") has been submitted'.
+
+[Fri Oct 18 03:40:54 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B314-3.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B314-3.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B314-3/B314-3.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B314-3/mapped
+    jobid: 135
+    wildcards: NAME=B314-3
+    resources: mem_mb=30
+
+Submitted job 135 with external jobid 'Your job 443742 ("B314-3_bwa") has been submitted'.
+
+[Fri Oct 18 03:40:54 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B357-5.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B357-5.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-5/B357-5.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-5/mapped
+    jobid: 157
+    wildcards: NAME=B357-5
+    resources: mem_mb=30
+
+Submitted job 157 with external jobid 'Your job 443743 ("B357-5_bwa") has been submitted'.
+[Fri Oct 18 04:31:57 2019]
+Finished job 172.
+1 of 173 steps (0.58%) done
+
+[Fri Oct 18 04:31:57 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-1/B370-1.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-1/B370-1.nss.sam
+    jobid: 129
+    wildcards: NAME=B370-1
+    resources: mem_mb=15
+
+Submitted job 129 with external jobid 'Your job 443775 ("B370-1_primary_filter") has been submitted'.
+[Fri Oct 18 04:32:07 2019]
+Finished job 156.
+2 of 173 steps (1%) done
+
+[Fri Oct 18 04:32:07 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B370-3.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B370-3.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-3/B370-3.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-3/mapped
+    jobid: 160
+    wildcards: NAME=B370-3
+    resources: mem_mb=30
+
+Submitted job 160 with external jobid 'Your job 443776 ("B370-3_bwa") has been submitted'.
+[Fri Oct 18 04:47:49 2019]
+Finished job 140.
+3 of 173 steps (2%) done
+
+[Fri Oct 18 04:47:49 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-4/B316-4.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-4/B316-4.nss.sam
+    jobid: 97
+    wildcards: NAME=B316-4
+    resources: mem_mb=15
+
+Submitted job 97 with external jobid 'Your job 443780 ("B316-4_primary_filter") has been submitted'.
+[Fri Oct 18 05:11:10 2019]
+Finished job 134.
+4 of 173 steps (2%) done
+
+[Fri Oct 18 05:11:10 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B314-2/B314-2.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B314-2/B314-2.nss.sam
+    jobid: 91
+    wildcards: NAME=B314-2
+    resources: mem_mb=15
+
+Submitted job 91 with external jobid 'Your job 443786 ("B314-2_primary_filter") has been submitted'.
+[Fri Oct 18 05:27:21 2019]
+Finished job 138.
+5 of 173 steps (3%) done
+
+[Fri Oct 18 05:27:21 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-2/B316-2.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-2/B316-2.nss.sam
+    jobid: 95
+    wildcards: NAME=B316-2
+    resources: mem_mb=15
+
+Submitted job 95 with external jobid 'Your job 443795 ("B316-2_primary_filter") has been submitted'.
+[Fri Oct 18 05:28:21 2019]
+Finished job 133.
+6 of 173 steps (3%) done
+
+[Fri Oct 18 05:28:21 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B314-1/B314-1.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B314-1/B314-1.nss.sam
+    jobid: 90
+    wildcards: NAME=B314-1
+    resources: mem_mb=15
+
+Submitted job 90 with external jobid 'Your job 443796 ("B314-1_primary_filter") has been submitted'.
+[Fri Oct 18 05:50:13 2019]
+Finished job 157.
+7 of 173 steps (4%) done
+
+[Fri Oct 18 05:50:13 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-5/B357-5.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-5/B357-5.nss.sam
+    jobid: 114
+    wildcards: NAME=B357-5
+    resources: mem_mb=15
+
+Submitted job 114 with external jobid 'Your job 443801 ("B357-5_primary_filter") has been submitted'.
+[Fri Oct 18 05:51:03 2019]
+Finished job 135.
+8 of 173 steps (5%) done
+
+[Fri Oct 18 05:51:03 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B314-3/B314-3.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B314-3/B314-3.nss.sam
+    jobid: 92
+    wildcards: NAME=B314-3
+    resources: mem_mb=15
+
+Submitted job 92 with external jobid 'Your job 443802 ("B314-3_primary_filter") has been submitted'.
+[Fri Oct 18 09:01:24 2019]
+Finished job 129.
+9 of 173 steps (5%) done
+
+[Fri Oct 18 09:01:24 2019]
+Job 86: ---SAM2BAM
+
+Submitted job 86 with external jobid 'Your job 443867 ("B370-1_sam2bam") has been submitted'.
+[Fri Oct 18 09:23:16 2019]
+Finished job 97.
+10 of 173 steps (6%) done
+
+[Fri Oct 18 09:23:16 2019]
+Job 54: ---SAM2BAM
+
+Submitted job 54 with external jobid 'Your job 443896 ("B316-4_sam2bam") has been submitted'.
+[Fri Oct 18 09:30:06 2019]
+Finished job 95.
+11 of 173 steps (6%) done
+
+[Fri Oct 18 09:30:06 2019]
+Job 52: ---SAM2BAM
+
+Submitted job 52 with external jobid 'Your job 443897 ("B316-2_sam2bam") has been submitted'.
+[Fri Oct 18 09:36:06 2019]
+Finished job 91.
+12 of 173 steps (7%) done
+
+[Fri Oct 18 09:36:06 2019]
+Job 48: ---SAM2BAM
+
+Submitted job 48 with external jobid 'Your job 443898 ("B314-2_sam2bam") has been submitted'.
+[Fri Oct 18 09:42:37 2019]
+Finished job 114.
+13 of 173 steps (8%) done
+
+[Fri Oct 18 09:42:37 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B357-2.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B357-2.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-2/B357-2.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-2/mapped
+    jobid: 154
+    wildcards: NAME=B357-2
+    resources: mem_mb=30
+
+Submitted job 154 with external jobid 'Your job 443900 ("B357-2_bwa") has been submitted'.
+[Fri Oct 18 09:45:17 2019]
+Finished job 90.
+14 of 173 steps (8%) done
+
+[Fri Oct 18 09:45:17 2019]
+Job 47: ---SAM2BAM
+
+Submitted job 47 with external jobid 'Your job 443903 ("B314-1_sam2bam") has been submitted'.
+[Fri Oct 18 09:46:47 2019]
+Finished job 92.
+15 of 173 steps (9%) done
+
+[Fri Oct 18 09:46:47 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-4/B357-4.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-4/B357-4.nss.sam
+    jobid: 113
+    wildcards: NAME=B357-4
+    resources: mem_mb=15
+
+Submitted job 113 with external jobid 'Your job 443904 ("B357-4_primary_filter") has been submitted'.
+[Fri Oct 18 09:54:08 2019]
+Finished job 160.
+16 of 173 steps (9%) done
+
+[Fri Oct 18 09:54:08 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B370-2.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B370-2.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-2/B370-2.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-2/mapped
+    jobid: 159
+    wildcards: NAME=B370-2
+    resources: mem_mb=30
+
+Submitted job 159 with external jobid 'Your job 443909 ("B370-2_bwa") has been submitted'.
+[Fri Oct 18 11:35:56 2019]
+Finished job 86.
+17 of 173 steps (10%) done
+
+[Fri Oct 18 11:35:56 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B314-4.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B314-4.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B314-4/B314-4.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B314-4/mapped
+    jobid: 136
+    wildcards: NAME=B314-4
+    resources: mem_mb=30
+
+Submitted job 136 with external jobid 'Your job 443960 ("B314-4_bwa") has been submitted'.
+[Fri Oct 18 14:05:55 2019]
+Finished job 54.
+18 of 173 steps (10%) done
+
+[Fri Oct 18 14:05:56 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-3/B370-3.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-3/B370-3.nss.sam
+    jobid: 117
+    wildcards: NAME=B370-3
+    resources: mem_mb=15
+
+Submitted job 117 with external jobid 'Your job 444056 ("B370-3_primary_filter") has been submitted'.
+[Fri Oct 18 14:31:17 2019]
+Finished job 52.
+19 of 173 steps (11%) done
+
+[Fri Oct 18 14:31:17 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B357-3.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B357-3.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-3/B357-3.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-3/mapped
+    jobid: 155
+    wildcards: NAME=B357-3
+    resources: mem_mb=30
+
+Submitted job 155 with external jobid 'Your job 444077 ("B357-3_bwa") has been submitted'.
+[Fri Oct 18 15:08:10 2019]
+Finished job 154.
+20 of 173 steps (12%) done
+
+[Fri Oct 18 15:08:10 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-2/B357-2.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-2/B357-2.nss.sam
+    jobid: 111
+    wildcards: NAME=B357-2
+    resources: mem_mb=15
+
+Submitted job 111 with external jobid 'Your job 444111 ("B357-2_primary_filter") has been submitted'.
+[Fri Oct 18 15:49:42 2019]
+Finished job 48.
+21 of 173 steps (12%) done
+
+[Fri Oct 18 15:49:42 2019]
+Job 71: ---SAM2BAM
+
+Submitted job 71 with external jobid 'Your job 444151 ("B357-5_sam2bam") has been submitted'.
+[Fri Oct 18 15:55:43 2019]
+Finished job 113.
+22 of 173 steps (13%) done
+
+[Fri Oct 18 15:55:43 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B370-4.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B370-4.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-4/B370-4.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-4/mapped
+    jobid: 161
+    wildcards: NAME=B370-4
+    resources: mem_mb=30
+
+Submitted job 161 with external jobid 'Your job 444153 ("B370-4_bwa") has been submitted'.
+[Fri Oct 18 16:43:26 2019]
+Finished job 47.
+23 of 173 steps (13%) done
+
+[Fri Oct 18 16:43:26 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B320-2.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B320-2.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B320-2/B320-2.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B320-2/mapped
+    jobid: 144
+    wildcards: NAME=B320-2
+    resources: mem_mb=30
+
+Submitted job 144 with external jobid 'Your job 444179 ("B320-2_bwa") has been submitted'.
+[Fri Oct 18 16:45:16 2019]
+Finished job 159.
+24 of 173 steps (14%) done
+
+[Fri Oct 18 16:45:16 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-2/B370-2.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-2/B370-2.nss.sam
+    jobid: 116
+    wildcards: NAME=B370-2
+    resources: mem_mb=15
+
+Submitted job 116 with external jobid 'Your job 444180 ("B370-2_primary_filter") has been submitted'.
+[Fri Oct 18 20:27:09 2019]
+Finished job 117.
+25 of 173 steps (14%) done
+
+[Fri Oct 18 20:27:09 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B316-1.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B316-1.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-1/B316-1.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-1/mapped
+    jobid: 137
+    wildcards: NAME=B316-1
+    resources: mem_mb=30
+
+Submitted job 137 with external jobid 'Your job 444291 ("B316-1_bwa") has been submitted'.
+[Fri Oct 18 20:41:50 2019]
+Finished job 136.
+26 of 173 steps (15%) done
+
+[Fri Oct 18 20:41:50 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B314-4/B314-4.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B314-4/B314-4.nss.sam
+    jobid: 93
+    wildcards: NAME=B314-4
+    resources: mem_mb=15
+
+Submitted job 93 with external jobid 'Your job 444296 ("B314-4_primary_filter") has been submitted'.
+[Fri Oct 18 20:47:21 2019]
+Finished job 111.
+27 of 173 steps (16%) done
+
+[Fri Oct 18 20:47:21 2019]
+Job 68: ---SAM2BAM
+
+Submitted job 68 with external jobid 'Your job 444299 ("B357-2_sam2bam") has been submitted'.
+[Fri Oct 18 20:51:21 2019]
+Finished job 155.
+28 of 173 steps (16%) done
+
+[Fri Oct 18 20:51:21 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-3/B357-3.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-3/B357-3.nss.sam
+    jobid: 112
+    wildcards: NAME=B357-3
+    resources: mem_mb=15
+
+Submitted job 112 with external jobid 'Your job 444300 ("B357-3_primary_filter") has been submitted'.
+[Fri Oct 18 21:00:41 2019]
+Finished job 116.
+29 of 173 steps (17%) done
+
+[Fri Oct 18 21:00:41 2019]
+Job 73: ---SAM2BAM
+
+Submitted job 73 with external jobid 'Your job 444305 ("B370-2_sam2bam") has been submitted'.
+[Fri Oct 18 21:16:12 2019]
+Finished job 144.
+30 of 173 steps (17%) done
+
+[Fri Oct 18 21:16:12 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B320-2/B320-2.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B320-2/B320-2.nss.sam
+    jobid: 101
+    wildcards: NAME=B320-2
+    resources: mem_mb=15
+
+Submitted job 101 with external jobid 'Your job 444314 ("B320-2_primary_filter") has been submitted'.
+[Fri Oct 18 21:21:53 2019]
+Finished job 71.
+31 of 173 steps (18%) done
+
+[Fri Oct 18 21:21:53 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B357-6.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B357-6.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-6/B357-6.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-6/mapped
+    jobid: 158
+    wildcards: NAME=B357-6
+    resources: mem_mb=30
+
+Submitted job 158 with external jobid 'Your job 444316 ("B357-6_bwa") has been submitted'.
+[Fri Oct 18 21:33:03 2019]
+Finished job 161.
+32 of 173 steps (18%) done
+
+[Fri Oct 18 21:33:03 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-4/B370-4.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-4/B370-4.nss.sam
+    jobid: 118
+    wildcards: NAME=B370-4
+    resources: mem_mb=15
+
+Submitted job 118 with external jobid 'Your job 444326 ("B370-4_primary_filter") has been submitted'.
+[Fri Oct 18 23:58:42 2019]
+Finished job 137.
+33 of 173 steps (19%) done
+
+[Fri Oct 18 23:58:42 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-1/B316-1.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-1/B316-1.nss.sam
+    jobid: 94
+    wildcards: NAME=B316-1
+    resources: mem_mb=15
+
+Submitted job 94 with external jobid 'Your job 444441 ("B316-1_primary_filter") has been submitted'.
+[Sat Oct 19 00:03:13 2019]
+Finished job 93.
+34 of 173 steps (20%) done
+
+[Sat Oct 19 00:03:13 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B370-5.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B370-5.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-5/B370-5.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-5/mapped
+    jobid: 162
+    wildcards: NAME=B370-5
+    resources: mem_mb=30
+
+Submitted job 162 with external jobid 'Your job 444444 ("B370-5_bwa") has been submitted'.
+[Sat Oct 19 00:29:34 2019]
+Finished job 112.
+35 of 173 steps (20%) done
+
+[Sat Oct 19 00:29:34 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B316-3.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B316-3.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-3/B316-3.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-3/mapped
+    jobid: 139
+    wildcards: NAME=B316-3
+    resources: mem_mb=30
+
+Submitted job 139 with external jobid 'Your job 444464 ("B316-3_bwa") has been submitted'.
+[Sat Oct 19 00:51:45 2019]
+Finished job 68.
+36 of 173 steps (21%) done
+
+[Sat Oct 19 00:51:45 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B335-1.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B335-1.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B335-1/B335-1.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B335-1/mapped
+    jobid: 150
+    wildcards: NAME=B335-1
+    resources: mem_mb=30
+
+Submitted job 150 with external jobid 'Your job 444470 ("B335-1_bwa") has been submitted'.
+[Sat Oct 19 00:58:06 2019]
+Finished job 73.
+37 of 173 steps (21%) done
+
+[Sat Oct 19 00:58:06 2019]
+Job 69: ---SAM2BAM
+
+Submitted job 69 with external jobid 'Your job 444472 ("B357-3_sam2bam") has been submitted'.
+[Sat Oct 19 01:03:06 2019]
+Finished job 101.
+38 of 173 steps (22%) done
+
+[Sat Oct 19 01:03:06 2019]
+Job 58: ---SAM2BAM
+
+Submitted job 58 with external jobid 'Your job 444474 ("B320-2_sam2bam") has been submitted'.
+[Sat Oct 19 01:07:56 2019]
+Finished job 118.
+39 of 173 steps (23%) done
+
+[Sat Oct 19 01:07:56 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B320-1.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B320-1.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B320-1/B320-1.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B320-1/mapped
+    jobid: 143
+    wildcards: NAME=B320-1
+    resources: mem_mb=30
+
+Submitted job 143 with external jobid 'Your job 444477 ("B320-1_bwa") has been submitted'.
+[Sat Oct 19 01:20:17 2019]
+Finished job 158.
+40 of 173 steps (23%) done
+
+[Sat Oct 19 01:20:17 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-6/B357-6.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B357-6/B357-6.nss.sam
+    jobid: 115
+    wildcards: NAME=B357-6
+    resources: mem_mb=15
+
+Submitted job 115 with external jobid 'Your job 444487 ("B357-6_primary_filter") has been submitted'.
+[Sat Oct 19 01:49:39 2019]
+Finished job 94.
+41 of 173 steps (24%) done
+
+[Sat Oct 19 01:49:39 2019]
+Job 51: ---SAM2BAM
+
+Submitted job 51 with external jobid 'Your job 444498 ("B316-1_sam2bam") has been submitted'.
+[Sat Oct 19 02:31:52 2019]
+Finished job 162.
+42 of 173 steps (24%) done
+
+[Sat Oct 19 02:31:52 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-5/B370-5.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B370-5/B370-5.nss.sam
+    jobid: 119
+    wildcards: NAME=B370-5
+    resources: mem_mb=15
+
+Submitted job 119 with external jobid 'Your job 444515 ("B370-5_primary_filter") has been submitted'.
+[Sat Oct 19 02:37:22 2019]
+Finished job 139.
+43 of 173 steps (25%) done
+
+[Sat Oct 19 02:37:22 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-3/B316-3.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-3/B316-3.nss.sam
+    jobid: 96
+    wildcards: NAME=B316-3
+    resources: mem_mb=15
+
+Submitted job 96 with external jobid 'Your job 444522 ("B316-3_primary_filter") has been submitted'.
+[Sat Oct 19 02:37:32 2019]
+Finished job 150.
+44 of 173 steps (25%) done
+
+[Sat Oct 19 02:37:32 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B335-1/B335-1.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B335-1/B335-1.nss.sam
+    jobid: 107
+    wildcards: NAME=B335-1
+    resources: mem_mb=15
+
+Submitted job 107 with external jobid 'Your job 444523 ("B335-1_primary_filter") has been submitted'.
+[Sat Oct 19 02:56:33 2019]
+Finished job 143.
+45 of 173 steps (26%) done
+
+[Sat Oct 19 02:56:33 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B320-1/B320-1.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B320-1/B320-1.nss.sam
+    jobid: 100
+    wildcards: NAME=B320-1
+    resources: mem_mb=15
+
+Submitted job 100 with external jobid 'Your job 444529 ("B320-1_primary_filter") has been submitted'.
+[Sat Oct 19 03:03:23 2019]
+Finished job 69.
+46 of 173 steps (27%) done
+
+[Sat Oct 19 03:03:23 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B335-2.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B335-2.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B335-2/B335-2.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B335-2/mapped
+    jobid: 151
+    wildcards: NAME=B335-2
+    resources: mem_mb=30
+
+Submitted job 151 with external jobid 'Your job 444531 ("B335-2_bwa") has been submitted'.
+[Sat Oct 19 03:10:04 2019]
+Finished job 58.
+47 of 173 steps (27%) done
+
+[Sat Oct 19 03:10:04 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B331-4.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B331-4.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B331-4/B331-4.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B331-4/mapped
+    jobid: 149
+    wildcards: NAME=B331-4
+    resources: mem_mb=30
+
+Submitted job 149 with external jobid 'Your job 444533 ("B331-4_bwa") has been submitted'.
+[Sat Oct 19 03:24:05 2019]
+Finished job 115.
+48 of 173 steps (28%) done
+
+[Sat Oct 19 03:24:05 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B335-3.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B335-3.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B335-3/B335-3.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B335-3/mapped
+    jobid: 152
+    wildcards: NAME=B335-3
+    resources: mem_mb=30
+
+Submitted job 152 with external jobid 'Your job 444537 ("B335-3_bwa") has been submitted'.
+[Sat Oct 19 04:38:39 2019]
+Finished job 51.
+49 of 173 steps (28%) done
+
+[Sat Oct 19 04:38:39 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B320-3.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B320-3.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B320-3/B320-3.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B320-3/mapped
+    jobid: 130
+    wildcards: NAME=B320-3
+    resources: mem_mb=30
+
+Submitted job 130 with external jobid 'Your job 444571 ("B320-3_bwa") has been submitted'.
+[Sat Oct 19 04:41:49 2019]
+Finished job 119.
+50 of 173 steps (29%) done
+
+[Sat Oct 19 04:41:49 2019]
+Job 70: ---SAM2BAM
+
+Submitted job 70 with external jobid 'Your job 444575 ("B357-4_sam2bam") has been submitted'.
+[Sat Oct 19 04:46:40 2019]
+Finished job 96.
+51 of 173 steps (29%) done
+
+[Sat Oct 19 04:46:40 2019]
+Job 53: ---SAM2BAM
+
+Submitted job 53 with external jobid 'Your job 444577 ("B316-3_sam2bam") has been submitted'.
+[Sat Oct 19 04:51:21 2019]
+Finished job 107.
+52 of 173 steps (30%) done
+
+[Sat Oct 19 04:51:21 2019]
+Job 64: ---SAM2BAM
+
+Submitted job 64 with external jobid 'Your job 444579 ("B335-1_sam2bam") has been submitted'.
+[Sat Oct 19 04:56:01 2019]
+Finished job 100.
+53 of 173 steps (31%) done
+
+[Sat Oct 19 04:56:01 2019]
+Job 57: ---SAM2BAM
+
+Submitted job 57 with external jobid 'Your job 444582 ("B320-1_sam2bam") has been submitted'.
+[Sat Oct 19 05:12:12 2019]
+Finished job 151.
+54 of 173 steps (31%) done
+
+[Sat Oct 19 05:12:12 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B335-2/B335-2.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B335-2/B335-2.nss.sam
+    jobid: 108
+    wildcards: NAME=B335-2
+    resources: mem_mb=15
+
+Submitted job 108 with external jobid 'Your job 444593 ("B335-2_primary_filter") has been submitted'.
+[Sat Oct 19 05:12:42 2019]
+Finished job 149.
+55 of 173 steps (32%) done
+
+[Sat Oct 19 05:12:42 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B331-4/B331-4.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B331-4/B331-4.nss.sam
+    jobid: 106
+    wildcards: NAME=B331-4
+    resources: mem_mb=15
+
+Submitted job 106 with external jobid 'Your job 444594 ("B331-4_primary_filter") has been submitted'.
+[Sat Oct 19 05:20:53 2019]
+Finished job 152.
+56 of 173 steps (32%) done
+
+[Sat Oct 19 05:20:53 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B335-3/B335-3.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B335-3/B335-3.nss.sam
+    jobid: 109
+    wildcards: NAME=B335-3
+    resources: mem_mb=15
+
+Submitted job 109 with external jobid 'Your job 444597 ("B335-3_primary_filter") has been submitted'.
+[Sat Oct 19 05:54:25 2019]
+Finished job 130.
+57 of 173 steps (33%) done
+
+[Sat Oct 19 05:54:25 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B320-3/B320-3.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B320-3/B320-3.nss.sam
+    jobid: 87
+    wildcards: NAME=B320-3
+    resources: mem_mb=15
+
+Submitted job 87 with external jobid 'Your job 444615 ("B320-3_primary_filter") has been submitted'.
+[Sat Oct 19 06:04:05 2019]
+Finished job 70.
+58 of 173 steps (34%) done
+
+[Sat Oct 19 06:04:05 2019]
+Job 4: ---SORTED
+
+Submitted job 4 with external jobid 'Your job 444616 ("B314-1_sort") has been submitted'.
+[Sat Oct 19 06:18:56 2019]
+Finished job 53.
+59 of 173 steps (34%) done
+
+[Sat Oct 19 06:18:56 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B331-2.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B331-2.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B331-2/B331-2.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B331-2/mapped
+    jobid: 147
+    wildcards: NAME=B331-2
+    resources: mem_mb=30
+
+Submitted job 147 with external jobid 'Your job 444621 ("B331-2_bwa") has been submitted'.
+[Sat Oct 19 06:29:37 2019]
+Finished job 64.
+60 of 173 steps (35%) done
+
+[Sat Oct 19 06:29:37 2019]
+Job 72: ---SAM2BAM
+
+Submitted job 72 with external jobid 'Your job 444625 ("B357-6_sam2bam") has been submitted'.
+[Sat Oct 19 06:39:47 2019]
+Finished job 108.
+61 of 173 steps (35%) done
+
+[Sat Oct 19 06:39:47 2019]
+Job 65: ---SAM2BAM
+
+Submitted job 65 with external jobid 'Your job 444630 ("B335-2_sam2bam") has been submitted'.
+[Sat Oct 19 06:43:58 2019]
+Finished job 106.
+62 of 173 steps (36%) done
+
+[Sat Oct 19 06:43:58 2019]
+Job 63: ---SAM2BAM
+
+Submitted job 63 with external jobid 'Your job 444634 ("B331-4_sam2bam") has been submitted'.
+[Sat Oct 19 06:45:08 2019]
+Finished job 57.
+63 of 173 steps (36%) done
+
+[Sat Oct 19 06:45:08 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B331-3.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B331-3.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B331-3/B331-3.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B331-3/mapped
+    jobid: 148
+    wildcards: NAME=B331-3
+    resources: mem_mb=30
+
+Submitted job 148 with external jobid 'Your job 444636 ("B331-3_bwa") has been submitted'.
+[Sat Oct 19 06:49:48 2019]
+Finished job 109.
+64 of 173 steps (37%) done
+
+[Sat Oct 19 06:49:48 2019]
+Job 66: ---SAM2BAM
+
+Submitted job 66 with external jobid 'Your job 444641 ("B335-3_sam2bam") has been submitted'.
+[Sat Oct 19 07:22:20 2019]
+Finished job 87.
+65 of 173 steps (38%) done
+
+[Sat Oct 19 07:22:20 2019]
+Job 44: ---SAM2BAM
+
+Submitted job 44 with external jobid 'Your job 444660 ("B320-3_sam2bam") has been submitted'.
+[Sat Oct 19 07:50:31 2019]
+Finished job 4.
+66 of 173 steps (38%) done
+
+[Sat Oct 19 07:50:31 2019]
+Job 5: ---SORTED
+
+Submitted job 5 with external jobid 'Your job 444668 ("B314-2_sort") has been submitted'.
+[Sat Oct 19 07:52:02 2019]
+Finished job 147.
+67 of 173 steps (39%) done
+
+[Sat Oct 19 07:52:02 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B331-2/B331-2.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B331-2/B331-2.nss.sam
+    jobid: 104
+    wildcards: NAME=B331-2
+    resources: mem_mb=15
+
+Submitted job 104 with external jobid 'Your job 444670 ("B331-2_primary_filter") has been submitted'.
+[Sat Oct 19 08:09:43 2019]
+Finished job 72.
+68 of 173 steps (39%) done
+
+[Sat Oct 19 08:09:43 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B316-7.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B316-7.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-7/B316-7.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-7/mapped
+    jobid: 131
+    wildcards: NAME=B316-7
+    resources: mem_mb=30
+
+Submitted job 131 with external jobid 'Your job 444679 ("B316-7_bwa") has been submitted'.
+[Sat Oct 19 08:24:54 2019]
+Finished job 63.
+69 of 173 steps (40%) done
+
+[Sat Oct 19 08:24:54 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B320-5.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B320-5.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B320-5/B320-5.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B320-5/mapped
+    jobid: 145
+    wildcards: NAME=B320-5
+    resources: mem_mb=30
+
+Submitted job 145 with external jobid 'Your job 444686 ("B320-5_bwa") has been submitted'.
+[Sat Oct 19 08:25:54 2019]
+Finished job 148.
+70 of 173 steps (40%) done
+
+[Sat Oct 19 08:25:54 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B331-3/B331-3.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B331-3/B331-3.nss.sam
+    jobid: 105
+    wildcards: NAME=B331-3
+    resources: mem_mb=15
+
+Submitted job 105 with external jobid 'Your job 444687 ("B331-3_primary_filter") has been submitted'.
+[Sat Oct 19 08:27:34 2019]
+Finished job 65.
+71 of 173 steps (41%) done
+
+[Sat Oct 19 08:27:34 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/US3-10.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/US3-10.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-10/US3-10.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-10/mapped
+    jobid: 163
+    wildcards: NAME=US3-10
+    resources: mem_mb=30
+
+Submitted job 163 with external jobid 'Your job 444688 ("US3-10_bwa") has been submitted'.
+[Sat Oct 19 08:49:05 2019]
+Finished job 66.
+72 of 173 steps (42%) done
+
+[Sat Oct 19 08:49:05 2019]
+Job 49: ---SAM2BAM
+
+Submitted job 49 with external jobid 'Your job 444699 ("B314-3_sam2bam") has been submitted'.
+[Sat Oct 19 09:27:27 2019]
+Finished job 104.
+73 of 173 steps (42%) done
+
+[Sat Oct 19 09:27:27 2019]
+Job 61: ---SAM2BAM
+
+Submitted job 61 with external jobid 'Your job 444720 ("B331-2_sam2bam") has been submitted'.
+[Sat Oct 19 09:28:57 2019]
+Finished job 44.
+74 of 173 steps (43%) done
+
+[Sat Oct 19 09:28:57 2019]
+Job 75: ---SAM2BAM
+
+Submitted job 75 with external jobid 'Your job 444721 ("B370-4_sam2bam") has been submitted'.
+[Sat Oct 19 09:49:29 2019]
+Finished job 131.
+75 of 173 steps (43%) done
+
+[Sat Oct 19 09:49:29 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-7/B316-7.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-7/B316-7.nss.sam
+    jobid: 88
+    wildcards: NAME=B316-7
+    resources: mem_mb=15
+
+Submitted job 88 with external jobid 'Your job 444727 ("B316-7_primary_filter") has been submitted'.
+[Sat Oct 19 09:52:29 2019]
+Finished job 5.
+76 of 173 steps (44%) done
+
+[Sat Oct 19 09:52:29 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B316-5.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B316-5.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-5/B316-5.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-5/mapped
+    jobid: 141
+    wildcards: NAME=B316-5
+    resources: mem_mb=30
+
+Submitted job 141 with external jobid 'Your job 444730 ("B316-5_bwa") has been submitted'.
+[Sat Oct 19 09:55:39 2019]
+Finished job 105.
+77 of 173 steps (45%) done
+
+[Sat Oct 19 09:55:39 2019]
+Job 62: ---SAM2BAM
+
+Submitted job 62 with external jobid 'Your job 444731 ("B331-3_sam2bam") has been submitted'.
+[Sat Oct 19 09:56:29 2019]
+Error in rule bwa:
+    jobid: 163
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-10/US3-10.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-10/mapped
+    cluster_jobid: Your job 444688 ("US3-10_bwa") has been submitted
+
+Trying to restart job 163.
+
+[Sat Oct 19 09:56:29 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/US3-10.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/US3-10.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-10/US3-10.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-10/mapped
+    jobid: 163
+    wildcards: NAME=US3-10
+    resources: mem_mb=60
+
+Submitted job 163 with external jobid 'Your job 444732 ("US3-10_bwa") has been submitted'.
+[Sat Oct 19 10:02:09 2019]
+Finished job 145.
+78 of 173 steps (45%) done
+
+[Sat Oct 19 10:02:09 2019]
+rule primary_filter:
+    input: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B320-5/B320-5.sam
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B320-5/B320-5.nss.sam
+    jobid: 102
+    wildcards: NAME=B320-5
+    resources: mem_mb=15
+
+Submitted job 102 with external jobid 'Your job 444735 ("B320-5_primary_filter") has been submitted'.
+[Sat Oct 19 10:18:30 2019]
+Finished job 49.
+79 of 173 steps (46%) done
+
+[Sat Oct 19 10:18:30 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B331-1.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B331-1.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B331-1/B331-1.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B331-1/mapped
+    jobid: 146
+    wildcards: NAME=B331-1
+    resources: mem_mb=30
+
+Submitted job 146 with external jobid 'Your job 444745 ("B331-1_bwa") has been submitted'.
+[Sat Oct 19 10:52:22 2019]
+Finished job 88.
+80 of 173 steps (46%) done
+
+[Sat Oct 19 10:52:22 2019]
+Job 45: ---SAM2BAM
+
+Submitted job 45 with external jobid 'Your job 444767 ("B316-7_sam2bam") has been submitted'.
+[Sat Oct 19 10:53:32 2019]
+Finished job 61.
+81 of 173 steps (47%) done
+
+[Sat Oct 19 10:53:32 2019]
+rule bwa:
+    input: /workdir/data/CDC/metagenomes/merged/unzip/B316-6.1.fastq, /workdir/data/CDC/metagenomes/merged/unzip/B316-6.2.fastq
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-6/B316-6.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/B316-6/mapped
+    jobid: 142
+    wildcards: NAME=B316-6
+    resources: mem_mb=30
+
+Submitted job 142 with external jobid 'Your job 444768 ("B316-6_bwa") has been submitted'.
+[Sat Oct 19 10:53:42 2019]
+Error in rule bwa:
+    jobid: 163
+    output: /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-10/US3-10.sam, /workdir/users/agk85/CDC2/mapping_with/mapping_with_t1/US3-10/mapped
+    cluster_jobid: Your job 444732 ("US3-10_bwa") has been submitted
+
+[Sat Oct 19 10:55:53 2019]
+Finished job 75.
+82 of 173 steps (47%) done
+[Sat Oct 19 10:59:03 2019]
+Finished job 102.
+83 of 173 steps (48%) done
+[Sat Oct 19 11:03:23 2019]
+Finished job 141.
+84 of 173 steps (49%) done
+[Sat Oct 19 11:10:33 2019]
+Finished job 62.
+85 of 173 steps (49%) done
+[Sat Oct 19 11:18:14 2019]
+Finished job 146.
+86 of 173 steps (50%) done
+[Sat Oct 19 12:01:16 2019]
+Finished job 45.
+87 of 173 steps (50%) done
+[Sat Oct 19 12:03:27 2019]
+Finished job 142.
+88 of 173 steps (51%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/CDC2/scripts/binning_with/.snakemake/log/2019-10-18T034053.433516.snakemake.log

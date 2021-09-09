@@ -1,0 +1,35 @@
+#This is a config file where you can specify all of the different configurations that you want to use for your particular script run, 
+#it is all referenced at the top of the snakemake if you are interested in hardcoding or adding any of the variables. 
+#This particular config file is an example that can be used for alignment_readcount_snakemake
+
+######This is where you should make project-specific edits######
+
+#Location of the QC'ed data
+DATA_LOCATION: "/workdir/data/press/metagenomes/merged"
+
+#Working directory
+BASE: "/workdir/users/agk85/press/mapping/bwa_mapping"
+
+#Path to the reference database including the prefix (this should be precomputed)
+REFERENCE_LOCATION: "/workdir/users/agk85/press/mapping/references/ProxiMeta-1_scaffold"
+
+#This is for the SAM filtering step, in general we use 90% identity
+percent_identity_filter: 0.9
+
+#Leave these next two set to 0
+minimum_match_length_ratio: 0
+minimum_percent_match: 0
+
+#1 = SAM, leave this
+output_type: 1
+
+#This might change depending on your needs. How it is set, only primary alignments will be kept
+sam2bam_flag: "-F 0x900"
+
+#This refers to the coverage of the gene body, we typically set this to 80% -> '80'
+rpkm_filter_coverage: 80
+
+#Put the correct extension here for your QC'ed fastq files, examples include '_2.fastq', '_1.fastq', '_1.adapter.fastq', etc
+fastq_file_postfix2: ".2.fastq" 
+fastq_file_postfix1: ".1.fastq" 
+

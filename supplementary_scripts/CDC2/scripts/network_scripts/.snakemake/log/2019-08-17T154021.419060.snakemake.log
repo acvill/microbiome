@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	2	normalize
+	2	rscript
+	5
+
+[Sat Aug 17 15:40:21 2019]
+Job 9: ---rscript
+
+[Sat Aug 17 15:40:29 2019]
+Error in rule rscript:
+    jobid: 9
+    output: /workdir/users/agk85/CDC2/networks/logs/B314-1_final_network_rscript_2_0
+
+RuleException:
+CalledProcessError in line 96 of /local/workdir/users/agk85/CDC2/scripts/network/snake_trans_network:
+Command 'set -euo pipefail;  if [ ! -e /workdir/users/agk85/CDC2/networks/membership ]; then mkdir -p /workdir/users/agk85/CDC2/networks/membership; fi
+		if [ ! -e /workdir/users/agk85/CDC2/networks/outputs ]; then mkdir -p /workdir/users/agk85/CDC2/networks/outputs; fi
+		if [ ! -e /workdir/users/agk85/CDC2/networks/graphs ]; then mkdir -p /workdir/users/agk85/CDC2/networks/graphs; fi
+		cd /workdir/users/agk85/CDC2/networks/membership
+		/programs/R-3.3.2/bin/Rscript /workdir/users/agk85/simulated/scripts/network_scripts/network_clustering.R CDC2 B314-1 B314-1 mge count B314-1
+		touch /workdir/users/agk85/CDC2/networks/logs/B314-1_final_network_rscript_2_0' returned non-zero exit status 1.
+  File "/local/workdir/users/agk85/CDC2/scripts/network/snake_trans_network", line 96, in __rule_rscript
+  File "/usr/lib64/python3.6/concurrent/futures/thread.py", line 56, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network/.snakemake/log/2019-08-17T154021.419060.snakemake.log

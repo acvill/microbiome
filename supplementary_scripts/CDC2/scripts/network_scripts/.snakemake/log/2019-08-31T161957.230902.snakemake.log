@@ -1,0 +1,95 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	32	checkm
+	1	final
+	18	normalize
+	19	rscript
+	70
+
+[Sat Aug 31 16:19:57 2019]
+Job 127: ---rscript
+
+[Sat Aug 31 16:20:27 2019]
+Finished job 127.
+1 of 70 steps (1%) done
+
+[Sat Aug 31 16:20:27 2019]
+Job 146: ---checkm
+
+[Sat Aug 31 16:45:21 2019]
+Finished job 146.
+2 of 70 steps (3%) done
+
+[Sat Aug 31 16:45:21 2019]
+Job 63: ---normalize
+
+[Sat Aug 31 16:45:22 2019]
+Finished job 63.
+3 of 70 steps (4%) done
+
+[Sat Aug 31 16:45:22 2019]
+Job 106: ---rscript
+
+[Sat Aug 31 16:45:33 2019]
+Finished job 106.
+4 of 70 steps (6%) done
+
+[Sat Aug 31 16:45:33 2019]
+Job 52: ---normalize
+
+[Sat Aug 31 16:45:36 2019]
+Finished job 52.
+5 of 70 steps (7%) done
+
+[Sat Aug 31 16:45:36 2019]
+Job 95: ---rscript
+
+[Sat Aug 31 16:45:42 2019]
+Finished job 95.
+6 of 70 steps (9%) done
+
+[Sat Aug 31 16:45:42 2019]
+Job 72: ---normalize
+
+[Sat Aug 31 16:45:44 2019]
+Finished job 72.
+7 of 70 steps (10%) done
+
+[Sat Aug 31 16:45:44 2019]
+Job 115: ---rscript
+
+[Sat Aug 31 16:45:53 2019]
+Finished job 115.
+8 of 70 steps (11%) done
+
+[Sat Aug 31 16:45:53 2019]
+Job 131: ---checkm
+
+[Sat Aug 31 17:08:54 2019]
+Finished job 131.
+9 of 70 steps (13%) done
+
+[Sat Aug 31 17:08:54 2019]
+Job 78: ---normalize
+
+[Sat Aug 31 17:08:56 2019]
+Finished job 78.
+10 of 70 steps (14%) done
+
+[Sat Aug 31 17:08:56 2019]
+Job 121: ---rscript
+
+[Sat Aug 31 17:09:05 2019]
+Finished job 121.
+11 of 70 steps (16%) done
+
+[Sat Aug 31 17:09:05 2019]
+Job 170: ---checkm
+
+Terminating processes on user request, this might take some time.
+Cancelling snakemake on user request.

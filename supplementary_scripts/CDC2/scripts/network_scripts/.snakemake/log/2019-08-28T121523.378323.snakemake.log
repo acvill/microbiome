@@ -1,0 +1,472 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 20
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	36	contig_bin
+	1	final
+	37
+
+[Wed Aug 28 12:15:23 2019]
+Job 12: ---contig_bin
+
+Submitted job 12 with external jobid 'Your job 441471 ("contig_bin_US8-5") has been submitted'.
+
+[Wed Aug 28 12:15:23 2019]
+Job 24: ---contig_bin
+
+Submitted job 24 with external jobid 'Your job 441472 ("contig_bin_B331-1") has been submitted'.
+
+[Wed Aug 28 12:15:23 2019]
+Job 14: ---contig_bin
+
+Submitted job 14 with external jobid 'Your job 441473 ("contig_bin_B320-5") has been submitted'.
+
+[Wed Aug 28 12:15:23 2019]
+Job 19: ---contig_bin
+
+Submitted job 19 with external jobid 'Your job 441474 ("contig_bin_B314-1") has been submitted'.
+
+[Wed Aug 28 12:15:23 2019]
+Job 15: ---contig_bin
+
+Submitted job 15 with external jobid 'Your job 441475 ("contig_bin_B316-1") has been submitted'.
+
+[Wed Aug 28 12:15:23 2019]
+Job 10: ---contig_bin
+
+Submitted job 10 with external jobid 'Your job 441476 ("contig_bin_B316-6") has been submitted'.
+
+[Wed Aug 28 12:15:23 2019]
+Job 3: ---contig_bin
+
+Submitted job 3 with external jobid 'Your job 441477 ("contig_bin_B314-2") has been submitted'.
+
+[Wed Aug 28 12:15:23 2019]
+Job 9: ---contig_bin
+
+Submitted job 9 with external jobid 'Your job 441478 ("contig_bin_US8-1") has been submitted'.
+
+[Wed Aug 28 12:15:24 2019]
+Job 17: ---contig_bin
+
+Submitted job 17 with external jobid 'Your job 441479 ("contig_bin_B357-3") has been submitted'.
+
+[Wed Aug 28 12:15:24 2019]
+Job 13: ---contig_bin
+
+Submitted job 13 with external jobid 'Your job 441480 ("contig_bin_US8-3") has been submitted'.
+
+[Wed Aug 28 12:15:24 2019]
+Job 4: ---contig_bin
+
+Submitted job 4 with external jobid 'Your job 441481 ("contig_bin_B331-3") has been submitted'.
+
+[Wed Aug 28 12:15:24 2019]
+Job 11: ---contig_bin
+
+Submitted job 11 with external jobid 'Your job 441482 ("contig_bin_B357-4") has been submitted'.
+
+[Wed Aug 28 12:15:24 2019]
+Job 25: ---contig_bin
+
+Submitted job 25 with external jobid 'Your job 441483 ("contig_bin_US8-2") has been submitted'.
+
+[Wed Aug 28 12:15:24 2019]
+Job 18: ---contig_bin
+
+Submitted job 18 with external jobid 'Your job 441484 ("contig_bin_B316-3") has been submitted'.
+
+[Wed Aug 28 12:15:24 2019]
+Job 23: ---contig_bin
+
+Submitted job 23 with external jobid 'Your job 441485 ("contig_bin_B320-1") has been submitted'.
+
+[Wed Aug 28 12:15:24 2019]
+Job 8: ---contig_bin
+
+Submitted job 8 with external jobid 'Your job 441486 ("contig_bin_B320-2") has been submitted'.
+
+[Wed Aug 28 12:15:24 2019]
+Job 21: ---contig_bin
+
+Submitted job 21 with external jobid 'Your job 441487 ("contig_bin_B335-1") has been submitted'.
+
+[Wed Aug 28 12:15:25 2019]
+Job 20: ---contig_bin
+
+Submitted job 20 with external jobid 'Your job 441488 ("contig_bin_B335-2") has been submitted'.
+
+[Wed Aug 28 12:15:25 2019]
+Job 16: ---contig_bin
+
+Submitted job 16 with external jobid 'Your job 441489 ("contig_bin_US8-4") has been submitted'.
+
+[Wed Aug 28 12:15:25 2019]
+Job 22: ---contig_bin
+
+Submitted job 22 with external jobid 'Your job 441490 ("contig_bin_B357-6") has been submitted'.
+[Wed Aug 28 12:15:45 2019]
+Error in rule contig_bin:
+    jobid: 12
+    output: /workdir/users/agk85/CDC2/logs/finals/US8-5_final_contig_bin, /workdir/users/agk85/CDC2/bins/US8-5_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441471 ("contig_bin_US8-5") has been submitted
+
+Trying to restart job 12.
+[Wed Aug 28 12:15:45 2019]
+Error in rule contig_bin:
+    jobid: 24
+    output: /workdir/users/agk85/CDC2/logs/finals/B331-1_final_contig_bin, /workdir/users/agk85/CDC2/bins/B331-1_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441472 ("contig_bin_B331-1") has been submitted
+
+Trying to restart job 24.
+[Wed Aug 28 12:15:45 2019]
+Error in rule contig_bin:
+    jobid: 14
+    output: /workdir/users/agk85/CDC2/logs/finals/B320-5_final_contig_bin, /workdir/users/agk85/CDC2/bins/B320-5_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441473 ("contig_bin_B320-5") has been submitted
+
+Trying to restart job 14.
+[Wed Aug 28 12:15:45 2019]
+Error in rule contig_bin:
+    jobid: 19
+    output: /workdir/users/agk85/CDC2/logs/finals/B314-1_final_contig_bin, /workdir/users/agk85/CDC2/bins/B314-1_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441474 ("contig_bin_B314-1") has been submitted
+
+Trying to restart job 19.
+
+[Wed Aug 28 12:15:46 2019]
+Job 12: ---contig_bin
+
+Submitted job 12 with external jobid 'Your job 441491 ("contig_bin_US8-5") has been submitted'.
+
+[Wed Aug 28 12:15:46 2019]
+Job 24: ---contig_bin
+
+Submitted job 24 with external jobid 'Your job 441492 ("contig_bin_B331-1") has been submitted'.
+
+[Wed Aug 28 12:15:46 2019]
+Job 14: ---contig_bin
+
+Submitted job 14 with external jobid 'Your job 441493 ("contig_bin_B320-5") has been submitted'.
+
+[Wed Aug 28 12:15:46 2019]
+Job 19: ---contig_bin
+
+Submitted job 19 with external jobid 'Your job 441494 ("contig_bin_B314-1") has been submitted'.
+[Wed Aug 28 12:16:45 2019]
+Error in rule contig_bin:
+    jobid: 15
+    output: /workdir/users/agk85/CDC2/logs/finals/B316-1_final_contig_bin, /workdir/users/agk85/CDC2/bins/B316-1_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441475 ("contig_bin_B316-1") has been submitted
+
+Trying to restart job 15.
+[Wed Aug 28 12:16:45 2019]
+
+Error in rule contig_bin:
+[Wed Aug 28 12:16:45 2019]
+    jobid: 10
+Job 15: ---contig_bin
+    output: /workdir/users/agk85/CDC2/logs/finals/B316-6_final_contig_bin, /workdir/users/agk85/CDC2/bins/B316-6_contig_taxa_network_2_fgs
+
+    cluster_jobid: Your job 441476 ("contig_bin_B316-6") has been submitted
+
+Trying to restart job 10.
+[Wed Aug 28 12:16:45 2019]
+Error in rule contig_bin:
+    jobid: 3
+    output: /workdir/users/agk85/CDC2/logs/finals/B314-2_final_contig_bin, /workdir/users/agk85/CDC2/bins/B314-2_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441477 ("contig_bin_B314-2") has been submitted
+
+Trying to restart job 3.
+[Wed Aug 28 12:16:45 2019]
+Error in rule contig_bin:
+    jobid: 9
+    output: /workdir/users/agk85/CDC2/logs/finals/US8-1_final_contig_bin, /workdir/users/agk85/CDC2/bins/US8-1_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441478 ("contig_bin_US8-1") has been submitted
+
+Trying to restart job 9.
+Submitted job 15 with external jobid 'Your job 441495 ("contig_bin_B316-1") has been submitted'.
+
+[Wed Aug 28 12:16:45 2019]
+Job 10: ---contig_bin
+
+Submitted job 10 with external jobid 'Your job 441496 ("contig_bin_B316-6") has been submitted'.
+
+[Wed Aug 28 12:16:45 2019]
+Job 3: ---contig_bin
+
+Submitted job 3 with external jobid 'Your job 441497 ("contig_bin_B314-2") has been submitted'.
+
+[Wed Aug 28 12:16:45 2019]
+Job 9: ---contig_bin
+
+Submitted job 9 with external jobid 'Your job 441498 ("contig_bin_US8-1") has been submitted'.
+[Wed Aug 28 12:17:09 2019]
+Error in rule contig_bin:
+    jobid: 17
+    output: /workdir/users/agk85/CDC2/logs/finals/B357-3_final_contig_bin, /workdir/users/agk85/CDC2/bins/B357-3_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441479 ("contig_bin_B357-3") has been submitted
+
+Trying to restart job 17.
+
+[Wed Aug 28 12:17:09 2019]
+[Wed Aug 28 12:17:09 2019]
+Job 17: ---contig_bin
+Error in rule contig_bin:
+
+    jobid: 13
+    output: /workdir/users/agk85/CDC2/logs/finals/US8-3_final_contig_bin, /workdir/users/agk85/CDC2/bins/US8-3_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441480 ("contig_bin_US8-3") has been submitted
+
+Trying to restart job 13.
+Submitted job 17 with external jobid 'Your job 441499 ("contig_bin_B357-3") has been submitted'.
+
+[Wed Aug 28 12:17:09 2019]
+Job 13: ---contig_bin
+
+Submitted job 13 with external jobid 'Your job 441500 ("contig_bin_US8-3") has been submitted'.
+[Wed Aug 28 12:17:10 2019]
+Error in rule contig_bin:
+    jobid: 4
+    output: /workdir/users/agk85/CDC2/logs/finals/B331-3_final_contig_bin, /workdir/users/agk85/CDC2/bins/B331-3_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441481 ("contig_bin_B331-3") has been submitted
+
+Trying to restart job 4.
+
+[Wed Aug 28 12:17:10 2019]
+[Wed Aug 28 12:17:10 2019]
+Error in rule contig_bin:
+Job 4: ---contig_bin
+    jobid: 11
+
+    output: /workdir/users/agk85/CDC2/logs/finals/B357-4_final_contig_bin, /workdir/users/agk85/CDC2/bins/B357-4_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441482 ("contig_bin_B357-4") has been submitted
+
+Trying to restart job 11.
+Submitted job 4 with external jobid 'Your job 441501 ("contig_bin_B331-3") has been submitted'.
+
+[Wed Aug 28 12:17:10 2019]
+Job 11: ---contig_bin
+
+Submitted job 11 with external jobid 'Your job 441502 ("contig_bin_B357-4") has been submitted'.
+[Wed Aug 28 12:17:58 2019]
+Error in rule contig_bin:
+    jobid: 25
+    output: /workdir/users/agk85/CDC2/logs/finals/US8-2_final_contig_bin, /workdir/users/agk85/CDC2/bins/US8-2_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441483 ("contig_bin_US8-2") has been submitted
+
+Trying to restart job 25.
+
+[Wed Aug 28 12:17:58 2019]
+[Wed Aug 28 12:17:58 2019]
+Job 25: ---contig_bin
+Error in rule contig_bin:
+
+    jobid: 18
+    output: /workdir/users/agk85/CDC2/logs/finals/B316-3_final_contig_bin, /workdir/users/agk85/CDC2/bins/B316-3_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441484 ("contig_bin_B316-3") has been submitted
+
+Trying to restart job 18.
+[Wed Aug 28 12:17:58 2019]
+Error in rule contig_bin:
+    jobid: 23
+    output: /workdir/users/agk85/CDC2/logs/finals/B320-1_final_contig_bin, /workdir/users/agk85/CDC2/bins/B320-1_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441485 ("contig_bin_B320-1") has been submitted
+
+Trying to restart job 23.
+[Wed Aug 28 12:17:58 2019]
+Error in rule contig_bin:
+    jobid: 8
+    output: /workdir/users/agk85/CDC2/logs/finals/B320-2_final_contig_bin, /workdir/users/agk85/CDC2/bins/B320-2_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441486 ("contig_bin_B320-2") has been submitted
+
+Trying to restart job 8.
+Submitted job 25 with external jobid 'Your job 441503 ("contig_bin_US8-2") has been submitted'.
+
+[Wed Aug 28 12:17:58 2019]
+Job 18: ---contig_bin
+
+Submitted job 18 with external jobid 'Your job 441504 ("contig_bin_B316-3") has been submitted'.
+
+[Wed Aug 28 12:17:58 2019]
+Job 23: ---contig_bin
+
+Submitted job 23 with external jobid 'Your job 441505 ("contig_bin_B320-1") has been submitted'.
+
+[Wed Aug 28 12:17:58 2019]
+Job 8: ---contig_bin
+
+Submitted job 8 with external jobid 'Your job 441506 ("contig_bin_B320-2") has been submitted'.
+[Wed Aug 28 12:18:46 2019]
+Error in rule contig_bin:
+    jobid: 21
+    output: /workdir/users/agk85/CDC2/logs/finals/B335-1_final_contig_bin, /workdir/users/agk85/CDC2/bins/B335-1_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441487 ("contig_bin_B335-1") has been submitted
+
+Trying to restart job 21.
+
+[Wed Aug 28 12:18:46 2019]
+[Wed Aug 28 12:18:46 2019]
+Error in rule contig_bin:
+Job 21: ---contig_bin
+    jobid: 20
+
+    output: /workdir/users/agk85/CDC2/logs/finals/B335-2_final_contig_bin, /workdir/users/agk85/CDC2/bins/B335-2_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441488 ("contig_bin_B335-2") has been submitted
+
+Trying to restart job 20.
+[Wed Aug 28 12:18:46 2019]
+Error in rule contig_bin:
+    jobid: 16
+    output: /workdir/users/agk85/CDC2/logs/finals/US8-4_final_contig_bin, /workdir/users/agk85/CDC2/bins/US8-4_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441489 ("contig_bin_US8-4") has been submitted
+
+Trying to restart job 16.
+[Wed Aug 28 12:18:46 2019]
+Error in rule contig_bin:
+    jobid: 22
+    output: /workdir/users/agk85/CDC2/logs/finals/B357-6_final_contig_bin, /workdir/users/agk85/CDC2/bins/B357-6_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441490 ("contig_bin_B357-6") has been submitted
+
+Trying to restart job 22.
+Submitted job 21 with external jobid 'Your job 441507 ("contig_bin_B335-1") has been submitted'.
+
+[Wed Aug 28 12:18:46 2019]
+Job 20: ---contig_bin
+
+Submitted job 20 with external jobid 'Your job 441508 ("contig_bin_B335-2") has been submitted'.
+
+[Wed Aug 28 12:18:46 2019]
+Job 16: ---contig_bin
+
+Submitted job 16 with external jobid 'Your job 441509 ("contig_bin_US8-4") has been submitted'.
+
+[Wed Aug 28 12:18:46 2019]
+Job 22: ---contig_bin
+
+Submitted job 22 with external jobid 'Your job 441510 ("contig_bin_B357-6") has been submitted'.
+[Wed Aug 28 12:19:09 2019]
+Error in rule contig_bin:
+    jobid: 12
+    output: /workdir/users/agk85/CDC2/logs/finals/US8-5_final_contig_bin, /workdir/users/agk85/CDC2/bins/US8-5_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441491 ("contig_bin_US8-5") has been submitted
+
+[Wed Aug 28 12:19:09 2019]
+Error in rule contig_bin:
+    jobid: 24
+    output: /workdir/users/agk85/CDC2/logs/finals/B331-1_final_contig_bin, /workdir/users/agk85/CDC2/bins/B331-1_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441492 ("contig_bin_B331-1") has been submitted
+
+[Wed Aug 28 12:19:54 2019]
+Error in rule contig_bin:
+    jobid: 14
+    output: /workdir/users/agk85/CDC2/logs/finals/B320-5_final_contig_bin, /workdir/users/agk85/CDC2/bins/B320-5_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441493 ("contig_bin_B320-5") has been submitted
+
+[Wed Aug 28 12:19:54 2019]
+Error in rule contig_bin:
+    jobid: 19
+    output: /workdir/users/agk85/CDC2/logs/finals/B314-1_final_contig_bin, /workdir/users/agk85/CDC2/bins/B314-1_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441494 ("contig_bin_B314-1") has been submitted
+
+[Wed Aug 28 12:20:38 2019]
+Error in rule contig_bin:
+    jobid: 15
+    output: /workdir/users/agk85/CDC2/logs/finals/B316-1_final_contig_bin, /workdir/users/agk85/CDC2/bins/B316-1_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441495 ("contig_bin_B316-1") has been submitted
+
+[Wed Aug 28 12:20:38 2019]
+Error in rule contig_bin:
+    jobid: 10
+    output: /workdir/users/agk85/CDC2/logs/finals/B316-6_final_contig_bin, /workdir/users/agk85/CDC2/bins/B316-6_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441496 ("contig_bin_B316-6") has been submitted
+
+[Wed Aug 28 12:21:11 2019]
+Error in rule contig_bin:
+    jobid: 3
+    output: /workdir/users/agk85/CDC2/logs/finals/B314-2_final_contig_bin, /workdir/users/agk85/CDC2/bins/B314-2_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441497 ("contig_bin_B314-2") has been submitted
+
+[Wed Aug 28 12:21:11 2019]
+Error in rule contig_bin:
+    jobid: 9
+    output: /workdir/users/agk85/CDC2/logs/finals/US8-1_final_contig_bin, /workdir/users/agk85/CDC2/bins/US8-1_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441498 ("contig_bin_US8-1") has been submitted
+
+[Wed Aug 28 12:21:55 2019]
+Error in rule contig_bin:
+    jobid: 17
+    output: /workdir/users/agk85/CDC2/logs/finals/B357-3_final_contig_bin, /workdir/users/agk85/CDC2/bins/B357-3_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441499 ("contig_bin_B357-3") has been submitted
+
+[Wed Aug 28 12:21:55 2019]
+Error in rule contig_bin:
+    jobid: 13
+    output: /workdir/users/agk85/CDC2/logs/finals/US8-3_final_contig_bin, /workdir/users/agk85/CDC2/bins/US8-3_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441500 ("contig_bin_US8-3") has been submitted
+
+[Wed Aug 28 12:22:39 2019]
+Error in rule contig_bin:
+    jobid: 4
+    output: /workdir/users/agk85/CDC2/logs/finals/B331-3_final_contig_bin, /workdir/users/agk85/CDC2/bins/B331-3_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441501 ("contig_bin_B331-3") has been submitted
+
+[Wed Aug 28 12:22:39 2019]
+Error in rule contig_bin:
+    jobid: 11
+    output: /workdir/users/agk85/CDC2/logs/finals/B357-4_final_contig_bin, /workdir/users/agk85/CDC2/bins/B357-4_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441502 ("contig_bin_B357-4") has been submitted
+
+[Wed Aug 28 12:23:10 2019]
+Error in rule contig_bin:
+    jobid: 25
+    output: /workdir/users/agk85/CDC2/logs/finals/US8-2_final_contig_bin, /workdir/users/agk85/CDC2/bins/US8-2_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441503 ("contig_bin_US8-2") has been submitted
+
+[Wed Aug 28 12:23:10 2019]
+Error in rule contig_bin:
+    jobid: 18
+    output: /workdir/users/agk85/CDC2/logs/finals/B316-3_final_contig_bin, /workdir/users/agk85/CDC2/bins/B316-3_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441504 ("contig_bin_B316-3") has been submitted
+
+[Wed Aug 28 12:24:01 2019]
+Error in rule contig_bin:
+    jobid: 23
+    output: /workdir/users/agk85/CDC2/logs/finals/B320-1_final_contig_bin, /workdir/users/agk85/CDC2/bins/B320-1_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441505 ("contig_bin_B320-1") has been submitted
+
+[Wed Aug 28 12:24:01 2019]
+Error in rule contig_bin:
+    jobid: 8
+    output: /workdir/users/agk85/CDC2/logs/finals/B320-2_final_contig_bin, /workdir/users/agk85/CDC2/bins/B320-2_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441506 ("contig_bin_B320-2") has been submitted
+
+[Wed Aug 28 12:24:41 2019]
+Error in rule contig_bin:
+    jobid: 21
+    output: /workdir/users/agk85/CDC2/logs/finals/B335-1_final_contig_bin, /workdir/users/agk85/CDC2/bins/B335-1_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441507 ("contig_bin_B335-1") has been submitted
+
+[Wed Aug 28 12:24:41 2019]
+Error in rule contig_bin:
+    jobid: 20
+    output: /workdir/users/agk85/CDC2/logs/finals/B335-2_final_contig_bin, /workdir/users/agk85/CDC2/bins/B335-2_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441508 ("contig_bin_B335-2") has been submitted
+
+[Wed Aug 28 12:25:11 2019]
+Error in rule contig_bin:
+    jobid: 16
+    output: /workdir/users/agk85/CDC2/logs/finals/US8-4_final_contig_bin, /workdir/users/agk85/CDC2/bins/US8-4_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441509 ("contig_bin_US8-4") has been submitted
+
+[Wed Aug 28 12:25:11 2019]
+Error in rule contig_bin:
+    jobid: 22
+    output: /workdir/users/agk85/CDC2/logs/finals/B357-6_final_contig_bin, /workdir/users/agk85/CDC2/bins/B357-6_contig_taxa_network_2_fgs
+    cluster_jobid: Your job 441510 ("contig_bin_B357-6") has been submitted
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network_scripts/.snakemake/log/2019-08-28T121523.378323.snakemake.log

@@ -1,0 +1,153 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 6
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	36	checkm
+	1	final
+	14	get_trans_noeuks_phagerepair
+	28	normalize
+	28	rscript
+	107
+
+[Mon Aug 19 02:19:08 2019]
+Job 39: ---trans
+
+Submitted job 39 with external jobid 'Your job 441042 ("trans_B320-2") has been submitted'.
+
+[Mon Aug 19 02:19:08 2019]
+Job 29: ---trans
+
+Submitted job 29 with external jobid 'Your job 441043 ("trans_B370-4") has been submitted'.
+
+[Mon Aug 19 02:19:08 2019]
+Job 30: ---trans
+
+Submitted job 30 with external jobid 'Your job 441044 ("trans_B370-5") has been submitted'.
+
+[Mon Aug 19 02:19:08 2019]
+Job 15: ---trans
+
+Submitted job 15 with external jobid 'Your job 441045 ("trans_B331-2") has been submitted'.
+
+[Mon Aug 19 02:19:09 2019]
+Job 38: ---trans
+
+Submitted job 38 with external jobid 'Your job 441046 ("trans_US8-5") has been submitted'.
+
+[Mon Aug 19 02:19:09 2019]
+Job 36: ---trans
+
+Submitted job 36 with external jobid 'Your job 441047 ("trans_US8-3") has been submitted'.
+[Mon Aug 19 02:19:28 2019]
+Error in rule get_trans_noeuks_phagerepair:
+    jobid: 39
+    output: /workdir/users/agk85/CDC2/logs/finals/B320-2_trans_final, /workdir/users/agk85/CDC2/hicpro/output/B320-2_output/hic_results/data/B320-2/B320-2_trans_primary_0.txt, /workdir/users/agk85/CDC2/hicpro/output/B320-2_output/hic_results/data/B320-2/B320-2_trans_primary_0_noeuks.txt, /workdir/users/agk85/CDC2/hicpro/output/B320-2_output/hic_results/data/B320-2/B320-2_trans_primary_0_ncol.txt, /workdir/users/agk85/CDC2/hicpro/output/B320-2_output/hic_results/data/B320-2/B320-2_trans_primary_0_ncol_withexcise.txt, /workdir/users/agk85/CDC2/hicpro/output/B320-2_output/hic_results/data/B320-2/B320-2_trans_primary_0_ncol_withexcise_noeuks.txt
+    cluster_jobid: Your job 441042 ("trans_B320-2") has been submitted
+
+Trying to restart job 39.
+
+[Mon Aug 19 02:19:28 2019]
+Job 39: ---trans
+
+Submitted job 39 with external jobid 'Your job 441048 ("trans_B320-2") has been submitted'.
+[Mon Aug 19 02:19:58 2019]
+Error in rule get_trans_noeuks_phagerepair:
+    jobid: 29
+    output: /workdir/users/agk85/CDC2/logs/finals/B370-4_trans_final, /workdir/users/agk85/CDC2/hicpro/output/B370-4_output/hic_results/data/B370-4/B370-4_trans_primary_0.txt, /workdir/users/agk85/CDC2/hicpro/output/B370-4_output/hic_results/data/B370-4/B370-4_trans_primary_0_noeuks.txt, /workdir/users/agk85/CDC2/hicpro/output/B370-4_output/hic_results/data/B370-4/B370-4_trans_primary_0_ncol.txt, /workdir/users/agk85/CDC2/hicpro/output/B370-4_output/hic_results/data/B370-4/B370-4_trans_primary_0_ncol_withexcise.txt, /workdir/users/agk85/CDC2/hicpro/output/B370-4_output/hic_results/data/B370-4/B370-4_trans_primary_0_ncol_withexcise_noeuks.txt
+    cluster_jobid: Your job 441043 ("trans_B370-4") has been submitted
+
+Trying to restart job 29.
+
+[Mon Aug 19 02:19:58 2019]
+Job 29: ---trans
+
+Submitted job 29 with external jobid 'Your job 441049 ("trans_B370-4") has been submitted'.
+[Mon Aug 19 02:20:28 2019]
+Error in rule get_trans_noeuks_phagerepair:
+    jobid: 30
+    output: /workdir/users/agk85/CDC2/logs/finals/B370-5_trans_final, /workdir/users/agk85/CDC2/hicpro/output/B370-5_output/hic_results/data/B370-5/B370-5_trans_primary_0.txt, /workdir/users/agk85/CDC2/hicpro/output/B370-5_output/hic_results/data/B370-5/B370-5_trans_primary_0_noeuks.txt, /workdir/users/agk85/CDC2/hicpro/output/B370-5_output/hic_results/data/B370-5/B370-5_trans_primary_0_ncol.txt, /workdir/users/agk85/CDC2/hicpro/output/B370-5_output/hic_results/data/B370-5/B370-5_trans_primary_0_ncol_withexcise.txt, /workdir/users/agk85/CDC2/hicpro/output/B370-5_output/hic_results/data/B370-5/B370-5_trans_primary_0_ncol_withexcise_noeuks.txt
+    cluster_jobid: Your job 441044 ("trans_B370-5") has been submitted
+
+Trying to restart job 30.
+
+[Mon Aug 19 02:20:28 2019]
+Job 30: ---trans
+
+Submitted job 30 with external jobid 'Your job 441050 ("trans_B370-5") has been submitted'.
+[Mon Aug 19 02:21:18 2019]
+Error in rule get_trans_noeuks_phagerepair:
+    jobid: 15
+    output: /workdir/users/agk85/CDC2/logs/finals/B331-2_trans_final, /workdir/users/agk85/CDC2/hicpro/output/B331-2_output/hic_results/data/B331-2/B331-2_trans_primary_0.txt, /workdir/users/agk85/CDC2/hicpro/output/B331-2_output/hic_results/data/B331-2/B331-2_trans_primary_0_noeuks.txt, /workdir/users/agk85/CDC2/hicpro/output/B331-2_output/hic_results/data/B331-2/B331-2_trans_primary_0_ncol.txt, /workdir/users/agk85/CDC2/hicpro/output/B331-2_output/hic_results/data/B331-2/B331-2_trans_primary_0_ncol_withexcise.txt, /workdir/users/agk85/CDC2/hicpro/output/B331-2_output/hic_results/data/B331-2/B331-2_trans_primary_0_ncol_withexcise_noeuks.txt
+    cluster_jobid: Your job 441045 ("trans_B331-2") has been submitted
+
+Trying to restart job 15.
+
+[Mon Aug 19 02:21:18 2019]
+Job 15: ---trans
+
+Submitted job 15 with external jobid 'Your job 441051 ("trans_B331-2") has been submitted'.
+[Mon Aug 19 02:21:58 2019]
+Error in rule get_trans_noeuks_phagerepair:
+    jobid: 38
+    output: /workdir/users/agk85/CDC2/logs/finals/US8-5_trans_final, /workdir/users/agk85/CDC2/hicpro/output/US8-5_output/hic_results/data/US8-5/US8-5_trans_primary_0.txt, /workdir/users/agk85/CDC2/hicpro/output/US8-5_output/hic_results/data/US8-5/US8-5_trans_primary_0_noeuks.txt, /workdir/users/agk85/CDC2/hicpro/output/US8-5_output/hic_results/data/US8-5/US8-5_trans_primary_0_ncol.txt, /workdir/users/agk85/CDC2/hicpro/output/US8-5_output/hic_results/data/US8-5/US8-5_trans_primary_0_ncol_withexcise.txt, /workdir/users/agk85/CDC2/hicpro/output/US8-5_output/hic_results/data/US8-5/US8-5_trans_primary_0_ncol_withexcise_noeuks.txt
+    cluster_jobid: Your job 441046 ("trans_US8-5") has been submitted
+
+Trying to restart job 38.
+
+[Mon Aug 19 02:21:58 2019]
+Job 38: ---trans
+
+Submitted job 38 with external jobid 'Your job 441052 ("trans_US8-5") has been submitted'.
+[Mon Aug 19 02:22:29 2019]
+Error in rule get_trans_noeuks_phagerepair:
+    jobid: 36
+    output: /workdir/users/agk85/CDC2/logs/finals/US8-3_trans_final, /workdir/users/agk85/CDC2/hicpro/output/US8-3_output/hic_results/data/US8-3/US8-3_trans_primary_0.txt, /workdir/users/agk85/CDC2/hicpro/output/US8-3_output/hic_results/data/US8-3/US8-3_trans_primary_0_noeuks.txt, /workdir/users/agk85/CDC2/hicpro/output/US8-3_output/hic_results/data/US8-3/US8-3_trans_primary_0_ncol.txt, /workdir/users/agk85/CDC2/hicpro/output/US8-3_output/hic_results/data/US8-3/US8-3_trans_primary_0_ncol_withexcise.txt, /workdir/users/agk85/CDC2/hicpro/output/US8-3_output/hic_results/data/US8-3/US8-3_trans_primary_0_ncol_withexcise_noeuks.txt
+    cluster_jobid: Your job 441047 ("trans_US8-3") has been submitted
+
+Trying to restart job 36.
+
+[Mon Aug 19 02:22:29 2019]
+Job 36: ---trans
+
+Submitted job 36 with external jobid 'Your job 441053 ("trans_US8-3") has been submitted'.
+[Mon Aug 19 02:23:19 2019]
+Error in rule get_trans_noeuks_phagerepair:
+    jobid: 39
+    output: /workdir/users/agk85/CDC2/logs/finals/B320-2_trans_final, /workdir/users/agk85/CDC2/hicpro/output/B320-2_output/hic_results/data/B320-2/B320-2_trans_primary_0.txt, /workdir/users/agk85/CDC2/hicpro/output/B320-2_output/hic_results/data/B320-2/B320-2_trans_primary_0_noeuks.txt, /workdir/users/agk85/CDC2/hicpro/output/B320-2_output/hic_results/data/B320-2/B320-2_trans_primary_0_ncol.txt, /workdir/users/agk85/CDC2/hicpro/output/B320-2_output/hic_results/data/B320-2/B320-2_trans_primary_0_ncol_withexcise.txt, /workdir/users/agk85/CDC2/hicpro/output/B320-2_output/hic_results/data/B320-2/B320-2_trans_primary_0_ncol_withexcise_noeuks.txt
+    cluster_jobid: Your job 441048 ("trans_B320-2") has been submitted
+
+[Mon Aug 19 02:23:59 2019]
+Error in rule get_trans_noeuks_phagerepair:
+    jobid: 29
+    output: /workdir/users/agk85/CDC2/logs/finals/B370-4_trans_final, /workdir/users/agk85/CDC2/hicpro/output/B370-4_output/hic_results/data/B370-4/B370-4_trans_primary_0.txt, /workdir/users/agk85/CDC2/hicpro/output/B370-4_output/hic_results/data/B370-4/B370-4_trans_primary_0_noeuks.txt, /workdir/users/agk85/CDC2/hicpro/output/B370-4_output/hic_results/data/B370-4/B370-4_trans_primary_0_ncol.txt, /workdir/users/agk85/CDC2/hicpro/output/B370-4_output/hic_results/data/B370-4/B370-4_trans_primary_0_ncol_withexcise.txt, /workdir/users/agk85/CDC2/hicpro/output/B370-4_output/hic_results/data/B370-4/B370-4_trans_primary_0_ncol_withexcise_noeuks.txt
+    cluster_jobid: Your job 441049 ("trans_B370-4") has been submitted
+
+[Mon Aug 19 02:24:29 2019]
+Error in rule get_trans_noeuks_phagerepair:
+    jobid: 30
+    output: /workdir/users/agk85/CDC2/logs/finals/B370-5_trans_final, /workdir/users/agk85/CDC2/hicpro/output/B370-5_output/hic_results/data/B370-5/B370-5_trans_primary_0.txt, /workdir/users/agk85/CDC2/hicpro/output/B370-5_output/hic_results/data/B370-5/B370-5_trans_primary_0_noeuks.txt, /workdir/users/agk85/CDC2/hicpro/output/B370-5_output/hic_results/data/B370-5/B370-5_trans_primary_0_ncol.txt, /workdir/users/agk85/CDC2/hicpro/output/B370-5_output/hic_results/data/B370-5/B370-5_trans_primary_0_ncol_withexcise.txt, /workdir/users/agk85/CDC2/hicpro/output/B370-5_output/hic_results/data/B370-5/B370-5_trans_primary_0_ncol_withexcise_noeuks.txt
+    cluster_jobid: Your job 441050 ("trans_B370-5") has been submitted
+
+[Mon Aug 19 02:25:19 2019]
+Error in rule get_trans_noeuks_phagerepair:
+    jobid: 15
+    output: /workdir/users/agk85/CDC2/logs/finals/B331-2_trans_final, /workdir/users/agk85/CDC2/hicpro/output/B331-2_output/hic_results/data/B331-2/B331-2_trans_primary_0.txt, /workdir/users/agk85/CDC2/hicpro/output/B331-2_output/hic_results/data/B331-2/B331-2_trans_primary_0_noeuks.txt, /workdir/users/agk85/CDC2/hicpro/output/B331-2_output/hic_results/data/B331-2/B331-2_trans_primary_0_ncol.txt, /workdir/users/agk85/CDC2/hicpro/output/B331-2_output/hic_results/data/B331-2/B331-2_trans_primary_0_ncol_withexcise.txt, /workdir/users/agk85/CDC2/hicpro/output/B331-2_output/hic_results/data/B331-2/B331-2_trans_primary_0_ncol_withexcise_noeuks.txt
+    cluster_jobid: Your job 441051 ("trans_B331-2") has been submitted
+
+[Mon Aug 19 02:25:59 2019]
+Error in rule get_trans_noeuks_phagerepair:
+    jobid: 38
+    output: /workdir/users/agk85/CDC2/logs/finals/US8-5_trans_final, /workdir/users/agk85/CDC2/hicpro/output/US8-5_output/hic_results/data/US8-5/US8-5_trans_primary_0.txt, /workdir/users/agk85/CDC2/hicpro/output/US8-5_output/hic_results/data/US8-5/US8-5_trans_primary_0_noeuks.txt, /workdir/users/agk85/CDC2/hicpro/output/US8-5_output/hic_results/data/US8-5/US8-5_trans_primary_0_ncol.txt, /workdir/users/agk85/CDC2/hicpro/output/US8-5_output/hic_results/data/US8-5/US8-5_trans_primary_0_ncol_withexcise.txt, /workdir/users/agk85/CDC2/hicpro/output/US8-5_output/hic_results/data/US8-5/US8-5_trans_primary_0_ncol_withexcise_noeuks.txt
+    cluster_jobid: Your job 441052 ("trans_US8-5") has been submitted
+
+[Mon Aug 19 02:26:29 2019]
+Error in rule get_trans_noeuks_phagerepair:
+    jobid: 36
+    output: /workdir/users/agk85/CDC2/logs/finals/US8-3_trans_final, /workdir/users/agk85/CDC2/hicpro/output/US8-3_output/hic_results/data/US8-3/US8-3_trans_primary_0.txt, /workdir/users/agk85/CDC2/hicpro/output/US8-3_output/hic_results/data/US8-3/US8-3_trans_primary_0_noeuks.txt, /workdir/users/agk85/CDC2/hicpro/output/US8-3_output/hic_results/data/US8-3/US8-3_trans_primary_0_ncol.txt, /workdir/users/agk85/CDC2/hicpro/output/US8-3_output/hic_results/data/US8-3/US8-3_trans_primary_0_ncol_withexcise.txt, /workdir/users/agk85/CDC2/hicpro/output/US8-3_output/hic_results/data/US8-3/US8-3_trans_primary_0_ncol_withexcise_noeuks.txt
+    cluster_jobid: Your job 441053 ("trans_US8-3") has been submitted
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/CDC2/scripts/network_scripts/.snakemake/log/2019-08-19T021908.432520.snakemake.log

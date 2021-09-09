@@ -1,0 +1,34 @@
+
+Job 348: ---map_bwa
+
+
+Job 11: ---bwafilter
+
+
+Job 92: ---sortbam
+
+
+Job 311: ---rpkm
+
+
+Job 288: ---rpkm
+
+
+Job 68: ---rpkm
+
+
+Job 385: ---rpkm
+
+
+Job 294: ---rpkm
+
+
+Job 50: ---rpkm
+
+
+Job 399: ---rpkm
+
+Terminating processes on user request.
+Removing output files of failed job rpkm since they might be corrupted:
+/workdir/users/agk85/CDC/mapping/metagenomes2/bwa_alignments/B310-5.rpkm.txt
+Complete log: .snakemake/log/2018-04-02T105122.489668.snakemake.log

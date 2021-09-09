@@ -1,0 +1,5 @@
+Building DAG of jobs...
+MissingInputException in line 100 of /local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_bwa_SSSS:
+Missing input files for rule rpkm:
+/workdir/data/CDC/sureselect/unzip/B314-3SS.2.fastq
+/workdir/data/CDC/sureselect/unzip/B314-3SS.1.fastq

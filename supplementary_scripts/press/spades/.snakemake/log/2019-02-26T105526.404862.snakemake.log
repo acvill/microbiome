@@ -1,0 +1,31 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	1	phageblast
+	1	phagefinder
+	3
+
+[Tue Feb 26 10:55:26 2019]
+Job 3: ---phage blast
+
+[Tue Feb 26 10:55:32 2019]
+Error in rule phageblast:
+    jobid: 3
+    output: /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/phage_finder_info.txt, /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_proteins.out
+
+RuleException:
+CalledProcessError in line 75 of /local/workdir/users/agk85/press/scripts/spades/snake_min_prodigal_pf_spadestest:
+Command 'set -euo pipefail;  python /workdir/users/agk85/CDC/scripts/phage_finder_info.py /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_scaffold.fasta /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_proteins.faa /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/phage_finder_info.txt
+		/programs/ncbi-blast-2.3.0+/bin/blastp -query /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_proteins.faa -db /workdir/users/agk85/tools/phage_finder_v2.1/DB/phagedb -num_threads 8 -outfmt 6 -out /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_proteins.out' returned non-zero exit status 1.
+  File "/local/workdir/users/agk85/press/scripts/spades/snake_min_prodigal_pf_spadestest", line 75, in __rule_phageblast
+  File "/usr/lib64/python3.6/concurrent/futures/thread.py", line 56, in run
+Removing output files of failed job phageblast since they might be corrupted:
+/workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/phage_finder_info.txt
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /local/workdir/users/agk85/press/scripts/spades/.snakemake/log/2019-02-26T105526.404862.snakemake.log

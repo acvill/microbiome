@@ -1,0 +1,43 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Unlimited resources: mem_mb
+Job counts:
+	count	jobs
+	1	final
+	1	phageblast
+	1	phagefinder
+	1	prodigal
+	4
+
+[Tue Feb 26 23:35:58 2019]
+Job 2: --- prodigal
+
+[Wed Feb 27 00:35:53 2019]
+Finished job 2.
+1 of 4 steps (25%) done
+
+[Wed Feb 27 00:35:53 2019]
+Job 3: ---phage blast
+
+[Wed Feb 27 05:28:36 2019]
+Finished job 3.
+2 of 4 steps (50%) done
+
+[Wed Feb 27 05:28:36 2019]
+Job 4: ---phage finder
+
+[Wed Feb 27 06:16:45 2019]
+Finished job 4.
+3 of 4 steps (75%) done
+
+[Wed Feb 27 06:16:45 2019]
+localrule final:
+    input: /workdir/users/agk85/press/metaspades/metagenomes/scaffolds/ProxiMeta-spades_scaffold.fasta, /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades.gff3, /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_proteins.faa, /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/ProxiMeta-spades_proteins.out, /workdir/users/agk85/press/prodigal/metagenomes/ProxiMeta-spades/PFPR_tab.txt
+    jobid: 0
+
+[Wed Feb 27 06:16:45 2019]
+Finished job 0.
+4 of 4 steps (100%) done
+Complete log: /local/workdir/users/agk85/press/scripts/spades/.snakemake/log/2019-02-26T233558.586075.snakemake.log

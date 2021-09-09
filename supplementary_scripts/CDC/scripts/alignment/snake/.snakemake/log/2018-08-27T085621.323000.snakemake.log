@@ -1,0 +1,5 @@
+Building DAG of jobs...
+MissingInputException in line 18 of /local/workdir/users/agk85/CDC/scripts/alignment/snake/snake_bwa_SSSS:
+Missing input files for rule bwa:
+/workdir/data/CDC/sureselect/unzip/B316-2SS.2.fastq
+/workdir/data/CDC/sureselect/unzip/B316-2SS.1.fastq
