@@ -1,4 +1,3 @@
-# microbiome
-This repository represents a long project investigating antibiotic resistance and mobile genes in the human microbiome using proximity ligation and high throughput sequencing (Hi-C).
+This repository is a fork of [alyssagkent/microbiome](https://github.com/alyssagkent/microbiome) containing additional scripts used in the analysis and figure production for our publication: [Widespread transfer of mobile antibiotic resistance genes within individual gut microbiomes revealed through bacterial Hi-C](https://www.nature.com/articles/s41467-020-18164-7). 
 
-Most scripts have been somewhat hard-coded for use in a cluster environment and for specific use in this project, e.g. sample ids have been employed for plotting purposes. So if using, please be aware of that. There are also likely many scripts of analyses that did not make it into the final project.
+Many of the scripts contain hard-coded directory structures and sample names. Some of the snakemake pipelines in [`/scripts`](https://github.com/acvill/microbiome/tree/master/scripts) rely on helper scripts in [`/supplementary_scripts`](https://github.com/acvill/microbiome/tree/master/supplementary_scripts). There are likely duplicate scripts across directories.  
